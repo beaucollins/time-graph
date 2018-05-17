@@ -30,7 +30,7 @@ body {
 	display: flex;
 	flex-direction: column;
 
-	.block-graph {
+	> div:first-child {
 		flex: 1;
 	}
 
