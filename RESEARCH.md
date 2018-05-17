@@ -56,12 +56,6 @@ Let's start with an ideal API that the `<Calendar>` would use:
 // Definition
 class BlockGraph extends Component {
   static propTypes = {
-
-    size: PropTypes.shape({
-      width: PropTypes.number.isRequired,
-      height: PropTypes.number.isRequired,
-    }).isRequired
-
   }
 }
 ```
