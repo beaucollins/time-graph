@@ -1,29 +1,33 @@
-import { Component } from 'react';
+import { Component, createRef, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-function Block(props) {
-	const style = {
-		width: props.rect.width,
-		height: props.rect.height,
-		left: props.rect.x,
-		top: props.rect.y,
-		outline: '1px dotted #F00',
-		position: 'absolute',
-	};
-	return (
-		<div style={style}>
-			{props.children}
-		</div>
-	);
-}
-
-Block.propTypes = {
-	rect: PropTypes.shape({
+class Block extends PureComponent {
+	static propTypes = {
 		width: PropTypes.number.isRequired,
 		height: PropTypes.number.isRequired,
 		x: PropTypes.number.isRequired,
 		y: PropTypes.number.isRequired,
-	}).isRequired,
+	};
+
+	render() {
+		const props = this.props;
+		const style = {
+			width: props.width,
+			height: props.height,
+			left: props.x,
+			top: props.y,
+			outline: '1px dotted #F00',
+			position: 'absolute',
+		};
+		return (
+			<div style={style}>
+				{props.children}
+			</div>
+		);
+	}
+}
+
+Block.propTypes = {
 };
 
 export default class BlockGraph extends Component {
@@ -60,6 +64,76 @@ export default class BlockGraph extends Component {
 		renderBlock: () => null,
 	}
 
+	constructor(props) {
+		super(props);
+		this.containerRef = createRef();
+	}
+
+	componentDidMount() {
+		if (this.containerRef.current) {
+			this.containerRef.current.addEventListener('scroll', this.observeScrolling);
+		}
+	}
+
+	componentWillUnmount() {
+		if (this.containerRef.current) {
+			this.containerRef.current.removeEventListener('scroll', this.observeScrolling);
+		}
+	}
+
+	observeScrolling = () => {
+		// report what the user is actually looking at in time and rowIndex domain
+	}
+
+	getViewportMeasurements() {
+		if (!this.containerRef.current) {
+			return;
+		}
+
+		const node = this.containerRef.current;
+		const pixels = {
+			total: {
+				x: 0,
+				y: 0,
+				width: node.scrollWidth,
+				height: node.scrollHeight,
+			},
+			visible: {
+				x: node.scrollLeft,
+				y: node.scrollTop,
+				width: node.clientWidth,
+				height: node.clientHeight,
+			},
+		};
+		const graph = {
+			total: {
+				x: this.convertPixelsToAbsoluteSeconds(0),
+				y: 0,
+				width: this.convertPixelsToSeconds(node.scrollWidth),
+				height: this.convertPixelsToRow(node.scrollHeight),
+			},
+			visible: {
+				x: this.convertPixelsToAbsoluteSeconds(node.scrollLeft),
+				y: this.convertPixelsToRow(node.scrollTop),
+				width: this.convertPixelsToSeconds(node.clientWidth),
+				height: this.convertPixelsToRow(node.clientHeight),
+			},
+		};
+		return { pixels, graph };
+	}
+
+	convertPixelsToRow(y) {
+		return Math.floor(y / this.props.rows.height);
+	}
+
+	convertPixelsToSeconds(x) {
+		return x / this.props.pixelsPerSecond;
+	}
+
+	convertPixelsToAbsoluteSeconds(x) {
+		return this.convertPixelsToSeconds(x) + this.props.originSeconds;
+	}
+
 	/**
 	 * @param {number} seconds - a quantity of seconds
 	 * @returns {number} the measurement in pixels that represents the seconds for this graph
@@ -84,7 +158,7 @@ export default class BlockGraph extends Component {
 				y: this.props.rows.getIndexForBlock(block) * this.props.rows.height,
 				height: this.props.rows.height,
 			};
-			return <Block key={block.uid} rect={rect}>{this.props.renderBlock(block)}</Block>;
+			return <Block key={block.uid} {...rect}>{this.props.renderBlock(block)}</Block>;
 		});
 	}
 
@@ -96,6 +170,7 @@ export default class BlockGraph extends Component {
 		return (
 			<div
 				style={style}
+				ref={this.containerRef}
 			>
 				{this.renderBlocks()}
 			</div>
