@@ -1,0 +1,55 @@
+{
+	"presets": [
+		[
+			"env", {
+				"targets": {
+					"browsers": [
+						"last 2 versions",
+						"IE >= 11"
+					]
+				}
+			}
+		],
+		"react",
+		"stage-0"
+	],
+	"env": {
+		"development": {
+			"plugins": [
+				[
+					"istanbul",
+					{
+						"exclude": [
+							"src/**/test/*.js",
+							"test/**"
+						],
+						"extensions": [
+							".js",
+							".jsx"
+						]
+					}
+				],
+				[
+					"transform-class-properties"
+				]
+			]
+		},
+		"test": {
+			"plugins": [
+				[
+					"istanbul",
+					{
+						"exclude": [
+							"src/**/test/*.js",
+							"test/**"
+						],
+						"extensions": [
+							".js",
+							".jsx"
+						]
+					}
+				]
+			]
+		}
+	}
+}
