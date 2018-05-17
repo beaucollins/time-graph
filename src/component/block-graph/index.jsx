@@ -12,6 +12,10 @@ export default class BlockGraph extends Component {
 			startTime: PropTypes.number.isRequired,
 			endTime: PropTypes.number.isRequired,
 		})).isRequired,
+		/**
+		 * The coefficient that converts a measument in seconds into a measurement in pixels
+		 */
+		pixelsPerSecond: PropTypes.number.isRequired,
 	};
 
 	static defaultProps = {
