@@ -27,9 +27,6 @@ class Block extends PureComponent {
 	}
 }
 
-Block.propTypes = {
-};
-
 export default class BlockGraph extends Component {
 	static propTypes = {
 		renderBlock: PropTypes.func.isRequired,
