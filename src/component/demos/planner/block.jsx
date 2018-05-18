@@ -66,7 +66,7 @@ export default class DemoBlock extends PureComponent {
 			fontWeight: isSelected ? 'bold' : 'normal',
 		};
 		return (
-			<div style={style}>
+			<div style={style} className="demo-block">
 				<div className="inner-block" style={innerStyle}>
 					<Duration seconds={duration} />
 				</div>

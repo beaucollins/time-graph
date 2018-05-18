@@ -20,6 +20,11 @@ export default class BlockGraph extends Component {
 		onMouseMoveGraph: PropTypes.func,
 		onMouseUpGraph: PropTypes.func,
 
+		chromeOffset: PropTypes.shape({
+			header: PropTypes.number.isRequired,
+			sidebar: PropTypes.number.isRequired,
+		}),
+
 		renderBlock: PropTypes.func.isRequired,
 		/**
 		 * A list of items to draw on the screen
@@ -48,8 +53,12 @@ export default class BlockGraph extends Component {
 	};
 
 	static defaultProps = {
+		chromeOffset: {
+			header: 0,
+			sidebar: 0,
+		},
 		blocks: [],
-		renderBlock: (block, rect) => <Block {...rect} />,
+		renderBlock: (block, rect) => <Block key={block.uid} {...rect} />,
 		onClickGraph: () => {},
 		onMouseDownGraph: () => {},
 		onMouseMoveGraph: () => {},
@@ -139,7 +148,7 @@ export default class BlockGraph extends Component {
 	 * @returns {number} pixel x value that represents that second in this intance of the graph
 	 */
 	convertAbsoluteSecondsToPixels(seconds) {
-		return this.convertSecondsToPixels(seconds - this.props.originSeconds);
+		return this.convertSecondsToPixels(seconds - this.props.originSeconds) + this.props.chromeOffset.sidebar;
 	}
 
 	convertViewPortPoint(point) {
@@ -152,6 +161,7 @@ export default class BlockGraph extends Component {
 		return sumPoints(
 			point,
 			invertPoint(node.getBoundingClientRect()),
+			invertPoint({ x: this.props.chromeOffset.sidebar, y: this.props.chromeOffset.header }),
 			{ x: node.scrollLeft, y: node.scrollTop }
 		);
 	}
@@ -170,52 +180,64 @@ export default class BlockGraph extends Component {
 		};
 	}
 
-	getEventTimeIndex(event) {
+	getEventData(event) {
 		const point = this.getEventPoint(event);
-		return this.convertPointToTimeIndex(point);
+		const timeIndex = this.convertPointToTimeIndex(point);
+		return {
+			timeIndex,
+			point,
+			match: this.filterMatchingBlock(timeIndex, point),
+		};
 	}
 
-	filterMatchingBlocks(timeIndex) {
-		return this.props.blocks.filter(block => {
+	filterMatchingBlock(timeIndex, point) {
+		const matching = this.props.blocks.filter(block => {
 			return timeSpanContainsTime(block, timeIndex.seconds) &&
 				this.props.rows.getIndexForBlock(block) === timeIndex.row;
 		});
+		if (matching && matching.length > 0) {
+			// TODO: calculate where the box was clicked
+			const block = matching[0];
+			const rect = this.getRectForBlock(block);
+			return { block, rect };
+		}
+		return null;
 	}
 
 	handleOnClick = event => {
 		// now we can convert the x to time and the y to a row index
-		const timeIndex = this.getEventTimeIndex(event);
-		const blocks = this.filterMatchingBlocks(timeIndex);
-		this.props.onClickGraph(event, timeIndex, blocks);
+		const eventData = this.getEventData(event);
+		this.props.onClickGraph(event, eventData);
 	}
 
 	handleOnMouseDown = event => {
-		const timeIndex = this.getEventTimeIndex(event);
-		const blocks = this.filterMatchingBlocks(timeIndex);
-		this.props.onMouseDownGraph(event, timeIndex, blocks);
+		const eventData = this.getEventData(event);
+		this.props.onMouseDownGraph(event, eventData);
 	}
 
 	handleOnMouseUp = event => {
-		const timeIndex = this.getEventTimeIndex(event);
-		const blocks = this.filterMatchingBlocks(timeIndex);
+		const eventData = this.getEventData(event);
 		// filter to the matching timestamps
-		this.props.onMouseUpGraph(event, timeIndex, blocks);
+		this.props.onMouseUpGraph(event, eventData);
 	}
 
 	handleOnMouseMove = event => {
-		const timeIndex = this.getEventTimeIndex(event);
-		const blocks = this.filterMatchingBlocks(timeIndex);
-		this.props.onMouseMoveGraph(event, timeIndex, blocks);
+		const eventData = this.getEventData(event);
+		this.props.onMouseMoveGraph(event, eventData);
+	}
+
+	getRectForBlock(block) {
+		return {
+			x: this.convertAbsoluteSecondsToPixels(block.startTime),
+			width: this.convertSecondsToPixels(block.endTime - block.startTime),
+			y: this.props.rows.getIndexForBlock(block) * this.props.rows.height + this.props.chromeOffset.header,
+			height: this.props.rows.height,
+		};
 	}
 
 	renderBlocks = () => {
 		return this.props.blocks.map(block => {
-			const rect = {
-				x: this.convertAbsoluteSecondsToPixels(block.startTime),
-				width: this.convertSecondsToPixels(block.endTime - block.startTime),
-				y: this.props.rows.getIndexForBlock(block) * this.props.rows.height,
-				height: this.props.rows.height,
-			};
+			const rect = this.getRectForBlock(block);
 			return this.props.renderBlock(block, rect);
 		});
 	}
@@ -234,7 +256,10 @@ export default class BlockGraph extends Component {
 				onMouseUp={this.handleOnMouseUp}
 				ref={this.containerRef}
 			>
-				{this.renderBlocks()}
+				{this.props.children && <div>{this.props.children}</div>}
+				<div>
+					{this.renderBlocks()}
+				</div>
 			</div>
 		);
 	}

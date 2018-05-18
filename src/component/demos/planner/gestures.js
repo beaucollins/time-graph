@@ -1,14 +1,6 @@
 import uuid from 'uuid/v4';
 import { timeSpansOverlap, unionTimeSpanSet } from 'timespan';
-
-export const splitBy = (fn, list) => {
-	return list.reduce(([matching, others], item) => {
-		if (fn(item)) {
-			return [[item, ...matching], others];
-		}
-		return [matching, [item, ...others]];
-	}, [[], []]);
-};
+import splitBy from 'split-by';
 
 const eachIndexInRange = (start, end, fn) => {
 	const increment = start < end ? 1 : -1;
@@ -69,12 +61,12 @@ export const applyGesture = (gesture, blocks) => {
 				return blocks;
 			}
 			// create the blocks that would fill the space for the gesture
-			const gestured = eachIndexInRange(gesture.origin.row, gesture.destination.row, (row) => {
-				const invertTime = gesture.origin.seconds > gesture.destination.seconds;
+			const gestured = eachIndexInRange(gesture.origin.timeIndex.row, gesture.destination.timeIndex.row, (row) => {
+				const invertTime = gesture.origin.timeIndex.seconds > gesture.destination.timeIndex.seconds;
 				return {
 					row,
-					startTime: invertTime ? gesture.destination.seconds : gesture.origin.seconds,
-					endTime: invertTime ? gesture.origin.seconds : gesture.destination.seconds,
+					startTime: invertTime ? gesture.destination.timeIndex.seconds : gesture.origin.timeIndex.seconds,
+					endTime: invertTime ? gesture.origin.timeIndex.seconds : gesture.destination.timeIndex.seconds,
 					type: gesture.blockType,
 					gestured: true,
 					uid: uuid(),

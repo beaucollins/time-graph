@@ -1,30 +1,3 @@
-body {
-	margin: 0;
-	font: 14px arial;
-}
-
-#root {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: linear-gradient(#EEE, #F2F2F2);
-	display: flex;
-	flex-direction: column;
-}
-
-#demo {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-}
-
-#demo-chrome {
-	height: 90px;
-	border-bottom: 1px solid #CCC;
-}
-
 #graph-container {
 	flex: 1;
 	display: flex;
