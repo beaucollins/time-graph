@@ -63,7 +63,7 @@ export default recognizeType({
 	},
 	[EVENT_TYPES.CLICK]: (event, gesture) => {
 		// there is no existing gesture, or the existing gesture is an accept gesture
-		if (!gesture || gesture.type === 'selection' ) {
+		if (!gesture || gesture.type === 'selection') {
 			// TODO: multi selection
 			if (event.graphData.match) {
 				return { type: 'selection', selected: event.graphData.match.block };

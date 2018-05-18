@@ -1,7 +1,6 @@
 import { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
 import BlockGraph from './index';
-import splitBy from 'split-by';
 
 function getDisplayName(WrappedComponent) {
 	return WrappedComponent.displayName || WrappedComponent.name || 'Component';

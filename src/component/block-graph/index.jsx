@@ -1,9 +1,10 @@
-import { Component, createRef, Fragment } from 'react';
+import { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
 import { throttle } from 'lodash';
 
 import { timeSpanContainsTime } from 'timespan';
 import Block from './block';
+import windower from './windower';
 
 function invertPoint({ x, y }) {
 	return { x: -x, y: -y };
@@ -13,87 +14,14 @@ function sumPoints(... points) {
 	return points.reduce(({ x, y }, point) => ({ x: x + point.x, y: y + point.y }), { x: 0, y: 0 });
 }
 
-function hashWindow([p1, p2]) {
-	return `${p1.x},${p1.y}:${p2.x},${p2.y}`;
-}
-
-const windower = (windowSize, datasource) => {
-	const windows = {};
-
-	const windowForPoint = point => {
-		const modX = point.x % windowSize.width;
-		const modY = point.y % windowSize.height;
-		return { x: point.x - modX, y: point.y - modY };
-	};
-
-	const translate = ({ x, y }) => {
-		return {
-			x: windowSize.width + x,
-			y: windowSize.height + y,
-		}
-	};
-
-	const snapViewPortToWindows = ([a, b]) => {
-		return [{
-			x: Math.floor(a.x / windowSize.width) * windowSize.width,
-			y: Math.floor(a.y / windowSize.height) * windowSize.height,
-		}, {
-			x: Math.ceil(b.x / windowSize.width) * windowSize.width,
-			y: Math.ceil(b.y / windowSize.height) * windowSize.height,
-		}];
-	};
-
-	const mapWindows = (viewport, iterator) => {
-		let result = [];
-		const [a, b] = snapViewPortToWindows(viewport);
-		let current = { ...a };
-		while (current.x < b.x) {
-			while (current.y < b.y) {
-				result.push(iterator({ x: current.x, y: current.y }));
-				current.y += windowSize.height;
-			}
-			current.y = a.y;
-			current.x += windowSize.width;
-		}
-		return result;
-	};
-	return {
-		windowForPoint,
-		renderVisibleWindows: (viewport, renderBlock, convertPoint) => {
-			return mapWindows(viewport, (w) => {
-				const style = {
-					...windowSize,
-					left: w.x,
-					top: w.y,
-					position: 'absolute',
-					color: '#999',
-					boxSizing: 'border-box',
-					border: '1px solid #CCC',
-				};
-				const range = [convertPoint(w), convertPoint(translate(w))];
-				const blocks = datasource({
-					timeSpan: { startTime: range[0].seconds, endTime: range[1].seconds },
-					rowSpan: { startIndex: range[0].row, endIndex: range[1].row },
-				});
-				return (
-					<Fragment key={`${w.x},${w.y}`}>
-						{blocks.map(renderBlock)}
-						<div style={style}>
-							{JSON.stringify(range, null, ' ')}
-						</div>
-					</Fragment>
-				);
-			});
-		},
-	};
-};
-
 export default class BlockGraph extends Component {
 	static propTypes = {
 		onClickGraph: PropTypes.func,
 		onMouseDownGraph: PropTypes.func,
 		onMouseMoveGraph: PropTypes.func,
 		onMouseUpGraph: PropTypes.func,
+
+		children: PropTypes.element,
 
 		chromeOffset: PropTypes.shape({
 			header: PropTypes.number.isRequired,
@@ -262,7 +190,8 @@ export default class BlockGraph extends Component {
 	 * @returns {number} pixel x value that represents that second in this intance of the graph
 	 */
 	convertAbsoluteSecondsToPixels(seconds) {
-		return this.convertSecondsToPixels(seconds - this.props.originSeconds) + this.props.chromeOffset.sidebar;
+		return this.convertSecondsToPixels(seconds - this.props.originSeconds) +
+			this.props.chromeOffset.sidebar;
 	}
 
 	convertViewPortPoint(point) {
@@ -316,7 +245,7 @@ export default class BlockGraph extends Component {
 		};
 	}
 
-	filterMatchingBlock(timeIndex, point) {
+	filterMatchingBlock(timeIndex) {
 		const matching = this.props.blocks.filter(block => {
 			return timeSpanContainsTime(block, timeIndex.seconds) &&
 				this.props.rows.getIndexForBlock(block) === timeIndex.row;
@@ -352,11 +281,12 @@ export default class BlockGraph extends Component {
 	}
 
 	getRectForBlock(block) {
+		const { rows, chromeOffset } = this.props;
 		return {
 			x: this.convertAbsoluteSecondsToPixels(block.startTime),
 			width: this.convertSecondsToPixels(block.endTime - block.startTime),
-			y: this.props.rows.getIndexForBlock(block) * this.props.rows.height + this.props.chromeOffset.header,
-			height: this.props.rows.height,
+			y: rows.getIndexForBlock(block) * rows.height + chromeOffset.header,
+			height: rows.height,
 		};
 	}
 

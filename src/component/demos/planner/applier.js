@@ -85,7 +85,9 @@ const mergeAndSplit = (generatedBlocks, existingBlocks) => {
 				// matching type gestures should be merged together
 				// TODO: there's a potential to cause blocks to be deleted, need those tracked
 				// for gesture results
-				matchingType.length > 0 ? { ...block, ...unionTimeSpanSet([block, ...matchingType]), gestured: true } : block,
+				matchingType.length > 0
+					? { ...block, ...unionTimeSpanSet([block, ...matchingType]), gestured: true }
+					: block,
 			],
 		};
 	}, { unchanged: [], modified: generatedBlocks, deleted: [] });
@@ -100,12 +102,13 @@ const multidraw = (gesture, blocks) => {
 		return { unchanged: blocks };
 	}
 	// create the blocks that would fill the space for the gesture
-	const generated = eachIndexInRange(gesture.origin.timeIndex.row, gesture.destination.timeIndex.row, (row) => {
-		const invertTime = gesture.origin.timeIndex.seconds > gesture.destination.timeIndex.seconds;
+	const { destination, origin } = gesture;
+	const generated = eachIndexInRange(origin.timeIndex.row, destination.timeIndex.row, (row) => {
+		const invertTime = origin.timeIndex.seconds > destination.timeIndex.seconds;
 		return {
 			row,
-			startTime: invertTime ? gesture.destination.timeIndex.seconds : gesture.origin.timeIndex.seconds,
-			endTime: invertTime ? gesture.origin.timeIndex.seconds : gesture.destination.timeIndex.seconds,
+			startTime: invertTime ? destination.timeIndex.seconds : origin.timeIndex.seconds,
+			endTime: invertTime ? origin.timeIndex.seconds : destination.timeIndex.seconds,
 			type: gesture.blockType,
 			gestured: true,
 			uid: uuid(),
@@ -128,8 +131,8 @@ const drag = (gesture, blocks) => {
 		row: gesture.dragMode === 'both' ? gesture.destination.timeIndex.row : block.row,
 	};
 	const result = mergeAndSplit([generated], blocks.filter(({ uid }) => uid !== block.uid));
-	return { ... result, modified: result.modified.filter(block => {
-		return !block.gestured || block.endTime - block.startTime >= 60 * 45;
+	return { ... result, modified: result.modified.filter(b => {
+		return !b.gestured || b.endTime - b.startTime >= 60 * 45;
 	}) };
 };
 
