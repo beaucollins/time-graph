@@ -49,17 +49,18 @@ const splitTimeSpans = (list, block) => {
 };
 
 const mergeAndSplit = (generatedBlocks, existingBlocks) => {
-	return existingBlocks.reduce(({ merged, potential }, block) => {
+	return existingBlocks.reduce(({ unchanged, modified, deleted }, block) => {
 		// find all generated blocks in the same row as this block
 		const [matching, others] = splitBy(maybe => block.row === maybe.row &&
-			timeSpansOverlap(block, maybe), potential);
+			timeSpansOverlap(block, maybe), modified);
 
 		// none of the potentially created blocks match any of the existing block
 		// by row or timespan, add the block to our list and continue iterating
 		if (matching.length === 0) {
 			return {
-				merged: [...merged, block],
-				potential: others,
+				unchanged: [...unchanged, block],
+				modified: others,
+				deleted,
 			};
 		}
 
@@ -73,18 +74,21 @@ const mergeAndSplit = (generatedBlocks, existingBlocks) => {
 		return {
 			// do not merge the existing block into the finished list because it will be modifying the
 			// generated blocks in some fashion (either by merging with some or splitting them)
-			merged,
-			potential: [
+			unchanged,
+			deleted,
+			modified: [
 				// these were not in the same row or were not overlapping
 				...others,
 				// these are gestures in the same row with non-matching types
 				// split these by removing `block`s timespan from them
 				...(otherType.length > 0 ? splitTimeSpans(otherType, block) : []),
 				// matching type gestures should be merged together
+				// TODO: there's a potential to cause blocks to be deleted, need those tracked
+				// for gesture results
 				matchingType.length > 0 ? { ...block, ...unionTimeSpanSet([block, ...matchingType]), gestured: true } : block,
 			],
 		};
-	}, { merged: [], potential: generatedBlocks });
+	}, { unchanged: [], modified: generatedBlocks, deleted: [] });
 };
 
 const multidraw = (gesture, blocks) => {
@@ -93,7 +97,7 @@ const multidraw = (gesture, blocks) => {
 	// blocks is the existing set of blocks, return only the
 	// modifications?
 	if (!gesture.destination) {
-		return blocks;
+		return { unchanged: blocks };
 	}
 	// create the blocks that would fill the space for the gesture
 	const generated = eachIndexInRange(gesture.origin.timeIndex.row, gesture.destination.timeIndex.row, (row) => {
@@ -108,9 +112,9 @@ const multidraw = (gesture, blocks) => {
 		};
 	});
 	const result = mergeAndSplit(generated, blocks);
-	return result.merged.concat(result.potential.filter(block => {
-		return !block.gestured || block.endTime - block.startTime > 60 * 45;
-	}));
+	return { ... result, modified: result.modified.filter(block => {
+		return !block.gestured || block.endTime - block.startTime >= 60 * 45;
+	}) };
 };
 
 const drag = (gesture, blocks) => {
@@ -124,12 +128,12 @@ const drag = (gesture, blocks) => {
 		row: gesture.dragMode === 'both' ? gesture.destination.timeIndex.row : block.row,
 	};
 	const result = mergeAndSplit([generated], blocks.filter(({ uid }) => uid !== block.uid));
-	return result.merged.concat(result.potential.filter(b => {
-		return !b.gestured || b.endTime - b.startTime >= 60 * 45;
-	}));
+	return { ... result, modified: result.modified.filter(block => {
+		return !block.gestured || block.endTime - block.startTime >= 60 * 45;
+	}) };
 };
 
 export default matchType({
 	multidraw, drag,
-}, (_, blocks) => blocks);
+}, (_, blocks) => ({ unchanged: blocks, modified: [], deleted: [] }));
 

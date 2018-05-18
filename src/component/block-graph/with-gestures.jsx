@@ -41,7 +41,7 @@ export default function withGestures(recognizer = () => null) {
 		static defaultProps = {
 			...BlockGraph.defaultProps,
 			onGestureChange: () => {},
-			applyGesture: (gesture, blocks) => blocks,
+			applyGesture: (gesture, blocks) => ({ unchanged: blocks }),
 		};
 
 		handle = (type, parentHandler) => (event, graphData) => {
@@ -58,7 +58,10 @@ export default function withGestures(recognizer = () => null) {
 
 		componentDidUpdate(_, prevState) {
 			if (prevState.gesture !== this.state.gesture) {
-				this.props.onGestureChange(this.state.gesture, prevState.gesture);
+				const { applyGesture, blocks } = this.props;
+				this.props.onGestureChange(this.state.gesture, prevState.gesture, (gesture) => {
+					return applyGesture(gesture, blocks);
+				});
 			}
 		}
 
@@ -82,9 +85,10 @@ export default function withGestures(recognizer = () => null) {
 			};
 
 			const { gesture } = this.state;
-			const gestureBlocks = applyGesture(gesture, this.props.blocks);
+			const { unchanged, modified } = applyGesture(gesture, this.props.blocks);
+			const graphBlocks = modified && modified.length > 0 ? [...unchanged, ...modified] : unchanged;
 			return (
-				<BlockGraph {...handlers} {...subProps} blocks={gestureBlocks}></BlockGraph>
+				<BlockGraph {...handlers} {...subProps} blocks={graphBlocks}></BlockGraph>
 			);
 		}
 	}

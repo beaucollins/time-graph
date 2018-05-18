@@ -50,16 +50,20 @@ export default class Planner extends React.Component {
 		return this.state.selectedBlockUids.indexOf(block.uid) !== -1;
 	}
 
-	handleGestureChange = gesture => {
+	handleGestureChange = (gesture, prevGesture, applier) => {
 		if (gesture && gesture.type === 'selection') {
 			this.setState( {selectedBlockUids: [gesture.selected.uid] });
 		} else {
 			this.setState({ selectedBlockUids: [] });
 		}
+		if (gesture.type === 'complete') {
+			const result = applier(gesture.gesture);
+			console.log('gesture complete', result)
+		}
+
 	}
 
 	applyGesture = (gesture, blocks) => {
-		console.log('apply gesture', gesture);
 		return applyGesture(gesture, blocks);
 	}
 

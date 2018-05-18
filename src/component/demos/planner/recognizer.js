@@ -49,16 +49,14 @@ export default recognizeType({
 			return { type: 'idle' };
 		}
 		if (gesture.type === 'multidraw') {
-			return { type: 'idle' };
+			return { type: 'complete', gesture, event };
 		}
 
 		if (gesture.type === 'drag') {
-			// if the drag was less than a certain distance, consider it a selection
-			const { match } = event.graphData;
-			if (match) {
-				return { type: 'selection', selected: match.block }
-			}
-			return { type: 'idle' };
+			// TODO: if the drag was less than a certain distance, consider it a selection?
+			// on mouse up if the gesture was a drag, we return a complete gesture
+			// to signify that the user has commited a gesture
+			return { type: 'complete', gesture, event };
 		}
 
 		return gesture;
