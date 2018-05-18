@@ -1,9 +1,27 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 import BlockGraph from './index';
 
 function getDisplayName(WrappedComponent) {
 	return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 }
+
+export function recognizeType(typeRecognizers = {}) {
+	return function(event, gesture) {
+		const recognizer = typeRecognizers[event.type];
+		if (recognizer && typeof recognizer === 'function') {
+			return recognizer(event, gesture);
+		}
+		return gesture;
+	};
+}
+
+export const EVENT_TYPES = {
+	MOVE: 'click',
+	MOUSEDOWN: 'mousedown',
+	MOUSEMOVE: 'mousemove',
+	MOUSEUP: 'mouseup',
+};
 
 /**
  * @param {Function} recognizer - transforms a gesture into a new gesture
@@ -11,19 +29,32 @@ function getDisplayName(WrappedComponent) {
  */
 export default function withGestures(recognizer = () => null, applier = (_, blocks) => blocks ) {
 	class WithGestures extends Component {
-		static propTypes = BlockGraph.propTypes;
-		static defaultProps = BlockGraph.defaultProps;
+		static propTypes = {
+			...BlockGraph.propTypes,
+			onGestureChange: PropTypes.func,
+		}
 
-		handle = (type, parentHandler) => (event, timeIndex, blocks) => {
+		static defaultProps = {
+			...BlockGraph.defaultProps,
+			onGestureChange: () => {},
+		};
+
+		handle = (type, parentHandler) => (event, graphData) => {
 			// console.log('do it', type, timeIndex, blocks.length);
 			// TODO: allow parent handler to do something?
-			parentHandler(event, timeIndex, blocks);
-			this.setState({ gesture: recognizer({ type, event, timeIndex, blocks }) });
+			parentHandler(event, graphData);
+			this.setState({ gesture: recognizer({ type, event, graphData }, this.state.gesture) });
 		}
 
 		constructor(props) {
 			super(props);
 			this.state = {};
+		}
+
+		componentDidUpdate(_, prevState) {
+			if (prevState.gesture !== this.state.gesture) {
+				this.props.onGestureChange(this.state.gesture, prevState.gesture);
+			}
 		}
 
 		render() {
@@ -37,10 +68,10 @@ export default function withGestures(recognizer = () => null, applier = (_, bloc
 			} = this.props;
 
 			const handlers = {
-				onClickGraph: this.handle('click', onClickGraph),
-				onMouseDownGraph: this.handle('mousedown', onMouseDownGraph),
-				onMouseMoveGraph: this.handle('mousemove', onMouseMoveGraph),
-				onMouseUpGraph: this.handle('mouseup', onMouseUpGraph),
+				onClickGraph: this.handle(EVENT_TYPES.CLICK, onClickGraph),
+				onMouseDownGraph: this.handle(EVENT_TYPES.MOUSEDOWN, onMouseDownGraph),
+				onMouseMoveGraph: this.handle(EVENT_TYPES.MOUSEMOVE, onMouseMoveGraph),
+				onMouseUpGraph: this.handle(EVENT_TYPES.MOUSEUP, onMouseUpGraph),
 			};
 
 			const { gesture } = this.state;

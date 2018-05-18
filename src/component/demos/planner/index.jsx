@@ -1,7 +1,7 @@
 import { Component, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import withGestures from 'component/block-graph/with-gestures';
+import withGestures, { recognizeType, EVENT_TYPES } from 'component/block-graph/with-gestures';
 import Block from './block';
 import uuid from 'uuid/v4';
 import { timeSpanContainsTime } from 'timespan';
@@ -10,7 +10,31 @@ import { calculateMinSecond } from 'data/helpers';
 
 const SECONDS_PER_HOUR = 60 * 60;
 
-const BlockGraph = withGestures();
+const gestureRecognizer = recognizeType({
+	[EVENT_TYPES.CLICK]: (event, gesture) => {
+		// There is an existing gesture, but it's not a selection gesture, so ignore?
+		if (gesture && gesture.type !== 'selection') {
+			return gesture;
+		}
+		// when the click didn't hit a block, we'll clear the gesture
+		if (!event.graphData.match) {
+			return null;
+		}
+		// if there's an existing gesture and that gesture is
+		// a selection gesture and we matched
+		//
+		// TODO: allow multi select when there is a key modifier
+		return { type: 'selection', selected: event.graphData.match.block };
+	},
+});
+
+const BlockGraph = withGestures(
+	gestureRecognizer,
+	(gesture, blocks) => {
+		console.log('apply gesture', gesture);
+		return blocks;
+	}
+);
 
 export default class Planner extends React.Component {
 
@@ -49,11 +73,12 @@ export default class Planner extends React.Component {
 		return this.state.selectedBlockUids.indexOf(block.uid) !== -1;
 	}
 
-	handleClickGraph = (event, timeIndex) => {
-		const { match } = timeIndex
-		this.setState({
-			selectedBlockUids: match ? [match.block.uid] : [] ,
-		});
+	handleGestureChange = (gesture) => {
+		if (gesture && gesture.type === 'selection') {
+			this.setState( {selectedBlockUids: [gesture.selected.uid] });
+		} else {
+			this.setState({ selectedBlockUids: [] });
+		}
 	}
 
 	handleMouseDownGraph = (event, timeIndex) => {
@@ -105,7 +130,7 @@ export default class Planner extends React.Component {
 		};
 		return (
 			<BlockGraph
-				onClickGraph={this.handleClickGraph}
+				onGestureChange={this.handleGestureChange}
 				onMouseDownGraph={this.handleMouseDownGraph}
 				onMouseUpGraph={this.handleMouseUpGraph}
 				onMouseMoveGraph={this.handleMouseMoveGraph}
