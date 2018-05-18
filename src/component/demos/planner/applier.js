@@ -129,7 +129,7 @@ const drag = (gesture, blocks) => {
 	}));
 };
 
-export const applyGesture = matchType({
+export default matchType({
 	multidraw, drag,
 }, (_, blocks) => blocks);
 
