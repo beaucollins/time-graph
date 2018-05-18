@@ -1,7 +1,7 @@
 import { Component, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import BlockGraph from 'component/block-graph';
+import withGestures from 'component/block-graph/with-gestures';
 import Block from './block';
 import uuid from 'uuid/v4';
 import { timeSpanContainsTime } from 'timespan';
@@ -9,6 +9,8 @@ import { applyGesture } from './gestures';
 import { calculateMinSecond } from 'data/helpers';
 
 const SECONDS_PER_HOUR = 60 * 60;
+
+const BlockGraph = withGestures();
 
 export default class Planner extends React.Component {
 
@@ -61,7 +63,6 @@ export default class Planner extends React.Component {
 			return;
 		}
 		event.preventDefault();
-		console.log('start gesture?');
 		this.setState({
 			gesture: { type: 'multidraw', blockType: 'a', origin: timeIndex },
 		});

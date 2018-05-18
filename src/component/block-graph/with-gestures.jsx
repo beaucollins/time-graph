@@ -9,7 +9,7 @@ function getDisplayName(WrappedComponent) {
  * @param {Function} recognizer - transforms a gesture into a new gesture
  * @param {Function} applier - produces new block state based on the current gesture
  */
-export default function withGestures(recognizer, applier) {
+export default function withGestures(recognizer = () => null, applier = (_, blocks) => blocks ) {
 	class WithGestures extends Component {
 		static propTypes = BlockGraph.propTypes;
 		static defaultProps = BlockGraph.defaultProps;
