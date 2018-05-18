@@ -7,6 +7,7 @@ import AvailabilityPlanner from 'component/demos/availability';
 
 import './app.scss';
 import maxData from 'data/max.json';
+import commonData from 'data/common.json';
 
 export default class App extends Component {
 
@@ -23,8 +24,11 @@ export default class App extends Component {
 			{ key: 'availability', label: 'Availability', render: () => {
 				return <div id="graph-container"><AvailabilityPlanner /></div>;
 			} },
+			{ key: 'empty', label: 'Empty', render: () => {
+				return <CompressablePlanner initialData={[]} />;
+			} },
 			{ key: 'common', label: 'Common', render: () => {
-				return <CompressablePlanner />;
+				return <CompressablePlanner initialData={ commonData } />;
 			} },
 			{ key: 'max', label: 'Max Data', render: () => {
 				return <div id="graph-container"><Planner initialData={ maxData } tickWidth={ 48 } /></div>;

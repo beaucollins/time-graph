@@ -54,10 +54,10 @@ export default class DemoBlock extends PureComponent {
 		const hue = colors[type] || DEFAULT_HUE;
 		const innerStyle = {
 			position: 'absolute',
-			top: 10,
-			bottom: 10,
-			left: 4,
-			right: 4,
+			top: 6,
+			bottom: 6,
+			left: 1,
+			right: 1,
 			background: temp ? `hsla(${hue}, 20%, 50%, 0.25)` : `hsl(${hue}, 20%, 50%)`,
 			borderRadius: 2,
 			border: temp ? `1px solid hsla(${hue}, 50%, 20%, 1)` : 'none',

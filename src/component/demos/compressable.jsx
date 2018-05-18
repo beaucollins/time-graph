@@ -1,12 +1,21 @@
 import { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
 import Planner from 'component/demos/planner';
-import commonData from 'data/common.json';
 
 export default class CompressablePlanner extends Component {
+	static propTypes = {
+		configs: PropTypes.arrayOf(PropTypes.shape({
+			key: PropTypes.string.isRequired,
+			label: PropTypes.string.isRequired,
+			tickWidth: PropTypes.number.isRequired,
+			rowHeight: PropTypes.number.isRequired,
+		})).isRequired,
+	};
+
 	static defaultProps = {
 		configs: [
-			{ key: 'expanded', label: 'Expanded', tickWidth: 24, rowHeight: 62 },
-			{ key: 'cozy', label: 'Cozy', tickWidth: 12, rowHeight: 48 },
+			{ key: 'expanded', label: 'Expanded', tickWidth: 24, rowHeight: 48 },
+			{ key: 'cozy', label: 'Cozy', tickWidth: 14, rowHeight: 32 },
 		],
 	};
 
@@ -52,7 +61,7 @@ export default class CompressablePlanner extends Component {
 				{this.renderMenu()}
 				<div id="graph-container">
 					<Planner
-						initialData={ commonData }
+						initialData={ this.props.initialData }
 						rowHeight={rowHeight}
 						tickWidth={tickWidth}
 						/>
