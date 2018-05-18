@@ -6,7 +6,7 @@ import { timeSpansOverlap, unionTimeSpanSet } from 'timespan';
 export const calculateMinSecond = (data) => {
 	const min = data.reduce((origin, block) => {
 		return block.startTime < origin ? block.startTime : origin;
-	}, Infinity);
+	}, moment.utc().startOf('day').unix());
 	return moment.unix(min).utc().startOf('day').unix();
 };
 
