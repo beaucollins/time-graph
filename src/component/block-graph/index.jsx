@@ -2,8 +2,8 @@ import { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
 import { throttle } from 'lodash';
 
+import { timeSpanContainsTime } from 'timespan';
 import Block from './block';
-import { timeSpansOverlap } from 'timespan';
 
 function invertPoint({ x, y }) {
 	return { x: -x, y: -y };
@@ -12,11 +12,6 @@ function invertPoint({ x, y }) {
 function sumPoints(... points) {
 	return points.reduce(({ x, y }, point) => ({ x: x + point.x, y: y + point.y }), { x: 0, y: 0 });
 }
-
-const defaultFilter = {
-	timeSpan: { startTime: -1, endTime: -1 },
-	rowSpan: { startIndex: -1, endIndex: -1 },
-};
 
 export default class BlockGraph extends Component {
 	static propTypes = {
@@ -64,15 +59,12 @@ export default class BlockGraph extends Component {
 	constructor(props) {
 		super(props);
 		this.containerRef = createRef();
-		this.state = {
-			rangeFilter: defaultFilter,
-		};
+		this.state = {};
 	}
 
 	componentDidMount() {
 		if (this.containerRef.current) {
 			this.containerRef.current.addEventListener('scroll', this.observeScrolling);
-			this.updateViewportFilter();
 		}
 	}
 
@@ -82,28 +74,7 @@ export default class BlockGraph extends Component {
 		}
 	}
 
-	updateViewportFilter() {
-		const { graph } = this.getViewportMeasurements();
-		if (!graph) {
-			return this.setState({ rangeFilter: defaultFilter });
-		}
-		this.setState({
-			rangeFilter: {
-				timeSpan: {
-					startTime: graph.visible.x,
-					endTime: graph.visible.x + graph.visible.width,
-				},
-				rowSpan: {
-					startIndex: graph.visible.y,
-					endIndex: graph.visible.y + graph.visible.height,
-				},
-			},
-		});
-	}
-
 	observeScrolling = throttle(() => {
-		// report what the user is actually looking at in time and rowIndex domain
-		// this.updateViewportFilter();
 	}, 100);
 
 	getViewportMeasurements() {
@@ -204,40 +175,40 @@ export default class BlockGraph extends Component {
 		return this.convertPointToTimeIndex(point);
 	}
 
+	filterMatchingBlocks(timeIndex) {
+		return this.props.blocks.filter(block => {
+			return timeSpanContainsTime(block, timeIndex.seconds) &&
+				this.props.rows.getIndexForBlock(block) === timeIndex.row;
+		});
+	}
+
 	handleOnClick = event => {
 		// now we can convert the x to time and the y to a row index
 		const timeIndex = this.getEventTimeIndex(event);
-		this.props.onClickGraph(event, timeIndex);
+		const blocks = this.filterMatchingBlocks(timeIndex);
+		this.props.onClickGraph(event, timeIndex, blocks);
 	}
 
 	handleOnMouseDown = event => {
 		const timeIndex = this.getEventTimeIndex(event);
-		this.props.onMouseDownGraph(event, timeIndex);
+		const blocks = this.filterMatchingBlocks(timeIndex);
+		this.props.onMouseDownGraph(event, timeIndex, blocks);
 	}
 
 	handleOnMouseUp = event => {
 		const timeIndex = this.getEventTimeIndex(event);
-		this.props.onMouseUpGraph(event, timeIndex);
+		const blocks = this.filterMatchingBlocks(timeIndex);
+		// filter to the matching timestamps
+		this.props.onMouseUpGraph(event, timeIndex, blocks);
 	}
 
 	handleOnMouseMove = event => {
 		const timeIndex = this.getEventTimeIndex(event);
-		this.props.onMouseMoveGraph(event, timeIndex);
+		const blocks = this.filterMatchingBlocks(timeIndex);
+		this.props.onMouseMoveGraph(event, timeIndex, blocks);
 	}
 
 	renderBlocks = () => {
-		// filter to only those in the viewport
-		// const filter = this.state.rangeFilter;
-
-		// const visible = this.props.blocks.filter(block => {
-		// 	if (!timeSpansOverlap(block, filter.timeSpan)) {
-		// 		return false;
-		// 	}
-		// 	if (block.row < filter.rowSpan.startIndex || block.row > filter.rowSpan.endIndex) {
-		// 		return false;
-		// 	}
-		// 	return true;
-		// });
 		return this.props.blocks.map(block => {
 			const rect = {
 				x: this.convertAbsoluteSecondsToPixels(block.startTime),
