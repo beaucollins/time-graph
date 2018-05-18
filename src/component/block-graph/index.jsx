@@ -1,4 +1,4 @@
-import { Component, createRef } from 'react';
+import { Component, createRef, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { throttle } from 'lodash';
 
@@ -12,6 +12,81 @@ function invertPoint({ x, y }) {
 function sumPoints(... points) {
 	return points.reduce(({ x, y }, point) => ({ x: x + point.x, y: y + point.y }), { x: 0, y: 0 });
 }
+
+function hashWindow([p1, p2]) {
+	return `${p1.x},${p1.y}:${p2.x},${p2.y}`;
+}
+
+const windower = (windowSize, datasource) => {
+	const windows = {};
+
+	const windowForPoint = point => {
+		const modX = point.x % windowSize.width;
+		const modY = point.y % windowSize.height;
+		return { x: point.x - modX, y: point.y - modY };
+	};
+
+	const translate = ({ x, y }) => {
+		return {
+			x: windowSize.width + x,
+			y: windowSize.height + y,
+		}
+	};
+
+	const snapViewPortToWindows = ([a, b]) => {
+		return [{
+			x: Math.floor(a.x / windowSize.width) * windowSize.width,
+			y: Math.floor(a.y / windowSize.height) * windowSize.height,
+		}, {
+			x: Math.ceil(b.x / windowSize.width) * windowSize.width,
+			y: Math.ceil(b.y / windowSize.height) * windowSize.height,
+		}];
+	};
+
+	const mapWindows = (viewport, iterator) => {
+		let result = [];
+		const [a, b] = snapViewPortToWindows(viewport);
+		let current = { ...a };
+		while (current.x < b.x) {
+			while (current.y < b.y) {
+				result.push(iterator({ x: current.x, y: current.y }));
+				current.y += windowSize.height;
+			}
+			current.y = a.y;
+			current.x += windowSize.width;
+		}
+		return result;
+	};
+	return {
+		windowForPoint,
+		renderVisibleWindows: (viewport, renderBlock, convertPoint) => {
+			return mapWindows(viewport, (w) => {
+				const style = {
+					...windowSize,
+					left: w.x,
+					top: w.y,
+					position: 'absolute',
+					color: '#999',
+					boxSizing: 'border-box',
+					border: '1px solid #CCC',
+				};
+				const range = [convertPoint(w), convertPoint(translate(w))];
+				const blocks = datasource({
+					timeSpan: { startTime: range[0].seconds, endTime: range[1].seconds },
+					rowSpan: { startIndex: range[0].row, endIndex: range[1].row },
+				});
+				return (
+					<Fragment key={`${w.x},${w.y}`}>
+						{blocks.map(renderBlock)}
+						<div style={style}>
+							{JSON.stringify(range, null, ' ')}
+						</div>
+					</Fragment>
+				);
+			});
+		},
+	};
+};
 
 export default class BlockGraph extends Component {
 	static propTypes = {
@@ -42,6 +117,7 @@ export default class BlockGraph extends Component {
 		 * The constant in seconds that defines the "left edge" of the graph
 		 */
 		originSeconds: PropTypes.number.isRequired,
+
 		rows: PropTypes.shape({
 			// tell <BlockGraph> which row a block belongs to
 			getIndexForBlock: PropTypes.func.isRequired,
@@ -74,6 +150,22 @@ export default class BlockGraph extends Component {
 	componentDidMount() {
 		if (this.containerRef.current) {
 			this.containerRef.current.addEventListener('scroll', this.observeScrolling);
+			// Calling setState() in this method will trigger an extra rendering, but it will happen
+			// before the browser updates the screen.
+			//
+			// Use this pattern with caution because it often causes performance issues.
+			//
+			// It can, however, be necessary for cases like modals and tooltips when you need to
+			// measure a DOM node before rendering something that depends on its size or position.
+			// eslint-disable-next-line react/no-did-mount-set-state
+			this.setState({ windower: windower(this.getWindowSize(), range => {
+				return this.props.blocks.filter(block => {
+					return block.row >= range.rowSpan.startIndex &&
+						block.row < range.rowSpan.endIndex &&
+						block.startTime >= range.timeSpan.startTime &&
+						block.startTime < range.timeSpan.endTime;
+				});
+			}) });
 		}
 	}
 
@@ -83,8 +175,30 @@ export default class BlockGraph extends Component {
 		}
 	}
 
+	getWindowSize() {
+		const node = this.containerRef.current;
+		if (!node) {
+			return { width: 0, height: 0 };
+		}
+		return {
+			width: Math.ceil(node.clientWidth * 2),
+			height: Math.ceil(node.clientHeight * 2),
+		};
+	}
+
+	getCurrentWindow() {
+		// the two points indicating the area of the current window
+		const node = this.containerRef.current;
+		if (!node) {
+			return [{ x: 0, y: 0 }, { x: 0, y: 0 }];
+		}
+
+		return [{ x: 0, y: 0 }, { x: node.clientWidth * 1.5, y: node.clientHeight * 1.5 }];
+	}
+
 	observeScrolling = throttle(() => {
-	}, 100);
+		this.forceUpdate();
+	}, 500);
 
 	getViewportMeasurements() {
 		if (!this.containerRef.current) {
@@ -166,6 +280,18 @@ export default class BlockGraph extends Component {
 		);
 	}
 
+	getCurrentViewPort() {
+		const node = this.containerRef.current;
+		const origin = {
+			x: node.scrollLeft,
+			y: node.scrollTop,
+		};
+		return [ origin, {
+			x: origin.x + node.clientWidth,
+			y: origin.y + node.clientHeight,
+		} ];
+	}
+
 	getEventPoint(event) {
 		return this.convertViewPortPoint({
 			x: event.clientX,
@@ -201,7 +327,6 @@ export default class BlockGraph extends Component {
 			const rect = this.getRectForBlock(block);
 			return { block, rect };
 		}
-		return null;
 	}
 
 	handleOnClick = event => {
@@ -236,10 +361,17 @@ export default class BlockGraph extends Component {
 	}
 
 	renderBlocks = () => {
-		return this.props.blocks.map(block => {
-			const rect = this.getRectForBlock(block);
-			return this.props.renderBlock(block, rect);
-		});
+		if (!this.state.windower) {
+			return null;
+		}
+		// first ask for all visible windows
+		return this.state.windower.renderVisibleWindows(
+			this.getCurrentViewPort(),
+			// how to render a block
+			(block) => this.props.renderBlock(block, this.getRectForBlock(block)),
+			// how to map a screen coordinate to a time index value
+			(point) => this.convertPointToTimeIndex(point),
+		);
 	}
 
 	render() {

@@ -1,6 +1,7 @@
-import { Component } from 'react';
+import { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
 import BlockGraph from './index';
+import splitBy from 'split-by';
 
 function getDisplayName(WrappedComponent) {
 	return WrappedComponent.displayName || WrappedComponent.name || 'Component';
@@ -54,6 +55,7 @@ export default function withGestures(recognizer = () => null) {
 		constructor(props) {
 			super(props);
 			this.state = {};
+			this.graphRef = createRef();
 		}
 
 		componentDidUpdate(_, prevState) {
@@ -85,10 +87,14 @@ export default function withGestures(recognizer = () => null) {
 			};
 
 			const { gesture } = this.state;
-			const { unchanged, modified } = applyGesture(gesture, this.props.blocks);
-			const graphBlocks = modified && modified.length > 0 ? [...unchanged, ...modified] : unchanged;
+			// const [visible, other] = splitBy(block => true, blocks);
+			const { unchanged, modified } = applyGesture(gesture, blocks);
+			const graphBlocks = modified && modified.length > 0 ? [...modified, ...unchanged] : unchanged;
+
 			return (
-				<BlockGraph {...handlers} {...subProps} blocks={graphBlocks}></BlockGraph>
+				<BlockGraph ref={this.graphRef} {...handlers} {...subProps} blocks={graphBlocks}>
+					{this.props.children}
+				</BlockGraph>
 			);
 		}
 	}
