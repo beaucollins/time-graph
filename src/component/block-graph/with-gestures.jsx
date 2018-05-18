@@ -8,7 +8,7 @@ function getDisplayName(WrappedComponent) {
 
 export function matchType(matchers = {}, noMatch = () => {}) {
 	return function(typedObject, ...args) {
-		const matched = matchers[typedObject.type];
+		const matched = typedObject && matchers[typedObject.type];
 		if (matched && typeof matched === 'function') {
 			return matched(typedObject, ...args);
 		}

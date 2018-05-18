@@ -1,7 +1,7 @@
 import { Component, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import withGestures, { recognizeType, EVENT_TYPES } from 'component/block-graph/with-gestures';
+import withGestures, { recognizeType, matchType, EVENT_TYPES } from 'component/block-graph/with-gestures';
 import Block from './block';
 import uuid from 'uuid/v4';
 import { timeSpanContainsTime } from 'timespan';
@@ -11,6 +11,27 @@ import { calculateMinSecond } from 'data/helpers';
 const SECONDS_PER_HOUR = 60 * 60;
 
 const gestureRecognizer = recognizeType({
+	[EVENT_TYPES.MOUSEDOWN]: (event, gesture) => {
+		if (event.graphData.match) {
+			// clicked on a block
+			// TODO: prepare for dragging operation of some kind
+			return null;
+		}
+		event.event.preventDefault();
+		return { type: 'multidraw', blockType: 'a', origin: event.graphData };
+	},
+	[EVENT_TYPES.MOUSEMOVE]: (event, gesture) => {
+		if (gesture && gesture.type !== 'multidraw') {
+			return gesture;
+		}
+		return { ... gesture, destination: event.graphData };
+	},
+	[EVENT_TYPES.MOUSEUP]: (event, gesture) => {
+		if (gesture && gesture.type === 'multidraw') {
+			return null;
+		}
+		return gesture;
+	},
 	[EVENT_TYPES.CLICK]: (event, gesture) => {
 		// There is an existing gesture, but it's not a selection gesture, so ignore?
 		if (gesture && gesture.type !== 'selection') {
@@ -28,12 +49,15 @@ const gestureRecognizer = recognizeType({
 	},
 });
 
+const gestureApplier = matchType({
+	multidraw: (gesture, blocks) => {
+		return applyGesture(gesture, blocks);
+	}
+}, (_, blocks) => blocks);
+
 const BlockGraph = withGestures(
 	gestureRecognizer,
-	(gesture, blocks) => {
-		console.log('apply gesture', gesture);
-		return blocks;
-	}
+	gestureApplier,
 );
 
 export default class Planner extends React.Component {
@@ -73,38 +97,12 @@ export default class Planner extends React.Component {
 		return this.state.selectedBlockUids.indexOf(block.uid) !== -1;
 	}
 
-	handleGestureChange = (gesture) => {
+	handleGestureChange = gesture => {
 		if (gesture && gesture.type === 'selection') {
 			this.setState( {selectedBlockUids: [gesture.selected.uid] });
 		} else {
 			this.setState({ selectedBlockUids: [] });
 		}
-	}
-
-	handleMouseDownGraph = (event, timeIndex) => {
-		const { match } = timeIndex;
-		if (match) {
-			// landed on at item, maybe allow resizing of that one item
-			return;
-		}
-		event.preventDefault();
-		this.setState({
-			gesture: { type: 'multidraw', blockType: 'a', origin: timeIndex },
-		});
-	}
-
-	handleMouseMoveGraph = (event, timeIndex) => {
-		const gesture = this.state.gesture;
-		if (gesture && gesture.type === 'multidraw') {
-			event.preventDefault();
-			this.setState({
-				gesture: { ... gesture, destination: timeIndex },
-			});
-		}
-	}
-
-	handleMouseUpGraph = (enent, timeIndex) => {
-		this.setState({gesture: null});
 	}
 
 	renderBlock = (block, rect) => {
@@ -120,26 +118,23 @@ export default class Planner extends React.Component {
 		);
 	}
 
+	getIndexForBlock(block) {
+		return block.row;
+	}
+
 	render() {
 		const { blocks } = this.state || {};
 		const { tickWidth, rowHeight } = this.props;
 		// get the blocks that are the result of the gesture and the starting set of blocks
-		const gesturedBlocks = applyGesture(this.state.gesture, blocks);
-		const getIndexForBlock = (block) => {
-			return block.row;
-		};
 		return (
 			<BlockGraph
 				onGestureChange={this.handleGestureChange}
-				onMouseDownGraph={this.handleMouseDownGraph}
-				onMouseUpGraph={this.handleMouseUpGraph}
-				onMouseMoveGraph={this.handleMouseMoveGraph}
 				renderBlock={this.renderBlock}
 				pixelsPerSecond={(tickWidth * 4) / SECONDS_PER_HOUR}
 				originSeconds={this.state.originSeconds}
-				blocks={gesturedBlocks}
+				blocks={blocks}
 				rows={{
-					getIndexForBlock,
+					getIndexForBlock: this.getIndexForBlock,
 					height: rowHeight,
 					count: 20,
 				}}

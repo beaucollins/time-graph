@@ -4,7 +4,6 @@ import withGestures from 'component/block-graph/with-gestures';
 import { SECONDS_PER_HOUR } from 'timespan';
 
 const recognizer = (event, gesture) => {
-	console.log('Recognize gesture', gesture, event);
 	return null;
 };
 
