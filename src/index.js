@@ -4,6 +4,7 @@ import Demo from 'component/demo';
 import { unionTimeSpanSet, timeSpansOverlap } from 'timespan';
 import moment from 'moment';
 import uuid from 'uuid/v4';
+import { splitBy } from 'gestures';
 
 import 'demo.scss';
 
@@ -34,14 +35,6 @@ const generateBlock = (timestamp, row, quarterHours = 4) => {
 	};
 };
 
-const splitBy = (fn, list) => {
-	return list.reduce(([matching, others], item) => {
-		if (fn(item)) {
-			return [[item, ...matching], others];
-		}
-		return [matching, [item, ...others]];
-	}, [[], []]);
-};
 
 const generateBlocksBeginning = (timestamp, total = 2000, rows = 200) => {
 	let blocks = [];
@@ -60,8 +53,9 @@ const generateBlocksBeginning = (timestamp, total = 2000, rows = 200) => {
 	}, []);
 };
 
-window.generateBlocks = () => {
-	localStorage.blocks = generateBlocksBeginning(origin);
+window.generateBlocks = (quantity = undefined, rows = undefined) => {
+	localStorage.blocks = JSON.stringify(generateBlocksBeginning(origin, quantity, rows));
+	console.log('done');
 };
 
 window.clearBlocks = () =>  {
@@ -70,7 +64,9 @@ window.clearBlocks = () =>  {
 
 if (localStorage.blocks) {
 	try {
-		app.setState({ blocks: JSON.parse(localStorage.blocks) });
+		const blocks = JSON.parse(localStorage.blocks);
+		app.setState({ blocks });
+		console.log('total blocks', blocks.length);
 	} catch (error) {
 		localStorage.clear();
 		window.location.reload();

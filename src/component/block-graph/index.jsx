@@ -1,34 +1,30 @@
-import { Component, createRef, PureComponent } from 'react';
+import { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
+import { throttle } from 'lodash';
 
-class Block extends PureComponent {
-	static propTypes = {
-		width: PropTypes.number.isRequired,
-		height: PropTypes.number.isRequired,
-		x: PropTypes.number.isRequired,
-		y: PropTypes.number.isRequired,
-	};
+import Block from './block';
+import { timeSpansOverlap } from 'timespan';
 
-	render() {
-		const props = this.props;
-		const style = {
-			width: props.width,
-			height: props.height,
-			left: props.x,
-			top: props.y,
-			outline: '1px dotted #F00',
-			position: 'absolute',
-		};
-		return (
-			<div style={style}>
-				{props.children}
-			</div>
-		);
-	}
+function invertPoint({ x, y }) {
+	return { x: -x, y: -y };
 }
+
+function sumPoints(... points) {
+	return points.reduce(({ x, y }, point) => ({ x: x + point.x, y: y + point.y }), { x: 0, y: 0 });
+}
+
+const defaultFilter = {
+	timeSpan: { startTime: -1, endTime: -1 },
+	rowSpan: { startIndex: -1, endIndex: -1 },
+};
 
 export default class BlockGraph extends Component {
 	static propTypes = {
+		onClickGraph: PropTypes.func,
+		onMouseDownGraph: PropTypes.func,
+		onMouseMoveGraph: PropTypes.func,
+		onMouseUpGraph: PropTypes.func,
+
 		renderBlock: PropTypes.func.isRequired,
 		/**
 		 * A list of items to draw on the screen
@@ -58,17 +54,25 @@ export default class BlockGraph extends Component {
 
 	static defaultProps = {
 		blocks: [],
-		renderBlock: () => null,
+		renderBlock: (block, rect) => <Block {...rect} />,
+		onClickGraph: () => {},
+		onMouseDownGraph: () => {},
+		onMouseMoveGraph: () => {},
+		onMouseUpGraph: () => {},
 	}
 
 	constructor(props) {
 		super(props);
 		this.containerRef = createRef();
+		this.state = {
+			rangeFilter: defaultFilter,
+		};
 	}
 
 	componentDidMount() {
 		if (this.containerRef.current) {
 			this.containerRef.current.addEventListener('scroll', this.observeScrolling);
+			this.updateViewportFilter();
 		}
 	}
 
@@ -78,13 +82,33 @@ export default class BlockGraph extends Component {
 		}
 	}
 
-	observeScrolling = () => {
-		// report what the user is actually looking at in time and rowIndex domain
+	updateViewportFilter() {
+		const { graph } = this.getViewportMeasurements();
+		if (!graph) {
+			return this.setState({ rangeFilter: defaultFilter });
+		}
+		this.setState({
+			rangeFilter: {
+				timeSpan: {
+					startTime: graph.visible.x,
+					endTime: graph.visible.x + graph.visible.width,
+				},
+				rowSpan: {
+					startIndex: graph.visible.y,
+					endIndex: graph.visible.y + graph.visible.height,
+				},
+			},
+		});
 	}
+
+	observeScrolling = throttle(() => {
+		// report what the user is actually looking at in time and rowIndex domain
+		// this.updateViewportFilter();
+	}, 100);
 
 	getViewportMeasurements() {
 		if (!this.containerRef.current) {
-			return;
+			return { pixels: {}, graph: {} };
 		}
 
 		const node = this.containerRef.current;
@@ -147,7 +171,73 @@ export default class BlockGraph extends Component {
 		return this.convertSecondsToPixels(seconds - this.props.originSeconds);
 	}
 
+	convertViewPortPoint(point) {
+		const node = this.containerRef.current;
+
+		if (!node) {
+			return { x: 0, y: 0 };
+		}
+
+		return sumPoints(
+			point,
+			invertPoint(node.getBoundingClientRect()),
+			{ x: node.scrollLeft, y: node.scrollTop }
+		);
+	}
+
+	getEventPoint(event) {
+		return this.convertViewPortPoint({
+			x: event.clientX,
+			y: event.clientY,
+		});
+	}
+
+	convertPointToTimeIndex(point) {
+		return {
+			seconds: this.convertPixelsToAbsoluteSeconds(point.x),
+			row: this.convertPixelsToRow(point.y),
+		};
+	}
+
+	getEventTimeIndex(event) {
+		const point = this.getEventPoint(event);
+		return this.convertPointToTimeIndex(point);
+	}
+
+	handleOnClick = event => {
+		// now we can convert the x to time and the y to a row index
+		const timeIndex = this.getEventTimeIndex(event);
+		this.props.onClickGraph(event, timeIndex);
+	}
+
+	handleOnMouseDown = event => {
+		const timeIndex = this.getEventTimeIndex(event);
+		this.props.onMouseDownGraph(event, timeIndex);
+	}
+
+	handleOnMouseUp = event => {
+		const timeIndex = this.getEventTimeIndex(event);
+		this.props.onMouseUpGraph(event, timeIndex);
+	}
+
+	handleOnMouseMove = event => {
+		const timeIndex = this.getEventTimeIndex(event);
+		this.props.onMouseMoveGraph(event, timeIndex);
+	}
+
 	renderBlocks = () => {
+		// filter to only those in the viewport
+		// const filter = this.state.rangeFilter;
+
+		// const visible = this.props.blocks.filter(block => {
+		// 	if (!timeSpansOverlap(block, filter.timeSpan)) {
+		// 		return false;
+		// 	}
+		// 	if (block.row < filter.rowSpan.startIndex || block.row > filter.rowSpan.endIndex) {
+		// 		return false;
+		// 	}
+		// 	return true;
+		// });
 		return this.props.blocks.map(block => {
 			const rect = {
 				x: this.convertAbsoluteSecondsToPixels(block.startTime),
@@ -155,7 +245,7 @@ export default class BlockGraph extends Component {
 				y: this.props.rows.getIndexForBlock(block) * this.props.rows.height,
 				height: this.props.rows.height,
 			};
-			return <Block key={block.uid} {...rect}>{this.props.renderBlock(block)}</Block>;
+			return this.props.renderBlock(block, rect);
 		});
 	}
 
@@ -167,6 +257,10 @@ export default class BlockGraph extends Component {
 		return (
 			<div
 				style={style}
+				onClick={this.handleOnClick}
+				onMouseMove={this.handleOnMouseMove}
+				onMouseDown={this.handleOnMouseDown}
+				onMouseUp={this.handleOnMouseUp}
 				ref={this.containerRef}
 			>
 				{this.renderBlocks()}

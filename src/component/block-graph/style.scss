@@ -2,3 +2,9 @@
 	position: relative;
 	overflow: auto;
 }
+
+.inner-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
