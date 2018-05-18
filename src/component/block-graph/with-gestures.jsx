@@ -6,15 +6,17 @@ function getDisplayName(WrappedComponent) {
 	return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 }
 
-export function recognizeType(typeRecognizers = {}) {
-	return function(event, gesture) {
-		const recognizer = typeRecognizers[event.type];
-		if (recognizer && typeof recognizer === 'function') {
-			return recognizer(event, gesture);
+export function matchType(matchers = {}, noMatch = () => {}) {
+	return function(typedObject, ...args) {
+		const matched = matchers[typedObject.type];
+		if (matched && typeof matched === 'function') {
+			return matched(typedObject, ...args);
 		}
-		return gesture;
+		return noMatch(typedObject, ...args);
 	};
 }
+
+export const recognizeType = matchers => matchType(matchers, (event, gesture) => gesture);
 
 export const EVENT_TYPES = {
 	MOVE: 'click',
@@ -26,6 +28,7 @@ export const EVENT_TYPES = {
 /**
  * @param {Function} recognizer - transforms a gesture into a new gesture
  * @param {Function} applier - produces new block state based on the current gesture
+ * @returns {Component} component with gesture recognizers
  */
 export default function withGestures(recognizer = () => null, applier = (_, blocks) => blocks ) {
 	class WithGestures extends Component {
