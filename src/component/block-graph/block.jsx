@@ -1,8 +1,6 @@
 import { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import './style.scss';
-
 export default class Block extends PureComponent {
 	static propTypes = {
 		width: PropTypes.number.isRequired,

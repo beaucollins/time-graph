@@ -7,20 +7,17 @@ import uuid from 'uuid/v4';
 import { timeSpanContainsTime } from 'timespan';
 import { applyGesture } from 'gestures';
 
-const HOUR_IN_PIXELS = 64;
+const HOUR_IN_PIXELS = 128;
 const SECONDS_PER_HOUR = 60 * 60;
 
 export default class Demo extends React.Component {
-
-	static propTypes = {
-		originSeconds: PropTypes.number.isRequired,
-	}
 
 	constructor(props) {
 		super(props);
 		this.state = {
 			blocks: [],
 			selectedBlockUids: [],
+			originSeconds: 0,
 		};
 	}
 
@@ -54,7 +51,7 @@ export default class Demo extends React.Component {
 		}
 		event.preventDefault();
 		this.setState({
-			gesture: { type: 'multidraw', origin: timeIndex },
+			gesture: { type: 'multidraw', blockType: 'a', origin: timeIndex },
 		});
 	}
 
@@ -73,7 +70,16 @@ export default class Demo extends React.Component {
 	}
 
 	renderBlock = (block, rect) => {
-		return <DemoBlock key={block.uid} temp={block.gestured === true} isSelected={this.isSelectedBlock(block)} {...rect} />;
+		return (
+			<DemoBlock
+				key={block.uid}
+				temp={block.gestured === true}
+				type={block.type}
+				isSelected={this.isSelectedBlock(block)}
+				duration={block.endTime - block.startTime}
+				{...rect}
+			/>
+		);
 	}
 
 	render() {
@@ -94,7 +100,7 @@ export default class Demo extends React.Component {
 					onMouseMoveGraph={this.handleMouseMoveGraph}
 					renderBlock={this.renderBlock}
 					pixelsPerSecond={HOUR_IN_PIXELS / SECONDS_PER_HOUR}
-					originSeconds={this.props.originSeconds}
+					originSeconds={this.state.originSeconds}
 					blocks={gesturedBlocks}
 					rows={{
 						getIndexForBlock,
