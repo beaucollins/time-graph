@@ -55,10 +55,7 @@ const gestureApplier = matchType({
 	}
 }, (_, blocks) => blocks);
 
-const BlockGraph = withGestures(
-	gestureRecognizer,
-	gestureApplier,
-);
+const BlockGraph = withGestures(gestureRecognizer);
 
 export default class Planner extends React.Component {
 
@@ -105,6 +102,10 @@ export default class Planner extends React.Component {
 		}
 	}
 
+	applyGesture = (gesture, blocks) => {
+		return gestureApplier(gesture, blocks);
+	}
+
 	renderBlock = (block, rect) => {
 		return (
 			<Block
@@ -130,6 +131,7 @@ export default class Planner extends React.Component {
 			<BlockGraph
 				onGestureChange={this.handleGestureChange}
 				renderBlock={this.renderBlock}
+				applyGesture={this.applyGesture}
 				pixelsPerSecond={(tickWidth * 4) / SECONDS_PER_HOUR}
 				originSeconds={this.state.originSeconds}
 				blocks={blocks}

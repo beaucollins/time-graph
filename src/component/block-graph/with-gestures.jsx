@@ -30,16 +30,18 @@ export const EVENT_TYPES = {
  * @param {Function} applier - produces new block state based on the current gesture
  * @returns {Component} component with gesture recognizers
  */
-export default function withGestures(recognizer = () => null, applier = (_, blocks) => blocks ) {
+export default function withGestures(recognizer = () => null) {
 	class WithGestures extends Component {
 		static propTypes = {
 			...BlockGraph.propTypes,
 			onGestureChange: PropTypes.func,
+			applyGesture: PropTypes.func,
 		}
 
 		static defaultProps = {
 			...BlockGraph.defaultProps,
 			onGestureChange: () => {},
+			applyGesture: (gesture, blocks) => blocks,
 		};
 
 		handle = (type, parentHandler) => (event, graphData) => {
@@ -67,6 +69,8 @@ export default function withGestures(recognizer = () => null, applier = (_, bloc
 				onMouseMoveGraph,
 				onMouseUpGraph,
 				blocks,
+				applyGesture,
+				onGestureChange,
 				...subProps
 			} = this.props;
 
@@ -78,7 +82,7 @@ export default function withGestures(recognizer = () => null, applier = (_, bloc
 			};
 
 			const { gesture } = this.state;
-			const gestureBlocks = applier(gesture, this.props.blocks);
+			const gestureBlocks = applyGesture(gesture, this.props.blocks);
 			return (
 				<BlockGraph {...handlers} {...subProps} blocks={gestureBlocks}></BlockGraph>
 			);
