@@ -31,7 +31,7 @@ export default class App extends Component {
 				return <CompressablePlanner initialData={ commonData } />;
 			} },
 			{ key: 'max', label: 'Max Data', render: () => {
-				return <div id="graph-container"><Planner initialData={ maxData } tickWidth={ 48 } /></div>;
+				return <CompressablePlanner initialData={ maxData } />;
 			} },
 		],
 	};
