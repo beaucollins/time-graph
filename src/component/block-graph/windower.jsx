@@ -1,6 +1,14 @@
 import { Fragment } from 'react';
 
 export default (windowSize, datasource) => {
+	const windows = {};
+
+	const windowKey = ({ x, y }) => `${x}-${y}`;
+
+	const indexBlocks = (w, blocks) => {
+		windows[windowKey(w)] = blocks;
+	};
+
 	const windowForPoint = point => {
 		const modX = point.x % windowSize.width;
 		const modY = point.y % windowSize.height;
@@ -55,8 +63,18 @@ export default (windowSize, datasource) => {
 		}
 		return result;
 	};
+
 	return {
 		windowForPoint,
+		getVisibleBlocks: (viewport) => {
+			const windowed = mapWindows(expandViewport(viewport), (w) => {
+				const cache = windows[windowKey(w)] || [];
+				return cache;
+			});
+			return windowed.reduce((flattened, items) => {
+				return flattened.concat(items);
+			}, []);
+		},
 		renderVisibleWindows: (viewport, renderBlock, convertPoint) => {
 			return mapWindows(expandViewport(viewport), (w) => {
 				const range = [
@@ -67,8 +85,9 @@ export default (windowSize, datasource) => {
 					timeSpan: { startTime: range[0].seconds, endTime: range[1].seconds },
 					rowSpan: { startIndex: range[0].row, endIndex: range[1].row },
 				});
+				indexBlocks(w, blocks);
 				return (
-					<Fragment key={`${w.x},${w.y}`}>
+					<Fragment key={windowKey(w)}>
 						{blocks.map(renderBlock)}
 					</Fragment>
 				);

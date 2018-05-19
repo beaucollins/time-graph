@@ -254,7 +254,12 @@ export default class BlockGraph extends Component {
 	}
 
 	filterMatchingBlock(timeIndex) {
-		const matching = this.props.blocks.filter(block => {
+		if (!this.state.windower) {
+			return null;
+		}
+
+		const viewport = this.getCurrentViewPort();
+		const matching = this.state.windower.getVisibleBlocks(viewport).filter(block => {
 			return timeSpanContainsTime(block, timeIndex.seconds) &&
 				this.props.rows.getIndexForBlock(block) === timeIndex.row;
 		});
