@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import withGestures from 'component/block-graph/with-gestures';
 
-import { SECONDS_PER_HOUR } from 'timespan';
+import { SECONDS_PER_HOUR, SECONDS_PER_DAY } from 'timespan';
 
 const recognizer = (event, gesture) => {
 	return null;
@@ -11,12 +11,16 @@ const gestureApplier = (gesture, blocks) => {
 	return blocks;
 };
 
-const GestureGraph = withGestures(recognizer, gestureApplier);
+const GestureGraph = withGestures(recognizer);
 
 export default class AvailabilityPlanner extends Component {
 	render() {
 		return (
 			<GestureGraph
+				timeSpan={{
+					startTime: 0,
+					endTime: SECONDS_PER_DAY,
+				}}
 				chromeOffset={{
 					header: 48,
 					sidebar: 164,

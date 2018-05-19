@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import withGestures, { recognizeType, EVENT_TYPES } from 'component/block-graph/with-gestures';
 import Block from './block';
 import uuid from 'uuid/v4';
-import { timeSpanContainsTime } from 'timespan';
+import { timeSpanContainsTime, snapToNearestSpan, SECONDS_PER_DAY } from 'timespan';
 import { calculateMinSecond } from 'data/helpers';
 import gestureRecognizer from './recognizer';
 import applyGesture from './applier';
@@ -40,9 +40,19 @@ export default class Planner extends React.Component {
 	}
 
 	static getDerivedStateFromProps(nextProps, prevState) {
+		const { rows, startTime, endTime } = nextProps.initialData.reduce((values, block) => {
+			return {
+				rows: Math.max(values.rows, block.row),
+				startTime: Math.min(values.startTime, block.startTime),
+				endTime: Math.max(values.endTime, block.endTime),
+			}
+		}, {rows: 0, startTime: Infinity, endTime: -Infinity });
+		const timeSpan = snapToNearestSpan({ startTime, endTime }, SECONDS_PER_DAY, true);
 		return {
 			blocks: nextProps.initialData,
-			originSeconds: calculateMinSecond(nextProps.initialData),
+			timeSpan,
+			rows: rows,
+			originSeconds: timeSpan.startTime,
 		};
 	}
 
@@ -58,9 +68,7 @@ export default class Planner extends React.Component {
 		}
 		if (gesture.type === 'complete') {
 			const result = applier(gesture.gesture);
-			console.log('gesture complete', result)
 		}
-
 	}
 
 	applyGesture = (gesture, blocks) => {
@@ -85,21 +93,26 @@ export default class Planner extends React.Component {
 	}
 
 	render() {
-		const { blocks } = this.state || {};
+		const { blocks, timeSpan, rows } = this.state;
 		const { tickWidth, rowHeight } = this.props;
 		// get the blocks that are the result of the gesture and the starting set of blocks
 		return (
 			<BlockGraph
+				chromeOffset={{
+					header: 36,
+					sidebar: 200,
+				}}
 				onGestureChange={this.handleGestureChange}
 				renderBlock={this.renderBlock}
 				applyGesture={this.applyGesture}
 				pixelsPerSecond={(tickWidth * 4) / SECONDS_PER_HOUR}
 				originSeconds={this.state.originSeconds}
 				blocks={blocks}
+				timeSpan={timeSpan}
 				rows={{
 					getIndexForBlock: this.getIndexForBlock,
 					height: rowHeight,
-					count: 20,
+					count: rows,
 				}}
 			/>
 		);

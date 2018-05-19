@@ -21,7 +21,7 @@ export default class BlockGraph extends Component {
 		onMouseMoveGraph: PropTypes.func,
 		onMouseUpGraph: PropTypes.func,
 
-		children: PropTypes.element,
+		children: PropTypes.any,
 
 		chromeOffset: PropTypes.shape({
 			header: PropTypes.number.isRequired,
@@ -45,6 +45,11 @@ export default class BlockGraph extends Component {
 		 * The constant in seconds that defines the "left edge" of the graph
 		 */
 		originSeconds: PropTypes.number.isRequired,
+
+		timeSpan: PropTypes.shape({
+			startTime: PropTypes.number.isRequired,
+			endTime: PropTypes.number.isRequired,
+		}).isRequired,
 
 		rows: PropTypes.shape({
 			// tell <BlockGraph> which row a block belongs to
@@ -126,7 +131,7 @@ export default class BlockGraph extends Component {
 
 	observeScrolling = throttle(() => {
 		this.forceUpdate();
-	}, 500);
+	}, 100);
 
 	getViewportMeasurements() {
 		if (!this.containerRef.current) {
@@ -204,7 +209,6 @@ export default class BlockGraph extends Component {
 		return sumPoints(
 			point,
 			invertPoint(node.getBoundingClientRect()),
-			invertPoint({ x: this.props.chromeOffset.sidebar, y: this.props.chromeOffset.header }),
 			{ x: node.scrollLeft, y: node.scrollTop }
 		);
 	}
@@ -236,8 +240,12 @@ export default class BlockGraph extends Component {
 	}
 
 	getEventData(event) {
+		const { chromeOffset } = this.props;
 		const point = this.getEventPoint(event);
-		const timeIndex = this.convertPointToTimeIndex(point);
+		const timeIndex = this.convertPointToTimeIndex(sumPoints(
+			point,
+			invertPoint({ x: chromeOffset.sidebar, y: chromeOffset.header }),
+		));
 		return {
 			timeIndex,
 			point,
@@ -304,10 +312,24 @@ export default class BlockGraph extends Component {
 		);
 	}
 
+	getMaxDimensions() {
+		const { timeSpan, chromeOffset, rows } = this.props;
+		const { endTime, startTime } = timeSpan;
+		return {
+			width: this.convertSecondsToPixels(endTime - startTime) + chromeOffset.sidebar,
+			height: rows.count * rows.height + chromeOffset.header,
+		};
+	}
+
 	render() {
 		const style = {
 			position: 'relative',
 			overflow: 'auto',
+		};
+		const graphStyle = {
+			position: 'relative',
+			overflow: 'hidden',
+			...this.getMaxDimensions(),
 		};
 		return (
 			<div
@@ -319,7 +341,7 @@ export default class BlockGraph extends Component {
 				ref={this.containerRef}
 			>
 				{this.props.children && <div>{this.props.children}</div>}
-				<div>
+				<div style={graphStyle}>
 					{this.renderBlocks()}
 				</div>
 			</div>

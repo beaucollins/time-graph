@@ -103,7 +103,9 @@ const multidraw = (gesture, blocks) => {
 	}
 	// create the blocks that would fill the space for the gesture
 	const { destination, origin } = gesture;
+	const rows = {};
 	const generated = eachIndexInRange(origin.timeIndex.row, destination.timeIndex.row, (row) => {
+		rows[row] = true;
 		const invertTime = origin.timeIndex.seconds > destination.timeIndex.seconds;
 		return {
 			row,
@@ -114,10 +116,16 @@ const multidraw = (gesture, blocks) => {
 			uid: uuid(),
 		};
 	});
-	const result = mergeAndSplit(generated, blocks);
-	return { ... result, modified: result.modified.filter(block => {
-		return !block.gestured || block.endTime - block.startTime >= 60 * 45;
-	}) };
+	// we only need to consider blocks in the same rows, slpit them out
+	const [matchingRow, other] = splitBy(block => rows[block.row] === true, blocks);
+	const result = mergeAndSplit(generated, matchingRow);
+	return {
+		...result,
+		unchanged: [...result.unchanged, ...other],
+		modified: result.modified.filter(block => {
+			return !block.gestured || block.endTime - block.startTime >= 60 * 45;
+		}),
+	};
 };
 
 const drag = (gesture, blocks) => {

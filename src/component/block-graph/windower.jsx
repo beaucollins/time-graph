@@ -24,6 +24,23 @@ export default (windowSize, datasource) => {
 		}];
 	};
 
+	const invertPoint = ({ x, y }) => ({ x: -x, y: -y });
+
+	const sumPoints = (...points) => points.reduce(({ x, y }, point) => {
+		return {
+			x: x + point.x,
+			y: y + point.y,
+		};
+	}, { x: 0, y: 0 });
+
+	const expandViewport = ([ p1, p2 ]) => {
+		const size = sumPoints(invertPoint(p1), p2);
+		return [
+			sumPoints(p1, invertPoint(size)),
+			sumPoints(p2, size),
+		];
+	}
+
 	const mapWindows = (viewport, iterator) => {
 		const result = [];
 		const [a, b] = snapViewPortToWindows(viewport);
@@ -41,16 +58,7 @@ export default (windowSize, datasource) => {
 	return {
 		windowForPoint,
 		renderVisibleWindows: (viewport, renderBlock, convertPoint) => {
-			return mapWindows(viewport, (w) => {
-				const style = {
-					...windowSize,
-					left: w.x,
-					top: w.y,
-					position: 'absolute',
-					color: '#999',
-					boxSizing: 'border-box',
-					border: '1px solid #CCC',
-				};
+			return mapWindows(expandViewport(viewport), (w) => {
 				const range = [
 					convertPoint(w),
 					convertPoint(translateWindow(w)),
@@ -62,9 +70,6 @@ export default (windowSize, datasource) => {
 				return (
 					<Fragment key={`${w.x},${w.y}`}>
 						{blocks.map(renderBlock)}
-						<div style={style}>
-							{JSON.stringify(range, null, ' ')}
-						</div>
 					</Fragment>
 				);
 			});
