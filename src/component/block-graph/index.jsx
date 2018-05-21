@@ -41,10 +41,6 @@ export default class BlockGraph extends Component {
 		 * The coefficient that converts a measument in seconds into a measurement in pixels
 		 */
 		pixelsPerSecond: PropTypes.number.isRequired,
-		/**
-		 * The constant in seconds that defines the "left edge" of the graph
-		 */
-		originSeconds: PropTypes.number.isRequired,
 
 		timeSpan: PropTypes.shape({
 			startTime: PropTypes.number.isRequired,
@@ -179,7 +175,7 @@ export default class BlockGraph extends Component {
 	}
 
 	convertPixelsToAbsoluteSeconds(x) {
-		return this.convertPixelsToSeconds(x) + this.props.originSeconds;
+		return this.convertPixelsToSeconds(x) + this.props.timeSpan.startTime;
 	}
 
 	/**
@@ -195,7 +191,7 @@ export default class BlockGraph extends Component {
 	 * @returns {number} pixel x value that represents that second in this intance of the graph
 	 */
 	convertAbsoluteSecondsToPixels(seconds) {
-		return this.convertSecondsToPixels(seconds - this.props.originSeconds) +
+		return this.convertSecondsToPixels(seconds - this.props.timeSpan.startTime) +
 			this.props.chromeOffset.sidebar;
 	}
 
@@ -235,7 +231,7 @@ export default class BlockGraph extends Component {
 	convertPointToTimeIndex(point) {
 		return {
 			seconds: this.convertPixelsToAbsoluteSeconds(point.x),
-			row: this.convertPixelsToRow(point.y),
+			row: Math.min(Math.max(0, this.convertPixelsToRow(point.y)), this.props.rows.count),
 		};
 	}
 

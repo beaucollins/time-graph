@@ -21,16 +21,18 @@ export default class App extends Component {
 
 	static defaultProps = {
 		options: [
-			{ key: 'availability', label: 'Availability', render: () => {
-				return <div id="graph-container"><AvailabilityPlanner /></div>;
+			// { key: 'availability', label: 'Availability', render: () => {
+			// 	return <div id="graph-container"><AvailabilityPlanner /></div>;
+			// } },
+			{ key: 'common', label: 'Common', render: () => {
+				console.log('rendering with %d blocks', commonData.length)
+				return <CompressablePlanner initialData={ commonData } />;
 			} },
 			{ key: 'empty', label: 'Empty', render: () => {
 				return <CompressablePlanner initialData={[]} />;
 			} },
-			{ key: 'common', label: 'Common', render: () => {
-				return <CompressablePlanner initialData={ commonData } />;
-			} },
 			{ key: 'max', label: 'Max Data', render: () => {
+				console.log('rendering with %d blocks', maxData.length)
 				return <CompressablePlanner initialData={ maxData } />;
 			} },
 		],

@@ -35,7 +35,6 @@ export default class Planner extends React.Component {
 		this.state = {
 			blocks: [],
 			selectedBlockUids: [],
-			originSeconds: 0,
 		};
 	}
 
@@ -50,9 +49,11 @@ export default class Planner extends React.Component {
 		const timeSpan = snapToNearestSpan({ startTime, endTime }, SECONDS_PER_DAY, true);
 		return {
 			blocks: nextProps.initialData,
-			timeSpan,
-			rows: rows,
-			originSeconds: timeSpan.startTime,
+			timeSpan: {
+				startTime: isNaN(timeSpan.startTime) ? 0 : timeSpan.startTime,
+				endTime: isNaN(timeSpan.endTime) ? SECONDS_PER_DAY : timeSpan.endTime,
+			},
+			rows: rows === 0 ? 25 : rows
 		};
 	}
 
@@ -106,7 +107,6 @@ export default class Planner extends React.Component {
 				renderBlock={this.renderBlock}
 				applyGesture={this.applyGesture}
 				pixelsPerSecond={(tickWidth * 4) / SECONDS_PER_HOUR}
-				originSeconds={this.state.originSeconds}
 				blocks={blocks}
 				timeSpan={timeSpan}
 				rows={{
