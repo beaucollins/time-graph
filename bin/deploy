@@ -34,4 +34,4 @@ git push
 cd ..
 
 # We have the gh-pages updated locally, push to github
-git push origin gh-pages:gh-pages
+git push origin
