@@ -505,7 +505,7 @@ The `applyGesture` function at this point is only used to produce what can be co
 
 To allow the parent component to signal that the changes from the gesture should be made more permanent, the `withGestures` wrapped component provides another prop named `onGestureChange`. This is a callback function that gets called as new gestures are recognized. It is given three parameters:
 
-- `gesture` - the new gesture that is happenning
+- `gesture` - the new gesture that is happening
 - `prevGesture` - the gesture it replaces
 - `getModifications` - a function that well return the modifications a gesture would produce.
 
