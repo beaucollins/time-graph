@@ -45,22 +45,19 @@ I'm going to call this piece of functionality the `<BlockGraph>`. It is the piec
 
 I believe the `<BlockGraph>`` already exists in the `<Calendar>` lurking in the shadows entwined in instance methods and event handlers. Can we liberate `<BlockGraph>` from the tight grasp of the `<Calendar>` and give this specter a proper life. A life with its very own `React.Component` definition and a `render` method it can be proud of? I think we can!
 
-Let's start with an ideal API that the `<Calendar>` would use:
+Let's start with an ideal API that the `<Calendar>` would use.
 
-```js
-// In a parent's render
-<BlockGraph
-  size={{ width: 600, height: 400 }}
-/>
+### The Birth of `<BlockGraph>`
 
-// Definition
-class BlockGraph extends Component {
-  static propTypes = {
-  }
-}
-```
+Some assumptions to begin with for `<BlockGraph>`:
+  - it will draw blocks in the correct position
+  - it will report when a user clicks and interacts within the graph
+  - it will allow for the scrolling of content that exceeds its bounds
+  - it will provide space above and to the left for fixed columns and headers
 
-The parent component will tell the `<BlockGraph>` how much screen space it will have. So how can we tell it what to draw? It needs a list of what we call _blocks_. Each of these _blocks_ has a _startTime_ and _endTime_ in seconds since the unix epoch. It needs a new prop:
+#### What to draw?
+
+How can we tell it what to draw? It needs a list of what we call _blocks_. Each of these _blocks_ has a _startTime_ and _endTime_ in seconds since the unix epoch. Time to define this in a `prop`:
 
 ```js
 static propTypes = {
@@ -70,9 +67,94 @@ static propTypes = {
   }))
 }
 
-// now used
+static defaultProps = {
+  blocks: []
+};
+
 <BlockGraph
-  // other props and then
   blocks={this.state.blocksToPleaseRender}
 />
+```
+
+[Commit it](https://github.com/beaucollins/time-graph/commit/a1918d8c812720154a1a0e5c4a146d84e360d667)!
+
+#### Where to draw?
+
+The `x` axis of the `<BlockGraph>` is time. Right now the `<Calendar>` and _blocks_ speak in seconds since the epoch. To correctly place a block on the `x` axis it needs to know how to convert from _seconds_ to _pixels_ (**note**: pixels do not map to physical screen pixels thanks to "retina" screens, but I believe the word "pixel" works because it implies the use of a screen).
+
+Since we can assume that the x axis is linear, a single coefficient value should be enough to convert a measurement of _seconds_ into a measurement of _pixels_. The `<BlockGraph>` does not care what this coefficient is. Honestly, it doesn't even care that it is working in seconds. It just needs to know what to multiply _startTime_ and _endTime_ by to measure their distance in pixels.
+
+For our case _right now_ we will assume we will be given data to draw in _seconds_ so we will name our `prop` accordingly:
+
+```js
+static propTypes = {
+  // add the prop!
+  pixelsPerSecond: PropTypes.number.isRequired,
+}
+```
+
+[Commit it!](https://github.com/beaucollins/time-graph/commit/cc437ca9f813fe7668dccaf2046f5f5507a0d026)
+
+
+For the `<Demo>` component we can define a reasonable width by saying we want an hour to be 100 pixels wide. So lets hardcode some math for the `<Demo>`:
+
+```js
+const HOUR_IN_PIXELS = 100;
+const SECONDS_PER_HOUR = 60 * 60;
+
+<BlockGraph
+  pixelsPerSecond={HOUR_IN_PIXELS / SECONDS_PER_HOUR}
+```
+
+[Commit it](https://github.com/beaucollins/time-graph/commit/e954553930ffd0ccec0eb28b417c649c6af2222b)
+
+#### Too Much Time!
+
+But wait! These _startTime_ and _endTime_ values are in absolute seconds since the unix epoch. If we're dealing in dates in the year 2018 _and beyond_ that's going to be a bajillion pixels. We should be able to give the `<BlockGraph>` a constant value to translate the `x` axis to a more reasonable space.
+
+```js
+static propTypes = {
+  originSeconds: PropTypes.number.isRequired,
+}
+```
+
+_A coefficient and a constant? Did we just do linear algebra?_
+
+Now that we have a way to convert _seconds_ to _pixels_ as well as a way shift the timeline to a reasonable window of time we can write a helper instance method that will give as the screen `x` value for any `seconds` since the epoch value:
+
+```js
+covertSecondsToPixels(seconds) {
+	return this.props.pixelsPerSecond * seconds;
+}
+
+convertAbsoluteSecondsToPixels(seconds) {
+	// figure out
+	return this.convertSecondsToPixels(seconds - this.props.originSeconds);
+}
+```
+
+[Commit it!](https://github.com/beaucollins/time-graph/commit/3811063add5eba156381f75a1033ef43ae0effb3)
+
+#### Time for the Second Dimension
+
+The `<BlockGraph>` is super smart about converting seconds to pixels so for now the `x` axis is taken care of. But what about the `y` axis? Let's look at two different use cases we're dealing with.
+
+- _Planner_: The y axis corresponds to a user who is associated with a block somehow.
+- _My Availability_: Thy y axis corresponds to a day of the week and a block is associated with that day somehow.
+- _Demand_: The y axis corresponds with a type of task that can be assigned in a block is associated with that task type somewhow.
+
+There's a lot of ambiguity there. For each use case there is a different data type that will define where a block is vertically in the graph. Looking at the designs though it feels safe to assume that in every case rows are the same height. If `<BlockGraph>` can learn how to associate a block with a row, and know how tall a row is it can map the `y` to the correct row number and back.
+
+These two values go together, so maybe define them together:
+
+```
+static propTypes = {
+  rows: PropTypes.shape({
+    getIndexForBlock: PropTypes.func.isRequired,
+    height: PropTypes.number.isRequired,
+    count: PropTypes.number.isRequired,
+  }).isRequired,
+};
+
+
 ```
