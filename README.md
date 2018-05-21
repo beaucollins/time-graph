@@ -553,7 +553,6 @@ class Planner extends Component {
   render() {
     const { blocks, timeSpan, rows } = this.state;
     const { tickWidth, rowHeight } = this.props;
-    // get the blocks that are the result of the gesture and the starting set of blocks
     return (
       <BlockGraph
         // not explained, but this would provide space in the blockgraph
