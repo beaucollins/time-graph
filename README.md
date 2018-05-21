@@ -1,5 +1,7 @@
 # BlockGraph
 
+[Demo using this approach](http://source.collins.pub/time-graph/).
+
 `<BlockGraph>` is a two dimensional graphing component. On the `x` of the graph is linear time, the `y` axis is definable by the user. The `<BlockGraph>` accepts parameters that allow the user to define the scale of time (e.g. how wide a second is in pixels) as well as the origin (what `x=0` equals in time).
   
 In linear algebra terms these are the coefficient and contant of linear function that `<BlockGraph>` will use to compute screen positions.
