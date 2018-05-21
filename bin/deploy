@@ -13,7 +13,7 @@ git clone -l . ./dist --branch gh-pages
 # git -C ./dist status
 
 # Run webpack to build new assets
-find dist | grep  -v \^dist\$ | grep -v \.git | xargs rm
+find dist | grep  -v \^dist\$ | grep -v \.git | grep -v \^dist/README\.md\$ | xargs rm
 npm run -s webpack -- --silent
 
 # Dirty changes summary is added to the commit
