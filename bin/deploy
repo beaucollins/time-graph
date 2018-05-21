@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 V=`git describe --always --dirty=" with local modifications" --tags`
+R=`git rev-parse --short HEAD`
 rm -fr ./dist
 
 # Updates to latest gh-pages on origin
@@ -23,6 +24,8 @@ cd ./dist
 git status
 git add .
 git commit --message "Deploying $V
+
+Revision $H
 
 $CHANGES
 "
