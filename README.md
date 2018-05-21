@@ -580,3 +580,18 @@ class Planner extends Component {
 }
 
 ```
+
+## Performance and Scaling the UI
+
+The "Common" demo displays about 600 block which is on the high end of what we would reasonably see in a days worth of "planning" in our current use case.
+
+However it would be worth understanding the next steps we can take to achieve performance with higher levels of data.
+
+There are two things to consider when tuning React performance:
+
+- Reduce rendering updates to components. This can be done with `shouldComponentUpdate` and `React.PureComponent`.
+- Reduce total quantity of items rendered. This can be mitigated with "windowing" when being asked to display lists of thousands (or more) items.
+
+The "Thousands" option in the Demo uses a windowing strategy to reduce the number of blocks rendered at any given time. A similar strategy can be applied to rows.
+
+The "Thousands" demo is applying gesture results in real time to __all__ of the data. The next step here is to only operate on the data confined to what the windowing component is presenting.

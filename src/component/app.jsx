@@ -31,7 +31,7 @@ export default class App extends Component {
 			{ key: 'empty', label: 'Empty', render: () => {
 				return <CompressablePlanner initialData={[]} />;
 			} },
-			{ key: 'max', label: 'Max Data', render: () => {
+			{ key: 'max', label: 'Thousands', render: () => {
 				console.log('rendering with %d blocks', maxData.length)
 				return <CompressablePlanner initialData={ maxData } />;
 			} },
