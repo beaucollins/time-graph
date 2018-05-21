@@ -1,5 +1,8 @@
 import { Fragment } from 'react';
 
+/**
+ * Two dimensional windower.
+ */
 export default (windowSize, datasource) => {
 	const windows = {};
 
