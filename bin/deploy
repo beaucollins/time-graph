@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+V=`git describe --always --dirty=" with local modifications" --tags`
+rm -fr ./dist
+
+# Updates to latest gh-pages on origin
+git fetch origin gh-pages:gh-pages
+
+# Clones gh-pages from local repo to ./dist
+git clone -l . ./dist --branch gh-pages
+
+# Output status of ./dist as if we are running in ./dist
+# git -C ./dist status
+
+# Run webpack to build new assets
+find dist | grep  -v \^dist\$ | grep -v \.git | xargs rm
+npm run -s webpack -- --silent
+
+# Dirty changes summary is added to the commit
+CHANGES=`git status --short`
+
+# Commit the changes on gh-pages branch
+cd ./dist
+git status
+git add .
+git commit --message "Deploying $V
+
+$CHANGES
+"
+git push
+
+cd ..
+
+# We have the gh-pages updated locally, push to github
+git push origin gh-pages:gh-pages
