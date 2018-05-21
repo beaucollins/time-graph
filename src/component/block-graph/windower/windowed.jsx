@@ -69,7 +69,7 @@ export default (windowSize, datasource) => {
 
 	return {
 		windowForPoint,
-		getVisibleBlocks: (viewport) => {
+		getVisibleItems: (viewport) => {
 			const windowed = mapWindows(expandViewport(viewport), (w) => {
 				const cache = windows[windowKey(w)] || [];
 				return cache;

@@ -1,10 +1,10 @@
-import { Component, createRef } from 'react';
+import { Component, createRef, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { throttle } from 'lodash';
 
 import { timeSpanContainsTime } from 'timespan';
 import Block from './block';
-import windower from './windower';
+import all from './windower/all';
 
 function invertPoint({ x, y }) {
 	return { x: -x, y: -y };
@@ -55,6 +55,9 @@ export default class BlockGraph extends Component {
 			// how many rows are there
 			count: PropTypes.number.isRequired,
 		}).isRequired,
+
+		windower: PropTypes.func.isRequired,
+
 	};
 
 	static defaultProps = {
@@ -68,6 +71,7 @@ export default class BlockGraph extends Component {
 		onMouseDownGraph: () => {},
 		onMouseMoveGraph: () => {},
 		onMouseUpGraph: () => {},
+		windower: all,
 	}
 
 	constructor(props) {
@@ -87,7 +91,7 @@ export default class BlockGraph extends Component {
 			// It can, however, be necessary for cases like modals and tooltips when you need to
 			// measure a DOM node before rendering something that depends on its size or position.
 			// eslint-disable-next-line react/no-did-mount-set-state
-			this.setState({ windower: windower(this.getWindowSize(), range => {
+			this.setState({ windower: this.props.windower(this.getWindowSize(), range => {
 				return this.props.blocks.filter(block => {
 					return block.row >= range.rowSpan.startIndex &&
 						block.row < range.rowSpan.endIndex &&
@@ -255,7 +259,7 @@ export default class BlockGraph extends Component {
 		}
 
 		const viewport = this.getCurrentViewPort();
-		const matching = this.state.windower.getVisibleBlocks(viewport).filter(block => {
+		const matching = this.state.windower.getVisibleItems(viewport).filter(block => {
 			return timeSpanContainsTime(block, timeIndex.seconds) &&
 				this.props.rows.getIndexForBlock(block) === timeIndex.row;
 		});

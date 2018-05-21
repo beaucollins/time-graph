@@ -1,20 +1,18 @@
-import { Component, PureComponent } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import withGestures, { recognizeType, EVENT_TYPES } from 'component/block-graph/with-gestures';
+import withGestures from 'component/block-graph/with-gestures';
 import Block from './block';
-import uuid from 'uuid/v4';
-import { timeSpanContainsTime, snapToNearestSpan, SECONDS_PER_DAY } from 'timespan';
-import { calculateMinSecond } from 'data/helpers';
+import { snapToNearestSpan, SECONDS_PER_DAY } from 'timespan';
 import gestureRecognizer from './recognizer';
 import applyGesture from './applier';
+import windowed from 'component/block-graph/windower/windowed';
 
 const SECONDS_PER_HOUR = 60 * 60;
 
 const BlockGraph = withGestures(gestureRecognizer);
 
-export default class Planner extends React.Component {
-
+export default class Planner extends Component {
 	static propTypes = {
 		initialData: PropTypes.arrayOf(PropTypes.shape({
 			uid: PropTypes.string.isRequired,
@@ -38,14 +36,14 @@ export default class Planner extends React.Component {
 		};
 	}
 
-	static getDerivedStateFromProps(nextProps, prevState) {
+	static getDerivedStateFromProps(nextProps) {
 		const { rows, startTime, endTime } = nextProps.initialData.reduce((values, block) => {
 			return {
 				rows: Math.max(values.rows, block.row),
 				startTime: Math.min(values.startTime, block.startTime),
 				endTime: Math.max(values.endTime, block.endTime),
-			}
-		}, {rows: 0, startTime: Infinity, endTime: -Infinity });
+			};
+		}, { rows: 0, startTime: Infinity, endTime: -Infinity });
 		const timeSpan = snapToNearestSpan({ startTime, endTime }, SECONDS_PER_DAY, true);
 		return {
 			blocks: nextProps.initialData,
@@ -53,7 +51,7 @@ export default class Planner extends React.Component {
 				startTime: isNaN(timeSpan.startTime) ? 0 : timeSpan.startTime,
 				endTime: isNaN(timeSpan.endTime) ? SECONDS_PER_DAY : timeSpan.endTime,
 			},
-			rows: rows === 0 ? 25 : rows
+			rows: rows === 0 ? 25 : rows,
 		};
 	}
 
@@ -63,12 +61,13 @@ export default class Planner extends React.Component {
 
 	handleGestureChange = (gesture, prevGesture, applier) => {
 		if (gesture && gesture.type === 'selection') {
-			this.setState( {selectedBlockUids: [gesture.selected.uid] });
+			this.setState({ selectedBlockUids: [gesture.selected.uid] });
 		} else {
 			this.setState({ selectedBlockUids: [] });
 		}
 		if (gesture.type === 'complete') {
-			const result = applier(gesture.gesture);
+			const changes = applier(gesture.gesture);
+			console.log('time to commit changes', changes);
 		}
 	}
 
@@ -103,6 +102,9 @@ export default class Planner extends React.Component {
 					header: 36,
 					sidebar: 200,
 				}}
+
+				windower={windowed}
+
 				onGestureChange={this.handleGestureChange}
 				renderBlock={this.renderBlock}
 				applyGesture={this.applyGesture}
