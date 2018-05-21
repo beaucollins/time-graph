@@ -56163,6 +56163,29 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+/**
+ * Given a start and end figures out all integers that exist in that range and
+ * call the fn callback with the number. Collects and concats the results into
+ * a single list.
+ *
+ * Will iterate either direction, so start can be greater than end.
+ *
+ * Example:
+ *   const results = eachIndexInRange(0, 10, (index) => {
+ *     // return a list of results matching this index
+ *     if (index > 3 && index < 5) {
+ *       return [{ key: 'value', index }];
+ *     }
+ *     return [ index * 2 ];
+ *   });
+ *
+ *   console.log(results); // => [0, 2, 4, {key: 'value', index: 3}, 8, {key: 'value', ...}]
+ *
+ * @param {number} start - the beginning index
+ * @param {number} end - the ending index
+ * @param {Function} fn - the callback of (number) => Array<>
+ * @returns {Array} a list of the results for each number in the index
+ */
 var eachIndexInRange = function eachIndexInRange(start, end, fn) {
   var increment = start < end ? 1 : -1;
   var results = [];
@@ -57426,4 +57449,4 @@ exports.describeTimeSpan = describeTimeSpan;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main-3161641cf5c7a7d401e0.bundle.js.map
+//# sourceMappingURL=main-ddc83072e377d8580123.bundle.js.map
