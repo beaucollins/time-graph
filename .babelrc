@@ -1,7 +1,7 @@
 {
 	"presets": [
 		[
-			"env", {
+			"@babel/preset-env", {
 				"targets": {
 					"browsers": [
 						"last 2 versions",
@@ -10,46 +10,9 @@
 				}
 			}
 		],
-		"react",
-		"stage-0"
+		"@babel/preset-react"
 	],
-	"env": {
-		"development": {
-			"plugins": [
-				[
-					"istanbul",
-					{
-						"exclude": [
-							"src/**/test/*.js",
-							"test/**"
-						],
-						"extensions": [
-							".js",
-							".jsx"
-						]
-					}
-				],
-				[
-					"transform-class-properties"
-				]
-			]
-		},
-		"test": {
-			"plugins": [
-				[
-					"istanbul",
-					{
-						"exclude": [
-							"src/**/test/*.js",
-							"test/**"
-						],
-						"extensions": [
-							".js",
-							".jsx"
-						]
-					}
-				]
-			]
-		}
-	}
+	"plugins": [
+		"@babel/plugin-proposal-class-properties"
+	]
 }
