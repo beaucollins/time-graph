@@ -3,6 +3,29 @@ import { timeSpansOverlap, unionTimeSpanSet } from 'timespan';
 import splitBy from 'split-by';
 import { matchType } from 'component/block-graph/with-gestures';
 
+/**
+ * Given a start and end figures out all integers that exist in that range and
+ * call the fn callback with the number. Collects and concats the results into
+ * a single list.
+ *
+ * Will iterate either direction, so start can be greater than end.
+ *
+ * Example:
+ *   const results = eachIndexInRange(0, 10, (index) => {
+ *     // return a list of results matching this index
+ *     if (index > 3 && index < 5) {
+ *       return [{ key: 'value', index }];
+ *     }
+ *     return [ index * 2 ];
+ *   });
+ *
+ *   console.log(results); // => [0, 2, 4, {key: 'value', index: 3}, 8, {key: 'value', ...}]
+ *
+ * @param {number} start - the beginning index
+ * @param {number} end - the ending index
+ * @param {Function} fn - the callback of (number) => Array<>
+ * @returns {Array} a list of the results for each number in the index
+ */
 const eachIndexInRange = (start, end, fn) => {
 	const increment = start < end ? 1 : -1;
 	let results = [];
