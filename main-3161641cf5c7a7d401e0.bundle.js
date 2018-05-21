@@ -54730,704 +54730,153 @@ module.exports = function(module) {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(React) {
 
-var cov_2jr42eh9wh = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/app.jsx',
-	    hash = '0f2b60c9a356c2a77cd659cbecd226381c48abe5',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/app.jsx',
-		statementMap: {
-			'0': {
-				start: {
-					line: 28,
-					column: 4
-				},
-				end: {
-					line: 28,
-					column: 62
-				}
-			},
-			'1': {
-				start: {
-					line: 29,
-					column: 4
-				},
-				end: {
-					line: 29,
-					column: 62
-				}
-			},
-			'2': {
-				start: {
-					line: 32,
-					column: 4
-				},
-				end: {
-					line: 32,
-					column: 52
-				}
-			},
-			'3': {
-				start: {
-					line: 35,
-					column: 4
-				},
-				end: {
-					line: 35,
-					column: 59
-				}
-			},
-			'4': {
-				start: {
-					line: 36,
-					column: 4
-				},
-				end: {
-					line: 36,
-					column: 59
-				}
-			},
-			'5': {
-				start: {
-					line: 42,
-					column: 2
-				},
-				end: {
-					line: 42,
-					column: 15
-				}
-			},
-			'6': {
-				start: {
-					line: 43,
-					column: 2
-				},
-				end: {
-					line: 43,
-					column: 18
-				}
-			},
-			'7': {
-				start: {
-					line: 47,
-					column: 2
-				},
-				end: {
-					line: 49,
-					column: 3
-				}
-			},
-			'8': {
-				start: {
-					line: 48,
-					column: 3
-				},
-				end: {
-					line: 48,
-					column: 51
-				}
-			},
-			'9': {
-				start: {
-					line: 52,
-					column: 22
-				},
-				end: {
-					line: 54,
-					column: 2
-				}
-			},
-			'10': {
-				start: {
-					line: 53,
-					column: 2
-				},
-				end: {
-					line: 53,
-					column: 42
-				}
-			},
-			'11': {
-				start: {
-					line: 57,
-					column: 27
-				},
-				end: {
-					line: 57,
-					column: 37
-				}
-			},
-			'12': {
-				start: {
-					line: 58,
-					column: 2
-				},
-				end: {
-					line: 60,
-					column: 4
-				}
-			},
-			'13': {
-				start: {
-					line: 64,
-					column: 2
-				},
-				end: {
-					line: 68,
-					column: 4
-				}
-			},
-			'14': {
-				start: {
-					line: 72,
-					column: 29
-				},
-				end: {
-					line: 72,
-					column: 39
-				}
-			},
-			'15': {
-				start: {
-					line: 73,
-					column: 2
-				},
-				end: {
-					line: 80,
-					column: 4
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: '(anonymous_0)',
-				decl: {
-					start: {
-						line: 27,
-						column: 45
-					},
-					end: {
-						line: 27,
-						column: 46
-					}
-				},
-				loc: {
-					start: {
-						line: 27,
-						column: 51
-					},
-					end: {
-						line: 30,
-						column: 4
-					}
-				},
-				line: 27
-			},
-			'1': {
-				name: '(anonymous_1)',
-				decl: {
-					start: {
-						line: 31,
-						column: 43
-					},
-					end: {
-						line: 31,
-						column: 44
-					}
-				},
-				loc: {
-					start: {
-						line: 31,
-						column: 49
-					},
-					end: {
-						line: 33,
-						column: 4
-					}
-				},
-				line: 31
-			},
-			'2': {
-				name: '(anonymous_2)',
-				decl: {
-					start: {
-						line: 34,
-						column: 45
-					},
-					end: {
-						line: 34,
-						column: 46
-					}
-				},
-				loc: {
-					start: {
-						line: 34,
-						column: 51
-					},
-					end: {
-						line: 37,
-						column: 4
-					}
-				},
-				line: 34
-			},
-			'3': {
-				name: '(anonymous_3)',
-				decl: {
-					start: {
-						line: 41,
-						column: 1
-					},
-					end: {
-						line: 41,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 41,
-						column: 20
-					},
-					end: {
-						line: 44,
-						column: 2
-					}
-				},
-				line: 41
-			},
-			'4': {
-				name: '(anonymous_4)',
-				decl: {
-					start: {
-						line: 46,
-						column: 1
-					},
-					end: {
-						line: 46,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 46,
-						column: 55
-					},
-					end: {
-						line: 50,
-						column: 2
-					}
-				},
-				line: 46
-			},
-			'5': {
-				name: '(anonymous_5)',
-				decl: {
-					start: {
-						line: 52,
-						column: 14
-					},
-					end: {
-						line: 52,
-						column: 15
-					}
-				},
-				loc: {
-					start: {
-						line: 52,
-						column: 22
-					},
-					end: {
-						line: 54,
-						column: 2
-					}
-				},
-				line: 52
-			},
-			'6': {
-				name: '(anonymous_6)',
-				decl: {
-					start: {
-						line: 52,
-						column: 22
-					},
-					end: {
-						line: 52,
-						column: 23
-					}
-				},
-				loc: {
-					start: {
-						line: 52,
-						column: 28
-					},
-					end: {
-						line: 54,
-						column: 2
-					}
-				},
-				line: 52
-			},
-			'7': {
-				name: '(anonymous_7)',
-				decl: {
-					start: {
-						line: 56,
-						column: 18
-					},
-					end: {
-						line: 56,
-						column: 19
-					}
-				},
-				loc: {
-					start: {
-						line: 56,
-						column: 26
-					},
-					end: {
-						line: 61,
-						column: 2
-					}
-				},
-				line: 56
-			},
-			'8': {
-				name: '(anonymous_8)',
-				decl: {
-					start: {
-						line: 63,
-						column: 1
-					},
-					end: {
-						line: 63,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 63,
-						column: 14
-					},
-					end: {
-						line: 69,
-						column: 2
-					}
-				},
-				line: 63
-			},
-			'9': {
-				name: '(anonymous_9)',
-				decl: {
-					start: {
-						line: 71,
-						column: 1
-					},
-					end: {
-						line: 71,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 71,
-						column: 10
-					},
-					end: {
-						line: 81,
-						column: 2
-					}
-				},
-				line: 71
-			}
-		},
-		branchMap: {
-			'0': {
-				loc: {
-					start: {
-						line: 47,
-						column: 2
-					},
-					end: {
-						line: 49,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 47,
-						column: 2
-					},
-					end: {
-						line: 49,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 47,
-						column: 2
-					},
-					end: {
-						line: 49,
-						column: 3
-					}
-				}],
-				line: 47
-			},
-			'1': {
-				loc: {
-					start: {
-						line: 59,
-						column: 51
-					},
-					end: {
-						line: 59,
-						column: 92
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 59,
-						column: 77
-					},
-					end: {
-						line: 59,
-						column: 87
-					}
-				}, {
-					start: {
-						line: 59,
-						column: 90
-					},
-					end: {
-						line: 59,
-						column: 92
-					}
-				}],
-				line: 59
-			}
-		},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0
-		},
-		f: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0
-		},
-		b: {
-			'0': [0, 0],
-			'1': [0, 0]
-		},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+exports.default = void 0;
 
 var _react = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 
-var _propTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _planner = _interopRequireDefault(__webpack_require__(/*! component/demos/planner */ "./component/demos/planner/index.jsx"));
 
-var _planner = __webpack_require__(/*! component/demos/planner */ "./component/demos/planner/index.jsx");
+var _compressable = _interopRequireDefault(__webpack_require__(/*! component/demos/compressable */ "./component/demos/compressable.jsx"));
 
-var _planner2 = _interopRequireDefault(_planner);
-
-var _compressable = __webpack_require__(/*! component/demos/compressable */ "./component/demos/compressable.jsx");
-
-var _compressable2 = _interopRequireDefault(_compressable);
-
-var _availability = __webpack_require__(/*! component/demos/availability */ "./component/demos/availability/index.jsx");
-
-var _availability2 = _interopRequireDefault(_availability);
+var _availability = _interopRequireDefault(__webpack_require__(/*! component/demos/availability */ "./component/demos/availability/index.jsx"));
 
 __webpack_require__(/*! ./app.scss */ "./component/app.scss");
 
-var _max = __webpack_require__(/*! data/max.json */ "./data/max.json");
+var _max = _interopRequireDefault(__webpack_require__(/*! data/max.json */ "./data/max.json"));
 
-var _max2 = _interopRequireDefault(_max);
-
-var _common = __webpack_require__(/*! data/common.json */ "./data/common.json");
-
-var _common2 = _interopRequireDefault(_common);
+var _common = _interopRequireDefault(__webpack_require__(/*! data/common.json */ "./data/common.json"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } _setPrototypeOf(subClass.prototype, superClass && superClass.prototype); if (superClass) _setPrototypeOf(subClass, superClass); }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var App = function (_ref) {
-	_inherits(App, _ref);
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-	function App(props) {
-		_classCallCheck(this, App);
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-		cov_2jr42eh9wh.f[3]++;
-		cov_2jr42eh9wh.s[5]++;
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-		var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+function _getPrototypeOf(o) { _getPrototypeOf = Object.getPrototypeOf || function _getPrototypeOf(o) { return o.__proto__; }; return _getPrototypeOf(o); }
 
-		_this.selectItem = function (item) {
-			cov_2jr42eh9wh.f[5]++;
-			cov_2jr42eh9wh.s[9]++;
-			return function () {
-				cov_2jr42eh9wh.f[6]++;
-				cov_2jr42eh9wh.s[10]++;
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
-				_this.setState({ selectedOption: item });
-			};
-		};
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-		_this.renderMenuItem = function (item) {
-			cov_2jr42eh9wh.f[7]++;
+var App =
+/*#__PURE__*/
+function (_Component) {
+  function App(props) {
+    var _this;
 
-			var _ref2 = (cov_2jr42eh9wh.s[11]++, _this.state),
-			    selectedOption = _ref2.selectedOption;
+    _classCallCheck(this, App);
 
-			cov_2jr42eh9wh.s[12]++;
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
 
-			return React.createElement(
-				'li',
-				{ onClick: _this.selectItem(item), className: item === selectedOption ? (cov_2jr42eh9wh.b[1][0]++, 'selected') : (cov_2jr42eh9wh.b[1][1]++, ''), key: item.key },
-				item.label
-			);
-		};
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "selectItem", function (item) {
+      return function () {
+        _this.setState({
+          selectedOption: item
+        });
+      };
+    });
 
-		cov_2jr42eh9wh.s[6]++;
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "renderMenuItem", function (item) {
+      var selectedOption = _this.state.selectedOption;
+      return React.createElement("li", {
+        onClick: _this.selectItem(item),
+        className: item === selectedOption ? 'selected' : '',
+        key: item.key
+      }, item.label);
+    });
 
-		_this.state = {};
-		return _this;
-	}
+    _this.state = {};
+    return _this;
+  }
 
-	_createClass(App, [{
-		key: 'renderMenu',
-		value: function renderMenu() {
-			cov_2jr42eh9wh.f[8]++;
-			cov_2jr42eh9wh.s[13]++;
+  _createClass(App, [{
+    key: "renderMenu",
+    value: function renderMenu() {
+      return React.createElement("menu", null, this.props.options.map(this.renderMenuItem));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var selectedOption = this.state.selectedOption;
+      return React.createElement("div", {
+        id: "demo"
+      }, React.createElement("div", {
+        id: "demo-chrome"
+      }, this.renderMenu(selectedOption)), selectedOption.render());
+    }
+  }], [{
+    key: "getDerivedStateFromProps",
+    value: function getDerivedStateFromProps(nextProps, prevState) {
+      if (!prevState.selectedOption) {
+        return {
+          selectedOption: nextProps.options[0]
+        };
+      }
+    }
+  }]);
 
-			return React.createElement(
-				'menu',
-				null,
-				this.props.options.map(this.renderMenuItem)
-			);
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			cov_2jr42eh9wh.f[9]++;
+  _inherits(App, _Component);
 
-			var _ref3 = (cov_2jr42eh9wh.s[14]++, this.state),
-			    selectedOption = _ref3.selectedOption;
+  return App;
+}(_react.Component);
 
-			cov_2jr42eh9wh.s[15]++;
-
-			return React.createElement(
-				'div',
-				{ id: 'demo' },
-				React.createElement(
-					'div',
-					{ id: 'demo-chrome' },
-					this.renderMenu(selectedOption)
-				),
-				selectedOption.render()
-			);
-		}
-	}], [{
-		key: 'getDerivedStateFromProps',
-		value: function getDerivedStateFromProps(nextProps, prevState) {
-			cov_2jr42eh9wh.f[4]++;
-			cov_2jr42eh9wh.s[7]++;
-
-			if (!prevState.selectedOption) {
-				cov_2jr42eh9wh.b[0][0]++;
-				cov_2jr42eh9wh.s[8]++;
-
-				return { selectedOption: nextProps.options[0] };
-			} else {
-				cov_2jr42eh9wh.b[0][1]++;
-			}
-		}
-	}]);
-
-	return App;
-}((_react.Component));
-
-App.propTypes = {
-	options: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-		key: _propTypes2.default.string.isRequired,
-		label: _propTypes2.default.string.isRequired,
-		render: _propTypes2.default.func.isRequired
-	})).isRequired
-};
-App.defaultProps = {
-	options: [
-	// { key: 'availability', label: 'Availability', render: () => {
-	// 	return <div id="graph-container"><AvailabilityPlanner /></div>;
-	// } },
-	{ key: 'common', label: 'Common', render: function render() {
-			cov_2jr42eh9wh.f[0]++;
-			cov_2jr42eh9wh.s[0]++;
-
-			console.log('rendering with %d blocks', _common2.default.length);
-			cov_2jr42eh9wh.s[1]++;
-			return React.createElement(_compressable2.default, { initialData: _common2.default });
-		} }, { key: 'empty', label: 'Empty', render: function render() {
-			cov_2jr42eh9wh.f[1]++;
-			cov_2jr42eh9wh.s[2]++;
-
-			return React.createElement(_compressable2.default, { initialData: [] });
-		} }, { key: 'max', label: 'Thousands', render: function render() {
-			cov_2jr42eh9wh.f[2]++;
-			cov_2jr42eh9wh.s[3]++;
-
-			console.log('rendering with %d blocks', _max2.default.length);
-			cov_2jr42eh9wh.s[4]++;
-			return React.createElement(_compressable2.default, { initialData: _max2.default });
-		} }]
-};
 exports.default = App;
+
+_defineProperty(App, "propTypes", {
+  options: _propTypes.default.arrayOf(_propTypes.default.shape({
+    key: _propTypes.default.string.isRequired,
+    label: _propTypes.default.string.isRequired,
+    render: _propTypes.default.func.isRequired
+  })).isRequired
+});
+
+_defineProperty(App, "defaultProps", {
+  options: [// { key: 'availability', label: 'Availability', render: () => {
+  // 	return <div id="graph-container"><AvailabilityPlanner /></div>;
+  // } },
+  {
+    key: 'common',
+    label: 'Common',
+    render: function render() {
+      console.log('rendering with %d blocks', _common.default.length);
+      return React.createElement(_compressable.default, {
+        initialData: _common.default
+      });
+    }
+  }, {
+    key: 'empty',
+    label: 'Empty',
+    render: function render() {
+      return React.createElement(_compressable.default, {
+        initialData: []
+      });
+    }
+  }, {
+    key: 'max',
+    label: 'Thousands',
+    render: function render() {
+      console.log('rendering with %d blocks', _max.default.length);
+      return React.createElement(_compressable.default, {
+        initialData: _max.default
+      });
+    }
+  }]
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! react */ "../node_modules/react/index.js")))
 
 /***/ }),
@@ -55472,152 +54921,77 @@ if(false) {}
 "use strict";
 /* WEBPACK VAR INJECTION */(function(React) {
 
-var cov_1zslagw3jg = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/block-graph/block.jsx',
-	    hash = '1f9ccb91c374000d28ab403093f8d636d595213d',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/block-graph/block.jsx',
-		statementMap: {
-			'0': {
-				start: {
-					line: 13,
-					column: 16
-				},
-				end: {
-					line: 13,
-					column: 26
-				}
-			},
-			'1': {
-				start: {
-					line: 14,
-					column: 16
-				},
-				end: {
-					line: 21,
-					column: 3
-				}
-			},
-			'2': {
-				start: {
-					line: 22,
-					column: 2
-				},
-				end: {
-					line: 24,
-					column: 4
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: '(anonymous_0)',
-				decl: {
-					start: {
-						line: 12,
-						column: 1
-					},
-					end: {
-						line: 12,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 12,
-						column: 10
-					},
-					end: {
-						line: 25,
-						column: 2
-					}
-				},
-				line: 12
-			}
-		},
-		branchMap: {},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0
-		},
-		f: {
-			'0': 0
-		},
-		b: {},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+exports.default = void 0;
 
 var _react = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 
-var _propTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } _setPrototypeOf(subClass.prototype, superClass && superClass.prototype); if (superClass) _setPrototypeOf(subClass, superClass); }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var Block = function (_ref) {
-	_inherits(Block, _ref);
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-	function Block() {
-		_classCallCheck(this, Block);
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-		return _possibleConstructorReturn(this, (Block.__proto__ || Object.getPrototypeOf(Block)).apply(this, arguments));
-	}
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-	_createClass(Block, [{
-		key: 'render',
-		value: function render() {
-			cov_1zslagw3jg.f[0]++;
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
-			var props = (cov_1zslagw3jg.s[0]++, this.props);
-			var style = (cov_1zslagw3jg.s[1]++, {
-				width: props.width,
-				height: props.height,
-				left: props.x,
-				top: props.y,
-				outline: '1px dotted #F00',
-				position: 'absolute'
-			});
-			cov_1zslagw3jg.s[2]++;
-			return React.createElement('div', { style: style });
-		}
-	}]);
+function _getPrototypeOf(o) { _getPrototypeOf = Object.getPrototypeOf || function _getPrototypeOf(o) { return o.__proto__; }; return _getPrototypeOf(o); }
 
-	return Block;
-}((_react.PureComponent));
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-Block.propTypes = {
-	width: _propTypes2.default.number.isRequired,
-	height: _propTypes2.default.number.isRequired,
-	x: _propTypes2.default.number.isRequired,
-	y: _propTypes2.default.number.isRequired
-};
+var Block =
+/*#__PURE__*/
+function (_PureComponent) {
+  function Block() {
+    _classCallCheck(this, Block);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Block).apply(this, arguments));
+  }
+
+  _createClass(Block, [{
+    key: "render",
+    value: function render() {
+      var props = this.props;
+      var style = {
+        width: props.width,
+        height: props.height,
+        left: props.x,
+        top: props.y,
+        outline: '1px dotted #F00',
+        position: 'absolute'
+      };
+      return React.createElement("div", {
+        style: style
+      });
+    }
+  }]);
+
+  _inherits(Block, _PureComponent);
+
+  return Block;
+}(_react.PureComponent);
+
 exports.default = Block;
+
+_defineProperty(Block, "propTypes", {
+  width: _propTypes.default.number.isRequired,
+  height: _propTypes.default.number.isRequired,
+  x: _propTypes.default.number.isRequired,
+  y: _propTypes.default.number.isRequired
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! react */ "../node_modules/react/index.js")))
 
 /***/ }),
@@ -55632,2919 +55006,487 @@ exports.default = Block;
 "use strict";
 /* WEBPACK VAR INJECTION */(function(React) {
 
-var cov_unal0jpdk = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/block-graph/index.jsx',
-	    hash = 'a8f18d7dd353bd0b93971b09b3210dcf2e2e3287',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/block-graph/index.jsx',
-		statementMap: {
-			'0': {
-				start: {
-					line: 10,
-					column: 1
-				},
-				end: {
-					line: 10,
-					column: 25
-				}
-			},
-			'1': {
-				start: {
-					line: 14,
-					column: 1
-				},
-				end: {
-					line: 14,
-					column: 97
-				}
-			},
-			'2': {
-				start: {
-					line: 14,
-					column: 44
-				},
-				end: {
-					line: 14,
-					column: 78
-				}
-			},
-			'3': {
-				start: {
-					line: 66,
-					column: 32
-				},
-				end: {
-					line: 66,
-					column: 67
-				}
-			},
-			'4': {
-				start: {
-					line: 74,
-					column: 2
-				},
-				end: {
-					line: 74,
-					column: 15
-				}
-			},
-			'5': {
-				start: {
-					line: 75,
-					column: 2
-				},
-				end: {
-					line: 75,
-					column: 34
-				}
-			},
-			'6': {
-				start: {
-					line: 76,
-					column: 2
-				},
-				end: {
-					line: 76,
-					column: 18
-				}
-			},
-			'7': {
-				start: {
-					line: 80,
-					column: 2
-				},
-				end: {
-					line: 98,
-					column: 3
-				}
-			},
-			'8': {
-				start: {
-					line: 81,
-					column: 3
-				},
-				end: {
-					line: 81,
-					column: 79
-				}
-			},
-			'9': {
-				start: {
-					line: 90,
-					column: 3
-				},
-				end: {
-					line: 97,
-					column: 9
-				}
-			},
-			'10': {
-				start: {
-					line: 91,
-					column: 4
-				},
-				end: {
-					line: 96,
-					column: 7
-				}
-			},
-			'11': {
-				start: {
-					line: 92,
-					column: 5
-				},
-				end: {
-					line: 95,
-					column: 47
-				}
-			},
-			'12': {
-				start: {
-					line: 102,
-					column: 2
-				},
-				end: {
-					line: 104,
-					column: 3
-				}
-			},
-			'13': {
-				start: {
-					line: 103,
-					column: 3
-				},
-				end: {
-					line: 103,
-					column: 82
-				}
-			},
-			'14': {
-				start: {
-					line: 108,
-					column: 15
-				},
-				end: {
-					line: 108,
-					column: 40
-				}
-			},
-			'15': {
-				start: {
-					line: 109,
-					column: 2
-				},
-				end: {
-					line: 111,
-					column: 3
-				}
-			},
-			'16': {
-				start: {
-					line: 110,
-					column: 3
-				},
-				end: {
-					line: 110,
-					column: 34
-				}
-			},
-			'17': {
-				start: {
-					line: 112,
-					column: 2
-				},
-				end: {
-					line: 115,
-					column: 4
-				}
-			},
-			'18': {
-				start: {
-					line: 120,
-					column: 15
-				},
-				end: {
-					line: 120,
-					column: 40
-				}
-			},
-			'19': {
-				start: {
-					line: 121,
-					column: 2
-				},
-				end: {
-					line: 123,
-					column: 3
-				}
-			},
-			'20': {
-				start: {
-					line: 122,
-					column: 3
-				},
-				end: {
-					line: 122,
-					column: 43
-				}
-			},
-			'21': {
-				start: {
-					line: 125,
-					column: 2
-				},
-				end: {
-					line: 125,
-					column: 85
-				}
-			},
-			'22': {
-				start: {
-					line: 129,
-					column: 2
-				},
-				end: {
-					line: 129,
-					column: 21
-				}
-			},
-			'23': {
-				start: {
-					line: 133,
-					column: 2
-				},
-				end: {
-					line: 135,
-					column: 3
-				}
-			},
-			'24': {
-				start: {
-					line: 134,
-					column: 3
-				},
-				end: {
-					line: 134,
-					column: 36
-				}
-			},
-			'25': {
-				start: {
-					line: 137,
-					column: 15
-				},
-				end: {
-					line: 137,
-					column: 40
-				}
-			},
-			'26': {
-				start: {
-					line: 138,
-					column: 17
-				},
-				end: {
-					line: 151,
-					column: 3
-				}
-			},
-			'27': {
-				start: {
-					line: 152,
-					column: 16
-				},
-				end: {
-					line: 165,
-					column: 3
-				}
-			},
-			'28': {
-				start: {
-					line: 166,
-					column: 2
-				},
-				end: {
-					line: 166,
-					column: 27
-				}
-			},
-			'29': {
-				start: {
-					line: 170,
-					column: 2
-				},
-				end: {
-					line: 170,
-					column: 48
-				}
-			},
-			'30': {
-				start: {
-					line: 174,
-					column: 2
-				},
-				end: {
-					line: 174,
-					column: 40
-				}
-			},
-			'31': {
-				start: {
-					line: 178,
-					column: 2
-				},
-				end: {
-					line: 178,
-					column: 72
-				}
-			},
-			'32': {
-				start: {
-					line: 186,
-					column: 2
-				},
-				end: {
-					line: 186,
-					column: 46
-				}
-			},
-			'33': {
-				start: {
-					line: 194,
-					column: 2
-				},
-				end: {
-					line: 195,
-					column: 35
-				}
-			},
-			'34': {
-				start: {
-					line: 199,
-					column: 15
-				},
-				end: {
-					line: 199,
-					column: 40
-				}
-			},
-			'35': {
-				start: {
-					line: 201,
-					column: 2
-				},
-				end: {
-					line: 203,
-					column: 3
-				}
-			},
-			'36': {
-				start: {
-					line: 202,
-					column: 3
-				},
-				end: {
-					line: 202,
-					column: 25
-				}
-			},
-			'37': {
-				start: {
-					line: 205,
-					column: 2
-				},
-				end: {
-					line: 209,
-					column: 4
-				}
-			},
-			'38': {
-				start: {
-					line: 213,
-					column: 15
-				},
-				end: {
-					line: 213,
-					column: 40
-				}
-			},
-			'39': {
-				start: {
-					line: 214,
-					column: 17
-				},
-				end: {
-					line: 217,
-					column: 3
-				}
-			},
-			'40': {
-				start: {
-					line: 218,
-					column: 2
-				},
-				end: {
-					line: 221,
-					column: 6
-				}
-			},
-			'41': {
-				start: {
-					line: 225,
-					column: 2
-				},
-				end: {
-					line: 228,
-					column: 5
-				}
-			},
-			'42': {
-				start: {
-					line: 232,
-					column: 2
-				},
-				end: {
-					line: 235,
-					column: 4
-				}
-			},
-			'43': {
-				start: {
-					line: 239,
-					column: 27
-				},
-				end: {
-					line: 239,
-					column: 37
-				}
-			},
-			'44': {
-				start: {
-					line: 240,
-					column: 16
-				},
-				end: {
-					line: 240,
-					column: 41
-				}
-			},
-			'45': {
-				start: {
-					line: 241,
-					column: 20
-				},
-				end: {
-					line: 244,
-					column: 4
-				}
-			},
-			'46': {
-				start: {
-					line: 245,
-					column: 2
-				},
-				end: {
-					line: 249,
-					column: 4
-				}
-			},
-			'47': {
-				start: {
-					line: 253,
-					column: 2
-				},
-				end: {
-					line: 255,
-					column: 3
-				}
-			},
-			'48': {
-				start: {
-					line: 254,
-					column: 3
-				},
-				end: {
-					line: 254,
-					column: 15
-				}
-			},
-			'49': {
-				start: {
-					line: 257,
-					column: 19
-				},
-				end: {
-					line: 257,
-					column: 44
-				}
-			},
-			'50': {
-				start: {
-					line: 258,
-					column: 19
-				},
-				end: {
-					line: 261,
-					column: 4
-				}
-			},
-			'51': {
-				start: {
-					line: 259,
-					column: 3
-				},
-				end: {
-					line: 260,
-					column: 62
-				}
-			},
-			'52': {
-				start: {
-					line: 262,
-					column: 2
-				},
-				end: {
-					line: 267,
-					column: 3
-				}
-			},
-			'53': {
-				start: {
-					line: 264,
-					column: 17
-				},
-				end: {
-					line: 264,
-					column: 28
-				}
-			},
-			'54': {
-				start: {
-					line: 265,
-					column: 16
-				},
-				end: {
-					line: 265,
-					column: 43
-				}
-			},
-			'55': {
-				start: {
-					line: 266,
-					column: 3
-				},
-				end: {
-					line: 266,
-					column: 26
-				}
-			},
-			'56': {
-				start: {
-					line: 272,
-					column: 20
-				},
-				end: {
-					line: 272,
-					column: 44
-				}
-			},
-			'57': {
-				start: {
-					line: 273,
-					column: 2
-				},
-				end: {
-					line: 273,
-					column: 44
-				}
-			},
-			'58': {
-				start: {
-					line: 277,
-					column: 20
-				},
-				end: {
-					line: 277,
-					column: 44
-				}
-			},
-			'59': {
-				start: {
-					line: 278,
-					column: 2
-				},
-				end: {
-					line: 278,
-					column: 48
-				}
-			},
-			'60': {
-				start: {
-					line: 282,
-					column: 20
-				},
-				end: {
-					line: 282,
-					column: 44
-				}
-			},
-			'61': {
-				start: {
-					line: 284,
-					column: 2
-				},
-				end: {
-					line: 284,
-					column: 46
-				}
-			},
-			'62': {
-				start: {
-					line: 288,
-					column: 20
-				},
-				end: {
-					line: 288,
-					column: 44
-				}
-			},
-			'63': {
-				start: {
-					line: 289,
-					column: 2
-				},
-				end: {
-					line: 289,
-					column: 48
-				}
-			},
-			'64': {
-				start: {
-					line: 293,
-					column: 33
-				},
-				end: {
-					line: 293,
-					column: 43
-				}
-			},
-			'65': {
-				start: {
-					line: 294,
-					column: 2
-				},
-				end: {
-					line: 299,
-					column: 4
-				}
-			},
-			'66': {
-				start: {
-					line: 303,
-					column: 2
-				},
-				end: {
-					line: 305,
-					column: 3
-				}
-			},
-			'67': {
-				start: {
-					line: 304,
-					column: 3
-				},
-				end: {
-					line: 304,
-					column: 15
-				}
-			},
-			'68': {
-				start: {
-					line: 307,
-					column: 2
-				},
-				end: {
-					line: 313,
-					column: 4
-				}
-			},
-			'69': {
-				start: {
-					line: 310,
-					column: 14
-				},
-				end: {
-					line: 310,
-					column: 72
-				}
-			},
-			'70': {
-				start: {
-					line: 312,
-					column: 14
-				},
-				end: {
-					line: 312,
-					column: 49
-				}
-			},
-			'71': {
-				start: {
-					line: 317,
-					column: 43
-				},
-				end: {
-					line: 317,
-					column: 53
-				}
-			},
-			'72': {
-				start: {
-					line: 318,
-					column: 33
-				},
-				end: {
-					line: 318,
-					column: 41
-				}
-			},
-			'73': {
-				start: {
-					line: 319,
-					column: 2
-				},
-				end: {
-					line: 322,
-					column: 4
-				}
-			},
-			'74': {
-				start: {
-					line: 326,
-					column: 16
-				},
-				end: {
-					line: 329,
-					column: 3
-				}
-			},
-			'75': {
-				start: {
-					line: 330,
-					column: 21
-				},
-				end: {
-					line: 334,
-					column: 3
-				}
-			},
-			'76': {
-				start: {
-					line: 335,
-					column: 2
-				},
-				end: {
-					line: 349,
-					column: 4
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: 'invertPoint',
-				decl: {
-					start: {
-						line: 9,
-						column: 9
-					},
-					end: {
-						line: 9,
-						column: 20
-					}
-				},
-				loc: {
-					start: {
-						line: 9,
-						column: 31
-					},
-					end: {
-						line: 11,
-						column: 1
-					}
-				},
-				line: 9
-			},
-			'1': {
-				name: 'sumPoints',
-				decl: {
-					start: {
-						line: 13,
-						column: 9
-					},
-					end: {
-						line: 13,
-						column: 18
-					}
-				},
-				loc: {
-					start: {
-						line: 13,
-						column: 31
-					},
-					end: {
-						line: 15,
-						column: 1
-					}
-				},
-				line: 13
-			},
-			'2': {
-				name: '(anonymous_2)',
-				decl: {
-					start: {
-						line: 14,
-						column: 22
-					},
-					end: {
-						line: 14,
-						column: 23
-					}
-				},
-				loc: {
-					start: {
-						line: 14,
-						column: 44
-					},
-					end: {
-						line: 14,
-						column: 78
-					}
-				},
-				line: 14
-			},
-			'3': {
-				name: '(anonymous_3)',
-				decl: {
-					start: {
-						line: 66,
-						column: 15
-					},
-					end: {
-						line: 66,
-						column: 16
-					}
-				},
-				loc: {
-					start: {
-						line: 66,
-						column: 32
-					},
-					end: {
-						line: 66,
-						column: 67
-					}
-				},
-				line: 66
-			},
-			'4': {
-				name: '(anonymous_4)',
-				decl: {
-					start: {
-						line: 67,
-						column: 16
-					},
-					end: {
-						line: 67,
-						column: 17
-					}
-				},
-				loc: {
-					start: {
-						line: 67,
-						column: 22
-					},
-					end: {
-						line: 67,
-						column: 24
-					}
-				},
-				line: 67
-			},
-			'5': {
-				name: '(anonymous_5)',
-				decl: {
-					start: {
-						line: 68,
-						column: 20
-					},
-					end: {
-						line: 68,
-						column: 21
-					}
-				},
-				loc: {
-					start: {
-						line: 68,
-						column: 26
-					},
-					end: {
-						line: 68,
-						column: 28
-					}
-				},
-				line: 68
-			},
-			'6': {
-				name: '(anonymous_6)',
-				decl: {
-					start: {
-						line: 69,
-						column: 20
-					},
-					end: {
-						line: 69,
-						column: 21
-					}
-				},
-				loc: {
-					start: {
-						line: 69,
-						column: 26
-					},
-					end: {
-						line: 69,
-						column: 28
-					}
-				},
-				line: 69
-			},
-			'7': {
-				name: '(anonymous_7)',
-				decl: {
-					start: {
-						line: 70,
-						column: 18
-					},
-					end: {
-						line: 70,
-						column: 19
-					}
-				},
-				loc: {
-					start: {
-						line: 70,
-						column: 24
-					},
-					end: {
-						line: 70,
-						column: 26
-					}
-				},
-				line: 70
-			},
-			'8': {
-				name: '(anonymous_8)',
-				decl: {
-					start: {
-						line: 73,
-						column: 1
-					},
-					end: {
-						line: 73,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 73,
-						column: 20
-					},
-					end: {
-						line: 77,
-						column: 2
-					}
-				},
-				line: 73
-			},
-			'9': {
-				name: '(anonymous_9)',
-				decl: {
-					start: {
-						line: 79,
-						column: 1
-					},
-					end: {
-						line: 79,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 79,
-						column: 21
-					},
-					end: {
-						line: 99,
-						column: 2
-					}
-				},
-				line: 79
-			},
-			'10': {
-				name: '(anonymous_10)',
-				decl: {
-					start: {
-						line: 90,
-						column: 60
-					},
-					end: {
-						line: 90,
-						column: 61
-					}
-				},
-				loc: {
-					start: {
-						line: 90,
-						column: 69
-					},
-					end: {
-						line: 97,
-						column: 4
-					}
-				},
-				line: 90
-			},
-			'11': {
-				name: '(anonymous_11)',
-				decl: {
-					start: {
-						line: 91,
-						column: 36
-					},
-					end: {
-						line: 91,
-						column: 37
-					}
-				},
-				loc: {
-					start: {
-						line: 91,
-						column: 45
-					},
-					end: {
-						line: 96,
-						column: 5
-					}
-				},
-				line: 91
-			},
-			'12': {
-				name: '(anonymous_12)',
-				decl: {
-					start: {
-						line: 101,
-						column: 1
-					},
-					end: {
-						line: 101,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 101,
-						column: 24
-					},
-					end: {
-						line: 105,
-						column: 2
-					}
-				},
-				line: 101
-			},
-			'13': {
-				name: '(anonymous_13)',
-				decl: {
-					start: {
-						line: 107,
-						column: 1
-					},
-					end: {
-						line: 107,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 107,
-						column: 17
-					},
-					end: {
-						line: 116,
-						column: 2
-					}
-				},
-				line: 107
-			},
-			'14': {
-				name: '(anonymous_14)',
-				decl: {
-					start: {
-						line: 118,
-						column: 1
-					},
-					end: {
-						line: 118,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 118,
-						column: 20
-					},
-					end: {
-						line: 126,
-						column: 2
-					}
-				},
-				line: 118
-			},
-			'15': {
-				name: '(anonymous_15)',
-				decl: {
-					start: {
-						line: 128,
-						column: 29
-					},
-					end: {
-						line: 128,
-						column: 30
-					}
-				},
-				loc: {
-					start: {
-						line: 128,
-						column: 35
-					},
-					end: {
-						line: 130,
-						column: 2
-					}
-				},
-				line: 128
-			},
-			'16': {
-				name: '(anonymous_16)',
-				decl: {
-					start: {
-						line: 132,
-						column: 1
-					},
-					end: {
-						line: 132,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 132,
-						column: 27
-					},
-					end: {
-						line: 167,
-						column: 2
-					}
-				},
-				line: 132
-			},
-			'17': {
-				name: '(anonymous_17)',
-				decl: {
-					start: {
-						line: 169,
-						column: 1
-					},
-					end: {
-						line: 169,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 169,
-						column: 23
-					},
-					end: {
-						line: 171,
-						column: 2
-					}
-				},
-				line: 169
-			},
-			'18': {
-				name: '(anonymous_18)',
-				decl: {
-					start: {
-						line: 173,
-						column: 1
-					},
-					end: {
-						line: 173,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 173,
-						column: 27
-					},
-					end: {
-						line: 175,
-						column: 2
-					}
-				},
-				line: 173
-			},
-			'19': {
-				name: '(anonymous_19)',
-				decl: {
-					start: {
-						line: 177,
-						column: 1
-					},
-					end: {
-						line: 177,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 177,
-						column: 35
-					},
-					end: {
-						line: 179,
-						column: 2
-					}
-				},
-				line: 177
-			},
-			'20': {
-				name: '(anonymous_20)',
-				decl: {
-					start: {
-						line: 185,
-						column: 1
-					},
-					end: {
-						line: 185,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 185,
-						column: 33
-					},
-					end: {
-						line: 187,
-						column: 2
-					}
-				},
-				line: 185
-			},
-			'21': {
-				name: '(anonymous_21)',
-				decl: {
-					start: {
-						line: 193,
-						column: 1
-					},
-					end: {
-						line: 193,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 193,
-						column: 41
-					},
-					end: {
-						line: 196,
-						column: 2
-					}
-				},
-				line: 193
-			},
-			'22': {
-				name: '(anonymous_22)',
-				decl: {
-					start: {
-						line: 198,
-						column: 1
-					},
-					end: {
-						line: 198,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 198,
-						column: 29
-					},
-					end: {
-						line: 210,
-						column: 2
-					}
-				},
-				line: 198
-			},
-			'23': {
-				name: '(anonymous_23)',
-				decl: {
-					start: {
-						line: 212,
-						column: 1
-					},
-					end: {
-						line: 212,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 212,
-						column: 22
-					},
-					end: {
-						line: 222,
-						column: 2
-					}
-				},
-				line: 212
-			},
-			'24': {
-				name: '(anonymous_24)',
-				decl: {
-					start: {
-						line: 224,
-						column: 1
-					},
-					end: {
-						line: 224,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 224,
-						column: 22
-					},
-					end: {
-						line: 229,
-						column: 2
-					}
-				},
-				line: 224
-			},
-			'25': {
-				name: '(anonymous_25)',
-				decl: {
-					start: {
-						line: 231,
-						column: 1
-					},
-					end: {
-						line: 231,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 231,
-						column: 32
-					},
-					end: {
-						line: 236,
-						column: 2
-					}
-				},
-				line: 231
-			},
-			'26': {
-				name: '(anonymous_26)',
-				decl: {
-					start: {
-						line: 238,
-						column: 1
-					},
-					end: {
-						line: 238,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 238,
-						column: 21
-					},
-					end: {
-						line: 250,
-						column: 2
-					}
-				},
-				line: 238
-			},
-			'27': {
-				name: '(anonymous_27)',
-				decl: {
-					start: {
-						line: 252,
-						column: 1
-					},
-					end: {
-						line: 252,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 252,
-						column: 32
-					},
-					end: {
-						line: 268,
-						column: 2
-					}
-				},
-				line: 252
-			},
-			'28': {
-				name: '(anonymous_28)',
-				decl: {
-					start: {
-						line: 258,
-						column: 73
-					},
-					end: {
-						line: 258,
-						column: 74
-					}
-				},
-				loc: {
-					start: {
-						line: 258,
-						column: 82
-					},
-					end: {
-						line: 261,
-						column: 3
-					}
-				},
-				line: 258
-			},
-			'29': {
-				name: '(anonymous_29)',
-				decl: {
-					start: {
-						line: 270,
-						column: 17
-					},
-					end: {
-						line: 270,
-						column: 18
-					}
-				},
-				loc: {
-					start: {
-						line: 270,
-						column: 26
-					},
-					end: {
-						line: 274,
-						column: 2
-					}
-				},
-				line: 270
-			},
-			'30': {
-				name: '(anonymous_30)',
-				decl: {
-					start: {
-						line: 276,
-						column: 21
-					},
-					end: {
-						line: 276,
-						column: 22
-					}
-				},
-				loc: {
-					start: {
-						line: 276,
-						column: 30
-					},
-					end: {
-						line: 279,
-						column: 2
-					}
-				},
-				line: 276
-			},
-			'31': {
-				name: '(anonymous_31)',
-				decl: {
-					start: {
-						line: 281,
-						column: 19
-					},
-					end: {
-						line: 281,
-						column: 20
-					}
-				},
-				loc: {
-					start: {
-						line: 281,
-						column: 28
-					},
-					end: {
-						line: 285,
-						column: 2
-					}
-				},
-				line: 281
-			},
-			'32': {
-				name: '(anonymous_32)',
-				decl: {
-					start: {
-						line: 287,
-						column: 21
-					},
-					end: {
-						line: 287,
-						column: 22
-					}
-				},
-				loc: {
-					start: {
-						line: 287,
-						column: 30
-					},
-					end: {
-						line: 290,
-						column: 2
-					}
-				},
-				line: 287
-			},
-			'33': {
-				name: '(anonymous_33)',
-				decl: {
-					start: {
-						line: 292,
-						column: 1
-					},
-					end: {
-						line: 292,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 292,
-						column: 24
-					},
-					end: {
-						line: 300,
-						column: 2
-					}
-				},
-				line: 292
-			},
-			'34': {
-				name: '(anonymous_34)',
-				decl: {
-					start: {
-						line: 302,
-						column: 16
-					},
-					end: {
-						line: 302,
-						column: 17
-					}
-				},
-				loc: {
-					start: {
-						line: 302,
-						column: 22
-					},
-					end: {
-						line: 314,
-						column: 2
-					}
-				},
-				line: 302
-			},
-			'35': {
-				name: '(anonymous_35)',
-				decl: {
-					start: {
-						line: 310,
-						column: 3
-					},
-					end: {
-						line: 310,
-						column: 4
-					}
-				},
-				loc: {
-					start: {
-						line: 310,
-						column: 14
-					},
-					end: {
-						line: 310,
-						column: 72
-					}
-				},
-				line: 310
-			},
-			'36': {
-				name: '(anonymous_36)',
-				decl: {
-					start: {
-						line: 312,
-						column: 3
-					},
-					end: {
-						line: 312,
-						column: 4
-					}
-				},
-				loc: {
-					start: {
-						line: 312,
-						column: 14
-					},
-					end: {
-						line: 312,
-						column: 49
-					}
-				},
-				line: 312
-			},
-			'37': {
-				name: '(anonymous_37)',
-				decl: {
-					start: {
-						line: 316,
-						column: 1
-					},
-					end: {
-						line: 316,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 316,
-						column: 20
-					},
-					end: {
-						line: 323,
-						column: 2
-					}
-				},
-				line: 316
-			},
-			'38': {
-				name: '(anonymous_38)',
-				decl: {
-					start: {
-						line: 325,
-						column: 1
-					},
-					end: {
-						line: 325,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 325,
-						column: 10
-					},
-					end: {
-						line: 350,
-						column: 2
-					}
-				},
-				line: 325
-			}
-		},
-		branchMap: {
-			'0': {
-				loc: {
-					start: {
-						line: 80,
-						column: 2
-					},
-					end: {
-						line: 98,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 80,
-						column: 2
-					},
-					end: {
-						line: 98,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 80,
-						column: 2
-					},
-					end: {
-						line: 98,
-						column: 3
-					}
-				}],
-				line: 80
-			},
-			'1': {
-				loc: {
-					start: {
-						line: 92,
-						column: 12
-					},
-					end: {
-						line: 95,
-						column: 46
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 92,
-						column: 12
-					},
-					end: {
-						line: 92,
-						column: 49
-					}
-				}, {
-					start: {
-						line: 93,
-						column: 6
-					},
-					end: {
-						line: 93,
-						column: 40
-					}
-				}, {
-					start: {
-						line: 94,
-						column: 6
-					},
-					end: {
-						line: 94,
-						column: 49
-					}
-				}, {
-					start: {
-						line: 95,
-						column: 6
-					},
-					end: {
-						line: 95,
-						column: 46
-					}
-				}],
-				line: 92
-			},
-			'2': {
-				loc: {
-					start: {
-						line: 102,
-						column: 2
-					},
-					end: {
-						line: 104,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 102,
-						column: 2
-					},
-					end: {
-						line: 104,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 102,
-						column: 2
-					},
-					end: {
-						line: 104,
-						column: 3
-					}
-				}],
-				line: 102
-			},
-			'3': {
-				loc: {
-					start: {
-						line: 109,
-						column: 2
-					},
-					end: {
-						line: 111,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 109,
-						column: 2
-					},
-					end: {
-						line: 111,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 109,
-						column: 2
-					},
-					end: {
-						line: 111,
-						column: 3
-					}
-				}],
-				line: 109
-			},
-			'4': {
-				loc: {
-					start: {
-						line: 121,
-						column: 2
-					},
-					end: {
-						line: 123,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 121,
-						column: 2
-					},
-					end: {
-						line: 123,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 121,
-						column: 2
-					},
-					end: {
-						line: 123,
-						column: 3
-					}
-				}],
-				line: 121
-			},
-			'5': {
-				loc: {
-					start: {
-						line: 133,
-						column: 2
-					},
-					end: {
-						line: 135,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 133,
-						column: 2
-					},
-					end: {
-						line: 135,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 133,
-						column: 2
-					},
-					end: {
-						line: 135,
-						column: 3
-					}
-				}],
-				line: 133
-			},
-			'6': {
-				loc: {
-					start: {
-						line: 201,
-						column: 2
-					},
-					end: {
-						line: 203,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 201,
-						column: 2
-					},
-					end: {
-						line: 203,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 201,
-						column: 2
-					},
-					end: {
-						line: 203,
-						column: 3
-					}
-				}],
-				line: 201
-			},
-			'7': {
-				loc: {
-					start: {
-						line: 253,
-						column: 2
-					},
-					end: {
-						line: 255,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 253,
-						column: 2
-					},
-					end: {
-						line: 255,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 253,
-						column: 2
-					},
-					end: {
-						line: 255,
-						column: 3
-					}
-				}],
-				line: 253
-			},
-			'8': {
-				loc: {
-					start: {
-						line: 259,
-						column: 10
-					},
-					end: {
-						line: 260,
-						column: 61
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 259,
-						column: 10
-					},
-					end: {
-						line: 259,
-						column: 56
-					}
-				}, {
-					start: {
-						line: 260,
-						column: 4
-					},
-					end: {
-						line: 260,
-						column: 61
-					}
-				}],
-				line: 259
-			},
-			'9': {
-				loc: {
-					start: {
-						line: 262,
-						column: 2
-					},
-					end: {
-						line: 267,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 262,
-						column: 2
-					},
-					end: {
-						line: 267,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 262,
-						column: 2
-					},
-					end: {
-						line: 267,
-						column: 3
-					}
-				}],
-				line: 262
-			},
-			'10': {
-				loc: {
-					start: {
-						line: 262,
-						column: 6
-					},
-					end: {
-						line: 262,
-						column: 37
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 262,
-						column: 6
-					},
-					end: {
-						line: 262,
-						column: 14
-					}
-				}, {
-					start: {
-						line: 262,
-						column: 18
-					},
-					end: {
-						line: 262,
-						column: 37
-					}
-				}],
-				line: 262
-			},
-			'11': {
-				loc: {
-					start: {
-						line: 303,
-						column: 2
-					},
-					end: {
-						line: 305,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 303,
-						column: 2
-					},
-					end: {
-						line: 305,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 303,
-						column: 2
-					},
-					end: {
-						line: 305,
-						column: 3
-					}
-				}],
-				line: 303
-			},
-			'12': {
-				loc: {
-					start: {
-						line: 344,
-						column: 5
-					},
-					end: {
-						line: 344,
-						column: 60
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 344,
-						column: 5
-					},
-					end: {
-						line: 344,
-						column: 24
-					}
-				}, {
-					start: {
-						line: 344,
-						column: 28
-					},
-					end: {
-						line: 344,
-						column: 60
-					}
-				}],
-				line: 344
-			}
-		},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0,
-			'16': 0,
-			'17': 0,
-			'18': 0,
-			'19': 0,
-			'20': 0,
-			'21': 0,
-			'22': 0,
-			'23': 0,
-			'24': 0,
-			'25': 0,
-			'26': 0,
-			'27': 0,
-			'28': 0,
-			'29': 0,
-			'30': 0,
-			'31': 0,
-			'32': 0,
-			'33': 0,
-			'34': 0,
-			'35': 0,
-			'36': 0,
-			'37': 0,
-			'38': 0,
-			'39': 0,
-			'40': 0,
-			'41': 0,
-			'42': 0,
-			'43': 0,
-			'44': 0,
-			'45': 0,
-			'46': 0,
-			'47': 0,
-			'48': 0,
-			'49': 0,
-			'50': 0,
-			'51': 0,
-			'52': 0,
-			'53': 0,
-			'54': 0,
-			'55': 0,
-			'56': 0,
-			'57': 0,
-			'58': 0,
-			'59': 0,
-			'60': 0,
-			'61': 0,
-			'62': 0,
-			'63': 0,
-			'64': 0,
-			'65': 0,
-			'66': 0,
-			'67': 0,
-			'68': 0,
-			'69': 0,
-			'70': 0,
-			'71': 0,
-			'72': 0,
-			'73': 0,
-			'74': 0,
-			'75': 0,
-			'76': 0
-		},
-		f: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0,
-			'16': 0,
-			'17': 0,
-			'18': 0,
-			'19': 0,
-			'20': 0,
-			'21': 0,
-			'22': 0,
-			'23': 0,
-			'24': 0,
-			'25': 0,
-			'26': 0,
-			'27': 0,
-			'28': 0,
-			'29': 0,
-			'30': 0,
-			'31': 0,
-			'32': 0,
-			'33': 0,
-			'34': 0,
-			'35': 0,
-			'36': 0,
-			'37': 0,
-			'38': 0
-		},
-		b: {
-			'0': [0, 0],
-			'1': [0, 0, 0, 0],
-			'2': [0, 0],
-			'3': [0, 0],
-			'4': [0, 0],
-			'5': [0, 0],
-			'6': [0, 0],
-			'7': [0, 0],
-			'8': [0, 0],
-			'9': [0, 0],
-			'10': [0, 0],
-			'11': [0, 0],
-			'12': [0, 0]
-		},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+exports.default = void 0;
 
 var _react = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 
-var _propTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 
 var _lodash = __webpack_require__(/*! lodash */ "../node_modules/lodash/lodash.js");
 
 var _timespan = __webpack_require__(/*! timespan */ "./timespan.js");
 
-var _block = __webpack_require__(/*! ./block */ "./component/block-graph/block.jsx");
+var _block = _interopRequireDefault(__webpack_require__(/*! ./block */ "./component/block-graph/block.jsx"));
 
-var _block2 = _interopRequireDefault(_block);
-
-var _windower = __webpack_require__(/*! ./windower */ "./component/block-graph/windower.jsx");
-
-var _windower2 = _interopRequireDefault(_windower);
+var _windower = _interopRequireDefault(__webpack_require__(/*! ./windower */ "./component/block-graph/windower.jsx"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } _setPrototypeOf(subClass.prototype, superClass && superClass.prototype); if (superClass) _setPrototypeOf(subClass, superClass); }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.getPrototypeOf || function _getPrototypeOf(o) { return o.__proto__; }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function invertPoint(_ref) {
-	var x = _ref.x,
-	    y = _ref.y;
-	cov_unal0jpdk.f[0]++;
-	cov_unal0jpdk.s[0]++;
-
-	return { x: -x, y: -y };
+  var x = _ref.x,
+      y = _ref.y;
+  return {
+    x: -x,
+    y: -y
+  };
 }
 
 function sumPoints() {
-	cov_unal0jpdk.f[1]++;
-	cov_unal0jpdk.s[1]++;
+  for (var _len = arguments.length, points = new Array(_len), _key = 0; _key < _len; _key++) {
+    points[_key] = arguments[_key];
+  }
 
-	for (var _len = arguments.length, points = Array(_len), _key = 0; _key < _len; _key++) {
-		points[_key] = arguments[_key];
-	}
-
-	return points.reduce(function (_ref2, point) {
-		var x = _ref2.x,
-		    y = _ref2.y;
-		cov_unal0jpdk.f[2]++;
-		cov_unal0jpdk.s[2]++;
-		return { x: x + point.x, y: y + point.y };
-	}, { x: 0, y: 0 });
+  return points.reduce(function (_ref2, point) {
+    var x = _ref2.x,
+        y = _ref2.y;
+    return {
+      x: x + point.x,
+      y: y + point.y
+    };
+  }, {
+    x: 0,
+    y: 0
+  });
 }
 
-var BlockGraph = function (_ref3) {
-	_inherits(BlockGraph, _ref3);
-
-	function BlockGraph(props) {
-		_classCallCheck(this, BlockGraph);
-
-		cov_unal0jpdk.f[8]++;
-		cov_unal0jpdk.s[4]++;
-
-		var _this = _possibleConstructorReturn(this, (BlockGraph.__proto__ || Object.getPrototypeOf(BlockGraph)).call(this, props));
-
-		_this.observeScrolling = (0, _lodash.throttle)(function () {
-			cov_unal0jpdk.f[15]++;
-			cov_unal0jpdk.s[22]++;
-
-			_this.forceUpdate();
-		}, 100);
-
-		_this.handleOnClick = function (event) {
-			cov_unal0jpdk.f[29]++;
-
-			// now we can convert the x to time and the y to a row index
-			var eventData = (cov_unal0jpdk.s[56]++, _this.getEventData(event));
-			cov_unal0jpdk.s[57]++;
-			_this.props.onClickGraph(event, eventData);
-		};
-
-		_this.handleOnMouseDown = function (event) {
-			cov_unal0jpdk.f[30]++;
-
-			var eventData = (cov_unal0jpdk.s[58]++, _this.getEventData(event));
-			cov_unal0jpdk.s[59]++;
-			_this.props.onMouseDownGraph(event, eventData);
-		};
-
-		_this.handleOnMouseUp = function (event) {
-			cov_unal0jpdk.f[31]++;
-
-			var eventData = (cov_unal0jpdk.s[60]++, _this.getEventData(event));
-			// filter to the matching timestamps
-			cov_unal0jpdk.s[61]++;
-			_this.props.onMouseUpGraph(event, eventData);
-		};
-
-		_this.handleOnMouseMove = function (event) {
-			cov_unal0jpdk.f[32]++;
-
-			var eventData = (cov_unal0jpdk.s[62]++, _this.getEventData(event));
-			cov_unal0jpdk.s[63]++;
-			_this.props.onMouseMoveGraph(event, eventData);
-		};
-
-		_this.renderBlocks = function () {
-			cov_unal0jpdk.f[34]++;
-			cov_unal0jpdk.s[66]++;
-
-			if (!_this.state.windower) {
-				cov_unal0jpdk.b[11][0]++;
-				cov_unal0jpdk.s[67]++;
-
-				return null;
-			} else {
-				cov_unal0jpdk.b[11][1]++;
-			}
-			// first ask for all visible windows
-			cov_unal0jpdk.s[68]++;
-			return _this.state.windower.renderVisibleWindows(_this.getCurrentViewPort(),
-			// how to render a block
-			function (block) {
-				cov_unal0jpdk.f[35]++;
-				cov_unal0jpdk.s[69]++;
-				return _this.props.renderBlock(block, _this.getRectForBlock(block));
-			},
-			// how to map a screen coordinate to a time index value
-			function (point) {
-				cov_unal0jpdk.f[36]++;
-				cov_unal0jpdk.s[70]++;
-				return _this.convertPointToTimeIndex(point);
-			});
-		};
-
-		cov_unal0jpdk.s[5]++;
-
-		_this.containerRef = (0, _react.createRef)();
-		cov_unal0jpdk.s[6]++;
-		_this.state = {};
-		return _this;
-	}
-
-	_createClass(BlockGraph, [{
-		key: 'componentDidMount',
-		value: function componentDidMount() {
-			var _this2 = this;
-
-			cov_unal0jpdk.f[9]++;
-			cov_unal0jpdk.s[7]++;
-
-			if (this.containerRef.current) {
-				cov_unal0jpdk.b[0][0]++;
-				cov_unal0jpdk.s[8]++;
-
-				this.containerRef.current.addEventListener('scroll', this.observeScrolling);
-				// Calling setState() in this method will trigger an extra rendering, but it will happen
-				// before the browser updates the screen.
-				//
-				// Use this pattern with caution because it often causes performance issues.
-				//
-				// It can, however, be necessary for cases like modals and tooltips when you need to
-				// measure a DOM node before rendering something that depends on its size or position.
-				// eslint-disable-next-line react/no-did-mount-set-state
-				cov_unal0jpdk.s[9]++;
-				this.setState({ windower: (0, _windower2.default)(this.getWindowSize(), function (range) {
-						cov_unal0jpdk.f[10]++;
-						cov_unal0jpdk.s[10]++;
-
-						return _this2.props.blocks.filter(function (block) {
-							cov_unal0jpdk.f[11]++;
-							cov_unal0jpdk.s[11]++;
-
-							return (cov_unal0jpdk.b[1][0]++, block.row >= range.rowSpan.startIndex) && (cov_unal0jpdk.b[1][1]++, block.row < range.rowSpan.endIndex) && (cov_unal0jpdk.b[1][2]++, block.startTime >= range.timeSpan.startTime) && (cov_unal0jpdk.b[1][3]++, block.startTime < range.timeSpan.endTime);
-						});
-					}) });
-			} else {
-				cov_unal0jpdk.b[0][1]++;
-			}
-		}
-	}, {
-		key: 'componentWillUnmount',
-		value: function componentWillUnmount() {
-			cov_unal0jpdk.f[12]++;
-			cov_unal0jpdk.s[12]++;
-
-			if (this.containerRef.current) {
-				cov_unal0jpdk.b[2][0]++;
-				cov_unal0jpdk.s[13]++;
-
-				this.containerRef.current.removeEventListener('scroll', this.observeScrolling);
-			} else {
-				cov_unal0jpdk.b[2][1]++;
-			}
-		}
-	}, {
-		key: 'getWindowSize',
-		value: function getWindowSize() {
-			cov_unal0jpdk.f[13]++;
-
-			var node = (cov_unal0jpdk.s[14]++, this.containerRef.current);
-			cov_unal0jpdk.s[15]++;
-			if (!node) {
-				cov_unal0jpdk.b[3][0]++;
-				cov_unal0jpdk.s[16]++;
-
-				return { width: 0, height: 0 };
-			} else {
-				cov_unal0jpdk.b[3][1]++;
-			}
-			cov_unal0jpdk.s[17]++;
-			return {
-				width: Math.ceil(node.clientWidth * 2),
-				height: Math.ceil(node.clientHeight * 2)
-			};
-		}
-	}, {
-		key: 'getCurrentWindow',
-		value: function getCurrentWindow() {
-			cov_unal0jpdk.f[14]++;
-
-			// the two points indicating the area of the current window
-			var node = (cov_unal0jpdk.s[18]++, this.containerRef.current);
-			cov_unal0jpdk.s[19]++;
-			if (!node) {
-				cov_unal0jpdk.b[4][0]++;
-				cov_unal0jpdk.s[20]++;
-
-				return [{ x: 0, y: 0 }, { x: 0, y: 0 }];
-			} else {
-				cov_unal0jpdk.b[4][1]++;
-			}
-
-			cov_unal0jpdk.s[21]++;
-			return [{ x: 0, y: 0 }, { x: node.clientWidth * 1.5, y: node.clientHeight * 1.5 }];
-		}
-	}, {
-		key: 'getViewportMeasurements',
-		value: function getViewportMeasurements() {
-			cov_unal0jpdk.f[16]++;
-			cov_unal0jpdk.s[23]++;
-
-			if (!this.containerRef.current) {
-				cov_unal0jpdk.b[5][0]++;
-				cov_unal0jpdk.s[24]++;
-
-				return { pixels: {}, graph: {} };
-			} else {
-				cov_unal0jpdk.b[5][1]++;
-			}
-
-			var node = (cov_unal0jpdk.s[25]++, this.containerRef.current);
-			var pixels = (cov_unal0jpdk.s[26]++, {
-				total: {
-					x: 0,
-					y: 0,
-					width: node.scrollWidth,
-					height: node.scrollHeight
-				},
-				visible: {
-					x: node.scrollLeft,
-					y: node.scrollTop,
-					width: node.clientWidth,
-					height: node.clientHeight
-				}
-			});
-			var graph = (cov_unal0jpdk.s[27]++, {
-				total: {
-					x: this.convertPixelsToAbsoluteSeconds(0),
-					y: 0,
-					width: this.convertPixelsToSeconds(node.scrollWidth),
-					height: this.convertPixelsToRow(node.scrollHeight)
-				},
-				visible: {
-					x: this.convertPixelsToAbsoluteSeconds(node.scrollLeft),
-					y: this.convertPixelsToRow(node.scrollTop),
-					width: this.convertPixelsToSeconds(node.clientWidth),
-					height: this.convertPixelsToRow(node.clientHeight)
-				}
-			});
-			cov_unal0jpdk.s[28]++;
-			return { pixels: pixels, graph: graph };
-		}
-	}, {
-		key: 'convertPixelsToRow',
-		value: function convertPixelsToRow(y) {
-			cov_unal0jpdk.f[17]++;
-			cov_unal0jpdk.s[29]++;
-
-			return Math.floor(y / this.props.rows.height);
-		}
-	}, {
-		key: 'convertPixelsToSeconds',
-		value: function convertPixelsToSeconds(x) {
-			cov_unal0jpdk.f[18]++;
-			cov_unal0jpdk.s[30]++;
-
-			return x / this.props.pixelsPerSecond;
-		}
-	}, {
-		key: 'convertPixelsToAbsoluteSeconds',
-		value: function convertPixelsToAbsoluteSeconds(x) {
-			cov_unal0jpdk.f[19]++;
-			cov_unal0jpdk.s[31]++;
-
-			return this.convertPixelsToSeconds(x) + this.props.timeSpan.startTime;
-		}
-
-		/**
-   * @param {number} seconds - a quantity of seconds
-   * @returns {number} the measurement in pixels that represents the seconds for this graph
-   */
-
-	}, {
-		key: 'convertSecondsToPixels',
-		value: function convertSecondsToPixels(seconds) {
-			cov_unal0jpdk.f[20]++;
-			cov_unal0jpdk.s[32]++;
-
-			return this.props.pixelsPerSecond * seconds;
-		}
-
-		/**
-   * @param {number} seconds - seconds since the epoch
-   * @returns {number} pixel x value that represents that second in this intance of the graph
-   */
-
-	}, {
-		key: 'convertAbsoluteSecondsToPixels',
-		value: function convertAbsoluteSecondsToPixels(seconds) {
-			cov_unal0jpdk.f[21]++;
-			cov_unal0jpdk.s[33]++;
-
-			return this.convertSecondsToPixels(seconds - this.props.timeSpan.startTime) + this.props.chromeOffset.sidebar;
-		}
-	}, {
-		key: 'convertViewPortPoint',
-		value: function convertViewPortPoint(point) {
-			cov_unal0jpdk.f[22]++;
-
-			var node = (cov_unal0jpdk.s[34]++, this.containerRef.current);
-
-			cov_unal0jpdk.s[35]++;
-			if (!node) {
-				cov_unal0jpdk.b[6][0]++;
-				cov_unal0jpdk.s[36]++;
-
-				return { x: 0, y: 0 };
-			} else {
-				cov_unal0jpdk.b[6][1]++;
-			}
-
-			cov_unal0jpdk.s[37]++;
-			return sumPoints(point, invertPoint(node.getBoundingClientRect()), { x: node.scrollLeft, y: node.scrollTop });
-		}
-	}, {
-		key: 'getCurrentViewPort',
-		value: function getCurrentViewPort() {
-			cov_unal0jpdk.f[23]++;
-
-			var node = (cov_unal0jpdk.s[38]++, this.containerRef.current);
-			var origin = (cov_unal0jpdk.s[39]++, {
-				x: node.scrollLeft,
-				y: node.scrollTop
-			});
-			cov_unal0jpdk.s[40]++;
-			return [origin, {
-				x: origin.x + node.clientWidth,
-				y: origin.y + node.clientHeight
-			}];
-		}
-	}, {
-		key: 'getEventPoint',
-		value: function getEventPoint(event) {
-			cov_unal0jpdk.f[24]++;
-			cov_unal0jpdk.s[41]++;
-
-			return this.convertViewPortPoint({
-				x: event.clientX,
-				y: event.clientY
-			});
-		}
-	}, {
-		key: 'convertPointToTimeIndex',
-		value: function convertPointToTimeIndex(point) {
-			cov_unal0jpdk.f[25]++;
-			cov_unal0jpdk.s[42]++;
-
-			return {
-				seconds: this.convertPixelsToAbsoluteSeconds(point.x),
-				row: Math.min(Math.max(0, this.convertPixelsToRow(point.y)), this.props.rows.count)
-			};
-		}
-	}, {
-		key: 'getEventData',
-		value: function getEventData(event) {
-			cov_unal0jpdk.f[26]++;
-
-			var _ref4 = (cov_unal0jpdk.s[43]++, this.props),
-			    chromeOffset = _ref4.chromeOffset;
-
-			var point = (cov_unal0jpdk.s[44]++, this.getEventPoint(event));
-			var timeIndex = (cov_unal0jpdk.s[45]++, this.convertPointToTimeIndex(sumPoints(point, invertPoint({ x: chromeOffset.sidebar, y: chromeOffset.header }))));
-			cov_unal0jpdk.s[46]++;
-			return {
-				timeIndex: timeIndex,
-				point: point,
-				match: this.filterMatchingBlock(timeIndex, point)
-			};
-		}
-	}, {
-		key: 'filterMatchingBlock',
-		value: function filterMatchingBlock(timeIndex) {
-			var _this3 = this;
-
-			cov_unal0jpdk.f[27]++;
-			cov_unal0jpdk.s[47]++;
-
-			if (!this.state.windower) {
-				cov_unal0jpdk.b[7][0]++;
-				cov_unal0jpdk.s[48]++;
-
-				return null;
-			} else {
-				cov_unal0jpdk.b[7][1]++;
-			}
-
-			var viewport = (cov_unal0jpdk.s[49]++, this.getCurrentViewPort());
-			var matching = (cov_unal0jpdk.s[50]++, this.state.windower.getVisibleBlocks(viewport).filter(function (block) {
-				cov_unal0jpdk.f[28]++;
-				cov_unal0jpdk.s[51]++;
-
-				return (cov_unal0jpdk.b[8][0]++, (0, _timespan.timeSpanContainsTime)(block, timeIndex.seconds)) && (cov_unal0jpdk.b[8][1]++, _this3.props.rows.getIndexForBlock(block) === timeIndex.row);
-			}));
-			cov_unal0jpdk.s[52]++;
-			if ((cov_unal0jpdk.b[10][0]++, matching) && (cov_unal0jpdk.b[10][1]++, matching.length > 0)) {
-				cov_unal0jpdk.b[9][0]++;
-
-				// TODO: calculate where the box was clicked
-				var block = (cov_unal0jpdk.s[53]++, matching[0]);
-				var rect = (cov_unal0jpdk.s[54]++, this.getRectForBlock(block));
-				cov_unal0jpdk.s[55]++;
-				return { block: block, rect: rect };
-			} else {
-				cov_unal0jpdk.b[9][1]++;
-			}
-		}
-	}, {
-		key: 'getRectForBlock',
-		value: function getRectForBlock(block) {
-			cov_unal0jpdk.f[33]++;
-
-			var _ref5 = (cov_unal0jpdk.s[64]++, this.props),
-			    rows = _ref5.rows,
-			    chromeOffset = _ref5.chromeOffset;
-
-			cov_unal0jpdk.s[65]++;
-
-			return {
-				x: this.convertAbsoluteSecondsToPixels(block.startTime),
-				width: this.convertSecondsToPixels(block.endTime - block.startTime),
-				y: rows.getIndexForBlock(block) * rows.height + chromeOffset.header,
-				height: rows.height
-			};
-		}
-	}, {
-		key: 'getMaxDimensions',
-		value: function getMaxDimensions() {
-			cov_unal0jpdk.f[37]++;
-
-			var _ref6 = (cov_unal0jpdk.s[71]++, this.props),
-			    timeSpan = _ref6.timeSpan,
-			    chromeOffset = _ref6.chromeOffset,
-			    rows = _ref6.rows;
-
-			var _ref7 = (cov_unal0jpdk.s[72]++, timeSpan),
-			    endTime = _ref7.endTime,
-			    startTime = _ref7.startTime;
-
-			cov_unal0jpdk.s[73]++;
-
-			return {
-				width: this.convertSecondsToPixels(endTime - startTime) + chromeOffset.sidebar,
-				height: rows.count * rows.height + chromeOffset.header
-			};
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			cov_unal0jpdk.f[38]++;
-
-			var style = (cov_unal0jpdk.s[74]++, {
-				position: 'relative',
-				overflow: 'auto'
-			});
-			var graphStyle = (cov_unal0jpdk.s[75]++, _extends({
-				position: 'relative',
-				overflow: 'hidden'
-			}, this.getMaxDimensions()));
-			cov_unal0jpdk.s[76]++;
-			return React.createElement(
-				'div',
-				{
-					style: style,
-					onClick: this.handleOnClick,
-					onMouseMove: this.handleOnMouseMove,
-					onMouseDown: this.handleOnMouseDown,
-					onMouseUp: this.handleOnMouseUp,
-					ref: this.containerRef
-				},
-				(cov_unal0jpdk.b[12][0]++, this.props.children) && (cov_unal0jpdk.b[12][1]++, React.createElement(
-					'div',
-					null,
-					this.props.children
-				)),
-				React.createElement(
-					'div',
-					{ style: graphStyle },
-					this.renderBlocks()
-				)
-			);
-		}
-	}]);
-
-	return BlockGraph;
-}((_react.Component));
-
-BlockGraph.propTypes = {
-	onClickGraph: _propTypes2.default.func,
-	onMouseDownGraph: _propTypes2.default.func,
-	onMouseMoveGraph: _propTypes2.default.func,
-	onMouseUpGraph: _propTypes2.default.func,
-
-	children: _propTypes2.default.any,
-
-	chromeOffset: _propTypes2.default.shape({
-		header: _propTypes2.default.number.isRequired,
-		sidebar: _propTypes2.default.number.isRequired
-	}),
-
-	renderBlock: _propTypes2.default.func.isRequired,
-	/**
-  * A list of items to draw on the screen
-  */
-	blocks: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-		uid: _propTypes2.default.string.isRequired,
-		startTime: _propTypes2.default.number.isRequired,
-		endTime: _propTypes2.default.number.isRequired
-	})).isRequired,
-	/**
-  * The coefficient that converts a measument in seconds into a measurement in pixels
-  */
-	pixelsPerSecond: _propTypes2.default.number.isRequired,
-
-	timeSpan: _propTypes2.default.shape({
-		startTime: _propTypes2.default.number.isRequired,
-		endTime: _propTypes2.default.number.isRequired
-	}).isRequired,
-
-	rows: _propTypes2.default.shape({
-		// tell <BlockGraph> which row a block belongs to
-		getIndexForBlock: _propTypes2.default.func.isRequired,
-		// how tall is a row in pixels
-		height: _propTypes2.default.number.isRequired,
-		// how many rows are there
-		count: _propTypes2.default.number.isRequired
-	}).isRequired
-};
-BlockGraph.defaultProps = {
-	chromeOffset: {
-		header: 0,
-		sidebar: 0
-	},
-	blocks: [],
-	renderBlock: function renderBlock(block, rect) {
-		cov_unal0jpdk.f[3]++;
-		cov_unal0jpdk.s[3]++;
-		return React.createElement(_block2.default, _extends({ key: block.uid }, rect));
-	},
-	onClickGraph: function onClickGraph() {
-		cov_unal0jpdk.f[4]++;
-	},
-	onMouseDownGraph: function onMouseDownGraph() {
-		cov_unal0jpdk.f[5]++;
-	},
-	onMouseMoveGraph: function onMouseMoveGraph() {
-		cov_unal0jpdk.f[6]++;
-	},
-	onMouseUpGraph: function onMouseUpGraph() {
-		cov_unal0jpdk.f[7]++;
-	}
-};
+var BlockGraph =
+/*#__PURE__*/
+function (_Component) {
+  function BlockGraph(props) {
+    var _this;
+
+    _classCallCheck(this, BlockGraph);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(BlockGraph).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "observeScrolling", (0, _lodash.throttle)(function () {
+      _this.forceUpdate();
+    }, 100));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleOnClick", function (event) {
+      // now we can convert the x to time and the y to a row index
+      var eventData = _this.getEventData(event);
+
+      _this.props.onClickGraph(event, eventData);
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleOnMouseDown", function (event) {
+      var eventData = _this.getEventData(event);
+
+      _this.props.onMouseDownGraph(event, eventData);
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleOnMouseUp", function (event) {
+      var eventData = _this.getEventData(event); // filter to the matching timestamps
+
+
+      _this.props.onMouseUpGraph(event, eventData);
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleOnMouseMove", function (event) {
+      var eventData = _this.getEventData(event);
+
+      _this.props.onMouseMoveGraph(event, eventData);
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "renderBlocks", function () {
+      if (!_this.state.windower) {
+        return null;
+      } // first ask for all visible windows
+
+
+      return _this.state.windower.renderVisibleWindows(_this.getCurrentViewPort(), // how to render a block
+      function (block) {
+        return _this.props.renderBlock(block, _this.getRectForBlock(block));
+      }, // how to map a screen coordinate to a time index value
+      function (point) {
+        return _this.convertPointToTimeIndex(point);
+      });
+    });
+
+    _this.containerRef = (0, _react.createRef)();
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(BlockGraph, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      if (this.containerRef.current) {
+        this.containerRef.current.addEventListener('scroll', this.observeScrolling); // Calling setState() in this method will trigger an extra rendering, but it will happen
+        // before the browser updates the screen.
+        //
+        // Use this pattern with caution because it often causes performance issues.
+        //
+        // It can, however, be necessary for cases like modals and tooltips when you need to
+        // measure a DOM node before rendering something that depends on its size or position.
+        // eslint-disable-next-line react/no-did-mount-set-state
+
+        this.setState({
+          windower: (0, _windower.default)(this.getWindowSize(), function (range) {
+            return _this2.props.blocks.filter(function (block) {
+              return block.row >= range.rowSpan.startIndex && block.row < range.rowSpan.endIndex && block.startTime >= range.timeSpan.startTime && block.startTime < range.timeSpan.endTime;
+            });
+          })
+        });
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (this.containerRef.current) {
+        this.containerRef.current.removeEventListener('scroll', this.observeScrolling);
+      }
+    }
+  }, {
+    key: "getWindowSize",
+    value: function getWindowSize() {
+      var node = this.containerRef.current;
+
+      if (!node) {
+        return {
+          width: 0,
+          height: 0
+        };
+      }
+
+      return {
+        width: Math.ceil(node.clientWidth * 2),
+        height: Math.ceil(node.clientHeight * 2)
+      };
+    }
+  }, {
+    key: "getCurrentWindow",
+    value: function getCurrentWindow() {
+      // the two points indicating the area of the current window
+      var node = this.containerRef.current;
+
+      if (!node) {
+        return [{
+          x: 0,
+          y: 0
+        }, {
+          x: 0,
+          y: 0
+        }];
+      }
+
+      return [{
+        x: 0,
+        y: 0
+      }, {
+        x: node.clientWidth * 1.5,
+        y: node.clientHeight * 1.5
+      }];
+    }
+  }, {
+    key: "getViewportMeasurements",
+    value: function getViewportMeasurements() {
+      if (!this.containerRef.current) {
+        return {
+          pixels: {},
+          graph: {}
+        };
+      }
+
+      var node = this.containerRef.current;
+      var pixels = {
+        total: {
+          x: 0,
+          y: 0,
+          width: node.scrollWidth,
+          height: node.scrollHeight
+        },
+        visible: {
+          x: node.scrollLeft,
+          y: node.scrollTop,
+          width: node.clientWidth,
+          height: node.clientHeight
+        }
+      };
+      var graph = {
+        total: {
+          x: this.convertPixelsToAbsoluteSeconds(0),
+          y: 0,
+          width: this.convertPixelsToSeconds(node.scrollWidth),
+          height: this.convertPixelsToRow(node.scrollHeight)
+        },
+        visible: {
+          x: this.convertPixelsToAbsoluteSeconds(node.scrollLeft),
+          y: this.convertPixelsToRow(node.scrollTop),
+          width: this.convertPixelsToSeconds(node.clientWidth),
+          height: this.convertPixelsToRow(node.clientHeight)
+        }
+      };
+      return {
+        pixels: pixels,
+        graph: graph
+      };
+    }
+  }, {
+    key: "convertPixelsToRow",
+    value: function convertPixelsToRow(y) {
+      return Math.floor(y / this.props.rows.height);
+    }
+  }, {
+    key: "convertPixelsToSeconds",
+    value: function convertPixelsToSeconds(x) {
+      return x / this.props.pixelsPerSecond;
+    }
+  }, {
+    key: "convertPixelsToAbsoluteSeconds",
+    value: function convertPixelsToAbsoluteSeconds(x) {
+      return this.convertPixelsToSeconds(x) + this.props.timeSpan.startTime;
+    }
+    /**
+     * @param {number} seconds - a quantity of seconds
+     * @returns {number} the measurement in pixels that represents the seconds for this graph
+     */
+
+  }, {
+    key: "convertSecondsToPixels",
+    value: function convertSecondsToPixels(seconds) {
+      return this.props.pixelsPerSecond * seconds;
+    }
+    /**
+     * @param {number} seconds - seconds since the epoch
+     * @returns {number} pixel x value that represents that second in this intance of the graph
+     */
+
+  }, {
+    key: "convertAbsoluteSecondsToPixels",
+    value: function convertAbsoluteSecondsToPixels(seconds) {
+      return this.convertSecondsToPixels(seconds - this.props.timeSpan.startTime) + this.props.chromeOffset.sidebar;
+    }
+  }, {
+    key: "convertViewPortPoint",
+    value: function convertViewPortPoint(point) {
+      var node = this.containerRef.current;
+
+      if (!node) {
+        return {
+          x: 0,
+          y: 0
+        };
+      }
+
+      return sumPoints(point, invertPoint(node.getBoundingClientRect()), {
+        x: node.scrollLeft,
+        y: node.scrollTop
+      });
+    }
+  }, {
+    key: "getCurrentViewPort",
+    value: function getCurrentViewPort() {
+      var node = this.containerRef.current;
+      var origin = {
+        x: node.scrollLeft,
+        y: node.scrollTop
+      };
+      return [origin, {
+        x: origin.x + node.clientWidth,
+        y: origin.y + node.clientHeight
+      }];
+    }
+  }, {
+    key: "getEventPoint",
+    value: function getEventPoint(event) {
+      return this.convertViewPortPoint({
+        x: event.clientX,
+        y: event.clientY
+      });
+    }
+  }, {
+    key: "convertPointToTimeIndex",
+    value: function convertPointToTimeIndex(point) {
+      return {
+        seconds: this.convertPixelsToAbsoluteSeconds(point.x),
+        row: Math.min(Math.max(0, this.convertPixelsToRow(point.y)), this.props.rows.count)
+      };
+    }
+  }, {
+    key: "getEventData",
+    value: function getEventData(event) {
+      var chromeOffset = this.props.chromeOffset;
+      var point = this.getEventPoint(event);
+      var timeIndex = this.convertPointToTimeIndex(sumPoints(point, invertPoint({
+        x: chromeOffset.sidebar,
+        y: chromeOffset.header
+      })));
+      return {
+        timeIndex: timeIndex,
+        point: point,
+        match: this.filterMatchingBlock(timeIndex, point)
+      };
+    }
+  }, {
+    key: "filterMatchingBlock",
+    value: function filterMatchingBlock(timeIndex) {
+      var _this3 = this;
+
+      if (!this.state.windower) {
+        return null;
+      }
+
+      var viewport = this.getCurrentViewPort();
+      var matching = this.state.windower.getVisibleBlocks(viewport).filter(function (block) {
+        return (0, _timespan.timeSpanContainsTime)(block, timeIndex.seconds) && _this3.props.rows.getIndexForBlock(block) === timeIndex.row;
+      });
+
+      if (matching && matching.length > 0) {
+        // TODO: calculate where the box was clicked
+        var block = matching[0];
+        var rect = this.getRectForBlock(block);
+        return {
+          block: block,
+          rect: rect
+        };
+      }
+    }
+  }, {
+    key: "getRectForBlock",
+    value: function getRectForBlock(block) {
+      var _this$props = this.props,
+          rows = _this$props.rows,
+          chromeOffset = _this$props.chromeOffset;
+      return {
+        x: this.convertAbsoluteSecondsToPixels(block.startTime),
+        width: this.convertSecondsToPixels(block.endTime - block.startTime),
+        y: rows.getIndexForBlock(block) * rows.height + chromeOffset.header,
+        height: rows.height
+      };
+    }
+  }, {
+    key: "getMaxDimensions",
+    value: function getMaxDimensions() {
+      var _this$props2 = this.props,
+          timeSpan = _this$props2.timeSpan,
+          chromeOffset = _this$props2.chromeOffset,
+          rows = _this$props2.rows;
+      var endTime = timeSpan.endTime,
+          startTime = timeSpan.startTime;
+      return {
+        width: this.convertSecondsToPixels(endTime - startTime) + chromeOffset.sidebar,
+        height: rows.count * rows.height + chromeOffset.header
+      };
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var style = {
+        position: 'relative',
+        overflow: 'auto'
+      };
+
+      var graphStyle = _objectSpread({
+        position: 'relative',
+        overflow: 'hidden'
+      }, this.getMaxDimensions());
+
+      return React.createElement("div", {
+        style: style,
+        onClick: this.handleOnClick,
+        onMouseMove: this.handleOnMouseMove,
+        onMouseDown: this.handleOnMouseDown,
+        onMouseUp: this.handleOnMouseUp,
+        ref: this.containerRef
+      }, this.props.children && React.createElement("div", null, this.props.children), React.createElement("div", {
+        style: graphStyle
+      }, this.renderBlocks()));
+    }
+  }]);
+
+  _inherits(BlockGraph, _Component);
+
+  return BlockGraph;
+}(_react.Component);
+
 exports.default = BlockGraph;
+
+_defineProperty(BlockGraph, "propTypes", {
+  onClickGraph: _propTypes.default.func,
+  onMouseDownGraph: _propTypes.default.func,
+  onMouseMoveGraph: _propTypes.default.func,
+  onMouseUpGraph: _propTypes.default.func,
+  children: _propTypes.default.any,
+  chromeOffset: _propTypes.default.shape({
+    header: _propTypes.default.number.isRequired,
+    sidebar: _propTypes.default.number.isRequired
+  }),
+  renderBlock: _propTypes.default.func.isRequired,
+
+  /**
+   * A list of items to draw on the screen
+   */
+  blocks: _propTypes.default.arrayOf(_propTypes.default.shape({
+    uid: _propTypes.default.string.isRequired,
+    startTime: _propTypes.default.number.isRequired,
+    endTime: _propTypes.default.number.isRequired
+  })).isRequired,
+
+  /**
+   * The coefficient that converts a measument in seconds into a measurement in pixels
+   */
+  pixelsPerSecond: _propTypes.default.number.isRequired,
+  timeSpan: _propTypes.default.shape({
+    startTime: _propTypes.default.number.isRequired,
+    endTime: _propTypes.default.number.isRequired
+  }).isRequired,
+  rows: _propTypes.default.shape({
+    // tell <BlockGraph> which row a block belongs to
+    getIndexForBlock: _propTypes.default.func.isRequired,
+    // how tall is a row in pixels
+    height: _propTypes.default.number.isRequired,
+    // how many rows are there
+    count: _propTypes.default.number.isRequired
+  }).isRequired
+});
+
+_defineProperty(BlockGraph, "defaultProps", {
+  chromeOffset: {
+    header: 0,
+    sidebar: 0
+  },
+  blocks: [],
+  renderBlock: function renderBlock(block, rect) {
+    return React.createElement(_block.default, _extends({
+      key: block.uid
+    }, rect));
+  },
+  onClickGraph: function onClickGraph() {},
+  onMouseDownGraph: function onMouseDownGraph() {},
+  onMouseMoveGraph: function onMouseMoveGraph() {},
+  onMouseUpGraph: function onMouseUpGraph() {}
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! react */ "../node_modules/react/index.js")))
 
 /***/ }),
@@ -58559,1141 +55501,169 @@ exports.default = BlockGraph;
 "use strict";
 /* WEBPACK VAR INJECTION */(function(React) {
 
-var cov_10q8rgo8yg = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/block-graph/windower.jsx',
-	    hash = '4185c1985569491f2c7f6f9eed49b37edf5e8487',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/block-graph/windower.jsx',
-		statementMap: {
-			'0': {
-				start: {
-					line: 7,
-					column: 17
-				},
-				end: {
-					line: 7,
-					column: 19
-				}
-			},
-			'1': {
-				start: {
-					line: 9,
-					column: 19
-				},
-				end: {
-					line: 9,
-					column: 44
-				}
-			},
-			'2': {
-				start: {
-					line: 9,
-					column: 33
-				},
-				end: {
-					line: 9,
-					column: 44
-				}
-			},
-			'3': {
-				start: {
-					line: 11,
-					column: 21
-				},
-				end: {
-					line: 13,
-					column: 2
-				}
-			},
-			'4': {
-				start: {
-					line: 12,
-					column: 2
-				},
-				end: {
-					line: 12,
-					column: 33
-				}
-			},
-			'5': {
-				start: {
-					line: 15,
-					column: 24
-				},
-				end: {
-					line: 19,
-					column: 2
-				}
-			},
-			'6': {
-				start: {
-					line: 16,
-					column: 15
-				},
-				end: {
-					line: 16,
-					column: 41
-				}
-			},
-			'7': {
-				start: {
-					line: 17,
-					column: 15
-				},
-				end: {
-					line: 17,
-					column: 42
-				}
-			},
-			'8': {
-				start: {
-					line: 18,
-					column: 2
-				},
-				end: {
-					line: 18,
-					column: 50
-				}
-			},
-			'9': {
-				start: {
-					line: 21,
-					column: 25
-				},
-				end: {
-					line: 26,
-					column: 2
-				}
-			},
-			'10': {
-				start: {
-					line: 22,
-					column: 2
-				},
-				end: {
-					line: 25,
-					column: 4
-				}
-			},
-			'11': {
-				start: {
-					line: 28,
-					column: 31
-				},
-				end: {
-					line: 36,
-					column: 2
-				}
-			},
-			'12': {
-				start: {
-					line: 29,
-					column: 2
-				},
-				end: {
-					line: 35,
-					column: 5
-				}
-			},
-			'13': {
-				start: {
-					line: 38,
-					column: 21
-				},
-				end: {
-					line: 38,
-					column: 53
-				}
-			},
-			'14': {
-				start: {
-					line: 38,
-					column: 36
-				},
-				end: {
-					line: 38,
-					column: 52
-				}
-			},
-			'15': {
-				start: {
-					line: 40,
-					column: 19
-				},
-				end: {
-					line: 45,
-					column: 19
-				}
-			},
-			'16': {
-				start: {
-					line: 40,
-					column: 34
-				},
-				end: {
-					line: 45,
-					column: 19
-				}
-			},
-			'17': {
-				start: {
-					line: 41,
-					column: 2
-				},
-				end: {
-					line: 44,
-					column: 4
-				}
-			},
-			'18': {
-				start: {
-					line: 47,
-					column: 24
-				},
-				end: {
-					line: 53,
-					column: 2
-				}
-			},
-			'19': {
-				start: {
-					line: 48,
-					column: 15
-				},
-				end: {
-					line: 48,
-					column: 45
-				}
-			},
-			'20': {
-				start: {
-					line: 49,
-					column: 2
-				},
-				end: {
-					line: 52,
-					column: 4
-				}
-			},
-			'21': {
-				start: {
-					line: 55,
-					column: 20
-				},
-				end: {
-					line: 68,
-					column: 2
-				}
-			},
-			'22': {
-				start: {
-					line: 56,
-					column: 17
-				},
-				end: {
-					line: 56,
-					column: 19
-				}
-			},
-			'23': {
-				start: {
-					line: 57,
-					column: 17
-				},
-				end: {
-					line: 57,
-					column: 48
-				}
-			},
-			'24': {
-				start: {
-					line: 58,
-					column: 18
-				},
-				end: {
-					line: 58,
-					column: 26
-				}
-			},
-			'25': {
-				start: {
-					line: 59,
-					column: 2
-				},
-				end: {
-					line: 66,
-					column: 3
-				}
-			},
-			'26': {
-				start: {
-					line: 60,
-					column: 3
-				},
-				end: {
-					line: 63,
-					column: 4
-				}
-			},
-			'27': {
-				start: {
-					line: 61,
-					column: 4
-				},
-				end: {
-					line: 61,
-					column: 58
-				}
-			},
-			'28': {
-				start: {
-					line: 62,
-					column: 4
-				},
-				end: {
-					line: 62,
-					column: 35
-				}
-			},
-			'29': {
-				start: {
-					line: 64,
-					column: 3
-				},
-				end: {
-					line: 64,
-					column: 19
-				}
-			},
-			'30': {
-				start: {
-					line: 65,
-					column: 3
-				},
-				end: {
-					line: 65,
-					column: 33
-				}
-			},
-			'31': {
-				start: {
-					line: 67,
-					column: 2
-				},
-				end: {
-					line: 67,
-					column: 16
-				}
-			},
-			'32': {
-				start: {
-					line: 70,
-					column: 1
-				},
-				end: {
-					line: 99,
-					column: 3
-				}
-			},
-			'33': {
-				start: {
-					line: 73,
-					column: 20
-				},
-				end: {
-					line: 76,
-					column: 5
-				}
-			},
-			'34': {
-				start: {
-					line: 74,
-					column: 18
-				},
-				end: {
-					line: 74,
-					column: 45
-				}
-			},
-			'35': {
-				start: {
-					line: 75,
-					column: 4
-				},
-				end: {
-					line: 75,
-					column: 17
-				}
-			},
-			'36': {
-				start: {
-					line: 77,
-					column: 3
-				},
-				end: {
-					line: 79,
-					column: 10
-				}
-			},
-			'37': {
-				start: {
-					line: 78,
-					column: 4
-				},
-				end: {
-					line: 78,
-					column: 35
-				}
-			},
-			'38': {
-				start: {
-					line: 82,
-					column: 3
-				},
-				end: {
-					line: 97,
-					column: 6
-				}
-			},
-			'39': {
-				start: {
-					line: 83,
-					column: 18
-				},
-				end: {
-					line: 86,
-					column: 5
-				}
-			},
-			'40': {
-				start: {
-					line: 87,
-					column: 19
-				},
-				end: {
-					line: 90,
-					column: 6
-				}
-			},
-			'41': {
-				start: {
-					line: 91,
-					column: 4
-				},
-				end: {
-					line: 91,
-					column: 27
-				}
-			},
-			'42': {
-				start: {
-					line: 92,
-					column: 4
-				},
-				end: {
-					line: 96,
-					column: 6
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: '(anonymous_0)',
-				decl: {
-					start: {
-						line: 6,
-						column: 15
-					},
-					end: {
-						line: 6,
-						column: 16
-					}
-				},
-				loc: {
-					start: {
-						line: 6,
-						column: 43
-					},
-					end: {
-						line: 100,
-						column: 1
-					}
-				},
-				line: 6
-			},
-			'1': {
-				name: '(anonymous_1)',
-				decl: {
-					start: {
-						line: 9,
-						column: 19
-					},
-					end: {
-						line: 9,
-						column: 20
-					}
-				},
-				loc: {
-					start: {
-						line: 9,
-						column: 33
-					},
-					end: {
-						line: 9,
-						column: 44
-					}
-				},
-				line: 9
-			},
-			'2': {
-				name: '(anonymous_2)',
-				decl: {
-					start: {
-						line: 11,
-						column: 21
-					},
-					end: {
-						line: 11,
-						column: 22
-					}
-				},
-				loc: {
-					start: {
-						line: 11,
-						column: 36
-					},
-					end: {
-						line: 13,
-						column: 2
-					}
-				},
-				line: 11
-			},
-			'3': {
-				name: '(anonymous_3)',
-				decl: {
-					start: {
-						line: 15,
-						column: 24
-					},
-					end: {
-						line: 15,
-						column: 25
-					}
-				},
-				loc: {
-					start: {
-						line: 15,
-						column: 33
-					},
-					end: {
-						line: 19,
-						column: 2
-					}
-				},
-				line: 15
-			},
-			'4': {
-				name: '(anonymous_4)',
-				decl: {
-					start: {
-						line: 21,
-						column: 25
-					},
-					end: {
-						line: 21,
-						column: 26
-					}
-				},
-				loc: {
-					start: {
-						line: 21,
-						column: 39
-					},
-					end: {
-						line: 26,
-						column: 2
-					}
-				},
-				line: 21
-			},
-			'5': {
-				name: '(anonymous_5)',
-				decl: {
-					start: {
-						line: 28,
-						column: 31
-					},
-					end: {
-						line: 28,
-						column: 32
-					}
-				},
-				loc: {
-					start: {
-						line: 28,
-						column: 43
-					},
-					end: {
-						line: 36,
-						column: 2
-					}
-				},
-				line: 28
-			},
-			'6': {
-				name: '(anonymous_6)',
-				decl: {
-					start: {
-						line: 38,
-						column: 21
-					},
-					end: {
-						line: 38,
-						column: 22
-					}
-				},
-				loc: {
-					start: {
-						line: 38,
-						column: 36
-					},
-					end: {
-						line: 38,
-						column: 52
-					}
-				},
-				line: 38
-			},
-			'7': {
-				name: '(anonymous_7)',
-				decl: {
-					start: {
-						line: 40,
-						column: 19
-					},
-					end: {
-						line: 40,
-						column: 20
-					}
-				},
-				loc: {
-					start: {
-						line: 40,
-						column: 34
-					},
-					end: {
-						line: 45,
-						column: 19
-					}
-				},
-				line: 40
-			},
-			'8': {
-				name: '(anonymous_8)',
-				decl: {
-					start: {
-						line: 40,
-						column: 48
-					},
-					end: {
-						line: 40,
-						column: 49
-					}
-				},
-				loc: {
-					start: {
-						line: 40,
-						column: 69
-					},
-					end: {
-						line: 45,
-						column: 2
-					}
-				},
-				line: 40
-			},
-			'9': {
-				name: '(anonymous_9)',
-				decl: {
-					start: {
-						line: 47,
-						column: 24
-					},
-					end: {
-						line: 47,
-						column: 25
-					}
-				},
-				loc: {
-					start: {
-						line: 47,
-						column: 40
-					},
-					end: {
-						line: 53,
-						column: 2
-					}
-				},
-				line: 47
-			},
-			'10': {
-				name: '(anonymous_10)',
-				decl: {
-					start: {
-						line: 55,
-						column: 20
-					},
-					end: {
-						line: 55,
-						column: 21
-					}
-				},
-				loc: {
-					start: {
-						line: 55,
-						column: 44
-					},
-					end: {
-						line: 68,
-						column: 2
-					}
-				},
-				line: 55
-			},
-			'11': {
-				name: '(anonymous_11)',
-				decl: {
-					start: {
-						line: 72,
-						column: 20
-					},
-					end: {
-						line: 72,
-						column: 21
-					}
-				},
-				loc: {
-					start: {
-						line: 72,
-						column: 34
-					},
-					end: {
-						line: 80,
-						column: 3
-					}
-				},
-				line: 72
-			},
-			'12': {
-				name: '(anonymous_12)',
-				decl: {
-					start: {
-						line: 73,
-						column: 57
-					},
-					end: {
-						line: 73,
-						column: 58
-					}
-				},
-				loc: {
-					start: {
-						line: 73,
-						column: 64
-					},
-					end: {
-						line: 76,
-						column: 4
-					}
-				},
-				line: 73
-			},
-			'13': {
-				name: '(anonymous_13)',
-				decl: {
-					start: {
-						line: 77,
-						column: 26
-					},
-					end: {
-						line: 77,
-						column: 27
-					}
-				},
-				loc: {
-					start: {
-						line: 77,
-						column: 48
-					},
-					end: {
-						line: 79,
-						column: 4
-					}
-				},
-				line: 77
-			},
-			'14': {
-				name: '(anonymous_14)',
-				decl: {
-					start: {
-						line: 81,
-						column: 24
-					},
-					end: {
-						line: 81,
-						column: 25
-					}
-				},
-				loc: {
-					start: {
-						line: 81,
-						column: 65
-					},
-					end: {
-						line: 98,
-						column: 3
-					}
-				},
-				line: 81
-			},
-			'15': {
-				name: '(anonymous_15)',
-				decl: {
-					start: {
-						line: 82,
-						column: 47
-					},
-					end: {
-						line: 82,
-						column: 48
-					}
-				},
-				loc: {
-					start: {
-						line: 82,
-						column: 54
-					},
-					end: {
-						line: 97,
-						column: 4
-					}
-				},
-				line: 82
-			}
-		},
-		branchMap: {
-			'0': {
-				loc: {
-					start: {
-						line: 74,
-						column: 18
-					},
-					end: {
-						line: 74,
-						column: 45
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 74,
-						column: 18
-					},
-					end: {
-						line: 74,
-						column: 39
-					}
-				}, {
-					start: {
-						line: 74,
-						column: 43
-					},
-					end: {
-						line: 74,
-						column: 45
-					}
-				}],
-				line: 74
-			}
-		},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0,
-			'16': 0,
-			'17': 0,
-			'18': 0,
-			'19': 0,
-			'20': 0,
-			'21': 0,
-			'22': 0,
-			'23': 0,
-			'24': 0,
-			'25': 0,
-			'26': 0,
-			'27': 0,
-			'28': 0,
-			'29': 0,
-			'30': 0,
-			'31': 0,
-			'32': 0,
-			'33': 0,
-			'34': 0,
-			'35': 0,
-			'36': 0,
-			'37': 0,
-			'38': 0,
-			'39': 0,
-			'40': 0,
-			'41': 0,
-			'42': 0
-		},
-		f: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0
-		},
-		b: {
-			'0': [0, 0]
-		},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+exports.default = void 0;
 
 var _react = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 /**
  * Two dimensional windower.
  */
-exports.default = function (windowSize, datasource) {
-	cov_10q8rgo8yg.f[0]++;
+var _default = function _default(windowSize, datasource) {
+  var windows = {};
 
-	var windows = (cov_10q8rgo8yg.s[0]++, {});
+  var windowKey = function windowKey(_ref) {
+    var x = _ref.x,
+        y = _ref.y;
+    return "".concat(x, "-").concat(y);
+  };
 
-	cov_10q8rgo8yg.s[1]++;
-	var windowKey = function windowKey(_ref) {
-		var x = _ref.x,
-		    y = _ref.y;
-		cov_10q8rgo8yg.f[1]++;
-		cov_10q8rgo8yg.s[2]++;
-		return x + '-' + y;
-	};
+  var indexBlocks = function indexBlocks(w, blocks) {
+    windows[windowKey(w)] = blocks;
+  };
 
-	cov_10q8rgo8yg.s[3]++;
-	var indexBlocks = function indexBlocks(w, blocks) {
-		cov_10q8rgo8yg.f[2]++;
-		cov_10q8rgo8yg.s[4]++;
+  var windowForPoint = function windowForPoint(point) {
+    var modX = point.x % windowSize.width;
+    var modY = point.y % windowSize.height;
+    return {
+      x: point.x - modX,
+      y: point.y - modY
+    };
+  };
 
-		windows[windowKey(w)] = blocks;
-	};
+  var translateWindow = function translateWindow(_ref2) {
+    var x = _ref2.x,
+        y = _ref2.y;
+    return {
+      x: windowSize.width + x,
+      y: windowSize.height + y
+    };
+  };
 
-	cov_10q8rgo8yg.s[5]++;
-	var windowForPoint = function windowForPoint(point) {
-		cov_10q8rgo8yg.f[3]++;
+  var snapViewPortToWindows = function snapViewPortToWindows(_ref3) {
+    var _ref4 = _slicedToArray(_ref3, 2),
+        a = _ref4[0],
+        b = _ref4[1];
 
-		var modX = (cov_10q8rgo8yg.s[6]++, point.x % windowSize.width);
-		var modY = (cov_10q8rgo8yg.s[7]++, point.y % windowSize.height);
-		cov_10q8rgo8yg.s[8]++;
-		return { x: point.x - modX, y: point.y - modY };
-	};
+    return [{
+      x: Math.floor(a.x / windowSize.width) * windowSize.width,
+      y: Math.floor(a.y / windowSize.height) * windowSize.height
+    }, {
+      x: Math.ceil(b.x / windowSize.width) * windowSize.width,
+      y: Math.ceil(b.y / windowSize.height) * windowSize.height
+    }];
+  };
 
-	cov_10q8rgo8yg.s[9]++;
-	var translateWindow = function translateWindow(_ref2) {
-		var x = _ref2.x,
-		    y = _ref2.y;
-		cov_10q8rgo8yg.f[4]++;
-		cov_10q8rgo8yg.s[10]++;
+  var invertPoint = function invertPoint(_ref5) {
+    var x = _ref5.x,
+        y = _ref5.y;
+    return {
+      x: -x,
+      y: -y
+    };
+  };
 
-		return {
-			x: windowSize.width + x,
-			y: windowSize.height + y
-		};
-	};
+  var sumPoints = function sumPoints() {
+    for (var _len = arguments.length, points = new Array(_len), _key = 0; _key < _len; _key++) {
+      points[_key] = arguments[_key];
+    }
 
-	cov_10q8rgo8yg.s[11]++;
-	var snapViewPortToWindows = function snapViewPortToWindows(_ref3) {
-		var _ref4 = _slicedToArray(_ref3, 2),
-		    a = _ref4[0],
-		    b = _ref4[1];
+    return points.reduce(function (_ref6, point) {
+      var x = _ref6.x,
+          y = _ref6.y;
+      return {
+        x: x + point.x,
+        y: y + point.y
+      };
+    }, {
+      x: 0,
+      y: 0
+    });
+  };
 
-		cov_10q8rgo8yg.f[5]++;
-		cov_10q8rgo8yg.s[12]++;
+  var expandViewport = function expandViewport(_ref7) {
+    var _ref8 = _slicedToArray(_ref7, 2),
+        p1 = _ref8[0],
+        p2 = _ref8[1];
 
-		return [{
-			x: Math.floor(a.x / windowSize.width) * windowSize.width,
-			y: Math.floor(a.y / windowSize.height) * windowSize.height
-		}, {
-			x: Math.ceil(b.x / windowSize.width) * windowSize.width,
-			y: Math.ceil(b.y / windowSize.height) * windowSize.height
-		}];
-	};
+    var size = sumPoints(invertPoint(p1), p2);
+    return [sumPoints(p1, invertPoint(size)), sumPoints(p2, size)];
+  };
 
-	cov_10q8rgo8yg.s[13]++;
-	var invertPoint = function invertPoint(_ref5) {
-		var x = _ref5.x,
-		    y = _ref5.y;
-		cov_10q8rgo8yg.f[6]++;
-		cov_10q8rgo8yg.s[14]++;
-		return { x: -x, y: -y };
-	};
+  var mapWindows = function mapWindows(viewport, iterator) {
+    var result = [];
 
-	cov_10q8rgo8yg.s[15]++;
-	var sumPoints = function sumPoints() {
-		for (var _len = arguments.length, points = Array(_len), _key = 0; _key < _len; _key++) {
-			points[_key] = arguments[_key];
-		}
+    var _snapViewPortToWindow = snapViewPortToWindows(viewport),
+        _snapViewPortToWindow2 = _slicedToArray(_snapViewPortToWindow, 2),
+        a = _snapViewPortToWindow2[0],
+        b = _snapViewPortToWindow2[1];
 
-		cov_10q8rgo8yg.f[7]++;
-		cov_10q8rgo8yg.s[16]++;
-		return points.reduce(function (_ref6, point) {
-			var x = _ref6.x,
-			    y = _ref6.y;
-			cov_10q8rgo8yg.f[8]++;
-			cov_10q8rgo8yg.s[17]++;
+    var current = _objectSpread({}, a);
 
-			return {
-				x: x + point.x,
-				y: y + point.y
-			};
-		}, { x: 0, y: 0 });
-	};
+    while (current.x < b.x) {
+      while (current.y < b.y) {
+        result.push(iterator({
+          x: current.x,
+          y: current.y
+        }));
+        current.y += windowSize.height;
+      }
 
-	cov_10q8rgo8yg.s[18]++;
-	var expandViewport = function expandViewport(_ref7) {
-		var _ref8 = _slicedToArray(_ref7, 2),
-		    p1 = _ref8[0],
-		    p2 = _ref8[1];
+      current.y = a.y;
+      current.x += windowSize.width;
+    }
 
-		cov_10q8rgo8yg.f[9]++;
+    return result;
+  };
 
-		var size = (cov_10q8rgo8yg.s[19]++, sumPoints(invertPoint(p1), p2));
-		cov_10q8rgo8yg.s[20]++;
-		return [sumPoints(p1, invertPoint(size)), sumPoints(p2, size)];
-	};
-
-	cov_10q8rgo8yg.s[21]++;
-	var mapWindows = function mapWindows(viewport, iterator) {
-		cov_10q8rgo8yg.f[10]++;
-
-		var result = (cov_10q8rgo8yg.s[22]++, []);
-
-		var _ref9 = (cov_10q8rgo8yg.s[23]++, snapViewPortToWindows(viewport)),
-		    _ref10 = _slicedToArray(_ref9, 2),
-		    a = _ref10[0],
-		    b = _ref10[1];
-
-		var current = (cov_10q8rgo8yg.s[24]++, _extends({}, a));
-		cov_10q8rgo8yg.s[25]++;
-		while (current.x < b.x) {
-			cov_10q8rgo8yg.s[26]++;
-
-			while (current.y < b.y) {
-				cov_10q8rgo8yg.s[27]++;
-
-				result.push(iterator({ x: current.x, y: current.y }));
-				cov_10q8rgo8yg.s[28]++;
-				current.y += windowSize.height;
-			}
-			cov_10q8rgo8yg.s[29]++;
-			current.y = a.y;
-			cov_10q8rgo8yg.s[30]++;
-			current.x += windowSize.width;
-		}
-		cov_10q8rgo8yg.s[31]++;
-		return result;
-	};
-
-	cov_10q8rgo8yg.s[32]++;
-	return {
-		windowForPoint: windowForPoint,
-		getVisibleBlocks: function getVisibleBlocks(viewport) {
-			cov_10q8rgo8yg.f[11]++;
-
-			var windowed = (cov_10q8rgo8yg.s[33]++, mapWindows(expandViewport(viewport), function (w) {
-				cov_10q8rgo8yg.f[12]++;
-
-				var cache = (cov_10q8rgo8yg.s[34]++, (cov_10q8rgo8yg.b[0][0]++, windows[windowKey(w)]) || (cov_10q8rgo8yg.b[0][1]++, []));
-				cov_10q8rgo8yg.s[35]++;
-				return cache;
-			}));
-			cov_10q8rgo8yg.s[36]++;
-			return windowed.reduce(function (flattened, items) {
-				cov_10q8rgo8yg.f[13]++;
-				cov_10q8rgo8yg.s[37]++;
-
-				return flattened.concat(items);
-			}, []);
-		},
-		renderVisibleWindows: function renderVisibleWindows(viewport, renderBlock, convertPoint) {
-			cov_10q8rgo8yg.f[14]++;
-			cov_10q8rgo8yg.s[38]++;
-
-			return mapWindows(expandViewport(viewport), function (w) {
-				cov_10q8rgo8yg.f[15]++;
-
-				var range = (cov_10q8rgo8yg.s[39]++, [convertPoint(w), convertPoint(translateWindow(w))]);
-				var blocks = (cov_10q8rgo8yg.s[40]++, datasource({
-					timeSpan: { startTime: range[0].seconds, endTime: range[1].seconds },
-					rowSpan: { startIndex: range[0].row, endIndex: range[1].row }
-				}));
-				cov_10q8rgo8yg.s[41]++;
-				indexBlocks(w, blocks);
-				cov_10q8rgo8yg.s[42]++;
-				return React.createElement(
-					_react.Fragment,
-					{ key: windowKey(w) },
-					blocks.map(renderBlock)
-				);
-			});
-		}
-	};
+  return {
+    windowForPoint: windowForPoint,
+    getVisibleBlocks: function getVisibleBlocks(viewport) {
+      var windowed = mapWindows(expandViewport(viewport), function (w) {
+        var cache = windows[windowKey(w)] || [];
+        return cache;
+      });
+      return windowed.reduce(function (flattened, items) {
+        return flattened.concat(items);
+      }, []);
+    },
+    renderVisibleWindows: function renderVisibleWindows(viewport, renderBlock, convertPoint) {
+      return mapWindows(expandViewport(viewport), function (w) {
+        var range = [convertPoint(w), convertPoint(translateWindow(w))];
+        var blocks = datasource({
+          timeSpan: {
+            startTime: range[0].seconds,
+            endTime: range[1].seconds
+          },
+          rowSpan: {
+            startIndex: range[0].row,
+            endIndex: range[1].row
+          }
+        });
+        indexBlocks(w, blocks);
+        return React.createElement(_react.Fragment, {
+          key: windowKey(w)
+        }, blocks.map(renderBlock));
+      });
+    }
+  };
 };
+
+exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! react */ "../node_modules/react/index.js")))
 
 /***/ }),
@@ -59708,1123 +55678,54 @@ exports.default = function (windowSize, datasource) {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(React) {
 
-var cov_111lrwsabt = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/block-graph/with-gestures.jsx',
-	    hash = 'd241e3daa7b19499af62facc1421938ddba3f8bc',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/block-graph/with-gestures.jsx',
-		statementMap: {
-			'0': {
-				start: {
-					line: 11,
-					column: 1
-				},
-				end: {
-					line: 11,
-					column: 77
-				}
-			},
-			'1': {
-				start: {
-					line: 15,
-					column: 1
-				},
-				end: {
-					line: 21,
-					column: 3
-				}
-			},
-			'2': {
-				start: {
-					line: 16,
-					column: 18
-				},
-				end: {
-					line: 16,
-					column: 59
-				}
-			},
-			'3': {
-				start: {
-					line: 17,
-					column: 2
-				},
-				end: {
-					line: 19,
-					column: 3
-				}
-			},
-			'4': {
-				start: {
-					line: 18,
-					column: 3
-				},
-				end: {
-					line: 18,
-					column: 40
-				}
-			},
-			'5': {
-				start: {
-					line: 20,
-					column: 2
-				},
-				end: {
-					line: 20,
-					column: 39
-				}
-			},
-			'6': {
-				start: {
-					line: 24,
-					column: 29
-				},
-				end: {
-					line: 24,
-					column: 89
-				}
-			},
-			'7': {
-				start: {
-					line: 24,
-					column: 41
-				},
-				end: {
-					line: 24,
-					column: 89
-				}
-			},
-			'8': {
-				start: {
-					line: 24,
-					column: 81
-				},
-				end: {
-					line: 24,
-					column: 88
-				}
-			},
-			'9': {
-				start: {
-					line: 26,
-					column: 27
-				},
-				end: {
-					line: 31,
-					column: 1
-				}
-			},
-			'10': {
-				start: {
-					line: 38,
-					column: 56
-				},
-				end: {
-					line: 38,
-					column: 60
-				}
-			},
-			'11': {
-				start: {
-					line: 49,
-					column: 39
-				},
-				end: {
-					line: 49,
-					column: 60
-				}
-			},
-			'12': {
-				start: {
-					line: 52,
-					column: 36
-				},
-				end: {
-					line: 57,
-					column: 3
-				}
-			},
-			'13': {
-				start: {
-					line: 55,
-					column: 3
-				},
-				end: {
-					line: 55,
-					column: 35
-				}
-			},
-			'14': {
-				start: {
-					line: 56,
-					column: 3
-				},
-				end: {
-					line: 56,
-					column: 90
-				}
-			},
-			'15': {
-				start: {
-					line: 60,
-					column: 3
-				},
-				end: {
-					line: 60,
-					column: 16
-				}
-			},
-			'16': {
-				start: {
-					line: 61,
-					column: 3
-				},
-				end: {
-					line: 61,
-					column: 19
-				}
-			},
-			'17': {
-				start: {
-					line: 62,
-					column: 3
-				},
-				end: {
-					line: 62,
-					column: 31
-				}
-			},
-			'18': {
-				start: {
-					line: 66,
-					column: 3
-				},
-				end: {
-					line: 71,
-					column: 4
-				}
-			},
-			'19': {
-				start: {
-					line: 67,
-					column: 37
-				},
-				end: {
-					line: 67,
-					column: 47
-				}
-			},
-			'20': {
-				start: {
-					line: 68,
-					column: 4
-				},
-				end: {
-					line: 70,
-					column: 7
-				}
-			},
-			'21': {
-				start: {
-					line: 69,
-					column: 5
-				},
-				end: {
-					line: 69,
-					column: 42
-				}
-			},
-			'22': {
-				start: {
-					line: 84,
-					column: 7
-				},
-				end: {
-					line: 84,
-					column: 17
-				}
-			},
-			'23': {
-				start: {
-					line: 86,
-					column: 20
-				},
-				end: {
-					line: 91,
-					column: 4
-				}
-			},
-			'24': {
-				start: {
-					line: 93,
-					column: 23
-				},
-				end: {
-					line: 93,
-					column: 33
-				}
-			},
-			'25': {
-				start: {
-					line: 95,
-					column: 35
-				},
-				end: {
-					line: 95,
-					column: 64
-				}
-			},
-			'26': {
-				start: {
-					line: 96,
-					column: 23
-				},
-				end: {
-					line: 96,
-					column: 96
-				}
-			},
-			'27': {
-				start: {
-					line: 98,
-					column: 3
-				},
-				end: {
-					line: 102,
-					column: 5
-				}
-			},
-			'28': {
-				start: {
-					line: 105,
-					column: 1
-				},
-				end: {
-					line: 105,
-					column: 74
-				}
-			},
-			'29': {
-				start: {
-					line: 106,
-					column: 1
-				},
-				end: {
-					line: 106,
-					column: 21
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: 'getDisplayName',
-				decl: {
-					start: {
-						line: 10,
-						column: 9
-					},
-					end: {
-						line: 10,
-						column: 23
-					}
-				},
-				loc: {
-					start: {
-						line: 10,
-						column: 42
-					},
-					end: {
-						line: 12,
-						column: 1
-					}
-				},
-				line: 10
-			},
-			'1': {
-				name: 'matchType',
-				decl: {
-					start: {
-						line: 14,
-						column: 16
-					},
-					end: {
-						line: 14,
-						column: 25
-					}
-				},
-				loc: {
-					start: {
-						line: 14,
-						column: 61
-					},
-					end: {
-						line: 22,
-						column: 1
-					}
-				},
-				line: 14
-			},
-			'2': {
-				name: '(anonymous_2)',
-				decl: {
-					start: {
-						line: 14,
-						column: 51
-					},
-					end: {
-						line: 14,
-						column: 52
-					}
-				},
-				loc: {
-					start: {
-						line: 14,
-						column: 57
-					},
-					end: {
-						line: 14,
-						column: 59
-					}
-				},
-				line: 14
-			},
-			'3': {
-				name: '(anonymous_3)',
-				decl: {
-					start: {
-						line: 15,
-						column: 8
-					},
-					end: {
-						line: 15,
-						column: 9
-					}
-				},
-				loc: {
-					start: {
-						line: 15,
-						column: 39
-					},
-					end: {
-						line: 21,
-						column: 2
-					}
-				},
-				line: 15
-			},
-			'4': {
-				name: '(anonymous_4)',
-				decl: {
-					start: {
-						line: 24,
-						column: 29
-					},
-					end: {
-						line: 24,
-						column: 30
-					}
-				},
-				loc: {
-					start: {
-						line: 24,
-						column: 41
-					},
-					end: {
-						line: 24,
-						column: 89
-					}
-				},
-				line: 24
-			},
-			'5': {
-				name: '(anonymous_5)',
-				decl: {
-					start: {
-						line: 24,
-						column: 61
-					},
-					end: {
-						line: 24,
-						column: 62
-					}
-				},
-				loc: {
-					start: {
-						line: 24,
-						column: 81
-					},
-					end: {
-						line: 24,
-						column: 88
-					}
-				},
-				line: 24
-			},
-			'6': {
-				name: 'withGestures',
-				decl: {
-					start: {
-						line: 38,
-						column: 24
-					},
-					end: {
-						line: 38,
-						column: 36
-					}
-				},
-				loc: {
-					start: {
-						line: 38,
-						column: 62
-					},
-					end: {
-						line: 107,
-						column: 1
-					}
-				},
-				line: 38
-			},
-			'7': {
-				name: '(anonymous_7)',
-				decl: {
-					start: {
-						line: 38,
-						column: 50
-					},
-					end: {
-						line: 38,
-						column: 51
-					}
-				},
-				loc: {
-					start: {
-						line: 38,
-						column: 56
-					},
-					end: {
-						line: 38,
-						column: 60
-					}
-				},
-				line: 38
-			},
-			'8': {
-				name: '(anonymous_8)',
-				decl: {
-					start: {
-						line: 48,
-						column: 20
-					},
-					end: {
-						line: 48,
-						column: 21
-					}
-				},
-				loc: {
-					start: {
-						line: 48,
-						column: 26
-					},
-					end: {
-						line: 48,
-						column: 28
-					}
-				},
-				line: 48
-			},
-			'9': {
-				name: '(anonymous_9)',
-				decl: {
-					start: {
-						line: 49,
-						column: 17
-					},
-					end: {
-						line: 49,
-						column: 18
-					}
-				},
-				loc: {
-					start: {
-						line: 49,
-						column: 39
-					},
-					end: {
-						line: 49,
-						column: 60
-					}
-				},
-				line: 49
-			},
-			'10': {
-				name: '(anonymous_10)',
-				decl: {
-					start: {
-						line: 52,
-						column: 11
-					},
-					end: {
-						line: 52,
-						column: 12
-					}
-				},
-				loc: {
-					start: {
-						line: 52,
-						column: 36
-					},
-					end: {
-						line: 57,
-						column: 3
-					}
-				},
-				line: 52
-			},
-			'11': {
-				name: '(anonymous_11)',
-				decl: {
-					start: {
-						line: 52,
-						column: 36
-					},
-					end: {
-						line: 52,
-						column: 37
-					}
-				},
-				loc: {
-					start: {
-						line: 52,
-						column: 58
-					},
-					end: {
-						line: 57,
-						column: 3
-					}
-				},
-				line: 52
-			},
-			'12': {
-				name: '(anonymous_12)',
-				decl: {
-					start: {
-						line: 59,
-						column: 2
-					},
-					end: {
-						line: 59,
-						column: 3
-					}
-				},
-				loc: {
-					start: {
-						line: 59,
-						column: 21
-					},
-					end: {
-						line: 63,
-						column: 3
-					}
-				},
-				line: 59
-			},
-			'13': {
-				name: '(anonymous_13)',
-				decl: {
-					start: {
-						line: 65,
-						column: 2
-					},
-					end: {
-						line: 65,
-						column: 3
-					}
-				},
-				loc: {
-					start: {
-						line: 65,
-						column: 35
-					},
-					end: {
-						line: 72,
-						column: 3
-					}
-				},
-				line: 65
-			},
-			'14': {
-				name: '(anonymous_14)',
-				decl: {
-					start: {
-						line: 68,
-						column: 70
-					},
-					end: {
-						line: 68,
-						column: 71
-					}
-				},
-				loc: {
-					start: {
-						line: 68,
-						column: 83
-					},
-					end: {
-						line: 70,
-						column: 5
-					}
-				},
-				line: 68
-			},
-			'15': {
-				name: '(anonymous_15)',
-				decl: {
-					start: {
-						line: 74,
-						column: 2
-					},
-					end: {
-						line: 74,
-						column: 3
-					}
-				},
-				loc: {
-					start: {
-						line: 74,
-						column: 11
-					},
-					end: {
-						line: 103,
-						column: 3
-					}
-				},
-				line: 74
-			}
-		},
-		branchMap: {
-			'0': {
-				loc: {
-					start: {
-						line: 11,
-						column: 8
-					},
-					end: {
-						line: 11,
-						column: 76
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 11,
-						column: 8
-					},
-					end: {
-						line: 11,
-						column: 36
-					}
-				}, {
-					start: {
-						line: 11,
-						column: 40
-					},
-					end: {
-						line: 11,
-						column: 61
-					}
-				}, {
-					start: {
-						line: 11,
-						column: 65
-					},
-					end: {
-						line: 11,
-						column: 76
-					}
-				}],
-				line: 11
-			},
-			'1': {
-				loc: {
-					start: {
-						line: 14,
-						column: 26
-					},
-					end: {
-						line: 14,
-						column: 39
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 14,
-						column: 37
-					},
-					end: {
-						line: 14,
-						column: 39
-					}
-				}],
-				line: 14
-			},
-			'2': {
-				loc: {
-					start: {
-						line: 14,
-						column: 41
-					},
-					end: {
-						line: 14,
-						column: 59
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 14,
-						column: 51
-					},
-					end: {
-						line: 14,
-						column: 59
-					}
-				}],
-				line: 14
-			},
-			'3': {
-				loc: {
-					start: {
-						line: 16,
-						column: 18
-					},
-					end: {
-						line: 16,
-						column: 59
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 16,
-						column: 18
-					},
-					end: {
-						line: 16,
-						column: 29
-					}
-				}, {
-					start: {
-						line: 16,
-						column: 33
-					},
-					end: {
-						line: 16,
-						column: 59
-					}
-				}],
-				line: 16
-			},
-			'4': {
-				loc: {
-					start: {
-						line: 17,
-						column: 2
-					},
-					end: {
-						line: 19,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 17,
-						column: 2
-					},
-					end: {
-						line: 19,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 17,
-						column: 2
-					},
-					end: {
-						line: 19,
-						column: 3
-					}
-				}],
-				line: 17
-			},
-			'5': {
-				loc: {
-					start: {
-						line: 17,
-						column: 6
-					},
-					end: {
-						line: 17,
-						column: 46
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 17,
-						column: 6
-					},
-					end: {
-						line: 17,
-						column: 13
-					}
-				}, {
-					start: {
-						line: 17,
-						column: 17
-					},
-					end: {
-						line: 17,
-						column: 46
-					}
-				}],
-				line: 17
-			},
-			'6': {
-				loc: {
-					start: {
-						line: 38,
-						column: 37
-					},
-					end: {
-						line: 38,
-						column: 60
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 38,
-						column: 50
-					},
-					end: {
-						line: 38,
-						column: 60
-					}
-				}],
-				line: 38
-			},
-			'7': {
-				loc: {
-					start: {
-						line: 66,
-						column: 3
-					},
-					end: {
-						line: 71,
-						column: 4
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 66,
-						column: 3
-					},
-					end: {
-						line: 71,
-						column: 4
-					}
-				}, {
-					start: {
-						line: 66,
-						column: 3
-					},
-					end: {
-						line: 71,
-						column: 4
-					}
-				}],
-				line: 66
-			},
-			'8': {
-				loc: {
-					start: {
-						line: 96,
-						column: 23
-					},
-					end: {
-						line: 96,
-						column: 96
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 96,
-						column: 57
-					},
-					end: {
-						line: 96,
-						column: 84
-					}
-				}, {
-					start: {
-						line: 96,
-						column: 87
-					},
-					end: {
-						line: 96,
-						column: 96
-					}
-				}],
-				line: 96
-			},
-			'9': {
-				loc: {
-					start: {
-						line: 96,
-						column: 23
-					},
-					end: {
-						line: 96,
-						column: 54
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 96,
-						column: 23
-					},
-					end: {
-						line: 96,
-						column: 31
-					}
-				}, {
-					start: {
-						line: 96,
-						column: 35
-					},
-					end: {
-						line: 96,
-						column: 54
-					}
-				}],
-				line: 96
-			}
-		},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0,
-			'16': 0,
-			'17': 0,
-			'18': 0,
-			'19': 0,
-			'20': 0,
-			'21': 0,
-			'22': 0,
-			'23': 0,
-			'24': 0,
-			'25': 0,
-			'26': 0,
-			'27': 0,
-			'28': 0,
-			'29': 0
-		},
-		f: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0
-		},
-		b: {
-			'0': [0, 0, 0],
-			'1': [0],
-			'2': [0],
-			'3': [0, 0],
-			'4': [0, 0],
-			'5': [0, 0],
-			'6': [0],
-			'7': [0, 0],
-			'8': [0, 0],
-			'9': [0, 0]
-		},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
-exports.EVENT_TYPES = exports.recognizeType = undefined;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 exports.matchType = matchType;
 exports.default = withGestures;
+exports.EVENT_TYPES = exports.recognizeType = void 0;
 
 var _react = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 
-var _propTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _index = __webpack_require__(/*! ./index */ "./component/block-graph/index.jsx");
-
-var _index2 = _interopRequireDefault(_index);
+var _index = _interopRequireDefault(__webpack_require__(/*! ./index */ "./component/block-graph/index.jsx"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } _setPrototypeOf(subClass.prototype, superClass && superClass.prototype); if (superClass) _setPrototypeOf(subClass, superClass); }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.getPrototypeOf || function _getPrototypeOf(o) { return o.__proto__; }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 /**
  * Updates display name of wrapped component for easier debugging.
@@ -60832,197 +55733,151 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
  * @returns {string} new display name to use for debug output
  */
 function getDisplayName(WrappedComponent) {
-	cov_111lrwsabt.f[0]++;
-	cov_111lrwsabt.s[0]++;
-
-	return (cov_111lrwsabt.b[0][0]++, WrappedComponent.displayName) || (cov_111lrwsabt.b[0][1]++, WrappedComponent.name) || (cov_111lrwsabt.b[0][2]++, 'Component');
+  return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 }
 
 function matchType() {
-	var matchers = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : (cov_111lrwsabt.b[1][0]++, {});
-	var noMatch = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : (cov_111lrwsabt.b[2][0]++, function () {
-		cov_111lrwsabt.f[2]++;
-	});
-	cov_111lrwsabt.f[1]++;
-	cov_111lrwsabt.s[1]++;
+  var matchers = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var noMatch = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {};
+  return function (typedObject) {
+    var matched = typedObject && matchers[typedObject.type];
 
-	return function (typedObject) {
-		cov_111lrwsabt.f[3]++;
+    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
 
-		var matched = (cov_111lrwsabt.s[2]++, (cov_111lrwsabt.b[3][0]++, typedObject) && (cov_111lrwsabt.b[3][1]++, matchers[typedObject.type]));
-		cov_111lrwsabt.s[3]++;
+    if (matched && typeof matched === 'function') {
+      return matched.apply(void 0, [typedObject].concat(args));
+    }
 
-		for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-			args[_key - 1] = arguments[_key];
-		}
-
-		if ((cov_111lrwsabt.b[5][0]++, matched) && (cov_111lrwsabt.b[5][1]++, typeof matched === 'function')) {
-			cov_111lrwsabt.b[4][0]++;
-			cov_111lrwsabt.s[4]++;
-
-			return matched.apply(undefined, [typedObject].concat(args));
-		} else {
-			cov_111lrwsabt.b[4][1]++;
-		}
-		cov_111lrwsabt.s[5]++;
-		return noMatch.apply(undefined, [typedObject].concat(args));
-	};
+    return noMatch.apply(void 0, [typedObject].concat(args));
+  };
 }
 
-cov_111lrwsabt.s[6]++;
-var recognizeType = exports.recognizeType = function recognizeType(matchers) {
-	cov_111lrwsabt.f[4]++;
-	cov_111lrwsabt.s[7]++;
-	return matchType(matchers, function (event, gesture) {
-		cov_111lrwsabt.f[5]++;
-		cov_111lrwsabt.s[8]++;
-		return gesture;
-	});
+var recognizeType = function recognizeType(matchers) {
+  return matchType(matchers, function (event, gesture) {
+    return gesture;
+  });
 };
 
-var EVENT_TYPES = exports.EVENT_TYPES = (cov_111lrwsabt.s[9]++, {
-	MOVE: 'click',
-	MOUSEDOWN: 'mousedown',
-	MOUSEMOVE: 'mousemove',
-	MOUSEUP: 'mouseup'
-});
-
+exports.recognizeType = recognizeType;
+var EVENT_TYPES = {
+  MOVE: 'click',
+  MOUSEDOWN: 'mousedown',
+  MOUSEMOVE: 'mousemove',
+  MOUSEUP: 'mouseup'
+};
 /**
  * @param {Function} recognizer - transforms a gesture into a new gesture
  * @param {Function} applier - produces new block state based on the current gesture
  * @returns {Component} component with gesture recognizers
  */
+
+exports.EVENT_TYPES = EVENT_TYPES;
+
 function withGestures() {
-	var recognizer = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : (cov_111lrwsabt.b[6][0]++, function () {
-		cov_111lrwsabt.f[7]++;
-		cov_111lrwsabt.s[10]++;
-		return null;
-	});
-	cov_111lrwsabt.f[6]++;
+  var recognizer = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : function () {
+    return null;
+  };
 
-	var WithGestures = function (_ref) {
-		_inherits(WithGestures, _ref);
+  var WithGestures =
+  /*#__PURE__*/
+  function (_Component) {
+    function WithGestures(props) {
+      var _this;
 
-		function WithGestures(props) {
-			_classCallCheck(this, WithGestures);
+      _classCallCheck(this, WithGestures);
 
-			cov_111lrwsabt.f[12]++;
-			cov_111lrwsabt.s[15]++;
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(WithGestures).call(this, props));
 
-			var _this = _possibleConstructorReturn(this, (WithGestures.__proto__ || Object.getPrototypeOf(WithGestures)).call(this, props));
+      _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handle", function (type, parentHandler) {
+        return function (event, graphData) {
+          // console.log('do it', type, timeIndex, blocks.length);
+          // TODO: allow parent handler to do something?
+          parentHandler(event, graphData);
 
-			_this.handle = function (type, parentHandler) {
-				cov_111lrwsabt.f[10]++;
-				cov_111lrwsabt.s[12]++;
-				return function (event, graphData) {
-					cov_111lrwsabt.f[11]++;
-					cov_111lrwsabt.s[13]++;
+          _this.setState({
+            gesture: recognizer({
+              type: type,
+              event: event,
+              graphData: graphData
+            }, _this.state.gesture)
+          });
+        };
+      });
 
-					// console.log('do it', type, timeIndex, blocks.length);
-					// TODO: allow parent handler to do something?
-					parentHandler(event, graphData);
-					cov_111lrwsabt.s[14]++;
-					_this.setState({ gesture: recognizer({ type: type, event: event, graphData: graphData }, _this.state.gesture) });
-				};
-			};
+      _this.state = {};
+      _this.graphRef = (0, _react.createRef)();
+      return _this;
+    }
 
-			cov_111lrwsabt.s[16]++;
+    _createClass(WithGestures, [{
+      key: "componentDidUpdate",
+      value: function componentDidUpdate(_, prevState) {
+        if (prevState.gesture !== this.state.gesture) {
+          var _this$props = this.props,
+              applyGesture = _this$props.applyGesture,
+              blocks = _this$props.blocks;
+          this.props.onGestureChange(this.state.gesture, prevState.gesture, function (gesture) {
+            return applyGesture(gesture, blocks);
+          });
+        }
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var _this$props2 = this.props,
+            onClickGraph = _this$props2.onClickGraph,
+            onMouseDownGraph = _this$props2.onMouseDownGraph,
+            onMouseMoveGraph = _this$props2.onMouseMoveGraph,
+            onMouseUpGraph = _this$props2.onMouseUpGraph,
+            blocks = _this$props2.blocks,
+            applyGesture = _this$props2.applyGesture,
+            onGestureChange = _this$props2.onGestureChange,
+            subProps = _objectWithoutProperties(_this$props2, ["onClickGraph", "onMouseDownGraph", "onMouseMoveGraph", "onMouseUpGraph", "blocks", "applyGesture", "onGestureChange"]);
 
-			_this.state = {};
-			cov_111lrwsabt.s[17]++;
-			_this.graphRef = (0, _react.createRef)();
-			return _this;
-		}
+        var handlers = {
+          onClickGraph: this.handle(EVENT_TYPES.CLICK, onClickGraph),
+          onMouseDownGraph: this.handle(EVENT_TYPES.MOUSEDOWN, onMouseDownGraph),
+          onMouseMoveGraph: this.handle(EVENT_TYPES.MOUSEMOVE, onMouseMoveGraph),
+          onMouseUpGraph: this.handle(EVENT_TYPES.MOUSEUP, onMouseUpGraph)
+        };
+        var gesture = this.state.gesture; // const [visible, other] = splitBy(block => true, blocks);
 
-		_createClass(WithGestures, [{
-			key: 'componentDidUpdate',
-			value: function componentDidUpdate(_, prevState) {
-				cov_111lrwsabt.f[13]++;
-				cov_111lrwsabt.s[18]++;
+        var _applyGesture = applyGesture(gesture, blocks),
+            unchanged = _applyGesture.unchanged,
+            modified = _applyGesture.modified;
 
-				if (prevState.gesture !== this.state.gesture) {
-					cov_111lrwsabt.b[7][0]++;
+        var graphBlocks = modified && modified.length > 0 ? _toConsumableArray(modified).concat(_toConsumableArray(unchanged)) : unchanged;
+        return React.createElement(_index.default, _extends({
+          ref: this.graphRef
+        }, handlers, subProps, {
+          blocks: graphBlocks
+        }), this.props.children);
+      }
+    }]);
 
-					var _ref2 = (cov_111lrwsabt.s[19]++, this.props),
-					    applyGesture = _ref2.applyGesture,
-					    blocks = _ref2.blocks;
+    _inherits(WithGestures, _Component);
 
-					cov_111lrwsabt.s[20]++;
+    return WithGestures;
+  }(_react.Component);
 
-					this.props.onGestureChange(this.state.gesture, prevState.gesture, function (gesture) {
-						cov_111lrwsabt.f[14]++;
-						cov_111lrwsabt.s[21]++;
+  _defineProperty(WithGestures, "propTypes", _objectSpread({}, _index.default.propTypes, {
+    onGestureChange: _propTypes.default.func,
+    applyGesture: _propTypes.default.func
+  }));
 
-						return applyGesture(gesture, blocks);
-					});
-				} else {
-					cov_111lrwsabt.b[7][1]++;
-				}
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-				cov_111lrwsabt.f[15]++;
+  _defineProperty(WithGestures, "defaultProps", _objectSpread({}, _index.default.defaultProps, {
+    onGestureChange: function onGestureChange() {},
+    applyGesture: function applyGesture(gesture, blocks) {
+      return {
+        unchanged: blocks
+      };
+    }
+  }));
 
-				var _ref3 = (cov_111lrwsabt.s[22]++, this.props),
-				    onClickGraph = _ref3.onClickGraph,
-				    onMouseDownGraph = _ref3.onMouseDownGraph,
-				    onMouseMoveGraph = _ref3.onMouseMoveGraph,
-				    onMouseUpGraph = _ref3.onMouseUpGraph,
-				    blocks = _ref3.blocks,
-				    applyGesture = _ref3.applyGesture,
-				    onGestureChange = _ref3.onGestureChange,
-				    subProps = _objectWithoutProperties(_ref3, ['onClickGraph', 'onMouseDownGraph', 'onMouseMoveGraph', 'onMouseUpGraph', 'blocks', 'applyGesture', 'onGestureChange']);
-
-				var handlers = (cov_111lrwsabt.s[23]++, {
-					onClickGraph: this.handle(EVENT_TYPES.CLICK, onClickGraph),
-					onMouseDownGraph: this.handle(EVENT_TYPES.MOUSEDOWN, onMouseDownGraph),
-					onMouseMoveGraph: this.handle(EVENT_TYPES.MOUSEMOVE, onMouseMoveGraph),
-					onMouseUpGraph: this.handle(EVENT_TYPES.MOUSEUP, onMouseUpGraph)
-				});
-
-				var _ref4 = (cov_111lrwsabt.s[24]++, this.state),
-				    gesture = _ref4.gesture;
-				// const [visible, other] = splitBy(block => true, blocks);
-
-
-				var _ref5 = (cov_111lrwsabt.s[25]++, applyGesture(gesture, blocks)),
-				    unchanged = _ref5.unchanged,
-				    modified = _ref5.modified;
-
-				var graphBlocks = (cov_111lrwsabt.s[26]++, (cov_111lrwsabt.b[9][0]++, modified) && (cov_111lrwsabt.b[9][1]++, modified.length > 0) ? (cov_111lrwsabt.b[8][0]++, [].concat(_toConsumableArray(modified), _toConsumableArray(unchanged))) : (cov_111lrwsabt.b[8][1]++, unchanged));
-
-				cov_111lrwsabt.s[27]++;
-				return React.createElement(
-					_index2.default,
-					_extends({ ref: this.graphRef }, handlers, subProps, { blocks: graphBlocks }),
-					this.props.children
-				);
-			}
-		}]);
-
-		return WithGestures;
-	}((_react.Component));
-
-	WithGestures.propTypes = _extends({}, _index2.default.propTypes, {
-		onGestureChange: _propTypes2.default.func,
-		applyGesture: _propTypes2.default.func
-	});
-	WithGestures.defaultProps = _extends({}, _index2.default.defaultProps, {
-		onGestureChange: function onGestureChange() {
-			cov_111lrwsabt.f[8]++;
-		},
-		applyGesture: function applyGesture(gesture, blocks) {
-			cov_111lrwsabt.f[9]++;
-			cov_111lrwsabt.s[11]++;
-			return { unchanged: blocks };
-		}
-	});
-	cov_111lrwsabt.s[28]++;
-
-	WithGestures.displayName = 'WithGestures(' + getDisplayName(_index2.default) + ')';
-	cov_111lrwsabt.s[29]++;
-	return WithGestures;
+  WithGestures.displayName = "WithGestures(".concat(getDisplayName(_index.default), ")");
+  return WithGestures;
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! react */ "../node_modules/react/index.js")))
 
@@ -61038,307 +55893,90 @@ function withGestures() {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(React) {
 
-var cov_2b0neuj9j4 = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/demos/availability/index.jsx',
-	    hash = '00388e7b08dec4f12ee47f4dbdbd2a6f4907d9c9',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/demos/availability/index.jsx',
-		statementMap: {
-			'0': {
-				start: {
-					line: 6,
-					column: 19
-				},
-				end: {
-					line: 8,
-					column: 1
-				}
-			},
-			'1': {
-				start: {
-					line: 7,
-					column: 1
-				},
-				end: {
-					line: 7,
-					column: 13
-				}
-			},
-			'2': {
-				start: {
-					line: 10,
-					column: 23
-				},
-				end: {
-					line: 12,
-					column: 1
-				}
-			},
-			'3': {
-				start: {
-					line: 11,
-					column: 1
-				},
-				end: {
-					line: 11,
-					column: 15
-				}
-			},
-			'4': {
-				start: {
-					line: 14,
-					column: 21
-				},
-				end: {
-					line: 14,
-					column: 45
-				}
-			},
-			'5': {
-				start: {
-					line: 18,
-					column: 2
-				},
-				end: {
-					line: 42,
-					column: 4
-				}
-			},
-			'6': {
-				start: {
-					line: 35,
-					column: 6
-				},
-				end: {
-					line: 35,
-					column: 15
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: '(anonymous_0)',
-				decl: {
-					start: {
-						line: 6,
-						column: 19
-					},
-					end: {
-						line: 6,
-						column: 20
-					}
-				},
-				loc: {
-					start: {
-						line: 6,
-						column: 39
-					},
-					end: {
-						line: 8,
-						column: 1
-					}
-				},
-				line: 6
-			},
-			'1': {
-				name: '(anonymous_1)',
-				decl: {
-					start: {
-						line: 10,
-						column: 23
-					},
-					end: {
-						line: 10,
-						column: 24
-					}
-				},
-				loc: {
-					start: {
-						line: 10,
-						column: 44
-					},
-					end: {
-						line: 12,
-						column: 1
-					}
-				},
-				line: 10
-			},
-			'2': {
-				name: '(anonymous_2)',
-				decl: {
-					start: {
-						line: 17,
-						column: 1
-					},
-					end: {
-						line: 17,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 17,
-						column: 10
-					},
-					end: {
-						line: 43,
-						column: 2
-					}
-				},
-				line: 17
-			},
-			'3': {
-				name: '(anonymous_3)',
-				decl: {
-					start: {
-						line: 34,
-						column: 23
-					},
-					end: {
-						line: 34,
-						column: 24
-					}
-				},
-				loc: {
-					start: {
-						line: 34,
-						column: 32
-					},
-					end: {
-						line: 36,
-						column: 6
-					}
-				},
-				line: 34
-			}
-		},
-		branchMap: {},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0
-		},
-		f: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0
-		},
-		b: {},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+exports.default = void 0;
 
 var _react = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 
-var _withGestures = __webpack_require__(/*! component/block-graph/with-gestures */ "./component/block-graph/with-gestures.jsx");
-
-var _withGestures2 = _interopRequireDefault(_withGestures);
+var _withGestures = _interopRequireDefault(__webpack_require__(/*! component/block-graph/with-gestures */ "./component/block-graph/with-gestures.jsx"));
 
 var _timespan = __webpack_require__(/*! timespan */ "./timespan.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } _setPrototypeOf(subClass.prototype, superClass && superClass.prototype); if (superClass) _setPrototypeOf(subClass, superClass); }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-cov_2b0neuj9j4.s[0]++;
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.getPrototypeOf || function _getPrototypeOf(o) { return o.__proto__; }; return _getPrototypeOf(o); }
 
 var recognizer = function recognizer(event, gesture) {
-	cov_2b0neuj9j4.f[0]++;
-	cov_2b0neuj9j4.s[1]++;
-
-	return null;
+  return null;
 };
 
-cov_2b0neuj9j4.s[2]++;
 var gestureApplier = function gestureApplier(gesture, blocks) {
-	cov_2b0neuj9j4.f[1]++;
-	cov_2b0neuj9j4.s[3]++;
-
-	return blocks;
+  return blocks;
 };
 
-var GestureGraph = (cov_2b0neuj9j4.s[4]++, (0, _withGestures2.default)(recognizer));
+var GestureGraph = (0, _withGestures.default)(recognizer);
 
-var AvailabilityPlanner = function (_ref) {
-	_inherits(AvailabilityPlanner, _ref);
+var AvailabilityPlanner =
+/*#__PURE__*/
+function (_Component) {
+  function AvailabilityPlanner() {
+    _classCallCheck(this, AvailabilityPlanner);
 
-	function AvailabilityPlanner() {
-		_classCallCheck(this, AvailabilityPlanner);
+    return _possibleConstructorReturn(this, _getPrototypeOf(AvailabilityPlanner).apply(this, arguments));
+  }
 
-		return _possibleConstructorReturn(this, (AvailabilityPlanner.__proto__ || Object.getPrototypeOf(AvailabilityPlanner)).apply(this, arguments));
-	}
+  _createClass(AvailabilityPlanner, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(GestureGraph, {
+        timeSpan: {
+          startTime: 0,
+          endTime: _timespan.SECONDS_PER_DAY
+        },
+        chromeOffset: {
+          header: 48,
+          sidebar: 164
+        },
+        pixelsPerSecond: 100 / _timespan.SECONDS_PER_HOUR,
+        originSeconds: 0,
+        blocks: [{
+          uid: 'test',
+          startTime: 3600,
+          endTime: 3600 * 2
+        }],
+        rows: {
+          height: 86,
+          count: 7,
+          getIndexForBlock: function getIndexForBlock(block) {
+            return 0;
+          }
+        }
+      }, React.createElement("div", null, "Hello world"), React.createElement("div", null));
+    }
+  }]);
 
-	_createClass(AvailabilityPlanner, [{
-		key: 'render',
-		value: function render() {
-			cov_2b0neuj9j4.f[2]++;
-			cov_2b0neuj9j4.s[5]++;
+  _inherits(AvailabilityPlanner, _Component);
 
-			return React.createElement(
-				GestureGraph,
-				{
-					timeSpan: {
-						startTime: 0,
-						endTime: _timespan.SECONDS_PER_DAY
-					},
-					chromeOffset: {
-						header: 48,
-						sidebar: 164
-					},
-					pixelsPerSecond: 100 / _timespan.SECONDS_PER_HOUR,
-					originSeconds: 0,
-					blocks: [{ uid: 'test', startTime: 3600, endTime: 3600 * 2 }],
-					rows: {
-						height: 86,
-						count: 7,
-						getIndexForBlock: function getIndexForBlock(block) {
-							cov_2b0neuj9j4.f[3]++;
-							cov_2b0neuj9j4.s[6]++;
-
-							return 0;
-						}
-					}
-				},
-				React.createElement(
-					'div',
-					null,
-					'Hello world'
-				),
-				React.createElement('div', null)
-			);
-		}
-	}]);
-
-	return AvailabilityPlanner;
-}((_react.Component));
+  return AvailabilityPlanner;
+}(_react.Component);
 
 exports.default = AvailabilityPlanner;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! react */ "../node_modules/react/index.js")))
@@ -61355,505 +55993,127 @@ exports.default = AvailabilityPlanner;
 "use strict";
 /* WEBPACK VAR INJECTION */(function(React) {
 
-var cov_moyuybgsd = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/demos/compressable.jsx',
-	    hash = '9af644737f9f50702eea63dd71cde03359a3e9fb',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/demos/compressable.jsx',
-		statementMap: {
-			'0': {
-				start: {
-					line: 23,
-					column: 2
-				},
-				end: {
-					line: 23,
-					column: 15
-				}
-			},
-			'1': {
-				start: {
-					line: 24,
-					column: 2
-				},
-				end: {
-					line: 24,
-					column: 18
-				}
-			},
-			'2': {
-				start: {
-					line: 28,
-					column: 2
-				},
-				end: {
-					line: 28,
-					column: 50
-				}
-			},
-			'3': {
-				start: {
-					line: 31,
-					column: 22
-				},
-				end: {
-					line: 33,
-					column: 2
-				}
-			},
-			'4': {
-				start: {
-					line: 32,
-					column: 2
-				},
-				end: {
-					line: 32,
-					column: 42
-				}
-			},
-			'5': {
-				start: {
-					line: 36,
-					column: 29
-				},
-				end: {
-					line: 36,
-					column: 39
-				}
-			},
-			'6': {
-				start: {
-					line: 37,
-					column: 2
-				},
-				end: {
-					line: 45,
-					column: 4
-				}
-			},
-			'7': {
-				start: {
-					line: 49,
-					column: 2
-				},
-				end: {
-					line: 53,
-					column: 4
-				}
-			},
-			'8': {
-				start: {
-					line: 57,
-					column: 29
-				},
-				end: {
-					line: 57,
-					column: 39
-				}
-			},
-			'9': {
-				start: {
-					line: 58,
-					column: 35
-				},
-				end: {
-					line: 58,
-					column: 49
-				}
-			},
-			'10': {
-				start: {
-					line: 59,
-					column: 2
-				},
-				end: {
-					line: 70,
-					column: 4
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: '(anonymous_0)',
-				decl: {
-					start: {
-						line: 22,
-						column: 1
-					},
-					end: {
-						line: 22,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 22,
-						column: 20
-					},
-					end: {
-						line: 25,
-						column: 2
-					}
-				},
-				line: 22
-			},
-			'1': {
-				name: '(anonymous_1)',
-				decl: {
-					start: {
-						line: 27,
-						column: 1
-					},
-					end: {
-						line: 27,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 27,
-						column: 44
-					},
-					end: {
-						line: 29,
-						column: 2
-					}
-				},
-				line: 27
-			},
-			'2': {
-				name: '(anonymous_2)',
-				decl: {
-					start: {
-						line: 31,
-						column: 14
-					},
-					end: {
-						line: 31,
-						column: 15
-					}
-				},
-				loc: {
-					start: {
-						line: 31,
-						column: 22
-					},
-					end: {
-						line: 33,
-						column: 2
-					}
-				},
-				line: 31
-			},
-			'3': {
-				name: '(anonymous_3)',
-				decl: {
-					start: {
-						line: 31,
-						column: 22
-					},
-					end: {
-						line: 31,
-						column: 23
-					}
-				},
-				loc: {
-					start: {
-						line: 31,
-						column: 28
-					},
-					end: {
-						line: 33,
-						column: 2
-					}
-				},
-				line: 31
-			},
-			'4': {
-				name: '(anonymous_4)',
-				decl: {
-					start: {
-						line: 35,
-						column: 18
-					},
-					end: {
-						line: 35,
-						column: 19
-					}
-				},
-				loc: {
-					start: {
-						line: 35,
-						column: 26
-					},
-					end: {
-						line: 46,
-						column: 2
-					}
-				},
-				line: 35
-			},
-			'5': {
-				name: '(anonymous_5)',
-				decl: {
-					start: {
-						line: 48,
-						column: 1
-					},
-					end: {
-						line: 48,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 48,
-						column: 14
-					},
-					end: {
-						line: 54,
-						column: 2
-					}
-				},
-				line: 48
-			},
-			'6': {
-				name: '(anonymous_6)',
-				decl: {
-					start: {
-						line: 56,
-						column: 1
-					},
-					end: {
-						line: 56,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 56,
-						column: 10
-					},
-					end: {
-						line: 71,
-						column: 2
-					}
-				},
-				line: 56
-			}
-		},
-		branchMap: {
-			'0': {
-				loc: {
-					start: {
-						line: 40,
-						column: 15
-					},
-					end: {
-						line: 40,
-						column: 56
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 40,
-						column: 41
-					},
-					end: {
-						line: 40,
-						column: 51
-					}
-				}, {
-					start: {
-						line: 40,
-						column: 54
-					},
-					end: {
-						line: 40,
-						column: 56
-					}
-				}],
-				line: 40
-			}
-		},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0
-		},
-		f: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0
-		},
-		b: {
-			'0': [0, 0]
-		},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+exports.default = void 0;
 
 var _react = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 
-var _propTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _planner = __webpack_require__(/*! component/demos/planner */ "./component/demos/planner/index.jsx");
-
-var _planner2 = _interopRequireDefault(_planner);
+var _planner = _interopRequireDefault(__webpack_require__(/*! component/demos/planner */ "./component/demos/planner/index.jsx"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } _setPrototypeOf(subClass.prototype, superClass && superClass.prototype); if (superClass) _setPrototypeOf(subClass, superClass); }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var CompressablePlanner = function (_ref) {
-	_inherits(CompressablePlanner, _ref);
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-	function CompressablePlanner(props) {
-		_classCallCheck(this, CompressablePlanner);
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-		cov_moyuybgsd.f[0]++;
-		cov_moyuybgsd.s[0]++;
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-		var _this = _possibleConstructorReturn(this, (CompressablePlanner.__proto__ || Object.getPrototypeOf(CompressablePlanner)).call(this, props));
+function _getPrototypeOf(o) { _getPrototypeOf = Object.getPrototypeOf || function _getPrototypeOf(o) { return o.__proto__; }; return _getPrototypeOf(o); }
 
-		_this.selectItem = function (item) {
-			cov_moyuybgsd.f[2]++;
-			cov_moyuybgsd.s[3]++;
-			return function () {
-				cov_moyuybgsd.f[3]++;
-				cov_moyuybgsd.s[4]++;
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
-				_this.setState({ selectedOption: item });
-			};
-		};
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-		_this.renderMenuItem = function (item) {
-			cov_moyuybgsd.f[4]++;
+var CompressablePlanner =
+/*#__PURE__*/
+function (_Component) {
+  function CompressablePlanner(props) {
+    var _this;
 
-			var _ref2 = (cov_moyuybgsd.s[5]++, _this.state),
-			    selectedOption = _ref2.selectedOption;
+    _classCallCheck(this, CompressablePlanner);
 
-			cov_moyuybgsd.s[6]++;
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(CompressablePlanner).call(this, props));
 
-			return React.createElement(
-				'li',
-				{
-					key: item.key,
-					className: selectedOption === item ? (cov_moyuybgsd.b[0][0]++, 'selected') : (cov_moyuybgsd.b[0][1]++, ''),
-					onClick: _this.selectItem(item)
-				},
-				item.label
-			);
-		};
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "selectItem", function (item) {
+      return function () {
+        _this.setState({
+          selectedOption: item
+        });
+      };
+    });
 
-		cov_moyuybgsd.s[1]++;
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "renderMenuItem", function (item) {
+      var selectedOption = _this.state.selectedOption;
+      return React.createElement("li", {
+        key: item.key,
+        className: selectedOption === item ? 'selected' : '',
+        onClick: _this.selectItem(item)
+      }, item.label);
+    });
 
-		_this.state = {};
-		return _this;
-	}
+    _this.state = {};
+    return _this;
+  }
 
-	_createClass(CompressablePlanner, [{
-		key: 'renderMenu',
-		value: function renderMenu() {
-			cov_moyuybgsd.f[5]++;
-			cov_moyuybgsd.s[7]++;
+  _createClass(CompressablePlanner, [{
+    key: "renderMenu",
+    value: function renderMenu() {
+      return React.createElement("menu", null, this.props.configs.map(this.renderMenuItem));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var selectedOption = this.state.selectedOption;
+      var rowHeight = selectedOption.rowHeight,
+          tickWidth = selectedOption.tickWidth;
+      return React.createElement(_react.Fragment, null, this.renderMenu(), React.createElement("div", {
+        id: "graph-container"
+      }, React.createElement(_planner.default, {
+        initialData: this.props.initialData,
+        rowHeight: rowHeight,
+        tickWidth: tickWidth
+      })));
+    }
+  }], [{
+    key: "getDerivedStateFromProps",
+    value: function getDerivedStateFromProps(nextProps) {
+      return {
+        selectedOption: nextProps.configs[0]
+      };
+    }
+  }]);
 
-			return React.createElement(
-				'menu',
-				null,
-				this.props.configs.map(this.renderMenuItem)
-			);
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			cov_moyuybgsd.f[6]++;
+  _inherits(CompressablePlanner, _Component);
 
-			var _ref3 = (cov_moyuybgsd.s[8]++, this.state),
-			    selectedOption = _ref3.selectedOption;
+  return CompressablePlanner;
+}(_react.Component);
 
-			var _ref4 = (cov_moyuybgsd.s[9]++, selectedOption),
-			    rowHeight = _ref4.rowHeight,
-			    tickWidth = _ref4.tickWidth;
-
-			cov_moyuybgsd.s[10]++;
-
-			return React.createElement(
-				_react.Fragment,
-				null,
-				this.renderMenu(),
-				React.createElement(
-					'div',
-					{ id: 'graph-container' },
-					React.createElement(_planner2.default, {
-						initialData: this.props.initialData,
-						rowHeight: rowHeight,
-						tickWidth: tickWidth
-					})
-				)
-			);
-		}
-	}], [{
-		key: 'getDerivedStateFromProps',
-		value: function getDerivedStateFromProps(nextProps) {
-			cov_moyuybgsd.f[1]++;
-			cov_moyuybgsd.s[2]++;
-
-			return { selectedOption: nextProps.configs[0] };
-		}
-	}]);
-
-	return CompressablePlanner;
-}((_react.Component));
-
-CompressablePlanner.propTypes = {
-	configs: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-		key: _propTypes2.default.string.isRequired,
-		label: _propTypes2.default.string.isRequired,
-		tickWidth: _propTypes2.default.number.isRequired,
-		rowHeight: _propTypes2.default.number.isRequired
-	})).isRequired
-};
-CompressablePlanner.defaultProps = {
-	configs: [{ key: 'expanded', label: 'Expanded', tickWidth: 24, rowHeight: 48 }, { key: 'cozy', label: 'Cozy', tickWidth: 14, rowHeight: 32 }]
-};
 exports.default = CompressablePlanner;
+
+_defineProperty(CompressablePlanner, "propTypes", {
+  configs: _propTypes.default.arrayOf(_propTypes.default.shape({
+    key: _propTypes.default.string.isRequired,
+    label: _propTypes.default.string.isRequired,
+    tickWidth: _propTypes.default.number.isRequired,
+    rowHeight: _propTypes.default.number.isRequired
+  })).isRequired
+});
+
+_defineProperty(CompressablePlanner, "defaultProps", {
+  configs: [{
+    key: 'expanded',
+    label: 'Expanded',
+    tickWidth: 24,
+    rowHeight: 48
+  }, {
+    key: 'cozy',
+    label: 'Cozy',
+    tickWidth: 14,
+    rowHeight: 32
+  }]
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! react */ "../node_modules/react/index.js")))
 
 /***/ }),
@@ -61868,1883 +56128,218 @@ exports.default = CompressablePlanner;
 "use strict";
 
 
-var cov_29pkvn2hel = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/demos/planner/applier.js',
-	    hash = 'a9bd67efe302ac8f6d3c0935ca09b158c745958d',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/demos/planner/applier.js',
-		statementMap: {
-			'0': {
-				start: {
-					line: 6,
-					column: 25
-				},
-				end: {
-					line: 25,
-					column: 1
-				}
-			},
-			'1': {
-				start: {
-					line: 7,
-					column: 19
-				},
-				end: {
-					line: 7,
-					column: 39
-				}
-			},
-			'2': {
-				start: {
-					line: 8,
-					column: 15
-				},
-				end: {
-					line: 8,
-					column: 17
-				}
-			},
-			'3': {
-				start: {
-					line: 10,
-					column: 1
-				},
-				end: {
-					line: 12,
-					column: 2
-				}
-			},
-			'4': {
-				start: {
-					line: 11,
-					column: 2
-				},
-				end: {
-					line: 11,
-					column: 35
-				}
-			},
-			'5': {
-				start: {
-					line: 13,
-					column: 15
-				},
-				end: {
-					line: 13,
-					column: 20
-				}
-			},
-			'6': {
-				start: {
-					line: 14,
-					column: 1
-				},
-				end: {
-					line: 23,
-					column: 16
-				}
-			},
-			'7': {
-				start: {
-					line: 15,
-					column: 2
-				},
-				end: {
-					line: 17,
-					column: 3
-				}
-			},
-			'8': {
-				start: {
-					line: 16,
-					column: 3
-				},
-				end: {
-					line: 16,
-					column: 9
-				}
-			},
-			'9': {
-				start: {
-					line: 18,
-					column: 2
-				},
-				end: {
-					line: 20,
-					column: 3
-				}
-			},
-			'10': {
-				start: {
-					line: 19,
-					column: 3
-				},
-				end: {
-					line: 19,
-					column: 9
-				}
-			},
-			'11': {
-				start: {
-					line: 21,
-					column: 2
-				},
-				end: {
-					line: 21,
-					column: 40
-				}
-			},
-			'12': {
-				start: {
-					line: 22,
-					column: 2
-				},
-				end: {
-					line: 22,
-					column: 27
-				}
-			},
-			'13': {
-				start: {
-					line: 24,
-					column: 1
-				},
-				end: {
-					line: 24,
-					column: 16
-				}
-			},
-			'14': {
-				start: {
-					line: 28,
-					column: 22
-				},
-				end: {
-					line: 43,
-					column: 1
-				}
-			},
-			'15': {
-				start: {
-					line: 29,
-					column: 1
-				},
-				end: {
-					line: 42,
-					column: 3
-				}
-			},
-			'16': {
-				start: {
-					line: 45,
-					column: 23
-				},
-				end: {
-					line: 49,
-					column: 1
-				}
-			},
-			'17': {
-				start: {
-					line: 46,
-					column: 1
-				},
-				end: {
-					line: 48,
-					column: 8
-				}
-			},
-			'18': {
-				start: {
-					line: 47,
-					column: 2
-				},
-				end: {
-					line: 47,
-					column: 57
-				}
-			},
-			'19': {
-				start: {
-					line: 51,
-					column: 22
-				},
-				end: {
-					line: 94,
-					column: 1
-				}
-			},
-			'20': {
-				start: {
-					line: 52,
-					column: 1
-				},
-				end: {
-					line: 93,
-					column: 63
-				}
-			},
-			'21': {
-				start: {
-					line: 54,
-					column: 29
-				},
-				end: {
-					line: 55,
-					column: 44
-				}
-			},
-			'22': {
-				start: {
-					line: 54,
-					column: 46
-				},
-				end: {
-					line: 55,
-					column: 33
-				}
-			},
-			'23': {
-				start: {
-					line: 59,
-					column: 2
-				},
-				end: {
-					line: 65,
-					column: 3
-				}
-			},
-			'24': {
-				start: {
-					line: 60,
-					column: 3
-				},
-				end: {
-					line: 64,
-					column: 5
-				}
-			},
-			'25': {
-				start: {
-					line: 72,
-					column: 36
-				},
-				end: {
-					line: 72,
-					column: 89
-				}
-			},
-			'26': {
-				start: {
-					line: 72,
-					column: 53
-				},
-				end: {
-					line: 72,
-					column: 78
-				}
-			},
-			'27': {
-				start: {
-					line: 74,
-					column: 2
-				},
-				end: {
-					line: 92,
-					column: 4
-				}
-			},
-			'28': {
-				start: {
-					line: 96,
-					column: 18
-				},
-				end: {
-					line: 129,
-					column: 1
-				}
-			},
-			'29': {
-				start: {
-					line: 101,
-					column: 1
-				},
-				end: {
-					line: 103,
-					column: 2
-				}
-			},
-			'30': {
-				start: {
-					line: 102,
-					column: 2
-				},
-				end: {
-					line: 102,
-					column: 31
-				}
-			},
-			'31': {
-				start: {
-					line: 105,
-					column: 33
-				},
-				end: {
-					line: 105,
-					column: 40
-				}
-			},
-			'32': {
-				start: {
-					line: 106,
-					column: 14
-				},
-				end: {
-					line: 106,
-					column: 16
-				}
-			},
-			'33': {
-				start: {
-					line: 107,
-					column: 19
-				},
-				end: {
-					line: 118,
-					column: 3
-				}
-			},
-			'34': {
-				start: {
-					line: 108,
-					column: 2
-				},
-				end: {
-					line: 108,
-					column: 19
-				}
-			},
-			'35': {
-				start: {
-					line: 109,
-					column: 21
-				},
-				end: {
-					line: 109,
-					column: 77
-				}
-			},
-			'36': {
-				start: {
-					line: 110,
-					column: 2
-				},
-				end: {
-					line: 117,
-					column: 4
-				}
-			},
-			'37': {
-				start: {
-					line: 120,
-					column: 30
-				},
-				end: {
-					line: 120,
-					column: 80
-				}
-			},
-			'38': {
-				start: {
-					line: 120,
-					column: 47
-				},
-				end: {
-					line: 120,
-					column: 71
-				}
-			},
-			'39': {
-				start: {
-					line: 121,
-					column: 16
-				},
-				end: {
-					line: 121,
-					column: 53
-				}
-			},
-			'40': {
-				start: {
-					line: 122,
-					column: 1
-				},
-				end: {
-					line: 128,
-					column: 3
-				}
-			},
-			'41': {
-				start: {
-					line: 126,
-					column: 3
-				},
-				end: {
-					line: 126,
-					column: 72
-				}
-			},
-			'42': {
-				start: {
-					line: 131,
-					column: 13
-				},
-				end: {
-					line: 145,
-					column: 1
-				}
-			},
-			'43': {
-				start: {
-					line: 132,
-					column: 20
-				},
-				end: {
-					line: 132,
-					column: 92
-				}
-			},
-			'44': {
-				start: {
-					line: 133,
-					column: 15
-				},
-				end: {
-					line: 133,
-					column: 28
-				}
-			},
-			'45': {
-				start: {
-					line: 134,
-					column: 19
-				},
-				end: {
-					line: 140,
-					column: 2
-				}
-			},
-			'46': {
-				start: {
-					line: 141,
-					column: 16
-				},
-				end: {
-					line: 141,
-					column: 89
-				}
-			},
-			'47': {
-				start: {
-					line: 141,
-					column: 70
-				},
-				end: {
-					line: 141,
-					column: 87
-				}
-			},
-			'48': {
-				start: {
-					line: 142,
-					column: 1
-				},
-				end: {
-					line: 144,
-					column: 6
-				}
-			},
-			'49': {
-				start: {
-					line: 143,
-					column: 2
-				},
-				end: {
-					line: 143,
-					column: 59
-				}
-			},
-			'50': {
-				start: {
-					line: 149,
-					column: 19
-				},
-				end: {
-					line: 149,
-					column: 67
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: '(anonymous_0)',
-				decl: {
-					start: {
-						line: 6,
-						column: 25
-					},
-					end: {
-						line: 6,
-						column: 26
-					}
-				},
-				loc: {
-					start: {
-						line: 6,
-						column: 45
-					},
-					end: {
-						line: 25,
-						column: 1
-					}
-				},
-				line: 6
-			},
-			'1': {
-				name: '(anonymous_1)',
-				decl: {
-					start: {
-						line: 28,
-						column: 22
-					},
-					end: {
-						line: 28,
-						column: 23
-					}
-				},
-				loc: {
-					start: {
-						line: 28,
-						column: 55
-					},
-					end: {
-						line: 43,
-						column: 1
-					}
-				},
-				line: 28
-			},
-			'2': {
-				name: '(anonymous_2)',
-				decl: {
-					start: {
-						line: 45,
-						column: 23
-					},
-					end: {
-						line: 45,
-						column: 24
-					}
-				},
-				loc: {
-					start: {
-						line: 45,
-						column: 40
-					},
-					end: {
-						line: 49,
-						column: 1
-					}
-				},
-				line: 45
-			},
-			'3': {
-				name: '(anonymous_3)',
-				decl: {
-					start: {
-						line: 46,
-						column: 20
-					},
-					end: {
-						line: 46,
-						column: 21
-					}
-				},
-				loc: {
-					start: {
-						line: 46,
-						column: 43
-					},
-					end: {
-						line: 48,
-						column: 2
-					}
-				},
-				line: 46
-			},
-			'4': {
-				name: '(anonymous_4)',
-				decl: {
-					start: {
-						line: 51,
-						column: 22
-					},
-					end: {
-						line: 51,
-						column: 23
-					}
-				},
-				loc: {
-					start: {
-						line: 51,
-						column: 59
-					},
-					end: {
-						line: 94,
-						column: 1
-					}
-				},
-				line: 51
-			},
-			'5': {
-				name: '(anonymous_5)',
-				decl: {
-					start: {
-						line: 52,
-						column: 30
-					},
-					end: {
-						line: 52,
-						column: 31
-					}
-				},
-				loc: {
-					start: {
-						line: 52,
-						column: 75
-					},
-					end: {
-						line: 93,
-						column: 2
-					}
-				},
-				line: 52
-			},
-			'6': {
-				name: '(anonymous_6)',
-				decl: {
-					start: {
-						line: 54,
-						column: 37
-					},
-					end: {
-						line: 54,
-						column: 38
-					}
-				},
-				loc: {
-					start: {
-						line: 54,
-						column: 46
-					},
-					end: {
-						line: 55,
-						column: 33
-					}
-				},
-				line: 54
-			},
-			'7': {
-				name: '(anonymous_7)',
-				decl: {
-					start: {
-						line: 72,
-						column: 44
-					},
-					end: {
-						line: 72,
-						column: 45
-					}
-				},
-				loc: {
-					start: {
-						line: 72,
-						column: 53
-					},
-					end: {
-						line: 72,
-						column: 78
-					}
-				},
-				line: 72
-			},
-			'8': {
-				name: '(anonymous_8)',
-				decl: {
-					start: {
-						line: 96,
-						column: 18
-					},
-					end: {
-						line: 96,
-						column: 19
-					}
-				},
-				loc: {
-					start: {
-						line: 96,
-						column: 39
-					},
-					end: {
-						line: 129,
-						column: 1
-					}
-				},
-				line: 96
-			},
-			'9': {
-				name: '(anonymous_9)',
-				decl: {
-					start: {
-						line: 107,
-						column: 85
-					},
-					end: {
-						line: 107,
-						column: 86
-					}
-				},
-				loc: {
-					start: {
-						line: 107,
-						column: 94
-					},
-					end: {
-						line: 118,
-						column: 2
-					}
-				},
-				line: 107
-			},
-			'10': {
-				name: '(anonymous_10)',
-				decl: {
-					start: {
-						line: 120,
-						column: 38
-					},
-					end: {
-						line: 120,
-						column: 39
-					}
-				},
-				loc: {
-					start: {
-						line: 120,
-						column: 47
-					},
-					end: {
-						line: 120,
-						column: 71
-					}
-				},
-				line: 120
-			},
-			'11': {
-				name: '(anonymous_11)',
-				decl: {
-					start: {
-						line: 125,
-						column: 35
-					},
-					end: {
-						line: 125,
-						column: 36
-					}
-				},
-				loc: {
-					start: {
-						line: 125,
-						column: 44
-					},
-					end: {
-						line: 127,
-						column: 3
-					}
-				},
-				line: 125
-			},
-			'12': {
-				name: '(anonymous_12)',
-				decl: {
-					start: {
-						line: 131,
-						column: 13
-					},
-					end: {
-						line: 131,
-						column: 14
-					}
-				},
-				loc: {
-					start: {
-						line: 131,
-						column: 34
-					},
-					end: {
-						line: 145,
-						column: 1
-					}
-				},
-				line: 131
-			},
-			'13': {
-				name: '(anonymous_13)',
-				decl: {
-					start: {
-						line: 141,
-						column: 57
-					},
-					end: {
-						line: 141,
-						column: 58
-					}
-				},
-				loc: {
-					start: {
-						line: 141,
-						column: 70
-					},
-					end: {
-						line: 141,
-						column: 87
-					}
-				},
-				line: 141
-			},
-			'14': {
-				name: '(anonymous_14)',
-				decl: {
-					start: {
-						line: 142,
-						column: 55
-					},
-					end: {
-						line: 142,
-						column: 56
-					}
-				},
-				loc: {
-					start: {
-						line: 142,
-						column: 60
-					},
-					end: {
-						line: 144,
-						column: 2
-					}
-				},
-				line: 142
-			},
-			'15': {
-				name: '(anonymous_15)',
-				decl: {
-					start: {
-						line: 149,
-						column: 3
-					},
-					end: {
-						line: 149,
-						column: 4
-					}
-				},
-				loc: {
-					start: {
-						line: 149,
-						column: 19
-					},
-					end: {
-						line: 149,
-						column: 67
-					}
-				},
-				line: 149
-			}
-		},
-		branchMap: {
-			'0': {
-				loc: {
-					start: {
-						line: 7,
-						column: 19
-					},
-					end: {
-						line: 7,
-						column: 39
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 7,
-						column: 33
-					},
-					end: {
-						line: 7,
-						column: 34
-					}
-				}, {
-					start: {
-						line: 7,
-						column: 37
-					},
-					end: {
-						line: 7,
-						column: 39
-					}
-				}],
-				line: 7
-			},
-			'1': {
-				loc: {
-					start: {
-						line: 10,
-						column: 1
-					},
-					end: {
-						line: 12,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 10,
-						column: 1
-					},
-					end: {
-						line: 12,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 10,
-						column: 1
-					},
-					end: {
-						line: 12,
-						column: 2
-					}
-				}],
-				line: 10
-			},
-			'2': {
-				loc: {
-					start: {
-						line: 15,
-						column: 2
-					},
-					end: {
-						line: 17,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 15,
-						column: 2
-					},
-					end: {
-						line: 17,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 15,
-						column: 2
-					},
-					end: {
-						line: 17,
-						column: 3
-					}
-				}],
-				line: 15
-			},
-			'3': {
-				loc: {
-					start: {
-						line: 15,
-						column: 6
-					},
-					end: {
-						line: 15,
-						column: 36
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 15,
-						column: 6
-					},
-					end: {
-						line: 15,
-						column: 19
-					}
-				}, {
-					start: {
-						line: 15,
-						column: 23
-					},
-					end: {
-						line: 15,
-						column: 36
-					}
-				}],
-				line: 15
-			},
-			'4': {
-				loc: {
-					start: {
-						line: 18,
-						column: 2
-					},
-					end: {
-						line: 20,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 18,
-						column: 2
-					},
-					end: {
-						line: 20,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 18,
-						column: 2
-					},
-					end: {
-						line: 20,
-						column: 3
-					}
-				}],
-				line: 18
-			},
-			'5': {
-				loc: {
-					start: {
-						line: 18,
-						column: 6
-					},
-					end: {
-						line: 18,
-						column: 36
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 18,
-						column: 6
-					},
-					end: {
-						line: 18,
-						column: 19
-					}
-				}, {
-					start: {
-						line: 18,
-						column: 23
-					},
-					end: {
-						line: 18,
-						column: 36
-					}
-				}],
-				line: 18
-			},
-			'6': {
-				loc: {
-					start: {
-						line: 54,
-						column: 46
-					},
-					end: {
-						line: 55,
-						column: 33
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 54,
-						column: 46
-					},
-					end: {
-						line: 54,
-						column: 69
-					}
-				}, {
-					start: {
-						line: 55,
-						column: 3
-					},
-					end: {
-						line: 55,
-						column: 33
-					}
-				}],
-				line: 54
-			},
-			'7': {
-				loc: {
-					start: {
-						line: 59,
-						column: 2
-					},
-					end: {
-						line: 65,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 59,
-						column: 2
-					},
-					end: {
-						line: 65,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 59,
-						column: 2
-					},
-					end: {
-						line: 65,
-						column: 3
-					}
-				}],
-				line: 59
-			},
-			'8': {
-				loc: {
-					start: {
-						line: 84,
-						column: 8
-					},
-					end: {
-						line: 84,
-						column: 68
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 84,
-						column: 31
-					},
-					end: {
-						line: 84,
-						column: 63
-					}
-				}, {
-					start: {
-						line: 84,
-						column: 66
-					},
-					end: {
-						line: 84,
-						column: 68
-					}
-				}],
-				line: 84
-			},
-			'9': {
-				loc: {
-					start: {
-						line: 88,
-						column: 4
-					},
-					end: {
-						line: 90,
-						column: 12
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 89,
-						column: 7
-					},
-					end: {
-						line: 89,
-						column: 82
-					}
-				}, {
-					start: {
-						line: 90,
-						column: 7
-					},
-					end: {
-						line: 90,
-						column: 12
-					}
-				}],
-				line: 88
-			},
-			'10': {
-				loc: {
-					start: {
-						line: 101,
-						column: 1
-					},
-					end: {
-						line: 103,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 101,
-						column: 1
-					},
-					end: {
-						line: 103,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 101,
-						column: 1
-					},
-					end: {
-						line: 103,
-						column: 2
-					}
-				}],
-				line: 101
-			},
-			'11': {
-				loc: {
-					start: {
-						line: 112,
-						column: 14
-					},
-					end: {
-						line: 112,
-						column: 83
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 112,
-						column: 27
-					},
-					end: {
-						line: 112,
-						column: 56
-					}
-				}, {
-					start: {
-						line: 112,
-						column: 59
-					},
-					end: {
-						line: 112,
-						column: 83
-					}
-				}],
-				line: 112
-			},
-			'12': {
-				loc: {
-					start: {
-						line: 113,
-						column: 12
-					},
-					end: {
-						line: 113,
-						column: 81
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 113,
-						column: 25
-					},
-					end: {
-						line: 113,
-						column: 49
-					}
-				}, {
-					start: {
-						line: 113,
-						column: 52
-					},
-					end: {
-						line: 113,
-						column: 81
-					}
-				}],
-				line: 113
-			},
-			'13': {
-				loc: {
-					start: {
-						line: 126,
-						column: 10
-					},
-					end: {
-						line: 126,
-						column: 71
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 126,
-						column: 10
-					},
-					end: {
-						line: 126,
-						column: 25
-					}
-				}, {
-					start: {
-						line: 126,
-						column: 29
-					},
-					end: {
-						line: 126,
-						column: 71
-					}
-				}],
-				line: 126
-			},
-			'14': {
-				loc: {
-					start: {
-						line: 137,
-						column: 11
-					},
-					end: {
-						line: 137,
-						column: 82
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 137,
-						column: 41
-					},
-					end: {
-						line: 137,
-						column: 54
-					}
-				}, {
-					start: {
-						line: 137,
-						column: 57
-					},
-					end: {
-						line: 137,
-						column: 82
-					}
-				}],
-				line: 137
-			},
-			'15': {
-				loc: {
-					start: {
-						line: 138,
-						column: 13
-					},
-					end: {
-						line: 138,
-						column: 89
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 138,
-						column: 44
-					},
-					end: {
-						line: 138,
-						column: 59
-					}
-				}, {
-					start: {
-						line: 138,
-						column: 62
-					},
-					end: {
-						line: 138,
-						column: 89
-					}
-				}],
-				line: 138
-			},
-			'16': {
-				loc: {
-					start: {
-						line: 139,
-						column: 7
-					},
-					end: {
-						line: 139,
-						column: 82
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 139,
-						column: 37
-					},
-					end: {
-						line: 139,
-						column: 70
-					}
-				}, {
-					start: {
-						line: 139,
-						column: 73
-					},
-					end: {
-						line: 139,
-						column: 82
-					}
-				}],
-				line: 139
-			},
-			'17': {
-				loc: {
-					start: {
-						line: 143,
-						column: 9
-					},
-					end: {
-						line: 143,
-						column: 58
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 143,
-						column: 9
-					},
-					end: {
-						line: 143,
-						column: 20
-					}
-				}, {
-					start: {
-						line: 143,
-						column: 24
-					},
-					end: {
-						line: 143,
-						column: 58
-					}
-				}],
-				line: 143
-			}
-		},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0,
-			'16': 0,
-			'17': 0,
-			'18': 0,
-			'19': 0,
-			'20': 0,
-			'21': 0,
-			'22': 0,
-			'23': 0,
-			'24': 0,
-			'25': 0,
-			'26': 0,
-			'27': 0,
-			'28': 0,
-			'29': 0,
-			'30': 0,
-			'31': 0,
-			'32': 0,
-			'33': 0,
-			'34': 0,
-			'35': 0,
-			'36': 0,
-			'37': 0,
-			'38': 0,
-			'39': 0,
-			'40': 0,
-			'41': 0,
-			'42': 0,
-			'43': 0,
-			'44': 0,
-			'45': 0,
-			'46': 0,
-			'47': 0,
-			'48': 0,
-			'49': 0,
-			'50': 0
-		},
-		f: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0
-		},
-		b: {
-			'0': [0, 0],
-			'1': [0, 0],
-			'2': [0, 0],
-			'3': [0, 0],
-			'4': [0, 0],
-			'5': [0, 0],
-			'6': [0, 0],
-			'7': [0, 0],
-			'8': [0, 0],
-			'9': [0, 0],
-			'10': [0, 0],
-			'11': [0, 0],
-			'12': [0, 0],
-			'13': [0, 0],
-			'14': [0, 0],
-			'15': [0, 0],
-			'16': [0, 0],
-			'17': [0, 0]
-		},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
+exports.default = void 0;
 
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _v = __webpack_require__(/*! uuid/v4 */ "../node_modules/uuid/v4.js");
-
-var _v2 = _interopRequireDefault(_v);
+var _v = _interopRequireDefault(__webpack_require__(/*! uuid/v4 */ "../node_modules/uuid/v4.js"));
 
 var _timespan = __webpack_require__(/*! timespan */ "./timespan.js");
 
-var _splitBy = __webpack_require__(/*! split-by */ "./split-by.js");
-
-var _splitBy2 = _interopRequireDefault(_splitBy);
+var _splitBy7 = _interopRequireDefault(__webpack_require__(/*! split-by */ "./split-by.js"));
 
 var _withGestures = __webpack_require__(/*! component/block-graph/with-gestures */ "./component/block-graph/with-gestures.jsx");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-cov_29pkvn2hel.s[0]++;
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var eachIndexInRange = function eachIndexInRange(start, end, fn) {
-	cov_29pkvn2hel.f[0]++;
+  var increment = start < end ? 1 : -1;
+  var results = [];
 
-	var increment = (cov_29pkvn2hel.s[1]++, start < end ? (cov_29pkvn2hel.b[0][0]++, 1) : (cov_29pkvn2hel.b[0][1]++, -1));
-	var results = (cov_29pkvn2hel.s[2]++, []);
+  if (start === end) {
+    return results.concat(fn(start));
+  }
 
-	cov_29pkvn2hel.s[3]++;
-	if (start === end) {
-		cov_29pkvn2hel.b[1][0]++;
-		cov_29pkvn2hel.s[4]++;
+  var current = start;
 
-		return results.concat(fn(start));
-	} else {
-		cov_29pkvn2hel.b[1][1]++;
-	}
-	var current = (cov_29pkvn2hel.s[5]++, start);
-	cov_29pkvn2hel.s[6]++;
-	do {
-		cov_29pkvn2hel.s[7]++;
+  do {
+    if (increment > 0 && current > end) {
+      break;
+    }
 
-		if ((cov_29pkvn2hel.b[3][0]++, increment > 0) && (cov_29pkvn2hel.b[3][1]++, current > end)) {
-			cov_29pkvn2hel.b[2][0]++;
-			cov_29pkvn2hel.s[8]++;
+    if (increment < 0 && current < end) {
+      break;
+    }
 
-			break;
-		} else {
-			cov_29pkvn2hel.b[2][1]++;
-		}
-		cov_29pkvn2hel.s[9]++;
-		if ((cov_29pkvn2hel.b[5][0]++, increment < 0) && (cov_29pkvn2hel.b[5][1]++, current < end)) {
-			cov_29pkvn2hel.b[4][0]++;
-			cov_29pkvn2hel.s[10]++;
+    results = results.concat(fn(current));
+    current += increment * 1;
+  } while (true);
 
-			break;
-		} else {
-			cov_29pkvn2hel.b[4][1]++;
-		}
-		cov_29pkvn2hel.s[11]++;
-		results = results.concat(fn(current));
-		cov_29pkvn2hel.s[12]++;
-		current += increment * 1;
-	} while (true);
-	cov_29pkvn2hel.s[13]++;
-	return results;
-};
+  return results;
+}; // assumes that splitting timespan is inside timespan
 
-// assumes that splitting timespan is inside timespan
-cov_29pkvn2hel.s[14]++;
+
 var splitTimeSpan = function splitTimeSpan(timeSpan, splittingTimeSpan) {
-	cov_29pkvn2hel.f[1]++;
-	cov_29pkvn2hel.s[15]++;
-
-	return [_extends({}, timeSpan, {
-		startTime: timeSpan.startTime,
-		endTime: splittingTimeSpan.startTime,
-		uid: timeSpan.uid
-	}), _extends({}, timeSpan, {
-		startTime: splittingTimeSpan.endTime,
-		endTime: timeSpan.endTime,
-		uid: (0, _v2.default)()
-	})];
+  return [_objectSpread({}, timeSpan, {
+    startTime: timeSpan.startTime,
+    endTime: splittingTimeSpan.startTime,
+    uid: timeSpan.uid
+  }), _objectSpread({}, timeSpan, {
+    startTime: splittingTimeSpan.endTime,
+    endTime: timeSpan.endTime,
+    uid: (0, _v.default)()
+  })];
 };
 
-cov_29pkvn2hel.s[16]++;
 var splitTimeSpans = function splitTimeSpans(list, block) {
-	cov_29pkvn2hel.f[2]++;
-	cov_29pkvn2hel.s[17]++;
-
-	return list.reduce(function (all, blockToSplit) {
-		cov_29pkvn2hel.f[3]++;
-		cov_29pkvn2hel.s[18]++;
-
-		return [].concat(_toConsumableArray(all), _toConsumableArray(splitTimeSpan(blockToSplit, block)));
-	}, []);
+  return list.reduce(function (all, blockToSplit) {
+    return _toConsumableArray(all).concat(_toConsumableArray(splitTimeSpan(blockToSplit, block)));
+  }, []);
 };
 
-cov_29pkvn2hel.s[19]++;
 var mergeAndSplit = function mergeAndSplit(generatedBlocks, existingBlocks) {
-	cov_29pkvn2hel.f[4]++;
-	cov_29pkvn2hel.s[20]++;
+  return existingBlocks.reduce(function (_ref, block) {
+    var unchanged = _ref.unchanged,
+        modified = _ref.modified,
+        deleted = _ref.deleted;
 
-	return existingBlocks.reduce(function (_ref, block) {
-		var unchanged = _ref.unchanged,
-		    modified = _ref.modified,
-		    deleted = _ref.deleted;
-		cov_29pkvn2hel.f[5]++;
-
-		// find all generated blocks in the same row as this block
-		var _ref2 = (cov_29pkvn2hel.s[21]++, (0, _splitBy2.default)(function (maybe) {
-			cov_29pkvn2hel.f[6]++;
-			cov_29pkvn2hel.s[22]++;
-			return (cov_29pkvn2hel.b[6][0]++, block.row === maybe.row) && (cov_29pkvn2hel.b[6][1]++, (0, _timespan.timeSpansOverlap)(block, maybe));
-		}, modified)),
-		    _ref3 = _slicedToArray(_ref2, 2),
-		    matching = _ref3[0],
-		    others = _ref3[1];
-
-		// none of the potentially created blocks match any of the existing block
-		// by row or timespan, add the block to our list and continue iterating
+    // find all generated blocks in the same row as this block
+    var _splitBy = (0, _splitBy7.default)(function (maybe) {
+      return block.row === maybe.row && (0, _timespan.timeSpansOverlap)(block, maybe);
+    }, modified),
+        _splitBy2 = _slicedToArray(_splitBy, 2),
+        matching = _splitBy2[0],
+        others = _splitBy2[1]; // none of the potentially created blocks match any of the existing block
+    // by row or timespan, add the block to our list and continue iterating
 
 
-		cov_29pkvn2hel.s[23]++;
-		if (matching.length === 0) {
-			cov_29pkvn2hel.b[7][0]++;
-			cov_29pkvn2hel.s[24]++;
-
-			return {
-				unchanged: [].concat(_toConsumableArray(unchanged), [block]),
-				modified: others,
-				deleted: deleted
-			};
-		} else {
-			cov_29pkvn2hel.b[7][1]++;
-		}
-
-		// there new blocks in the same row and overlap in time. we need to determine
-		// if the `block` can be merged with any of the generated blocks or if it should be used
-		// to split the potentially created block
-
-		// split the matching block between those that match type and those that do not
-
-		var _ref4 = (cov_29pkvn2hel.s[25]++, (0, _splitBy2.default)(function (maybe) {
-			cov_29pkvn2hel.f[7]++;
-			cov_29pkvn2hel.s[26]++;
-			return maybe.type === block.type;
-		}, matching)),
-		    _ref5 = _slicedToArray(_ref4, 2),
-		    matchingType = _ref5[0],
-		    otherType = _ref5[1];
-
-		cov_29pkvn2hel.s[27]++;
+    if (matching.length === 0) {
+      return {
+        unchanged: _toConsumableArray(unchanged).concat([block]),
+        modified: others,
+        deleted: deleted
+      };
+    } // there new blocks in the same row and overlap in time. we need to determine
+    // if the `block` can be merged with any of the generated blocks or if it should be used
+    // to split the potentially created block
+    // split the matching block between those that match type and those that do not
 
 
-		return {
-			// do not merge the existing block into the finished list because it will be modifying the
-			// generated blocks in some fashion (either by merging with some or splitting them)
-			unchanged: unchanged,
-			deleted: deleted,
-			modified: [].concat(_toConsumableArray(others), _toConsumableArray(otherType.length > 0 ? (cov_29pkvn2hel.b[8][0]++, splitTimeSpans(otherType, block)) : (cov_29pkvn2hel.b[8][1]++, [])), [
-			// matching type gestures should be merged together
-			// TODO: there's a potential to cause blocks to be deleted, need those tracked
-			// for gesture results
-			matchingType.length > 0 ? (cov_29pkvn2hel.b[9][0]++, _extends({}, block, (0, _timespan.unionTimeSpanSet)([block].concat(_toConsumableArray(matchingType))), { gestured: true })) : (cov_29pkvn2hel.b[9][1]++, block)])
-		};
-	}, { unchanged: [], modified: generatedBlocks, deleted: [] });
+    var _splitBy3 = (0, _splitBy7.default)(function (maybe) {
+      return maybe.type === block.type;
+    }, matching),
+        _splitBy4 = _slicedToArray(_splitBy3, 2),
+        matchingType = _splitBy4[0],
+        otherType = _splitBy4[1];
+
+    return {
+      // do not merge the existing block into the finished list because it will be modifying the
+      // generated blocks in some fashion (either by merging with some or splitting them)
+      unchanged: unchanged,
+      deleted: deleted,
+      modified: _toConsumableArray(others).concat(_toConsumableArray(otherType.length > 0 ? splitTimeSpans(otherType, block) : []), [// matching type gestures should be merged together
+      // TODO: there's a potential to cause blocks to be deleted, need those tracked
+      // for gesture results
+      matchingType.length > 0 ? _objectSpread({}, block, (0, _timespan.unionTimeSpanSet)([block].concat(_toConsumableArray(matchingType))), {
+        gestured: true
+      }) : block])
+    };
+  }, {
+    unchanged: [],
+    modified: generatedBlocks,
+    deleted: []
+  });
 };
 
-cov_29pkvn2hel.s[28]++;
 var multidraw = function multidraw(gesture, blocks) {
-	cov_29pkvn2hel.f[8]++;
-	cov_29pkvn2hel.s[29]++;
+  // the user is dragging the mouse from gesture.origin
+  // to gesture.destination, fill in any possible blocks
+  // blocks is the existing set of blocks, return only the
+  // modifications?
+  if (!gesture.destination) {
+    return {
+      unchanged: blocks
+    };
+  } // create the blocks that would fill the space for the gesture
 
-	// the user is dragging the mouse from gesture.origin
-	// to gesture.destination, fill in any possible blocks
-	// blocks is the existing set of blocks, return only the
-	// modifications?
-	if (!gesture.destination) {
-		cov_29pkvn2hel.b[10][0]++;
-		cov_29pkvn2hel.s[30]++;
 
-		return { unchanged: blocks };
-	} else {
-		cov_29pkvn2hel.b[10][1]++;
-	}
-	// create the blocks that would fill the space for the gesture
+  var destination = gesture.destination,
+      origin = gesture.origin;
+  var rows = {};
+  var generated = eachIndexInRange(origin.timeIndex.row, destination.timeIndex.row, function (row) {
+    rows[row] = true;
+    var invertTime = origin.timeIndex.seconds > destination.timeIndex.seconds;
+    return {
+      row: row,
+      startTime: invertTime ? destination.timeIndex.seconds : origin.timeIndex.seconds,
+      endTime: invertTime ? origin.timeIndex.seconds : destination.timeIndex.seconds,
+      type: gesture.blockType,
+      gestured: true,
+      uid: (0, _v.default)()
+    };
+  }); // we only need to consider blocks in the same rows, slpit them out
 
-	var _ref6 = (cov_29pkvn2hel.s[31]++, gesture),
-	    destination = _ref6.destination,
-	    origin = _ref6.origin;
+  var _splitBy5 = (0, _splitBy7.default)(function (block) {
+    return rows[block.row] === true;
+  }, blocks),
+      _splitBy6 = _slicedToArray(_splitBy5, 2),
+      matchingRow = _splitBy6[0],
+      other = _splitBy6[1];
 
-	var rows = (cov_29pkvn2hel.s[32]++, {});
-	var generated = (cov_29pkvn2hel.s[33]++, eachIndexInRange(origin.timeIndex.row, destination.timeIndex.row, function (row) {
-		cov_29pkvn2hel.f[9]++;
-		cov_29pkvn2hel.s[34]++;
-
-		rows[row] = true;
-		var invertTime = (cov_29pkvn2hel.s[35]++, origin.timeIndex.seconds > destination.timeIndex.seconds);
-		cov_29pkvn2hel.s[36]++;
-		return {
-			row: row,
-			startTime: invertTime ? (cov_29pkvn2hel.b[11][0]++, destination.timeIndex.seconds) : (cov_29pkvn2hel.b[11][1]++, origin.timeIndex.seconds),
-			endTime: invertTime ? (cov_29pkvn2hel.b[12][0]++, origin.timeIndex.seconds) : (cov_29pkvn2hel.b[12][1]++, destination.timeIndex.seconds),
-			type: gesture.blockType,
-			gestured: true,
-			uid: (0, _v2.default)()
-		};
-	}));
-	// we only need to consider blocks in the same rows, slpit them out
-
-	var _ref7 = (cov_29pkvn2hel.s[37]++, (0, _splitBy2.default)(function (block) {
-		cov_29pkvn2hel.f[10]++;
-		cov_29pkvn2hel.s[38]++;
-		return rows[block.row] === true;
-	}, blocks)),
-	    _ref8 = _slicedToArray(_ref7, 2),
-	    matchingRow = _ref8[0],
-	    other = _ref8[1];
-
-	var result = (cov_29pkvn2hel.s[39]++, mergeAndSplit(generated, matchingRow));
-	cov_29pkvn2hel.s[40]++;
-	return _extends({}, result, {
-		unchanged: [].concat(_toConsumableArray(result.unchanged), _toConsumableArray(other)),
-		modified: result.modified.filter(function (block) {
-			cov_29pkvn2hel.f[11]++;
-			cov_29pkvn2hel.s[41]++;
-
-			return (cov_29pkvn2hel.b[13][0]++, !block.gestured) || (cov_29pkvn2hel.b[13][1]++, block.endTime - block.startTime >= 60 * 45);
-		})
-	});
+  var result = mergeAndSplit(generated, matchingRow);
+  return _objectSpread({}, result, {
+    unchanged: _toConsumableArray(result.unchanged).concat(_toConsumableArray(other)),
+    modified: result.modified.filter(function (block) {
+      return !block.gestured || block.endTime - block.startTime >= 60 * 45;
+    })
+  });
 };
 
-cov_29pkvn2hel.s[42]++;
 var drag = function drag(gesture, blocks) {
-	cov_29pkvn2hel.f[12]++;
+  var timeDelta = gesture.destination.timeIndex.seconds - gesture.origin.timeIndex.seconds;
+  var block = gesture.block;
 
-	var timeDelta = (cov_29pkvn2hel.s[43]++, gesture.destination.timeIndex.seconds - gesture.origin.timeIndex.seconds);
-	var block = (cov_29pkvn2hel.s[44]++, gesture.block);
-	var generated = (cov_29pkvn2hel.s[45]++, _extends({}, block, {
-		gestured: true,
-		endTime: gesture.dragMode === 'left' ? (cov_29pkvn2hel.b[14][0]++, block.endTime) : (cov_29pkvn2hel.b[14][1]++, block.endTime + timeDelta),
-		startTime: gesture.dragMode === 'right' ? (cov_29pkvn2hel.b[15][0]++, block.startTime) : (cov_29pkvn2hel.b[15][1]++, block.startTime + timeDelta),
-		row: gesture.dragMode === 'both' ? (cov_29pkvn2hel.b[16][0]++, gesture.destination.timeIndex.row) : (cov_29pkvn2hel.b[16][1]++, block.row)
-	}));
-	var result = (cov_29pkvn2hel.s[46]++, mergeAndSplit([generated], blocks.filter(function (_ref9) {
-		var uid = _ref9.uid;
-		cov_29pkvn2hel.f[13]++;
-		cov_29pkvn2hel.s[47]++;
-		return uid !== block.uid;
-	})));
-	cov_29pkvn2hel.s[48]++;
-	return _extends({}, result, { modified: result.modified.filter(function (b) {
-			cov_29pkvn2hel.f[14]++;
-			cov_29pkvn2hel.s[49]++;
+  var generated = _objectSpread({}, block, {
+    gestured: true,
+    endTime: gesture.dragMode === 'left' ? block.endTime : block.endTime + timeDelta,
+    startTime: gesture.dragMode === 'right' ? block.startTime : block.startTime + timeDelta,
+    row: gesture.dragMode === 'both' ? gesture.destination.timeIndex.row : block.row
+  });
 
-			return (cov_29pkvn2hel.b[17][0]++, !b.gestured) || (cov_29pkvn2hel.b[17][1]++, b.endTime - b.startTime >= 60 * 45);
-		}) });
+  var result = mergeAndSplit([generated], blocks.filter(function (_ref2) {
+    var uid = _ref2.uid;
+    return uid !== block.uid;
+  }));
+  return _objectSpread({}, result, {
+    modified: result.modified.filter(function (b) {
+      return !b.gestured || b.endTime - b.startTime >= 60 * 45;
+    })
+  });
 };
 
-exports.default = (0, _withGestures.matchType)({
-	multidraw: multidraw, drag: drag
+var _default = (0, _withGestures.matchType)({
+  multidraw: multidraw,
+  drag: drag
 }, function (_, blocks) {
-	cov_29pkvn2hel.f[15]++;
-	cov_29pkvn2hel.s[50]++;
-	return { unchanged: blocks, modified: [], deleted: [] };
+  return {
+    unchanged: blocks,
+    modified: [],
+    deleted: []
+  };
 });
+
+exports.default = _default;
 
 /***/ }),
 
@@ -63758,625 +56353,126 @@ exports.default = (0, _withGestures.matchType)({
 "use strict";
 /* WEBPACK VAR INJECTION */(function(React) {
 
-var cov_1lvbut0qpv = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/demos/planner/block.jsx',
-	    hash = '47d4cb2dcae76ad6d897f3572ea98a4b0d12fc3d',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/demos/planner/block.jsx',
-		statementMap: {
-			'0': {
-				start: {
-					line: 6,
-					column: 15
-				},
-				end: {
-					line: 10,
-					column: 1
-				}
-			},
-			'1': {
-				start: {
-					line: 12,
-					column: 20
-				},
-				end: {
-					line: 12,
-					column: 22
-				}
-			},
-			'2': {
-				start: {
-					line: 14,
-					column: 17
-				},
-				end: {
-					line: 23,
-					column: 1
-				}
-			},
-			'3': {
-				start: {
-					line: 15,
-					column: 15
-				},
-				end: {
-					line: 15,
-					column: 59
-				}
-			},
-			'4': {
-				start: {
-					line: 16,
-					column: 17
-				},
-				end: {
-					line: 16,
-					column: 91
-				}
-			},
-			'5': {
-				start: {
-					line: 17,
-					column: 1
-				},
-				end: {
-					line: 22,
-					column: 3
-				}
-			},
-			'6': {
-				start: {
-					line: 25,
-					column: 0
-				},
-				end: {
-					line: 27,
-					column: 2
-				}
-			},
-			'7': {
-				start: {
-					line: 45,
-					column: 16
-				},
-				end: {
-					line: 45,
-					column: 26
-				}
-			},
-			'8': {
-				start: {
-					line: 46,
-					column: 47
-				},
-				end: {
-					line: 46,
-					column: 52
-				}
-			},
-			'9': {
-				start: {
-					line: 47,
-					column: 16
-				},
-				end: {
-					line: 53,
-					column: 3
-				}
-			},
-			'10': {
-				start: {
-					line: 54,
-					column: 14
-				},
-				end: {
-					line: 54,
-					column: 41
-				}
-			},
-			'11': {
-				start: {
-					line: 55,
-					column: 21
-				},
-				end: {
-					line: 67,
-					column: 3
-				}
-			},
-			'12': {
-				start: {
-					line: 68,
-					column: 2
-				},
-				end: {
-					line: 74,
-					column: 4
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: '(anonymous_0)',
-				decl: {
-					start: {
-						line: 14,
-						column: 17
-					},
-					end: {
-						line: 14,
-						column: 18
-					}
-				},
-				loc: {
-					start: {
-						line: 14,
-						column: 26
-					},
-					end: {
-						line: 23,
-						column: 1
-					}
-				},
-				line: 14
-			},
-			'1': {
-				name: '(anonymous_1)',
-				decl: {
-					start: {
-						line: 44,
-						column: 1
-					},
-					end: {
-						line: 44,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 44,
-						column: 10
-					},
-					end: {
-						line: 75,
-						column: 2
-					}
-				},
-				line: 44
-			}
-		},
-		branchMap: {
-			'0': {
-				loc: {
-					start: {
-						line: 19,
-						column: 5
-					},
-					end: {
-						line: 19,
-						column: 30
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 19,
-						column: 5
-					},
-					end: {
-						line: 19,
-						column: 14
-					}
-				}, {
-					start: {
-						line: 19,
-						column: 18
-					},
-					end: {
-						line: 19,
-						column: 30
-					}
-				}],
-				line: 19
-			},
-			'1': {
-				loc: {
-					start: {
-						line: 20,
-						column: 5
-					},
-					end: {
-						line: 20,
-						column: 33
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 20,
-						column: 5
-					},
-					end: {
-						line: 20,
-						column: 16
-					}
-				}, {
-					start: {
-						line: 20,
-						column: 20
-					},
-					end: {
-						line: 20,
-						column: 33
-					}
-				}],
-				line: 20
-			},
-			'2': {
-				loc: {
-					start: {
-						line: 54,
-						column: 14
-					},
-					end: {
-						line: 54,
-						column: 41
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 54,
-						column: 14
-					},
-					end: {
-						line: 54,
-						column: 26
-					}
-				}, {
-					start: {
-						line: 54,
-						column: 30
-					},
-					end: {
-						line: 54,
-						column: 41
-					}
-				}],
-				line: 54
-			},
-			'3': {
-				loc: {
-					start: {
-						line: 61,
-						column: 15
-					},
-					end: {
-						line: 61,
-						column: 78
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 61,
-						column: 22
-					},
-					end: {
-						line: 61,
-						column: 52
-					}
-				}, {
-					start: {
-						line: 61,
-						column: 55
-					},
-					end: {
-						line: 61,
-						column: 78
-					}
-				}],
-				line: 61
-			},
-			'4': {
-				loc: {
-					start: {
-						line: 63,
-						column: 11
-					},
-					end: {
-						line: 63,
-						column: 64
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 63,
-						column: 18
-					},
-					end: {
-						line: 63,
-						column: 55
-					}
-				}, {
-					start: {
-						line: 63,
-						column: 58
-					},
-					end: {
-						line: 63,
-						column: 64
-					}
-				}],
-				line: 63
-			},
-			'5': {
-				loc: {
-					start: {
-						line: 64,
-						column: 10
-					},
-					end: {
-						line: 64,
-						column: 49
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 64,
-						column: 17
-					},
-					end: {
-						line: 64,
-						column: 40
-					}
-				}, {
-					start: {
-						line: 64,
-						column: 43
-					},
-					end: {
-						line: 64,
-						column: 49
-					}
-				}],
-				line: 64
-			},
-			'6': {
-				loc: {
-					start: {
-						line: 65,
-						column: 12
-					},
-					end: {
-						line: 65,
-						column: 50
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 65,
-						column: 25
-					},
-					end: {
-						line: 65,
-						column: 41
-					}
-				}, {
-					start: {
-						line: 65,
-						column: 44
-					},
-					end: {
-						line: 65,
-						column: 50
-					}
-				}],
-				line: 65
-			},
-			'7': {
-				loc: {
-					start: {
-						line: 66,
-						column: 15
-					},
-					end: {
-						line: 66,
-						column: 45
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 66,
-						column: 28
-					},
-					end: {
-						line: 66,
-						column: 34
-					}
-				}, {
-					start: {
-						line: 66,
-						column: 37
-					},
-					end: {
-						line: 66,
-						column: 45
-					}
-				}],
-				line: 66
-			}
-		},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0
-		},
-		f: {
-			'0': 0,
-			'1': 0
-		},
-		b: {
-			'0': [0, 0],
-			'1': [0, 0],
-			'2': [0, 0],
-			'3': [0, 0],
-			'4': [0, 0],
-			'5': [0, 0],
-			'6': [0, 0],
-			'7': [0, 0]
-		},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+exports.default = void 0;
 
 var _react = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 
-var _propTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 
 var _timespan = __webpack_require__(/*! timespan */ "./timespan.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } _setPrototypeOf(subClass.prototype, superClass && superClass.prototype); if (superClass) _setPrototypeOf(subClass, superClass); }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var colors = (cov_1lvbut0qpv.s[0]++, {
-	a: 0,
-	b: 128,
-	c: 255
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.getPrototypeOf || function _getPrototypeOf(o) { return o.__proto__; }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var colors = {
+  a: 0,
+  b: 128,
+  c: 255
+};
+var DEFAULT_HUE = 26;
+
+var Duration = function Duration(props) {
+  var hours = Math.floor(props.seconds / _timespan.SECONDS_PER_HOUR);
+  var minutes = Math.ceil((props.seconds - hours * _timespan.SECONDS_PER_HOUR) / _timespan.SECONDS_PER_MINUTE);
+  return React.createElement("div", null, hours > 0 && "".concat(hours, "h "), minutes > 0 && "".concat(minutes, "m"));
+};
+
+Duration.propTypes = {
+  seconds: _propTypes.default.number.isRequired
+};
+
+var DemoBlock =
+/*#__PURE__*/
+function (_PureComponent) {
+  function DemoBlock() {
+    _classCallCheck(this, DemoBlock);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(DemoBlock).apply(this, arguments));
+  }
+
+  _createClass(DemoBlock, [{
+    key: "render",
+    value: function render() {
+      var props = this.props;
+      var isSelected = props.isSelected,
+          type = props.type,
+          duration = props.duration,
+          temp = props.temp;
+      var style = {
+        width: props.width,
+        height: props.height,
+        left: props.x,
+        top: props.y,
+        position: 'absolute'
+      };
+      var hue = colors[type] || DEFAULT_HUE;
+      var innerStyle = {
+        position: 'absolute',
+        top: 6,
+        bottom: 6,
+        left: 1,
+        right: 1,
+        background: temp ? "hsla(".concat(hue, ", 20%, 50%, 0.25)") : "hsl(".concat(hue, ", 20%, 50%)"),
+        borderRadius: 2,
+        border: temp ? "1px solid hsla(".concat(hue, ", 50%, 20%, 1)") : 'none',
+        color: temp ? "hsl(".concat(hue, ", 20%, 20%)") : '#fff',
+        outline: isSelected ? '5px solid #FFF' : 'none',
+        fontWeight: isSelected ? 'bold' : 'normal'
+      };
+      return React.createElement("div", {
+        style: style,
+        className: "demo-block"
+      }, React.createElement("div", {
+        className: "inner-block",
+        style: innerStyle
+      }, React.createElement(Duration, {
+        seconds: duration
+      })));
+    }
+  }]);
+
+  _inherits(DemoBlock, _PureComponent);
+
+  return DemoBlock;
+}(_react.PureComponent);
+
+exports.default = DemoBlock;
+
+_defineProperty(DemoBlock, "propTypes", {
+  width: _propTypes.default.number.isRequired,
+  height: _propTypes.default.number.isRequired,
+  x: _propTypes.default.number.isRequired,
+  y: _propTypes.default.number.isRequired,
+  temp: _propTypes.default.bool,
+  type: _propTypes.default.string.isRequired,
+  duration: _propTypes.default.number.isRequired
 });
 
-var DEFAULT_HUE = (cov_1lvbut0qpv.s[1]++, 26);
-
-cov_1lvbut0qpv.s[2]++;
-var Duration = function Duration(props) {
-	cov_1lvbut0qpv.f[0]++;
-
-	var hours = (cov_1lvbut0qpv.s[3]++, Math.floor(props.seconds / _timespan.SECONDS_PER_HOUR));
-	var minutes = (cov_1lvbut0qpv.s[4]++, Math.ceil((props.seconds - hours * _timespan.SECONDS_PER_HOUR) / _timespan.SECONDS_PER_MINUTE));
-	cov_1lvbut0qpv.s[5]++;
-	return React.createElement(
-		'div',
-		null,
-		(cov_1lvbut0qpv.b[0][0]++, hours > 0) && (cov_1lvbut0qpv.b[0][1]++, hours + 'h '),
-		(cov_1lvbut0qpv.b[1][0]++, minutes > 0) && (cov_1lvbut0qpv.b[1][1]++, minutes + 'm')
-	);
-};
-
-cov_1lvbut0qpv.s[6]++;
-Duration.propTypes = {
-	seconds: _propTypes2.default.number.isRequired
-};
-
-var DemoBlock = function (_ref) {
-	_inherits(DemoBlock, _ref);
-
-	function DemoBlock() {
-		_classCallCheck(this, DemoBlock);
-
-		return _possibleConstructorReturn(this, (DemoBlock.__proto__ || Object.getPrototypeOf(DemoBlock)).apply(this, arguments));
-	}
-
-	_createClass(DemoBlock, [{
-		key: 'render',
-		value: function render() {
-			cov_1lvbut0qpv.f[1]++;
-
-			var props = (cov_1lvbut0qpv.s[7]++, this.props);
-
-			var _ref2 = (cov_1lvbut0qpv.s[8]++, props),
-			    isSelected = _ref2.isSelected,
-			    type = _ref2.type,
-			    duration = _ref2.duration,
-			    temp = _ref2.temp;
-
-			var style = (cov_1lvbut0qpv.s[9]++, {
-				width: props.width,
-				height: props.height,
-				left: props.x,
-				top: props.y,
-				position: 'absolute'
-			});
-			var hue = (cov_1lvbut0qpv.s[10]++, (cov_1lvbut0qpv.b[2][0]++, colors[type]) || (cov_1lvbut0qpv.b[2][1]++, DEFAULT_HUE));
-			var innerStyle = (cov_1lvbut0qpv.s[11]++, {
-				position: 'absolute',
-				top: 6,
-				bottom: 6,
-				left: 1,
-				right: 1,
-				background: temp ? (cov_1lvbut0qpv.b[3][0]++, 'hsla(' + hue + ', 20%, 50%, 0.25)') : (cov_1lvbut0qpv.b[3][1]++, 'hsl(' + hue + ', 20%, 50%)'),
-				borderRadius: 2,
-				border: temp ? (cov_1lvbut0qpv.b[4][0]++, '1px solid hsla(' + hue + ', 50%, 20%, 1)') : (cov_1lvbut0qpv.b[4][1]++, 'none'),
-				color: temp ? (cov_1lvbut0qpv.b[5][0]++, 'hsl(' + hue + ', 20%, 20%)') : (cov_1lvbut0qpv.b[5][1]++, '#fff'),
-				outline: isSelected ? (cov_1lvbut0qpv.b[6][0]++, '5px solid #FFF') : (cov_1lvbut0qpv.b[6][1]++, 'none'),
-				fontWeight: isSelected ? (cov_1lvbut0qpv.b[7][0]++, 'bold') : (cov_1lvbut0qpv.b[7][1]++, 'normal')
-			});
-			cov_1lvbut0qpv.s[12]++;
-			return React.createElement(
-				'div',
-				{ style: style, className: 'demo-block' },
-				React.createElement(
-					'div',
-					{ className: 'inner-block', style: innerStyle },
-					React.createElement(Duration, { seconds: duration })
-				)
-			);
-		}
-	}]);
-
-	return DemoBlock;
-}((_react.PureComponent));
-
-DemoBlock.propTypes = {
-	width: _propTypes2.default.number.isRequired,
-	height: _propTypes2.default.number.isRequired,
-	x: _propTypes2.default.number.isRequired,
-	y: _propTypes2.default.number.isRequired,
-	temp: _propTypes2.default.bool,
-	type: _propTypes2.default.string.isRequired,
-	duration: _propTypes2.default.number.isRequired
-};
-DemoBlock.defaultProps = {
-	temp: false
-};
-exports.default = DemoBlock;
+_defineProperty(DemoBlock, "defaultProps", {
+  temp: false
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! react */ "../node_modules/react/index.js")))
 
 /***/ }),
@@ -64391,902 +56487,198 @@ exports.default = DemoBlock;
 "use strict";
 /* WEBPACK VAR INJECTION */(function(React) {
 
-var cov_rsq5ua3gp = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/demos/planner/index.jsx',
-	    hash = '0301dcc51e7b6d33ba639d18caa1e22eb25ce98f',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/demos/planner/index.jsx',
-		statementMap: {
-			'0': {
-				start: {
-					line: 12,
-					column: 25
-				},
-				end: {
-					line: 12,
-					column: 32
-				}
-			},
-			'1': {
-				start: {
-					line: 14,
-					column: 19
-				},
-				end: {
-					line: 14,
-					column: 50
-				}
-			},
-			'2': {
-				start: {
-					line: 34,
-					column: 2
-				},
-				end: {
-					line: 34,
-					column: 15
-				}
-			},
-			'3': {
-				start: {
-					line: 35,
-					column: 2
-				},
-				end: {
-					line: 38,
-					column: 4
-				}
-			},
-			'4': {
-				start: {
-					line: 42,
-					column: 39
-				},
-				end: {
-					line: 48,
-					column: 57
-				}
-			},
-			'5': {
-				start: {
-					line: 43,
-					column: 3
-				},
-				end: {
-					line: 47,
-					column: 4
-				}
-			},
-			'6': {
-				start: {
-					line: 49,
-					column: 19
-				},
-				end: {
-					line: 49,
-					column: 83
-				}
-			},
-			'7': {
-				start: {
-					line: 50,
-					column: 2
-				},
-				end: {
-					line: 57,
-					column: 4
-				}
-			},
-			'8': {
-				start: {
-					line: 61,
-					column: 2
-				},
-				end: {
-					line: 61,
-					column: 64
-				}
-			},
-			'9': {
-				start: {
-					line: 65,
-					column: 2
-				},
-				end: {
-					line: 69,
-					column: 3
-				}
-			},
-			'10': {
-				start: {
-					line: 66,
-					column: 3
-				},
-				end: {
-					line: 66,
-					column: 64
-				}
-			},
-			'11': {
-				start: {
-					line: 68,
-					column: 3
-				},
-				end: {
-					line: 68,
-					column: 44
-				}
-			},
-			'12': {
-				start: {
-					line: 70,
-					column: 2
-				},
-				end: {
-					line: 72,
-					column: 3
-				}
-			},
-			'13': {
-				start: {
-					line: 71,
-					column: 18
-				},
-				end: {
-					line: 71,
-					column: 42
-				}
-			},
-			'14': {
-				start: {
-					line: 76,
-					column: 2
-				},
-				end: {
-					line: 76,
-					column: 39
-				}
-			},
-			'15': {
-				start: {
-					line: 80,
-					column: 2
-				},
-				end: {
-					line: 89,
-					column: 4
-				}
-			},
-			'16': {
-				start: {
-					line: 93,
-					column: 2
-				},
-				end: {
-					line: 93,
-					column: 19
-				}
-			},
-			'17': {
-				start: {
-					line: 97,
-					column: 37
-				},
-				end: {
-					line: 97,
-					column: 47
-				}
-			},
-			'18': {
-				start: {
-					line: 98,
-					column: 35
-				},
-				end: {
-					line: 98,
-					column: 45
-				}
-			},
-			'19': {
-				start: {
-					line: 100,
-					column: 2
-				},
-				end: {
-					line: 118,
-					column: 4
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: '(anonymous_0)',
-				decl: {
-					start: {
-						line: 33,
-						column: 1
-					},
-					end: {
-						line: 33,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 33,
-						column: 20
-					},
-					end: {
-						line: 39,
-						column: 2
-					}
-				},
-				line: 33
-			},
-			'1': {
-				name: '(anonymous_1)',
-				decl: {
-					start: {
-						line: 41,
-						column: 1
-					},
-					end: {
-						line: 41,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 41,
-						column: 55
-					},
-					end: {
-						line: 58,
-						column: 2
-					}
-				},
-				line: 41
-			},
-			'2': {
-				name: '(anonymous_2)',
-				decl: {
-					start: {
-						line: 42,
-						column: 68
-					},
-					end: {
-						line: 42,
-						column: 69
-					}
-				},
-				loc: {
-					start: {
-						line: 42,
-						column: 87
-					},
-					end: {
-						line: 48,
-						column: 3
-					}
-				},
-				line: 42
-			},
-			'3': {
-				name: '(anonymous_3)',
-				decl: {
-					start: {
-						line: 60,
-						column: 1
-					},
-					end: {
-						line: 60,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 60,
-						column: 24
-					},
-					end: {
-						line: 62,
-						column: 2
-					}
-				},
-				line: 60
-			},
-			'4': {
-				name: '(anonymous_4)',
-				decl: {
-					start: {
-						line: 64,
-						column: 23
-					},
-					end: {
-						line: 64,
-						column: 24
-					}
-				},
-				loc: {
-					start: {
-						line: 64,
-						column: 58
-					},
-					end: {
-						line: 73,
-						column: 2
-					}
-				},
-				line: 64
-			},
-			'5': {
-				name: '(anonymous_5)',
-				decl: {
-					start: {
-						line: 75,
-						column: 16
-					},
-					end: {
-						line: 75,
-						column: 17
-					}
-				},
-				loc: {
-					start: {
-						line: 75,
-						column: 37
-					},
-					end: {
-						line: 77,
-						column: 2
-					}
-				},
-				line: 75
-			},
-			'6': {
-				name: '(anonymous_6)',
-				decl: {
-					start: {
-						line: 79,
-						column: 15
-					},
-					end: {
-						line: 79,
-						column: 16
-					}
-				},
-				loc: {
-					start: {
-						line: 79,
-						column: 32
-					},
-					end: {
-						line: 90,
-						column: 2
-					}
-				},
-				line: 79
-			},
-			'7': {
-				name: '(anonymous_7)',
-				decl: {
-					start: {
-						line: 92,
-						column: 1
-					},
-					end: {
-						line: 92,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 92,
-						column: 25
-					},
-					end: {
-						line: 94,
-						column: 2
-					}
-				},
-				line: 92
-			},
-			'8': {
-				name: '(anonymous_8)',
-				decl: {
-					start: {
-						line: 96,
-						column: 1
-					},
-					end: {
-						line: 96,
-						column: 2
-					}
-				},
-				loc: {
-					start: {
-						line: 96,
-						column: 10
-					},
-					end: {
-						line: 119,
-						column: 2
-					}
-				},
-				line: 96
-			}
-		},
-		branchMap: {
-			'0': {
-				loc: {
-					start: {
-						line: 53,
-						column: 15
-					},
-					end: {
-						line: 53,
-						column: 65
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 53,
-						column: 43
-					},
-					end: {
-						line: 53,
-						column: 44
-					}
-				}, {
-					start: {
-						line: 53,
-						column: 47
-					},
-					end: {
-						line: 53,
-						column: 65
-					}
-				}],
-				line: 53
-			},
-			'1': {
-				loc: {
-					start: {
-						line: 54,
-						column: 13
-					},
-					end: {
-						line: 54,
-						column: 73
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 54,
-						column: 39
-					},
-					end: {
-						line: 54,
-						column: 54
-					}
-				}, {
-					start: {
-						line: 54,
-						column: 57
-					},
-					end: {
-						line: 54,
-						column: 73
-					}
-				}],
-				line: 54
-			},
-			'2': {
-				loc: {
-					start: {
-						line: 56,
-						column: 9
-					},
-					end: {
-						line: 56,
-						column: 31
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 56,
-						column: 22
-					},
-					end: {
-						line: 56,
-						column: 24
-					}
-				}, {
-					start: {
-						line: 56,
-						column: 27
-					},
-					end: {
-						line: 56,
-						column: 31
-					}
-				}],
-				line: 56
-			},
-			'3': {
-				loc: {
-					start: {
-						line: 65,
-						column: 2
-					},
-					end: {
-						line: 69,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 65,
-						column: 2
-					},
-					end: {
-						line: 69,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 65,
-						column: 2
-					},
-					end: {
-						line: 69,
-						column: 3
-					}
-				}],
-				line: 65
-			},
-			'4': {
-				loc: {
-					start: {
-						line: 65,
-						column: 6
-					},
-					end: {
-						line: 65,
-						column: 45
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 65,
-						column: 6
-					},
-					end: {
-						line: 65,
-						column: 13
-					}
-				}, {
-					start: {
-						line: 65,
-						column: 17
-					},
-					end: {
-						line: 65,
-						column: 45
-					}
-				}],
-				line: 65
-			},
-			'5': {
-				loc: {
-					start: {
-						line: 70,
-						column: 2
-					},
-					end: {
-						line: 72,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 70,
-						column: 2
-					},
-					end: {
-						line: 72,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 70,
-						column: 2
-					},
-					end: {
-						line: 72,
-						column: 3
-					}
-				}],
-				line: 70
-			}
-		},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0,
-			'16': 0,
-			'17': 0,
-			'18': 0,
-			'19': 0
-		},
-		f: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0
-		},
-		b: {
-			'0': [0, 0],
-			'1': [0, 0],
-			'2': [0, 0],
-			'3': [0, 0],
-			'4': [0, 0],
-			'5': [0, 0]
-		},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+exports.default = void 0;
 
 var _react = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 
-var _propTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _withGestures = _interopRequireWildcard(__webpack_require__(/*! component/block-graph/with-gestures */ "./component/block-graph/with-gestures.jsx"));
 
-var _withGestures = __webpack_require__(/*! component/block-graph/with-gestures */ "./component/block-graph/with-gestures.jsx");
+var _block = _interopRequireDefault(__webpack_require__(/*! ./block */ "./component/demos/planner/block.jsx"));
 
-var _withGestures2 = _interopRequireDefault(_withGestures);
-
-var _block = __webpack_require__(/*! ./block */ "./component/demos/planner/block.jsx");
-
-var _block2 = _interopRequireDefault(_block);
-
-var _v = __webpack_require__(/*! uuid/v4 */ "../node_modules/uuid/v4.js");
-
-var _v2 = _interopRequireDefault(_v);
+var _v = _interopRequireDefault(__webpack_require__(/*! uuid/v4 */ "../node_modules/uuid/v4.js"));
 
 var _timespan = __webpack_require__(/*! timespan */ "./timespan.js");
 
 var _helpers = __webpack_require__(/*! data/helpers */ "./data/helpers.js");
 
-var _recognizer = __webpack_require__(/*! ./recognizer */ "./component/demos/planner/recognizer.js");
+var _recognizer = _interopRequireDefault(__webpack_require__(/*! ./recognizer */ "./component/demos/planner/recognizer.js"));
 
-var _recognizer2 = _interopRequireDefault(_recognizer);
+var _applier = _interopRequireDefault(__webpack_require__(/*! ./applier */ "./component/demos/planner/applier.js"));
 
-var _applier = __webpack_require__(/*! ./applier */ "./component/demos/planner/applier.js");
-
-var _applier2 = _interopRequireDefault(_applier);
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } _setPrototypeOf(subClass.prototype, superClass && superClass.prototype); if (superClass) _setPrototypeOf(subClass, superClass); }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var SECONDS_PER_HOUR = (cov_rsq5ua3gp.s[0]++, 60 * 60);
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-var BlockGraph = (cov_rsq5ua3gp.s[1]++, (0, _withGestures2.default)(_recognizer2.default));
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var Planner = function (_ref) {
-	_inherits(Planner, _ref);
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-	function Planner(props) {
-		_classCallCheck(this, Planner);
+function _getPrototypeOf(o) { _getPrototypeOf = Object.getPrototypeOf || function _getPrototypeOf(o) { return o.__proto__; }; return _getPrototypeOf(o); }
 
-		cov_rsq5ua3gp.f[0]++;
-		cov_rsq5ua3gp.s[2]++;
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
-		var _this = _possibleConstructorReturn(this, (Planner.__proto__ || Object.getPrototypeOf(Planner)).call(this, props));
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-		_this.handleGestureChange = function (gesture, prevGesture, applier) {
-			cov_rsq5ua3gp.f[4]++;
-			cov_rsq5ua3gp.s[9]++;
+var SECONDS_PER_HOUR = 60 * 60;
+var BlockGraph = (0, _withGestures.default)(_recognizer.default);
 
-			if ((cov_rsq5ua3gp.b[4][0]++, gesture) && (cov_rsq5ua3gp.b[4][1]++, gesture.type === 'selection')) {
-				cov_rsq5ua3gp.b[3][0]++;
-				cov_rsq5ua3gp.s[10]++;
+var Planner =
+/*#__PURE__*/
+function (_React$Component) {
+  function Planner(props) {
+    var _this;
 
-				_this.setState({ selectedBlockUids: [gesture.selected.uid] });
-			} else {
-				cov_rsq5ua3gp.b[3][1]++;
-				cov_rsq5ua3gp.s[11]++;
+    _classCallCheck(this, Planner);
 
-				_this.setState({ selectedBlockUids: [] });
-			}
-			cov_rsq5ua3gp.s[12]++;
-			if (gesture.type === 'complete') {
-				cov_rsq5ua3gp.b[5][0]++;
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Planner).call(this, props));
 
-				var result = (cov_rsq5ua3gp.s[13]++, applier(gesture.gesture));
-			} else {
-				cov_rsq5ua3gp.b[5][1]++;
-			}
-		};
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleGestureChange", function (gesture, prevGesture, applier) {
+      if (gesture && gesture.type === 'selection') {
+        _this.setState({
+          selectedBlockUids: [gesture.selected.uid]
+        });
+      } else {
+        _this.setState({
+          selectedBlockUids: []
+        });
+      }
 
-		_this.applyGesture = function (gesture, blocks) {
-			cov_rsq5ua3gp.f[5]++;
-			cov_rsq5ua3gp.s[14]++;
+      if (gesture.type === 'complete') {
+        var result = applier(gesture.gesture);
+      }
+    });
 
-			return (0, _applier2.default)(gesture, blocks);
-		};
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "applyGesture", function (gesture, blocks) {
+      return (0, _applier.default)(gesture, blocks);
+    });
 
-		_this.renderBlock = function (block, rect) {
-			cov_rsq5ua3gp.f[6]++;
-			cov_rsq5ua3gp.s[15]++;
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "renderBlock", function (block, rect) {
+      return React.createElement(_block.default, _extends({
+        key: block.uid,
+        temp: block.gestured === true,
+        type: block.type,
+        isSelected: _this.isSelectedBlock(block),
+        duration: block.endTime - block.startTime
+      }, rect));
+    });
 
-			return React.createElement(_block2.default, _extends({
-				key: block.uid,
-				temp: block.gestured === true,
-				type: block.type,
-				isSelected: _this.isSelectedBlock(block),
-				duration: block.endTime - block.startTime
-			}, rect));
-		};
+    _this.state = {
+      blocks: [],
+      selectedBlockUids: []
+    };
+    return _this;
+  }
 
-		cov_rsq5ua3gp.s[3]++;
+  _createClass(Planner, [{
+    key: "isSelectedBlock",
+    value: function isSelectedBlock(block) {
+      return this.state.selectedBlockUids.indexOf(block.uid) !== -1;
+    }
+  }, {
+    key: "getIndexForBlock",
+    value: function getIndexForBlock(block) {
+      return block.row;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$state = this.state,
+          blocks = _this$state.blocks,
+          timeSpan = _this$state.timeSpan,
+          rows = _this$state.rows;
+      var _this$props = this.props,
+          tickWidth = _this$props.tickWidth,
+          rowHeight = _this$props.rowHeight; // get the blocks that are the result of the gesture and the starting set of blocks
 
-		_this.state = {
-			blocks: [],
-			selectedBlockUids: []
-		};
-		return _this;
-	}
+      return React.createElement(BlockGraph, {
+        chromeOffset: {
+          header: 36,
+          sidebar: 200
+        },
+        onGestureChange: this.handleGestureChange,
+        renderBlock: this.renderBlock,
+        applyGesture: this.applyGesture,
+        pixelsPerSecond: tickWidth * 4 / SECONDS_PER_HOUR,
+        blocks: blocks,
+        timeSpan: timeSpan,
+        rows: {
+          getIndexForBlock: this.getIndexForBlock,
+          height: rowHeight,
+          count: rows
+        }
+      });
+    }
+  }], [{
+    key: "getDerivedStateFromProps",
+    value: function getDerivedStateFromProps(nextProps, prevState) {
+      var _nextProps$initialDat = nextProps.initialData.reduce(function (values, block) {
+        return {
+          rows: Math.max(values.rows, block.row),
+          startTime: Math.min(values.startTime, block.startTime),
+          endTime: Math.max(values.endTime, block.endTime)
+        };
+      }, {
+        rows: 0,
+        startTime: Infinity,
+        endTime: -Infinity
+      }),
+          rows = _nextProps$initialDat.rows,
+          startTime = _nextProps$initialDat.startTime,
+          endTime = _nextProps$initialDat.endTime;
 
-	_createClass(Planner, [{
-		key: 'isSelectedBlock',
-		value: function isSelectedBlock(block) {
-			cov_rsq5ua3gp.f[3]++;
-			cov_rsq5ua3gp.s[8]++;
+      var timeSpan = (0, _timespan.snapToNearestSpan)({
+        startTime: startTime,
+        endTime: endTime
+      }, _timespan.SECONDS_PER_DAY, true);
+      return {
+        blocks: nextProps.initialData,
+        timeSpan: {
+          startTime: isNaN(timeSpan.startTime) ? 0 : timeSpan.startTime,
+          endTime: isNaN(timeSpan.endTime) ? _timespan.SECONDS_PER_DAY : timeSpan.endTime
+        },
+        rows: rows === 0 ? 25 : rows
+      };
+    }
+  }]);
 
-			return this.state.selectedBlockUids.indexOf(block.uid) !== -1;
-		}
-	}, {
-		key: 'getIndexForBlock',
-		value: function getIndexForBlock(block) {
-			cov_rsq5ua3gp.f[7]++;
-			cov_rsq5ua3gp.s[16]++;
+  _inherits(Planner, _React$Component);
 
-			return block.row;
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			cov_rsq5ua3gp.f[8]++;
+  return Planner;
+}(React.Component);
 
-			var _ref2 = (cov_rsq5ua3gp.s[17]++, this.state),
-			    blocks = _ref2.blocks,
-			    timeSpan = _ref2.timeSpan,
-			    rows = _ref2.rows;
-
-			var _ref3 = (cov_rsq5ua3gp.s[18]++, this.props),
-			    tickWidth = _ref3.tickWidth,
-			    rowHeight = _ref3.rowHeight;
-			// get the blocks that are the result of the gesture and the starting set of blocks
-
-
-			cov_rsq5ua3gp.s[19]++;
-			return React.createElement(BlockGraph, {
-				chromeOffset: {
-					header: 36,
-					sidebar: 200
-				},
-				onGestureChange: this.handleGestureChange,
-				renderBlock: this.renderBlock,
-				applyGesture: this.applyGesture,
-				pixelsPerSecond: tickWidth * 4 / SECONDS_PER_HOUR,
-				blocks: blocks,
-				timeSpan: timeSpan,
-				rows: {
-					getIndexForBlock: this.getIndexForBlock,
-					height: rowHeight,
-					count: rows
-				}
-			});
-		}
-	}], [{
-		key: 'getDerivedStateFromProps',
-		value: function getDerivedStateFromProps(nextProps, prevState) {
-			cov_rsq5ua3gp.f[1]++;
-
-			var _ref4 = (cov_rsq5ua3gp.s[4]++, nextProps.initialData.reduce(function (values, block) {
-				cov_rsq5ua3gp.f[2]++;
-				cov_rsq5ua3gp.s[5]++;
-
-				return {
-					rows: Math.max(values.rows, block.row),
-					startTime: Math.min(values.startTime, block.startTime),
-					endTime: Math.max(values.endTime, block.endTime)
-				};
-			}, { rows: 0, startTime: Infinity, endTime: -Infinity })),
-			    rows = _ref4.rows,
-			    startTime = _ref4.startTime,
-			    endTime = _ref4.endTime;
-
-			var timeSpan = (cov_rsq5ua3gp.s[6]++, (0, _timespan.snapToNearestSpan)({ startTime: startTime, endTime: endTime }, _timespan.SECONDS_PER_DAY, true));
-			cov_rsq5ua3gp.s[7]++;
-			return {
-				blocks: nextProps.initialData,
-				timeSpan: {
-					startTime: isNaN(timeSpan.startTime) ? (cov_rsq5ua3gp.b[0][0]++, 0) : (cov_rsq5ua3gp.b[0][1]++, timeSpan.startTime),
-					endTime: isNaN(timeSpan.endTime) ? (cov_rsq5ua3gp.b[1][0]++, _timespan.SECONDS_PER_DAY) : (cov_rsq5ua3gp.b[1][1]++, timeSpan.endTime)
-				},
-				rows: rows === 0 ? (cov_rsq5ua3gp.b[2][0]++, 25) : (cov_rsq5ua3gp.b[2][1]++, rows)
-			};
-		}
-	}]);
-
-	return Planner;
-}((React.Component));
-
-Planner.propTypes = {
-	initialData: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-		uid: _propTypes2.default.string.isRequired,
-		startTime: _propTypes2.default.number.isRequired,
-		endTime: _propTypes2.default.number.isRequired
-	})),
-	tickWidth: _propTypes2.default.number.isRequired,
-	rowHeight: _propTypes2.default.number.isRequired
-};
-Planner.defaultProps = {
-	tickWidth: 18,
-	rowHeight: 48
-};
 exports.default = Planner;
+
+_defineProperty(Planner, "propTypes", {
+  initialData: _propTypes.default.arrayOf(_propTypes.default.shape({
+    uid: _propTypes.default.string.isRequired,
+    startTime: _propTypes.default.number.isRequired,
+    endTime: _propTypes.default.number.isRequired
+  })),
+  tickWidth: _propTypes.default.number.isRequired,
+  rowHeight: _propTypes.default.number.isRequired
+});
+
+_defineProperty(Planner, "defaultProps", {
+  tickWidth: 18,
+  rowHeight: 48
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! react */ "../node_modules/react/index.js")))
 
 /***/ }),
@@ -65301,1150 +56693,128 @@ exports.default = Planner;
 "use strict";
 
 
-var cov_285usgxei7 = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/demos/planner/recognizer.js',
-	    hash = 'c17bbc73941009fb424ef602435f6b54445c3c28',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/demos/planner/recognizer.js',
-		statementMap: {
-			'0': {
-				start: {
-					line: 3,
-					column: 23
-				},
-				end: {
-					line: 3,
-					column: 25
-				}
-			},
-			'1': {
-				start: {
-					line: 6,
-					column: 26
-				},
-				end: {
-					line: 6,
-					column: 41
-				}
-			},
-			'2': {
-				start: {
-					line: 7,
-					column: 18
-				},
-				end: {
-					line: 7,
-					column: 23
-				}
-			},
-			'3': {
-				start: {
-					line: 8,
-					column: 19
-				},
-				end: {
-					line: 8,
-					column: 45
-				}
-			},
-			'4': {
-				start: {
-					line: 9,
-					column: 20
-				},
-				end: {
-					line: 9,
-					column: 59
-				}
-			},
-			'5': {
-				start: {
-					line: 14,
-					column: 1
-				},
-				end: {
-					line: 16,
-					column: 2
-				}
-			},
-			'6': {
-				start: {
-					line: 15,
-					column: 2
-				},
-				end: {
-					line: 15,
-					column: 16
-				}
-			},
-			'7': {
-				start: {
-					line: 17,
-					column: 1
-				},
-				end: {
-					line: 19,
-					column: 2
-				}
-			},
-			'8': {
-				start: {
-					line: 18,
-					column: 2
-				},
-				end: {
-					line: 18,
-					column: 17
-				}
-			},
-			'9': {
-				start: {
-					line: 20,
-					column: 1
-				},
-				end: {
-					line: 20,
-					column: 15
-				}
-			},
-			'10': {
-				start: {
-					line: 25,
-					column: 2
-				},
-				end: {
-					line: 34,
-					column: 3
-				}
-			},
-			'11': {
-				start: {
-					line: 27,
-					column: 3
-				},
-				end: {
-					line: 33,
-					column: 5
-				}
-			},
-			'12': {
-				start: {
-					line: 35,
-					column: 2
-				},
-				end: {
-					line: 35,
-					column: 72
-				}
-			},
-			'13': {
-				start: {
-					line: 38,
-					column: 2
-				},
-				end: {
-					line: 40,
-					column: 3
-				}
-			},
-			'14': {
-				start: {
-					line: 39,
-					column: 3
-				},
-				end: {
-					line: 39,
-					column: 18
-				}
-			},
-			'15': {
-				start: {
-					line: 41,
-					column: 2
-				},
-				end: {
-					line: 43,
-					column: 3
-				}
-			},
-			'16': {
-				start: {
-					line: 42,
-					column: 3
-				},
-				end: {
-					line: 42,
-					column: 18
-				}
-			},
-			'17': {
-				start: {
-					line: 44,
-					column: 2
-				},
-				end: {
-					line: 44,
-					column: 31
-				}
-			},
-			'18': {
-				start: {
-					line: 45,
-					column: 2
-				},
-				end: {
-					line: 45,
-					column: 55
-				}
-			},
-			'19': {
-				start: {
-					line: 48,
-					column: 2
-				},
-				end: {
-					line: 50,
-					column: 3
-				}
-			},
-			'20': {
-				start: {
-					line: 49,
-					column: 3
-				},
-				end: {
-					line: 49,
-					column: 27
-				}
-			},
-			'21': {
-				start: {
-					line: 51,
-					column: 2
-				},
-				end: {
-					line: 53,
-					column: 3
-				}
-			},
-			'22': {
-				start: {
-					line: 52,
-					column: 3
-				},
-				end: {
-					line: 52,
-					column: 47
-				}
-			},
-			'23': {
-				start: {
-					line: 55,
-					column: 2
-				},
-				end: {
-					line: 60,
-					column: 3
-				}
-			},
-			'24': {
-				start: {
-					line: 59,
-					column: 3
-				},
-				end: {
-					line: 59,
-					column: 47
-				}
-			},
-			'25': {
-				start: {
-					line: 62,
-					column: 2
-				},
-				end: {
-					line: 62,
-					column: 17
-				}
-			},
-			'26': {
-				start: {
-					line: 66,
-					column: 2
-				},
-				end: {
-					line: 72,
-					column: 3
-				}
-			},
-			'27': {
-				start: {
-					line: 68,
-					column: 3
-				},
-				end: {
-					line: 70,
-					column: 4
-				}
-			},
-			'28': {
-				start: {
-					line: 69,
-					column: 4
-				},
-				end: {
-					line: 69,
-					column: 72
-				}
-			},
-			'29': {
-				start: {
-					line: 71,
-					column: 3
-				},
-				end: {
-					line: 71,
-					column: 27
-				}
-			},
-			'30': {
-				start: {
-					line: 75,
-					column: 2
-				},
-				end: {
-					line: 77,
-					column: 3
-				}
-			},
-			'31': {
-				start: {
-					line: 76,
-					column: 3
-				},
-				end: {
-					line: 76,
-					column: 71
-				}
-			},
-			'32': {
-				start: {
-					line: 79,
-					column: 2
-				},
-				end: {
-					line: 79,
-					column: 17
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: 'detectDragMode',
-				decl: {
-					start: {
-						line: 5,
-						column: 9
-					},
-					end: {
-						line: 5,
-						column: 23
-					}
-				},
-				loc: {
-					start: {
-						line: 5,
-						column: 31
-					},
-					end: {
-						line: 21,
-						column: 1
-					}
-				},
-				line: 5
-			},
-			'1': {
-				name: '(anonymous_1)',
-				decl: {
-					start: {
-						line: 24,
-						column: 26
-					},
-					end: {
-						line: 24,
-						column: 27
-					}
-				},
-				loc: {
-					start: {
-						line: 24,
-						column: 46
-					},
-					end: {
-						line: 36,
-						column: 2
-					}
-				},
-				line: 24
-			},
-			'2': {
-				name: '(anonymous_2)',
-				decl: {
-					start: {
-						line: 37,
-						column: 26
-					},
-					end: {
-						line: 37,
-						column: 27
-					}
-				},
-				loc: {
-					start: {
-						line: 37,
-						column: 46
-					},
-					end: {
-						line: 46,
-						column: 2
-					}
-				},
-				line: 37
-			},
-			'3': {
-				name: '(anonymous_3)',
-				decl: {
-					start: {
-						line: 47,
-						column: 24
-					},
-					end: {
-						line: 47,
-						column: 25
-					}
-				},
-				loc: {
-					start: {
-						line: 47,
-						column: 44
-					},
-					end: {
-						line: 63,
-						column: 2
-					}
-				},
-				line: 47
-			},
-			'4': {
-				name: '(anonymous_4)',
-				decl: {
-					start: {
-						line: 64,
-						column: 22
-					},
-					end: {
-						line: 64,
-						column: 23
-					}
-				},
-				loc: {
-					start: {
-						line: 64,
-						column: 42
-					},
-					end: {
-						line: 80,
-						column: 2
-					}
-				},
-				line: 64
-			}
-		},
-		branchMap: {
-			'0': {
-				loc: {
-					start: {
-						line: 14,
-						column: 1
-					},
-					end: {
-						line: 16,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 14,
-						column: 1
-					},
-					end: {
-						line: 16,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 14,
-						column: 1
-					},
-					end: {
-						line: 16,
-						column: 2
-					}
-				}],
-				line: 14
-			},
-			'1': {
-				loc: {
-					start: {
-						line: 17,
-						column: 1
-					},
-					end: {
-						line: 19,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 17,
-						column: 1
-					},
-					end: {
-						line: 19,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 17,
-						column: 1
-					},
-					end: {
-						line: 19,
-						column: 2
-					}
-				}],
-				line: 17
-			},
-			'2': {
-				loc: {
-					start: {
-						line: 25,
-						column: 2
-					},
-					end: {
-						line: 34,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 25,
-						column: 2
-					},
-					end: {
-						line: 34,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 25,
-						column: 2
-					},
-					end: {
-						line: 34,
-						column: 3
-					}
-				}],
-				line: 25
-			},
-			'3': {
-				loc: {
-					start: {
-						line: 38,
-						column: 2
-					},
-					end: {
-						line: 40,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 38,
-						column: 2
-					},
-					end: {
-						line: 40,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 38,
-						column: 2
-					},
-					end: {
-						line: 40,
-						column: 3
-					}
-				}],
-				line: 38
-			},
-			'4': {
-				loc: {
-					start: {
-						line: 41,
-						column: 2
-					},
-					end: {
-						line: 43,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 41,
-						column: 2
-					},
-					end: {
-						line: 43,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 41,
-						column: 2
-					},
-					end: {
-						line: 43,
-						column: 3
-					}
-				}],
-				line: 41
-			},
-			'5': {
-				loc: {
-					start: {
-						line: 41,
-						column: 6
-					},
-					end: {
-						line: 41,
-						column: 72
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 41,
-						column: 6
-					},
-					end: {
-						line: 41,
-						column: 13
-					}
-				}, {
-					start: {
-						line: 41,
-						column: 17
-					},
-					end: {
-						line: 41,
-						column: 45
-					}
-				}, {
-					start: {
-						line: 41,
-						column: 49
-					},
-					end: {
-						line: 41,
-						column: 72
-					}
-				}],
-				line: 41
-			},
-			'6': {
-				loc: {
-					start: {
-						line: 48,
-						column: 2
-					},
-					end: {
-						line: 50,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 48,
-						column: 2
-					},
-					end: {
-						line: 50,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 48,
-						column: 2
-					},
-					end: {
-						line: 50,
-						column: 3
-					}
-				}],
-				line: 48
-			},
-			'7': {
-				loc: {
-					start: {
-						line: 51,
-						column: 2
-					},
-					end: {
-						line: 53,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 51,
-						column: 2
-					},
-					end: {
-						line: 53,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 51,
-						column: 2
-					},
-					end: {
-						line: 53,
-						column: 3
-					}
-				}],
-				line: 51
-			},
-			'8': {
-				loc: {
-					start: {
-						line: 55,
-						column: 2
-					},
-					end: {
-						line: 60,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 55,
-						column: 2
-					},
-					end: {
-						line: 60,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 55,
-						column: 2
-					},
-					end: {
-						line: 60,
-						column: 3
-					}
-				}],
-				line: 55
-			},
-			'9': {
-				loc: {
-					start: {
-						line: 66,
-						column: 2
-					},
-					end: {
-						line: 72,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 66,
-						column: 2
-					},
-					end: {
-						line: 72,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 66,
-						column: 2
-					},
-					end: {
-						line: 72,
-						column: 3
-					}
-				}],
-				line: 66
-			},
-			'10': {
-				loc: {
-					start: {
-						line: 66,
-						column: 6
-					},
-					end: {
-						line: 66,
-						column: 46
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 66,
-						column: 6
-					},
-					end: {
-						line: 66,
-						column: 14
-					}
-				}, {
-					start: {
-						line: 66,
-						column: 18
-					},
-					end: {
-						line: 66,
-						column: 46
-					}
-				}],
-				line: 66
-			},
-			'11': {
-				loc: {
-					start: {
-						line: 68,
-						column: 3
-					},
-					end: {
-						line: 70,
-						column: 4
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 68,
-						column: 3
-					},
-					end: {
-						line: 70,
-						column: 4
-					}
-				}, {
-					start: {
-						line: 68,
-						column: 3
-					},
-					end: {
-						line: 70,
-						column: 4
-					}
-				}],
-				line: 68
-			},
-			'12': {
-				loc: {
-					start: {
-						line: 75,
-						column: 2
-					},
-					end: {
-						line: 77,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 75,
-						column: 2
-					},
-					end: {
-						line: 77,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 75,
-						column: 2
-					},
-					end: {
-						line: 77,
-						column: 3
-					}
-				}],
-				line: 75
-			}
-		},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0,
-			'16': 0,
-			'17': 0,
-			'18': 0,
-			'19': 0,
-			'20': 0,
-			'21': 0,
-			'22': 0,
-			'23': 0,
-			'24': 0,
-			'25': 0,
-			'26': 0,
-			'27': 0,
-			'28': 0,
-			'29': 0,
-			'30': 0,
-			'31': 0,
-			'32': 0
-		},
-		f: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0
-		},
-		b: {
-			'0': [0, 0],
-			'1': [0, 0],
-			'2': [0, 0],
-			'3': [0, 0],
-			'4': [0, 0],
-			'5': [0, 0, 0],
-			'6': [0, 0],
-			'7': [0, 0],
-			'8': [0, 0],
-			'9': [0, 0],
-			'10': [0, 0],
-			'11': [0, 0],
-			'12': [0, 0]
-		},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
-
-var _recognizeType;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+exports.default = void 0;
 
 var _withGestures = __webpack_require__(/*! component/block-graph/with-gestures */ "./component/block-graph/with-gestures.jsx");
 
+var _recognizeType;
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var EDGE_THRESHOLD = (cov_285usgxei7.s[0]++, 10);
+var EDGE_THRESHOLD = 10;
 
 function detectDragMode(event) {
-	cov_285usgxei7.f[0]++;
+  var _event$graphData = event.graphData,
+      match = _event$graphData.match,
+      point = _event$graphData.point;
+  var rect = match.rect;
+  var leftDelta = Math.abs(rect.x - point.x);
+  var rightDelta = Math.abs(rect.x + rect.width - point.x); // point is the coordinate within the graph
+  // rect is where the block is within the graph
+  // if we're within a threshold of either side we
+  // only want to drag one side
 
-	var _ref = (cov_285usgxei7.s[1]++, event.graphData),
-	    match = _ref.match,
-	    point = _ref.point;
+  if (leftDelta <= EDGE_THRESHOLD) {
+    return 'left';
+  }
 
-	var _ref2 = (cov_285usgxei7.s[2]++, match),
-	    rect = _ref2.rect;
+  if (rightDelta <= EDGE_THRESHOLD) {
+    return 'right';
+  }
 
-	var leftDelta = (cov_285usgxei7.s[3]++, Math.abs(rect.x - point.x));
-	var rightDelta = (cov_285usgxei7.s[4]++, Math.abs(rect.x + rect.width - point.x));
-	// point is the coordinate within the graph
-	// rect is where the block is within the graph
-	// if we're within a threshold of either side we
-	// only want to drag one side
-	cov_285usgxei7.s[5]++;
-	if (leftDelta <= EDGE_THRESHOLD) {
-		cov_285usgxei7.b[0][0]++;
-		cov_285usgxei7.s[6]++;
-
-		return 'left';
-	} else {
-		cov_285usgxei7.b[0][1]++;
-	}
-	cov_285usgxei7.s[7]++;
-	if (rightDelta <= EDGE_THRESHOLD) {
-		cov_285usgxei7.b[1][0]++;
-		cov_285usgxei7.s[8]++;
-
-		return 'right';
-	} else {
-		cov_285usgxei7.b[1][1]++;
-	}
-	cov_285usgxei7.s[9]++;
-	return 'both';
+  return 'both';
 }
 
-exports.default = (0, _withGestures.recognizeType)((_recognizeType = {}, _defineProperty(_recognizeType, _withGestures.EVENT_TYPES.MOUSEDOWN, function (event, gesture) {
-	cov_285usgxei7.f[1]++;
-	cov_285usgxei7.s[10]++;
+var _default = (0, _withGestures.recognizeType)((_recognizeType = {}, _defineProperty(_recognizeType, _withGestures.EVENT_TYPES.MOUSEDOWN, function (event, gesture) {
+  if (event.graphData.match) {
+    // clicked on a block
+    return {
+      type: 'drag',
+      origin: event.graphData,
+      destination: event.graphData,
+      dragMode: detectDragMode(event, gesture),
+      block: event.graphData.match.block
+    };
+  }
 
-	if (event.graphData.match) {
-		cov_285usgxei7.b[2][0]++;
-		cov_285usgxei7.s[11]++;
-
-		// clicked on a block
-		return {
-			type: 'drag',
-			origin: event.graphData,
-			destination: event.graphData,
-			dragMode: detectDragMode(event, gesture),
-			block: event.graphData.match.block
-		};
-	} else {
-		cov_285usgxei7.b[2][1]++;
-	}
-	cov_285usgxei7.s[12]++;
-	return { type: 'multidraw', blockType: 'a', origin: event.graphData };
+  return {
+    type: 'multidraw',
+    blockType: 'a',
+    origin: event.graphData
+  };
 }), _defineProperty(_recognizeType, _withGestures.EVENT_TYPES.MOUSEMOVE, function (event, gesture) {
-	cov_285usgxei7.f[2]++;
-	cov_285usgxei7.s[13]++;
+  if (!gesture) {
+    return gesture;
+  }
 
-	if (!gesture) {
-		cov_285usgxei7.b[3][0]++;
-		cov_285usgxei7.s[14]++;
+  if (gesture && gesture.type !== 'multidraw' && gesture.type !== 'drag') {
+    return gesture;
+  }
 
-		return gesture;
-	} else {
-		cov_285usgxei7.b[3][1]++;
-	}
-	cov_285usgxei7.s[15]++;
-	if ((cov_285usgxei7.b[5][0]++, gesture) && (cov_285usgxei7.b[5][1]++, gesture.type !== 'multidraw') && (cov_285usgxei7.b[5][2]++, gesture.type !== 'drag')) {
-		cov_285usgxei7.b[4][0]++;
-		cov_285usgxei7.s[16]++;
-
-		return gesture;
-	} else {
-		cov_285usgxei7.b[4][1]++;
-	}
-	cov_285usgxei7.s[17]++;
-	event.event.preventDefault();
-	cov_285usgxei7.s[18]++;
-	return _extends({}, gesture, { destination: event.graphData });
+  event.event.preventDefault();
+  return _objectSpread({}, gesture, {
+    destination: event.graphData
+  });
 }), _defineProperty(_recognizeType, _withGestures.EVENT_TYPES.MOUSEUP, function (event, gesture) {
-	cov_285usgxei7.f[3]++;
-	cov_285usgxei7.s[19]++;
+  if (!gesture) {
+    return {
+      type: 'idle'
+    };
+  }
 
-	if (!gesture) {
-		cov_285usgxei7.b[6][0]++;
-		cov_285usgxei7.s[20]++;
+  if (gesture.type === 'multidraw') {
+    return {
+      type: 'complete',
+      gesture: gesture,
+      event: event
+    };
+  }
 
-		return { type: 'idle' };
-	} else {
-		cov_285usgxei7.b[6][1]++;
-	}
-	cov_285usgxei7.s[21]++;
-	if (gesture.type === 'multidraw') {
-		cov_285usgxei7.b[7][0]++;
-		cov_285usgxei7.s[22]++;
+  if (gesture.type === 'drag') {
+    // TODO: if the drag was less than a certain distance, consider it a selection?
+    // on mouse up if the gesture was a drag, we return a complete gesture
+    // to signify that the user has commited a gesture
+    return {
+      type: 'complete',
+      gesture: gesture,
+      event: event
+    };
+  }
 
-		return { type: 'complete', gesture: gesture, event: event };
-	} else {
-		cov_285usgxei7.b[7][1]++;
-	}
-
-	cov_285usgxei7.s[23]++;
-	if (gesture.type === 'drag') {
-		cov_285usgxei7.b[8][0]++;
-		cov_285usgxei7.s[24]++;
-
-		// TODO: if the drag was less than a certain distance, consider it a selection?
-		// on mouse up if the gesture was a drag, we return a complete gesture
-		// to signify that the user has commited a gesture
-		return { type: 'complete', gesture: gesture, event: event };
-	} else {
-		cov_285usgxei7.b[8][1]++;
-	}
-
-	cov_285usgxei7.s[25]++;
-	return gesture;
+  return gesture;
 }), _defineProperty(_recognizeType, _withGestures.EVENT_TYPES.CLICK, function (event, gesture) {
-	cov_285usgxei7.f[4]++;
-	cov_285usgxei7.s[26]++;
+  // there is no existing gesture, or the existing gesture is an accept gesture
+  if (!gesture || gesture.type === 'selection') {
+    // TODO: multi selection
+    if (event.graphData.match) {
+      return {
+        type: 'selection',
+        selected: event.graphData.match.block
+      };
+    }
 
-	// there is no existing gesture, or the existing gesture is an accept gesture
-	if ((cov_285usgxei7.b[10][0]++, !gesture) || (cov_285usgxei7.b[10][1]++, gesture.type === 'selection')) {
-		cov_285usgxei7.b[9][0]++;
-		cov_285usgxei7.s[27]++;
+    return {
+      type: 'idle'
+    };
+  } // if this is the end of a drag gesture, keep the block selected
 
-		// TODO: multi selection
-		if (event.graphData.match) {
-			cov_285usgxei7.b[11][0]++;
-			cov_285usgxei7.s[28]++;
 
-			return { type: 'selection', selected: event.graphData.match.block };
-		} else {
-			cov_285usgxei7.b[11][1]++;
-		}
-		cov_285usgxei7.s[29]++;
-		return { type: 'idle' };
-	} else {
-		cov_285usgxei7.b[9][1]++;
-	}
+  if (gesture.type === 'drag') {
+    return {
+      type: 'selection',
+      selected: event.graphData.match.block
+    };
+  }
 
-	// if this is the end of a drag gesture, keep the block selected
-	cov_285usgxei7.s[30]++;
-	if (gesture.type === 'drag') {
-		cov_285usgxei7.b[12][0]++;
-		cov_285usgxei7.s[31]++;
-
-		return { type: 'selection', selected: event.graphData.match.block };
-	} else {
-		cov_285usgxei7.b[12][1]++;
-	}
-
-	cov_285usgxei7.s[32]++;
-	return gesture;
+  return gesture;
 }), _recognizeType));
+
+exports.default = _default;
 
 /***/ }),
 
@@ -66469,743 +56839,96 @@ module.exports = [{"uid":"5afc349d-3260-48fb-ac5e-6e3b24dcf9b4","row":107,"start
 "use strict";
 
 
-var cov_1cg9pg8vpk = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/data/helpers.js',
-	    hash = '62102b2f2da811d0e7f2984c16a523fcd8e02058',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/data/helpers.js',
-		statementMap: {
-			'0': {
-				start: {
-					line: 6,
-					column: 34
-				},
-				end: {
-					line: 11,
-					column: 1
-				}
-			},
-			'1': {
-				start: {
-					line: 7,
-					column: 13
-				},
-				end: {
-					line: 9,
-					column: 39
-				}
-			},
-			'2': {
-				start: {
-					line: 8,
-					column: 2
-				},
-				end: {
-					line: 8,
-					column: 61
-				}
-			},
-			'3': {
-				start: {
-					line: 10,
-					column: 1
-				},
-				end: {
-					line: 10,
-					column: 53
-				}
-			},
-			'4': {
-				start: {
-					line: 13,
-					column: 19
-				},
-				end: {
-					line: 16,
-					column: 1
-				}
-			},
-			'5': {
-				start: {
-					line: 14,
-					column: 15
-				},
-				end: {
-					line: 14,
-					column: 30
-				}
-			},
-			'6': {
-				start: {
-					line: 15,
-					column: 1
-				},
-				end: {
-					line: 15,
-					column: 56
-				}
-			},
-			'7': {
-				start: {
-					line: 18,
-					column: 22
-				},
-				end: {
-					line: 20,
-					column: 1
-				}
-			},
-			'8': {
-				start: {
-					line: 19,
-					column: 1
-				},
-				end: {
-					line: 19,
-					column: 59
-				}
-			},
-			'9': {
-				start: {
-					line: 22,
-					column: 22
-				},
-				end: {
-					line: 31,
-					column: 1
-				}
-			},
-			'10': {
-				start: {
-					line: 23,
-					column: 19
-				},
-				end: {
-					line: 23,
-					column: 52
-				}
-			},
-			'11': {
-				start: {
-					line: 24,
-					column: 1
-				},
-				end: {
-					line: 30,
-					column: 3
-				}
-			},
-			'12': {
-				start: {
-					line: 33,
-					column: 39
-				},
-				end: {
-					line: 48,
-					column: 1
-				}
-			},
-			'13': {
-				start: {
-					line: 34,
-					column: 14
-				},
-				end: {
-					line: 34,
-					column: 16
-				}
-			},
-			'14': {
-				start: {
-					line: 35,
-					column: 1
-				},
-				end: {
-					line: 37,
-					column: 2
-				}
-			},
-			'15': {
-				start: {
-					line: 36,
-					column: 2
-				},
-				end: {
-					line: 36,
-					column: 89
-				}
-			},
-			'16': {
-				start: {
-					line: 38,
-					column: 1
-				},
-				end: {
-					line: 47,
-					column: 8
-				}
-			},
-			'17': {
-				start: {
-					line: 39,
-					column: 29
-				},
-				end: {
-					line: 40,
-					column: 42
-				}
-			},
-			'18': {
-				start: {
-					line: 39,
-					column: 48
-				},
-				end: {
-					line: 40,
-					column: 33
-				}
-			},
-			'19': {
-				start: {
-					line: 42,
-					column: 16
-				},
-				end: {
-					line: 45,
-					column: 3
-				}
-			},
-			'20': {
-				start: {
-					line: 46,
-					column: 2
-				},
-				end: {
-					line: 46,
-					column: 28
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: '(anonymous_0)',
-				decl: {
-					start: {
-						line: 6,
-						column: 34
-					},
-					end: {
-						line: 6,
-						column: 35
-					}
-				},
-				loc: {
-					start: {
-						line: 6,
-						column: 44
-					},
-					end: {
-						line: 11,
-						column: 1
-					}
-				},
-				line: 6
-			},
-			'1': {
-				name: '(anonymous_1)',
-				decl: {
-					start: {
-						line: 7,
-						column: 25
-					},
-					end: {
-						line: 7,
-						column: 26
-					}
-				},
-				loc: {
-					start: {
-						line: 7,
-						column: 44
-					},
-					end: {
-						line: 9,
-						column: 2
-					}
-				},
-				line: 7
-			},
-			'2': {
-				name: '(anonymous_2)',
-				decl: {
-					start: {
-						line: 13,
-						column: 19
-					},
-					end: {
-						line: 13,
-						column: 20
-					}
-				},
-				loc: {
-					start: {
-						line: 13,
-						column: 25
-					},
-					end: {
-						line: 16,
-						column: 1
-					}
-				},
-				line: 13
-			},
-			'3': {
-				name: '(anonymous_3)',
-				decl: {
-					start: {
-						line: 18,
-						column: 22
-					},
-					end: {
-						line: 18,
-						column: 23
-					}
-				},
-				loc: {
-					start: {
-						line: 18,
-						column: 41
-					},
-					end: {
-						line: 20,
-						column: 1
-					}
-				},
-				line: 18
-			},
-			'4': {
-				name: '(anonymous_4)',
-				decl: {
-					start: {
-						line: 22,
-						column: 22
-					},
-					end: {
-						line: 22,
-						column: 23
-					}
-				},
-				loc: {
-					start: {
-						line: 22,
-						column: 60
-					},
-					end: {
-						line: 31,
-						column: 1
-					}
-				},
-				line: 22
-			},
-			'5': {
-				name: '(anonymous_5)',
-				decl: {
-					start: {
-						line: 33,
-						column: 39
-					},
-					end: {
-						line: 33,
-						column: 40
-					}
-				},
-				loc: {
-					start: {
-						line: 33,
-						column: 80
-					},
-					end: {
-						line: 48,
-						column: 1
-					}
-				},
-				line: 33
-			},
-			'6': {
-				name: '(anonymous_6)',
-				decl: {
-					start: {
-						line: 38,
-						column: 22
-					},
-					end: {
-						line: 38,
-						column: 23
-					}
-				},
-				loc: {
-					start: {
-						line: 38,
-						column: 41
-					},
-					end: {
-						line: 47,
-						column: 2
-					}
-				},
-				line: 38
-			},
-			'7': {
-				name: '(anonymous_7)',
-				decl: {
-					start: {
-						line: 39,
-						column: 37
-					},
-					end: {
-						line: 39,
-						column: 38
-					}
-				},
-				loc: {
-					start: {
-						line: 39,
-						column: 48
-					},
-					end: {
-						line: 40,
-						column: 33
-					}
-				},
-				line: 39
-			}
-		},
-		branchMap: {
-			'0': {
-				loc: {
-					start: {
-						line: 8,
-						column: 9
-					},
-					end: {
-						line: 8,
-						column: 60
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 8,
-						column: 36
-					},
-					end: {
-						line: 8,
-						column: 51
-					}
-				}, {
-					start: {
-						line: 8,
-						column: 54
-					},
-					end: {
-						line: 8,
-						column: 60
-					}
-				}],
-				line: 8
-			},
-			'1': {
-				loc: {
-					start: {
-						line: 18,
-						column: 29
-					},
-					end: {
-						line: 18,
-						column: 36
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 18,
-						column: 35
-					},
-					end: {
-						line: 18,
-						column: 36
-					}
-				}],
-				line: 18
-			},
-			'2': {
-				loc: {
-					start: {
-						line: 22,
-						column: 39
-					},
-					end: {
-						line: 22,
-						column: 55
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 22,
-						column: 54
-					},
-					end: {
-						line: 22,
-						column: 55
-					}
-				}],
-				line: 22
-			},
-			'3': {
-				loc: {
-					start: {
-						line: 33,
-						column: 51
-					},
-					end: {
-						line: 33,
-						column: 63
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 33,
-						column: 59
-					},
-					end: {
-						line: 33,
-						column: 63
-					}
-				}],
-				line: 33
-			},
-			'4': {
-				loc: {
-					start: {
-						line: 33,
-						column: 65
-					},
-					end: {
-						line: 33,
-						column: 75
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 33,
-						column: 72
-					},
-					end: {
-						line: 33,
-						column: 75
-					}
-				}],
-				line: 33
-			},
-			'5': {
-				loc: {
-					start: {
-						line: 39,
-						column: 48
-					},
-					end: {
-						line: 40,
-						column: 33
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 39,
-						column: 48
-					},
-					end: {
-						line: 39,
-						column: 71
-					}
-				}, {
-					start: {
-						line: 40,
-						column: 3
-					},
-					end: {
-						line: 40,
-						column: 33
-					}
-				}],
-				line: 39
-			}
-		},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0,
-			'16': 0,
-			'17': 0,
-			'18': 0,
-			'19': 0,
-			'20': 0
-		},
-		f: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0
-		},
-		b: {
-			'0': [0, 0],
-			'1': [0],
-			'2': [0],
-			'3': [0],
-			'4': [0],
-			'5': [0, 0]
-		},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
-exports.generateBlocksBeginning = exports.calculateMinSecond = undefined;
+exports.generateBlocksBeginning = exports.calculateMinSecond = void 0;
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _moment = _interopRequireDefault(__webpack_require__(/*! moment */ "../node_modules/moment/moment.js"));
 
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+var _v = _interopRequireDefault(__webpack_require__(/*! uuid/v4 */ "../node_modules/uuid/v4.js"));
 
-var _moment = __webpack_require__(/*! moment */ "../node_modules/moment/moment.js");
-
-var _moment2 = _interopRequireDefault(_moment);
-
-var _v = __webpack_require__(/*! uuid/v4 */ "../node_modules/uuid/v4.js");
-
-var _v2 = _interopRequireDefault(_v);
-
-var _splitBy = __webpack_require__(/*! split-by */ "./split-by.js");
-
-var _splitBy2 = _interopRequireDefault(_splitBy);
+var _splitBy3 = _interopRequireDefault(__webpack_require__(/*! split-by */ "./split-by.js"));
 
 var _timespan = __webpack_require__(/*! timespan */ "./timespan.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
-cov_1cg9pg8vpk.s[0]++;
-var calculateMinSecond = exports.calculateMinSecond = function calculateMinSecond(data) {
-	cov_1cg9pg8vpk.f[0]++;
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
 
-	var min = (cov_1cg9pg8vpk.s[1]++, data.reduce(function (origin, block) {
-		cov_1cg9pg8vpk.f[1]++;
-		cov_1cg9pg8vpk.s[2]++;
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
 
-		return block.startTime < origin ? (cov_1cg9pg8vpk.b[0][0]++, block.startTime) : (cov_1cg9pg8vpk.b[0][1]++, origin);
-	}, _moment2.default.utc().startOf('day').unix()));
-	cov_1cg9pg8vpk.s[3]++;
-	return _moment2.default.unix(min).utc().startOf('day').unix();
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var calculateMinSecond = function calculateMinSecond(data) {
+  var min = data.reduce(function (origin, block) {
+    return block.startTime < origin ? block.startTime : origin;
+  }, _moment.default.utc().startOf('day').unix());
+  return _moment.default.unix(min).utc().startOf('day').unix();
 };
 
-cov_1cg9pg8vpk.s[4]++;
+exports.calculateMinSecond = calculateMinSecond;
+
 var randomType = function randomType() {
-	cov_1cg9pg8vpk.f[2]++;
-
-	var types = (cov_1cg9pg8vpk.s[5]++, ['a', 'b', 'c']);
-	cov_1cg9pg8vpk.s[6]++;
-	return types[Math.floor(Math.random() * types.length)];
+  var types = ['a', 'b', 'c'];
+  return types[Math.floor(Math.random() * types.length)];
 };
 
-cov_1cg9pg8vpk.s[7]++;
 var randomSeconds = function randomSeconds(size) {
-	var min = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : (cov_1cg9pg8vpk.b[1][0]++, 0);
-	cov_1cg9pg8vpk.f[3]++;
-	cov_1cg9pg8vpk.s[8]++;
-
-	return (Math.floor(Math.random() * size) + min) * 15 * 60; // random time in 15 minute intervals;
+  var min = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  return (Math.floor(Math.random() * size) + min) * 15 * 60; // random time in 15 minute intervals;
 };
 
-cov_1cg9pg8vpk.s[9]++;
 var generateBlock = function generateBlock(timestamp, row) {
-	var quarterHours = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : (cov_1cg9pg8vpk.b[2][0]++, 4);
-	cov_1cg9pg8vpk.f[4]++;
-
-	var startTime = (cov_1cg9pg8vpk.s[10]++, randomSeconds(22 * 4) + timestamp);
-	cov_1cg9pg8vpk.s[11]++;
-	return {
-		uid: (0, _v2.default)(),
-		row: row,
-		startTime: startTime,
-		type: randomType(),
-		endTime: startTime + randomSeconds(quarterHours, 3)
-	};
+  var quarterHours = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 4;
+  var startTime = randomSeconds(22 * 4) + timestamp;
+  return {
+    uid: (0, _v.default)(),
+    row: row,
+    startTime: startTime,
+    type: randomType(),
+    endTime: startTime + randomSeconds(quarterHours, 3)
+  };
 };
 
-cov_1cg9pg8vpk.s[12]++;
-var generateBlocksBeginning = exports.generateBlocksBeginning = function generateBlocksBeginning(timestamp) {
-	var total = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : (cov_1cg9pg8vpk.b[3][0]++, 2000);
-	var rows = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : (cov_1cg9pg8vpk.b[4][0]++, 200);
-	cov_1cg9pg8vpk.f[5]++;
+var generateBlocksBeginning = function generateBlocksBeginning(timestamp) {
+  var total = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2000;
+  var rows = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 200;
+  var blocks = [];
 
-	var blocks = (cov_1cg9pg8vpk.s[13]++, []);
-	cov_1cg9pg8vpk.s[14]++;
-	while (blocks.length < total) {
-		cov_1cg9pg8vpk.s[15]++;
+  while (blocks.length < total) {
+    blocks = blocks.concat([generateBlock(timestamp, Math.floor(Math.random() * rows))]);
+  }
 
-		blocks = blocks.concat([generateBlock(timestamp, Math.floor(Math.random() * rows))]);
-	}
-	cov_1cg9pg8vpk.s[16]++;
-	return blocks.reduce(function (merged, block) {
-		cov_1cg9pg8vpk.f[6]++;
+  return blocks.reduce(function (merged, block) {
+    var _splitBy = (0, _splitBy3.default)(function (maybe) {
+      return block.row === maybe.row && (0, _timespan.timeSpansOverlap)(block, maybe);
+    }, merged),
+        _splitBy2 = _slicedToArray(_splitBy, 2),
+        matching = _splitBy2[0],
+        others = _splitBy2[1];
 
-		var _ref = (cov_1cg9pg8vpk.s[17]++, (0, _splitBy2.default)(function (maybe) {
-			cov_1cg9pg8vpk.f[7]++;
-			cov_1cg9pg8vpk.s[18]++;
-			return (cov_1cg9pg8vpk.b[5][0]++, block.row === maybe.row) && (cov_1cg9pg8vpk.b[5][1]++, (0, _timespan.timeSpansOverlap)(block, maybe));
-		}, merged)),
-		    _ref2 = _slicedToArray(_ref, 2),
-		    matching = _ref2[0],
-		    others = _ref2[1];
+    var union = _objectSpread({}, block, (0, _timespan.unionTimeSpanSet)(_toConsumableArray(matching).concat([block])));
 
-		var union = (cov_1cg9pg8vpk.s[19]++, _extends({}, block, (0, _timespan.unionTimeSpanSet)([].concat(_toConsumableArray(matching), [block]))));
-		cov_1cg9pg8vpk.s[20]++;
-		return [union].concat(_toConsumableArray(others));
-	}, []);
+    return [union].concat(_toConsumableArray(others));
+  }, []);
 };
+
+exports.generateBlocksBeginning = generateBlocksBeginning;
 
 /***/ }),
 
@@ -67260,192 +56983,13 @@ if(false) {}
 "use strict";
 
 
-var cov_2fl4e3kzhi = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/index.js',
-	    hash = 'bf3ef33d43c2cb9f80bdb236d019aa2c33f4c7c4',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/index.js',
-		statementMap: {
-			'0': {
-				start: {
-					line: 10,
-					column: 0
-				},
-				end: {
-					line: 16,
-					column: 2
-				}
-			},
-			'1': {
-				start: {
-					line: 11,
-					column: 1
-				},
-				end: {
-					line: 15,
-					column: 4
-				}
-			},
-			'2': {
-				start: {
-					line: 18,
-					column: 17
-				},
-				end: {
-					line: 18,
-					column: 46
-				}
-			},
-			'3': {
-				start: {
-					line: 19,
-					column: 0
-				},
-				end: {
-					line: 19,
-					column: 21
-				}
-			},
-			'4': {
-				start: {
-					line: 21,
-					column: 0
-				},
-				end: {
-					line: 21,
-					column: 36
-				}
-			},
-			'5': {
-				start: {
-					line: 23,
-					column: 0
-				},
-				end: {
-					line: 23,
-					column: 26
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: '(anonymous_0)',
-				decl: {
-					start: {
-						line: 10,
-						column: 24
-					},
-					end: {
-						line: 10,
-						column: 25
-					}
-				},
-				loc: {
-					start: {
-						line: 10,
-						column: 68
-					},
-					end: {
-						line: 16,
-						column: 1
-					}
-				},
-				line: 10
-			}
-		},
-		branchMap: {
-			'0': {
-				loc: {
-					start: {
-						line: 10,
-						column: 25
-					},
-					end: {
-						line: 10,
-						column: 45
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 10,
-						column: 36
-					},
-					end: {
-						line: 10,
-						column: 45
-					}
-				}],
-				line: 10
-			},
-			'1': {
-				loc: {
-					start: {
-						line: 10,
-						column: 47
-					},
-					end: {
-						line: 10,
-						column: 63
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 10,
-						column: 54
-					},
-					end: {
-						line: 10,
-						column: 63
-					}
-				}],
-				line: 10
-			}
-		},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0
-		},
-		f: {
-			'0': 0
-		},
-		b: {
-			'0': [0],
-			'1': [0]
-		},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
-var _react = __webpack_require__(/*! react */ "../node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "../node_modules/react/index.js"));
 
 var _reactDom = __webpack_require__(/*! react-dom */ "../node_modules/react-dom/index.js");
 
-var _app = __webpack_require__(/*! component/app */ "./component/app.jsx");
+var _app = _interopRequireDefault(__webpack_require__(/*! component/app */ "./component/app.jsx"));
 
-var _app2 = _interopRequireDefault(_app);
-
-var _moment = __webpack_require__(/*! moment */ "../node_modules/moment/moment.js");
-
-var _moment2 = _interopRequireDefault(_moment);
+var _moment = _interopRequireDefault(__webpack_require__(/*! moment */ "../node_modules/moment/moment.js"));
 
 var _helpers = __webpack_require__(/*! data/helpers */ "./data/helpers.js");
 
@@ -67453,27 +56997,16 @@ __webpack_require__(/*! demo.scss */ "./demo.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_2fl4e3kzhi.s[0]++;
-
-
 window.generateBlocks = function () {
-	var quantity = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : (cov_2fl4e3kzhi.b[0][0]++, undefined);
-	var rows = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : (cov_2fl4e3kzhi.b[1][0]++, undefined);
-	cov_2fl4e3kzhi.f[0]++;
-	cov_2fl4e3kzhi.s[1]++;
-
-	return JSON.stringify((0, _helpers.generateBlocksBeginning)((0, _moment2.default)().utc().startOf('day').unix(), quantity, rows));
+  var quantity = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : undefined;
+  var rows = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : undefined;
+  return JSON.stringify((0, _helpers.generateBlocksBeginning)((0, _moment.default)().utc().startOf('day').unix(), quantity, rows));
 };
 
-var rootNode = (cov_2fl4e3kzhi.s[2]++, document.createElement('div'));
-cov_2fl4e3kzhi.s[3]++;
+var rootNode = document.createElement('div');
 rootNode.id = 'root';
-
-cov_2fl4e3kzhi.s[4]++;
 document.body.appendChild(rootNode);
-
-cov_2fl4e3kzhi.s[5]++;
-(0, _reactDom.render)(_react2.default.createElement(_app2.default, null), rootNode);
+(0, _reactDom.render)(_react.default.createElement(_app.default, null), rootNode);
 
 /***/ }),
 
@@ -67487,198 +57020,42 @@ cov_2fl4e3kzhi.s[5]++;
 "use strict";
 
 
-var cov_rk1j6yg5x = function () {
-	var path = "/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/split-by.js",
-	    hash = "b2a8eb19255913d3ae027cc8a140876491b8ce75",
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = "__coverage__",
-	    coverageData = {
-		path: "/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/split-by.js",
-		statementMap: {
-			"0": {
-				start: {
-					line: 2,
-					column: 1
-				},
-				end: {
-					line: 7,
-					column: 14
-				}
-			},
-			"1": {
-				start: {
-					line: 3,
-					column: 2
-				},
-				end: {
-					line: 5,
-					column: 3
-				}
-			},
-			"2": {
-				start: {
-					line: 4,
-					column: 3
-				},
-				end: {
-					line: 4,
-					column: 40
-				}
-			},
-			"3": {
-				start: {
-					line: 6,
-					column: 2
-				},
-				end: {
-					line: 6,
-					column: 39
-				}
-			}
-		},
-		fnMap: {
-			"0": {
-				name: "(anonymous_0)",
-				decl: {
-					start: {
-						line: 1,
-						column: 15
-					},
-					end: {
-						line: 1,
-						column: 16
-					}
-				},
-				loc: {
-					start: {
-						line: 1,
-						column: 29
-					},
-					end: {
-						line: 8,
-						column: 1
-					}
-				},
-				line: 1
-			},
-			"1": {
-				name: "(anonymous_1)",
-				decl: {
-					start: {
-						line: 2,
-						column: 20
-					},
-					end: {
-						line: 2,
-						column: 21
-					}
-				},
-				loc: {
-					start: {
-						line: 2,
-						column: 50
-					},
-					end: {
-						line: 7,
-						column: 2
-					}
-				},
-				line: 2
-			}
-		},
-		branchMap: {
-			"0": {
-				loc: {
-					start: {
-						line: 3,
-						column: 2
-					},
-					end: {
-						line: 5,
-						column: 3
-					}
-				},
-				type: "if",
-				locations: [{
-					start: {
-						line: 3,
-						column: 2
-					},
-					end: {
-						line: 5,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 3,
-						column: 2
-					},
-					end: {
-						line: 5,
-						column: 3
-					}
-				}],
-				line: 3
-			}
-		},
-		s: {
-			"0": 0,
-			"1": 0,
-			"2": 0,
-			"3": 0
-		},
-		f: {
-			"0": 0,
-			"1": 0
-		},
-		b: {
-			"0": [0, 0]
-		},
-		_coverageSchema: "332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
+exports.default = void 0;
 
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
 
-exports.default = function (fn, list) {
-	cov_rk1j6yg5x.f[0]++;
-	cov_rk1j6yg5x.s[0]++;
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
 
-	return list.reduce(function (_ref, item) {
-		var _ref2 = _slicedToArray(_ref, 2),
-		    matching = _ref2[0],
-		    others = _ref2[1];
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
-		cov_rk1j6yg5x.f[1]++;
-		cov_rk1j6yg5x.s[1]++;
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-		if (fn(item)) {
-			cov_rk1j6yg5x.b[0][0]++;
-			cov_rk1j6yg5x.s[2]++;
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-			return [[item].concat(_toConsumableArray(matching)), others];
-		} else {
-			cov_rk1j6yg5x.b[0][1]++;
-		}
-		cov_rk1j6yg5x.s[3]++;
-		return [matching, [item].concat(_toConsumableArray(others))];
-	}, [[], []]);
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var _default = function _default(fn, list) {
+  return list.reduce(function (_ref, item) {
+    var _ref2 = _slicedToArray(_ref, 2),
+        matching = _ref2[0],
+        others = _ref2[1];
+
+    if (fn(item)) {
+      return [[item].concat(_toConsumableArray(matching)), others];
+    }
+
+    return [matching, [item].concat(_toConsumableArray(others))];
+  }, [[], []]);
 };
+
+exports.default = _default;
 
 /***/ }),
 
@@ -67692,2091 +57069,25 @@ exports.default = function (fn, list) {
 "use strict";
 
 
-var cov_1h4xp5e4yy = function () {
-	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/timespan.js',
-	    hash = '2d936934997276f8922ca9d72320b78e09941029',
-	    Function = function () {}.constructor,
-	    global = new Function('return this')(),
-	    gcv = '__coverage__',
-	    coverageData = {
-		path: '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/timespan.js',
-		statementMap: {
-			'0': {
-				start: {
-					line: 3,
-					column: 34
-				},
-				end: {
-					line: 3,
-					column: 36
-				}
-			},
-			'1': {
-				start: {
-					line: 4,
-					column: 32
-				},
-				end: {
-					line: 4,
-					column: 55
-				}
-			},
-			'2': {
-				start: {
-					line: 5,
-					column: 31
-				},
-				end: {
-					line: 5,
-					column: 52
-				}
-			},
-			'3': {
-				start: {
-					line: 26,
-					column: 36
-				},
-				end: {
-					line: 28,
-					column: 1
-				}
-			},
-			'4': {
-				start: {
-					line: 27,
-					column: 1
-				},
-				end: {
-					line: 27,
-					column: 75
-				}
-			},
-			'5': {
-				start: {
-					line: 36,
-					column: 33
-				},
-				end: {
-					line: 41,
-					column: 1
-				}
-			},
-			'6': {
-				start: {
-					line: 37,
-					column: 1
-				},
-				end: {
-					line: 39,
-					column: 2
-				}
-			},
-			'7': {
-				start: {
-					line: 38,
-					column: 2
-				},
-				end: {
-					line: 38,
-					column: 15
-				}
-			},
-			'8': {
-				start: {
-					line: 40,
-					column: 1
-				},
-				end: {
-					line: 40,
-					column: 63
-				}
-			},
-			'9': {
-				start: {
-					line: 50,
-					column: 40
-				},
-				end: {
-					line: 52,
-					column: 1
-				}
-			},
-			'10': {
-				start: {
-					line: 51,
-					column: 1
-				},
-				end: {
-					line: 51,
-					column: 91
-				}
-			},
-			'11': {
-				start: {
-					line: 61,
-					column: 32
-				},
-				end: {
-					line: 77,
-					column: 1
-				}
-			},
-			'12': {
-				start: {
-					line: 63,
-					column: 1
-				},
-				end: {
-					line: 65,
-					column: 2
-				}
-			},
-			'13': {
-				start: {
-					line: 64,
-					column: 2
-				},
-				end: {
-					line: 64,
-					column: 14
-				}
-			},
-			'14': {
-				start: {
-					line: 68,
-					column: 1
-				},
-				end: {
-					line: 70,
-					column: 2
-				}
-			},
-			'15': {
-				start: {
-					line: 69,
-					column: 2
-				},
-				end: {
-					line: 69,
-					column: 14
-				}
-			},
-			'16': {
-				start: {
-					line: 72,
-					column: 1
-				},
-				end: {
-					line: 74,
-					column: 2
-				}
-			},
-			'17': {
-				start: {
-					line: 73,
-					column: 2
-				},
-				end: {
-					line: 73,
-					column: 14
-				}
-			},
-			'18': {
-				start: {
-					line: 76,
-					column: 1
-				},
-				end: {
-					line: 76,
-					column: 14
-				}
-			},
-			'19': {
-				start: {
-					line: 86,
-					column: 30
-				},
-				end: {
-					line: 91,
-					column: 1
-				}
-			},
-			'20': {
-				start: {
-					line: 87,
-					column: 1
-				},
-				end: {
-					line: 90,
-					column: 3
-				}
-			},
-			'21': {
-				start: {
-					line: 97,
-					column: 33
-				},
-				end: {
-					line: 125,
-					column: 1
-				}
-			},
-			'22': {
-				start: {
-					line: 99,
-					column: 1
-				},
-				end: {
-					line: 101,
-					column: 2
-				}
-			},
-			'23': {
-				start: {
-					line: 100,
-					column: 2
-				},
-				end: {
-					line: 100,
-					column: 19
-				}
-			},
-			'24': {
-				start: {
-					line: 103,
-					column: 24
-				},
-				end: {
-					line: 118,
-					column: 2
-				}
-			},
-			'25': {
-				start: {
-					line: 106,
-					column: 2
-				},
-				end: {
-					line: 108,
-					column: 3
-				}
-			},
-			'26': {
-				start: {
-					line: 107,
-					column: 3
-				},
-				end: {
-					line: 107,
-					column: 38
-				}
-			},
-			'27': {
-				start: {
-					line: 111,
-					column: 2
-				},
-				end: {
-					line: 113,
-					column: 3
-				}
-			},
-			'28': {
-				start: {
-					line: 112,
-					column: 3
-				},
-				end: {
-					line: 112,
-					column: 63
-				}
-			},
-			'29': {
-				start: {
-					line: 117,
-					column: 2
-				},
-				end: {
-					line: 117,
-					column: 65
-				}
-			},
-			'30': {
-				start: {
-					line: 120,
-					column: 37
-				},
-				end: {
-					line: 123,
-					column: 3
-				}
-			},
-			'31': {
-				start: {
-					line: 124,
-					column: 1
-				},
-				end: {
-					line: 124,
-					column: 32
-				}
-			},
-			'32': {
-				start: {
-					line: 133,
-					column: 32
-				},
-				end: {
-					line: 147,
-					column: 1
-				}
-			},
-			'33': {
-				start: {
-					line: 134,
-					column: 1
-				},
-				end: {
-					line: 136,
-					column: 2
-				}
-			},
-			'34': {
-				start: {
-					line: 135,
-					column: 2
-				},
-				end: {
-					line: 135,
-					column: 53
-				}
-			},
-			'35': {
-				start: {
-					line: 137,
-					column: 1
-				},
-				end: {
-					line: 139,
-					column: 2
-				}
-			},
-			'36': {
-				start: {
-					line: 138,
-					column: 2
-				},
-				end: {
-					line: 138,
-					column: 22
-				}
-			},
-			'37': {
-				start: {
-					line: 140,
-					column: 25
-				},
-				end: {
-					line: 140,
-					column: 34
-				}
-			},
-			'38': {
-				start: {
-					line: 141,
-					column: 1
-				},
-				end: {
-					line: 146,
-					column: 10
-				}
-			},
-			'39': {
-				start: {
-					line: 142,
-					column: 2
-				},
-				end: {
-					line: 145,
-					column: 4
-				}
-			},
-			'40': {
-				start: {
-					line: 156,
-					column: 34
-				},
-				end: {
-					line: 185,
-					column: 1
-				}
-			},
-			'41': {
-				start: {
-					line: 158,
-					column: 1
-				},
-				end: {
-					line: 160,
-					column: 2
-				}
-			},
-			'42': {
-				start: {
-					line: 159,
-					column: 2
-				},
-				end: {
-					line: 159,
-					column: 55
-				}
-			},
-			'43': {
-				start: {
-					line: 162,
-					column: 18
-				},
-				end: {
-					line: 162,
-					column: 20
-				}
-			},
-			'44': {
-				start: {
-					line: 165,
-					column: 13
-				},
-				end: {
-					line: 165,
-					column: 22
-				}
-			},
-			'45': {
-				start: {
-					line: 168,
-					column: 1
-				},
-				end: {
-					line: 171,
-					column: 2
-				}
-			},
-			'46': {
-				start: {
-					line: 169,
-					column: 2
-				},
-				end: {
-					line: 169,
-					column: 31
-				}
-			},
-			'47': {
-				start: {
-					line: 170,
-					column: 2
-				},
-				end: {
-					line: 170,
-					column: 33
-				}
-			},
-			'48': {
-				start: {
-					line: 175,
-					column: 1
-				},
-				end: {
-					line: 178,
-					column: 2
-				}
-			},
-			'49': {
-				start: {
-					line: 176,
-					column: 2
-				},
-				end: {
-					line: 176,
-					column: 67
-				}
-			},
-			'50': {
-				start: {
-					line: 177,
-					column: 2
-				},
-				end: {
-					line: 177,
-					column: 27
-				}
-			},
-			'51': {
-				start: {
-					line: 181,
-					column: 1
-				},
-				end: {
-					line: 183,
-					column: 2
-				}
-			},
-			'52': {
-				start: {
-					line: 182,
-					column: 2
-				},
-				end: {
-					line: 182,
-					column: 57
-				}
-			},
-			'53': {
-				start: {
-					line: 184,
-					column: 1
-				},
-				end: {
-					line: 184,
-					column: 17
-				}
-			},
-			'54': {
-				start: {
-					line: 202,
-					column: 30
-				},
-				end: {
-					line: 214,
-					column: 1
-				}
-			},
-			'55': {
-				start: {
-					line: 203,
-					column: 16
-				},
-				end: {
-					line: 203,
-					column: 32
-				}
-			},
-			'56': {
-				start: {
-					line: 206,
-					column: 2
-				},
-				end: {
-					line: 208,
-					column: 31
-				}
-			},
-			'57': {
-				start: {
-					line: 209,
-					column: 1
-				},
-				end: {
-					line: 211,
-					column: 2
-				}
-			},
-			'58': {
-				start: {
-					line: 210,
-					column: 2
-				},
-				end: {
-					line: 210,
-					column: 37
-				}
-			},
-			'59': {
-				start: {
-					line: 213,
-					column: 1
-				},
-				end: {
-					line: 213,
-					column: 22
-				}
-			},
-			'60': {
-				start: {
-					line: 230,
-					column: 33
-				},
-				end: {
-					line: 235,
-					column: 1
-				}
-			},
-			'61': {
-				start: {
-					line: 231,
-					column: 1
-				},
-				end: {
-					line: 234,
-					column: 3
-				}
-			},
-			'62': {
-				start: {
-					line: 237,
-					column: 28
-				},
-				end: {
-					line: 242,
-					column: 1
-				}
-			},
-			'63': {
-				start: {
-					line: 238,
-					column: 1
-				},
-				end: {
-					line: 240,
-					column: 2
-				}
-			},
-			'64': {
-				start: {
-					line: 239,
-					column: 2
-				},
-				end: {
-					line: 239,
-					column: 20
-				}
-			},
-			'65': {
-				start: {
-					line: 241,
-					column: 1
-				},
-				end: {
-					line: 241,
-					column: 44
-				}
-			},
-			'66': {
-				start: {
-					line: 244,
-					column: 32
-				},
-				end: {
-					line: 246,
-					column: 1
-				}
-			},
-			'67': {
-				start: {
-					line: 245,
-					column: 1
-				},
-				end: {
-					line: 245,
-					column: 80
-				}
-			}
-		},
-		fnMap: {
-			'0': {
-				name: '(anonymous_0)',
-				decl: {
-					start: {
-						line: 26,
-						column: 36
-					},
-					end: {
-						line: 26,
-						column: 37
-					}
-				},
-				loc: {
-					start: {
-						line: 26,
-						column: 62
-					},
-					end: {
-						line: 28,
-						column: 1
-					}
-				},
-				line: 26
-			},
-			'1': {
-				name: '(anonymous_1)',
-				decl: {
-					start: {
-						line: 36,
-						column: 33
-					},
-					end: {
-						line: 36,
-						column: 34
-					}
-				},
-				loc: {
-					start: {
-						line: 36,
-						column: 43
-					},
-					end: {
-						line: 41,
-						column: 1
-					}
-				},
-				line: 36
-			},
-			'2': {
-				name: '(anonymous_2)',
-				decl: {
-					start: {
-						line: 50,
-						column: 40
-					},
-					end: {
-						line: 50,
-						column: 41
-					}
-				},
-				loc: {
-					start: {
-						line: 50,
-						column: 65
-					},
-					end: {
-						line: 52,
-						column: 1
-					}
-				},
-				line: 50
-			},
-			'3': {
-				name: '(anonymous_3)',
-				decl: {
-					start: {
-						line: 61,
-						column: 32
-					},
-					end: {
-						line: 61,
-						column: 33
-					}
-				},
-				loc: {
-					start: {
-						line: 61,
-						column: 42
-					},
-					end: {
-						line: 77,
-						column: 1
-					}
-				},
-				line: 61
-			},
-			'4': {
-				name: '(anonymous_4)',
-				decl: {
-					start: {
-						line: 86,
-						column: 30
-					},
-					end: {
-						line: 86,
-						column: 31
-					}
-				},
-				loc: {
-					start: {
-						line: 86,
-						column: 40
-					},
-					end: {
-						line: 91,
-						column: 1
-					}
-				},
-				line: 86
-			},
-			'5': {
-				name: '(anonymous_5)',
-				decl: {
-					start: {
-						line: 97,
-						column: 33
-					},
-					end: {
-						line: 97,
-						column: 34
-					}
-				},
-				loc: {
-					start: {
-						line: 97,
-						column: 46
-					},
-					end: {
-						line: 125,
-						column: 1
-					}
-				},
-				line: 97
-			},
-			'6': {
-				name: '(anonymous_6)',
-				decl: {
-					start: {
-						line: 103,
-						column: 24
-					},
-					end: {
-						line: 103,
-						column: 25
-					}
-				},
-				loc: {
-					start: {
-						line: 103,
-						column: 57
-					},
-					end: {
-						line: 118,
-						column: 2
-					}
-				},
-				line: 103
-			},
-			'7': {
-				name: '(anonymous_7)',
-				decl: {
-					start: {
-						line: 133,
-						column: 32
-					},
-					end: {
-						line: 133,
-						column: 33
-					}
-				},
-				loc: {
-					start: {
-						line: 133,
-						column: 45
-					},
-					end: {
-						line: 147,
-						column: 1
-					}
-				},
-				line: 133
-			},
-			'8': {
-				name: '(anonymous_8)',
-				decl: {
-					start: {
-						line: 141,
-						column: 20
-					},
-					end: {
-						line: 141,
-						column: 21
-					}
-				},
-				loc: {
-					start: {
-						line: 141,
-						column: 41
-					},
-					end: {
-						line: 146,
-						column: 2
-					}
-				},
-				line: 141
-			},
-			'9': {
-				name: '(anonymous_9)',
-				decl: {
-					start: {
-						line: 156,
-						column: 34
-					},
-					end: {
-						line: 156,
-						column: 35
-					}
-				},
-				loc: {
-					start: {
-						line: 156,
-						column: 47
-					},
-					end: {
-						line: 185,
-						column: 1
-					}
-				},
-				line: 156
-			},
-			'10': {
-				name: '(anonymous_10)',
-				decl: {
-					start: {
-						line: 202,
-						column: 30
-					},
-					end: {
-						line: 202,
-						column: 31
-					}
-				},
-				loc: {
-					start: {
-						line: 202,
-						column: 81
-					},
-					end: {
-						line: 214,
-						column: 1
-					}
-				},
-				line: 202
-			},
-			'11': {
-				name: '(anonymous_11)',
-				decl: {
-					start: {
-						line: 230,
-						column: 33
-					},
-					end: {
-						line: 230,
-						column: 34
-					}
-				},
-				loc: {
-					start: {
-						line: 230,
-						column: 76
-					},
-					end: {
-						line: 235,
-						column: 1
-					}
-				},
-				line: 230
-			},
-			'12': {
-				name: '(anonymous_12)',
-				decl: {
-					start: {
-						line: 237,
-						column: 28
-					},
-					end: {
-						line: 237,
-						column: 29
-					}
-				},
-				loc: {
-					start: {
-						line: 237,
-						column: 36
-					},
-					end: {
-						line: 242,
-						column: 1
-					}
-				},
-				line: 237
-			},
-			'13': {
-				name: '(anonymous_13)',
-				decl: {
-					start: {
-						line: 244,
-						column: 32
-					},
-					end: {
-						line: 244,
-						column: 33
-					}
-				},
-				loc: {
-					start: {
-						line: 244,
-						column: 40
-					},
-					end: {
-						line: 246,
-						column: 1
-					}
-				},
-				line: 244
-			}
-		},
-		branchMap: {
-			'0': {
-				loc: {
-					start: {
-						line: 27,
-						column: 8
-					},
-					end: {
-						line: 27,
-						column: 74
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 27,
-						column: 8
-					},
-					end: {
-						line: 27,
-						column: 40
-					}
-				}, {
-					start: {
-						line: 27,
-						column: 44
-					},
-					end: {
-						line: 27,
-						column: 74
-					}
-				}],
-				line: 27
-			},
-			'1': {
-				loc: {
-					start: {
-						line: 37,
-						column: 1
-					},
-					end: {
-						line: 39,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 37,
-						column: 1
-					},
-					end: {
-						line: 39,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 37,
-						column: 1
-					},
-					end: {
-						line: 39,
-						column: 2
-					}
-				}],
-				line: 37
-			},
-			'2': {
-				loc: {
-					start: {
-						line: 37,
-						column: 5
-					},
-					end: {
-						line: 37,
-						column: 13
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 37,
-						column: 5
-					},
-					end: {
-						line: 37,
-						column: 7
-					}
-				}, {
-					start: {
-						line: 37,
-						column: 11
-					},
-					end: {
-						line: 37,
-						column: 13
-					}
-				}],
-				line: 37
-			},
-			'3': {
-				loc: {
-					start: {
-						line: 40,
-						column: 8
-					},
-					end: {
-						line: 40,
-						column: 62
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 40,
-						column: 8
-					},
-					end: {
-						line: 40,
-						column: 35
-					}
-				}, {
-					start: {
-						line: 40,
-						column: 39
-					},
-					end: {
-						line: 40,
-						column: 62
-					}
-				}],
-				line: 40
-			},
-			'4': {
-				loc: {
-					start: {
-						line: 51,
-						column: 8
-					},
-					end: {
-						line: 51,
-						column: 90
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 51,
-						column: 8
-					},
-					end: {
-						line: 51,
-						column: 49
-					}
-				}, {
-					start: {
-						line: 51,
-						column: 53
-					},
-					end: {
-						line: 51,
-						column: 90
-					}
-				}],
-				line: 51
-			},
-			'5': {
-				loc: {
-					start: {
-						line: 63,
-						column: 1
-					},
-					end: {
-						line: 65,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 63,
-						column: 1
-					},
-					end: {
-						line: 65,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 63,
-						column: 1
-					},
-					end: {
-						line: 65,
-						column: 2
-					}
-				}],
-				line: 63
-			},
-			'6': {
-				loc: {
-					start: {
-						line: 68,
-						column: 1
-					},
-					end: {
-						line: 70,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 68,
-						column: 1
-					},
-					end: {
-						line: 70,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 68,
-						column: 1
-					},
-					end: {
-						line: 70,
-						column: 2
-					}
-				}],
-				line: 68
-			},
-			'7': {
-				loc: {
-					start: {
-						line: 72,
-						column: 1
-					},
-					end: {
-						line: 74,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 72,
-						column: 1
-					},
-					end: {
-						line: 74,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 72,
-						column: 1
-					},
-					end: {
-						line: 74,
-						column: 2
-					}
-				}],
-				line: 72
-			},
-			'8': {
-				loc: {
-					start: {
-						line: 72,
-						column: 5
-					},
-					end: {
-						line: 72,
-						column: 55
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 72,
-						column: 5
-					},
-					end: {
-						line: 72,
-						column: 28
-					}
-				}, {
-					start: {
-						line: 72,
-						column: 32
-					},
-					end: {
-						line: 72,
-						column: 55
-					}
-				}],
-				line: 72
-			},
-			'9': {
-				loc: {
-					start: {
-						line: 99,
-						column: 1
-					},
-					end: {
-						line: 101,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 99,
-						column: 1
-					},
-					end: {
-						line: 101,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 99,
-						column: 1
-					},
-					end: {
-						line: 101,
-						column: 2
-					}
-				}],
-				line: 99
-			},
-			'10': {
-				loc: {
-					start: {
-						line: 106,
-						column: 2
-					},
-					end: {
-						line: 108,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 106,
-						column: 2
-					},
-					end: {
-						line: 108,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 106,
-						column: 2
-					},
-					end: {
-						line: 108,
-						column: 3
-					}
-				}],
-				line: 106
-			},
-			'11': {
-				loc: {
-					start: {
-						line: 111,
-						column: 2
-					},
-					end: {
-						line: 113,
-						column: 3
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 111,
-						column: 2
-					},
-					end: {
-						line: 113,
-						column: 3
-					}
-				}, {
-					start: {
-						line: 111,
-						column: 2
-					},
-					end: {
-						line: 113,
-						column: 3
-					}
-				}],
-				line: 111
-			},
-			'12': {
-				loc: {
-					start: {
-						line: 134,
-						column: 1
-					},
-					end: {
-						line: 136,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 134,
-						column: 1
-					},
-					end: {
-						line: 136,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 134,
-						column: 1
-					},
-					end: {
-						line: 136,
-						column: 2
-					}
-				}],
-				line: 134
-			},
-			'13': {
-				loc: {
-					start: {
-						line: 134,
-						column: 5
-					},
-					end: {
-						line: 134,
-						column: 41
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 134,
-						column: 5
-					},
-					end: {
-						line: 134,
-						column: 15
-					}
-				}, {
-					start: {
-						line: 134,
-						column: 19
-					},
-					end: {
-						line: 134,
-						column: 41
-					}
-				}],
-				line: 134
-			},
-			'14': {
-				loc: {
-					start: {
-						line: 137,
-						column: 1
-					},
-					end: {
-						line: 139,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 137,
-						column: 1
-					},
-					end: {
-						line: 139,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 137,
-						column: 1
-					},
-					end: {
-						line: 139,
-						column: 2
-					}
-				}],
-				line: 137
-			},
-			'15': {
-				loc: {
-					start: {
-						line: 143,
-						column: 14
-					},
-					end: {
-						line: 143,
-						column: 89
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 143,
-						column: 53
-					},
-					end: {
-						line: 143,
-						column: 71
-					}
-				}, {
-					start: {
-						line: 143,
-						column: 74
-					},
-					end: {
-						line: 143,
-						column: 89
-					}
-				}],
-				line: 143
-			},
-			'16': {
-				loc: {
-					start: {
-						line: 144,
-						column: 12
-					},
-					end: {
-						line: 144,
-						column: 79
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 144,
-						column: 47
-					},
-					end: {
-						line: 144,
-						column: 63
-					}
-				}, {
-					start: {
-						line: 144,
-						column: 66
-					},
-					end: {
-						line: 144,
-						column: 79
-					}
-				}],
-				line: 144
-			},
-			'17': {
-				loc: {
-					start: {
-						line: 158,
-						column: 1
-					},
-					end: {
-						line: 160,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 158,
-						column: 1
-					},
-					end: {
-						line: 160,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 158,
-						column: 1
-					},
-					end: {
-						line: 160,
-						column: 2
-					}
-				}],
-				line: 158
-			},
-			'18': {
-				loc: {
-					start: {
-						line: 168,
-						column: 1
-					},
-					end: {
-						line: 171,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 168,
-						column: 1
-					},
-					end: {
-						line: 171,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 168,
-						column: 1
-					},
-					end: {
-						line: 171,
-						column: 2
-					}
-				}],
-				line: 168
-			},
-			'19': {
-				loc: {
-					start: {
-						line: 181,
-						column: 1
-					},
-					end: {
-						line: 183,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 181,
-						column: 1
-					},
-					end: {
-						line: 183,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 181,
-						column: 1
-					},
-					end: {
-						line: 183,
-						column: 2
-					}
-				}],
-				line: 181
-			},
-			'20': {
-				loc: {
-					start: {
-						line: 202,
-						column: 48
-					},
-					end: {
-						line: 202,
-						column: 76
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 202,
-						column: 67
-					},
-					end: {
-						line: 202,
-						column: 76
-					}
-				}],
-				line: 202
-			},
-			'21': {
-				loc: {
-					start: {
-						line: 206,
-						column: 2
-					},
-					end: {
-						line: 208,
-						column: 31
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 206,
-						column: 3
-					},
-					end: {
-						line: 206,
-						column: 33
-					}
-				}, {
-					start: {
-						line: 206,
-						column: 37
-					},
-					end: {
-						line: 206,
-						column: 62
-					}
-				}, {
-					start: {
-						line: 208,
-						column: 2
-					},
-					end: {
-						line: 208,
-						column: 31
-					}
-				}],
-				line: 206
-			},
-			'22': {
-				loc: {
-					start: {
-						line: 209,
-						column: 1
-					},
-					end: {
-						line: 211,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 209,
-						column: 1
-					},
-					end: {
-						line: 211,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 209,
-						column: 1
-					},
-					end: {
-						line: 211,
-						column: 2
-					}
-				}],
-				line: 209
-			},
-			'23': {
-				loc: {
-					start: {
-						line: 230,
-						column: 55
-					},
-					end: {
-						line: 230,
-						column: 71
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 230,
-						column: 66
-					},
-					end: {
-						line: 230,
-						column: 71
-					}
-				}],
-				line: 230
-			},
-			'24': {
-				loc: {
-					start: {
-						line: 232,
-						column: 59
-					},
-					end: {
-						line: 232,
-						column: 92
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 232,
-						column: 70
-					},
-					end: {
-						line: 232,
-						column: 80
-					}
-				}, {
-					start: {
-						line: 232,
-						column: 83
-					},
-					end: {
-						line: 232,
-						column: 92
-					}
-				}],
-				line: 232
-			},
-			'25': {
-				loc: {
-					start: {
-						line: 233,
-						column: 55
-					},
-					end: {
-						line: 233,
-						column: 86
-					}
-				},
-				type: 'cond-expr',
-				locations: [{
-					start: {
-						line: 233,
-						column: 66
-					},
-					end: {
-						line: 233,
-						column: 74
-					}
-				}, {
-					start: {
-						line: 233,
-						column: 77
-					},
-					end: {
-						line: 233,
-						column: 86
-					}
-				}],
-				line: 233
-			},
-			'26': {
-				loc: {
-					start: {
-						line: 238,
-						column: 1
-					},
-					end: {
-						line: 240,
-						column: 2
-					}
-				},
-				type: 'if',
-				locations: [{
-					start: {
-						line: 238,
-						column: 1
-					},
-					end: {
-						line: 240,
-						column: 2
-					}
-				}, {
-					start: {
-						line: 238,
-						column: 1
-					},
-					end: {
-						line: 240,
-						column: 2
-					}
-				}],
-				line: 238
-			},
-			'27': {
-				loc: {
-					start: {
-						line: 238,
-						column: 5
-					},
-					end: {
-						line: 238,
-						column: 44
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 238,
-						column: 5
-					},
-					end: {
-						line: 238,
-						column: 22
-					}
-				}, {
-					start: {
-						line: 238,
-						column: 26
-					},
-					end: {
-						line: 238,
-						column: 44
-					}
-				}],
-				line: 238
-			}
-		},
-		s: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0,
-			'14': 0,
-			'15': 0,
-			'16': 0,
-			'17': 0,
-			'18': 0,
-			'19': 0,
-			'20': 0,
-			'21': 0,
-			'22': 0,
-			'23': 0,
-			'24': 0,
-			'25': 0,
-			'26': 0,
-			'27': 0,
-			'28': 0,
-			'29': 0,
-			'30': 0,
-			'31': 0,
-			'32': 0,
-			'33': 0,
-			'34': 0,
-			'35': 0,
-			'36': 0,
-			'37': 0,
-			'38': 0,
-			'39': 0,
-			'40': 0,
-			'41': 0,
-			'42': 0,
-			'43': 0,
-			'44': 0,
-			'45': 0,
-			'46': 0,
-			'47': 0,
-			'48': 0,
-			'49': 0,
-			'50': 0,
-			'51': 0,
-			'52': 0,
-			'53': 0,
-			'54': 0,
-			'55': 0,
-			'56': 0,
-			'57': 0,
-			'58': 0,
-			'59': 0,
-			'60': 0,
-			'61': 0,
-			'62': 0,
-			'63': 0,
-			'64': 0,
-			'65': 0,
-			'66': 0,
-			'67': 0
-		},
-		f: {
-			'0': 0,
-			'1': 0,
-			'2': 0,
-			'3': 0,
-			'4': 0,
-			'5': 0,
-			'6': 0,
-			'7': 0,
-			'8': 0,
-			'9': 0,
-			'10': 0,
-			'11': 0,
-			'12': 0,
-			'13': 0
-		},
-		b: {
-			'0': [0, 0],
-			'1': [0, 0],
-			'2': [0, 0],
-			'3': [0, 0],
-			'4': [0, 0],
-			'5': [0, 0],
-			'6': [0, 0],
-			'7': [0, 0],
-			'8': [0, 0],
-			'9': [0, 0],
-			'10': [0, 0],
-			'11': [0, 0],
-			'12': [0, 0],
-			'13': [0, 0],
-			'14': [0, 0],
-			'15': [0, 0],
-			'16': [0, 0],
-			'17': [0, 0],
-			'18': [0, 0],
-			'19': [0, 0],
-			'20': [0],
-			'21': [0, 0, 0],
-			'22': [0, 0],
-			'23': [0],
-			'24': [0, 0],
-			'25': [0, 0],
-			'26': [0, 0],
-			'27': [0, 0]
-		},
-		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-	},
-	    coverage = global[gcv] || (global[gcv] = {});
-
-	if (coverage[path] && coverage[path].hash === hash) {
-		return coverage[path];
-	}
-
-	coverageData.hash = hash;
-	return coverage[path] = coverageData;
-}();
-
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
+exports.describeTimeSpan = exports.describeTime = exports.snapToNearestSpan = exports.snapTimeToUnit = exports.invertTimeRangeSet = exports.unionTimeSpanSet = exports.mergeTimeRangeSet = exports.mergeTimeSpans = exports.timeSpansOverlap = exports.timeSpanContainsTimeSpan = exports.timeSpansAreEqual = exports.timeSpanContainsTime = exports.SECONDS_PER_DAY = exports.SECONDS_PER_HOUR = exports.SECONDS_PER_MINUTE = void 0;
 
-function _toArray(arr) { return Array.isArray(arr) ? arr : Array.from(arr); }
+function _toArray(arr) { return _arrayWithHoles(arr) || _iterableToArray(arr) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 /** @format */
-
-var SECONDS_PER_MINUTE = exports.SECONDS_PER_MINUTE = (cov_1h4xp5e4yy.s[0]++, 60);
-var SECONDS_PER_HOUR = exports.SECONDS_PER_HOUR = (cov_1h4xp5e4yy.s[1]++, SECONDS_PER_MINUTE * 60);
-var SECONDS_PER_DAY = exports.SECONDS_PER_DAY = (cov_1h4xp5e4yy.s[2]++, SECONDS_PER_HOUR * 24);
-
+var SECONDS_PER_MINUTE = 60;
+exports.SECONDS_PER_MINUTE = SECONDS_PER_MINUTE;
+var SECONDS_PER_HOUR = SECONDS_PER_MINUTE * 60;
+exports.SECONDS_PER_HOUR = SECONDS_PER_HOUR;
+var SECONDS_PER_DAY = SECONDS_PER_HOUR * 24;
 /**
  * Represents a single range of time with a start and beginning. Makes no assumption of which unit
  * of time is used (seconds vs milliseconds vs minutes). Assumes startTime and endTime are in the
@@ -69796,37 +57107,29 @@ var SECONDS_PER_DAY = exports.SECONDS_PER_DAY = (cov_1h4xp5e4yy.s[2]++, SECONDS_
  * @param {number} timestamp - a timestamp in the same units as container
  * @returns {boolean} true if timestamp is within the container timespan
  */
-cov_1h4xp5e4yy.s[3]++;
-var timeSpanContainsTime = exports.timeSpanContainsTime = function timeSpanContainsTime(container, timestamp) {
-	cov_1h4xp5e4yy.f[0]++;
-	cov_1h4xp5e4yy.s[4]++;
 
-	return (cov_1h4xp5e4yy.b[0][0]++, timestamp >= container.startTime) && (cov_1h4xp5e4yy.b[0][1]++, timestamp <= container.endTime);
+exports.SECONDS_PER_DAY = SECONDS_PER_DAY;
+
+var timeSpanContainsTime = function timeSpanContainsTime(container, timestamp) {
+  return timestamp >= container.startTime && timestamp <= container.endTime;
 };
-
 /**
  * Compares if timespans are the same
  * @param {TimeSpan} a - timespan to compare
  * @param {TimeSpan} b - timespan to compare
  * @returns {boolean} true if start time and end time are equal
  */
-cov_1h4xp5e4yy.s[5]++;
-var timeSpansAreEqual = exports.timeSpansAreEqual = function timeSpansAreEqual(a, b) {
-	cov_1h4xp5e4yy.f[1]++;
-	cov_1h4xp5e4yy.s[6]++;
 
-	if ((cov_1h4xp5e4yy.b[2][0]++, !a) || (cov_1h4xp5e4yy.b[2][1]++, !b)) {
-		cov_1h4xp5e4yy.b[1][0]++;
-		cov_1h4xp5e4yy.s[7]++;
 
-		return false;
-	} else {
-		cov_1h4xp5e4yy.b[1][1]++;
-	}
-	cov_1h4xp5e4yy.s[8]++;
-	return (cov_1h4xp5e4yy.b[3][0]++, a.startTime === b.startTime) && (cov_1h4xp5e4yy.b[3][1]++, a.endTime === b.endTime);
+exports.timeSpanContainsTime = timeSpanContainsTime;
+
+var timeSpansAreEqual = function timeSpansAreEqual(a, b) {
+  if (!a || !b) {
+    return false;
+  }
+
+  return a.startTime === b.startTime && a.endTime === b.endTime;
 };
-
 /**
  * Returns `true` if timespan fits completely within container
  *
@@ -69834,14 +57137,13 @@ var timeSpansAreEqual = exports.timeSpansAreEqual = function timeSpansAreEqual(a
  * @param {TimeSpan} timespan - timespan being placed in container timespan
  * @returns {boolean} true if timespan fits in container TimeSpan
  */
-cov_1h4xp5e4yy.s[9]++;
-var timeSpanContainsTimeSpan = exports.timeSpanContainsTimeSpan = function timeSpanContainsTimeSpan(container, timespan) {
-	cov_1h4xp5e4yy.f[2]++;
-	cov_1h4xp5e4yy.s[10]++;
 
-	return (cov_1h4xp5e4yy.b[4][0]++, timespan.startTime >= container.startTime) && (cov_1h4xp5e4yy.b[4][1]++, timespan.endTime <= container.endTime);
+
+exports.timeSpansAreEqual = timeSpansAreEqual;
+
+var timeSpanContainsTimeSpan = function timeSpanContainsTimeSpan(container, timespan) {
+  return timespan.startTime >= container.startTime && timespan.endTime <= container.endTime;
 };
-
 /**
  * Returns `true` if spans overlap or are adjacent to eachother
  *
@@ -69849,46 +57151,27 @@ var timeSpanContainsTimeSpan = exports.timeSpanContainsTimeSpan = function timeS
  * @param {TimeSpan} b - TimeSpan
  * @returns {boolean} true if spans overlap or are exactly adjacent
  */
-cov_1h4xp5e4yy.s[11]++;
-var timeSpansOverlap = exports.timeSpansOverlap = function timeSpansOverlap(a, b) {
-	cov_1h4xp5e4yy.f[3]++;
-	cov_1h4xp5e4yy.s[12]++;
 
-	// adjacent a | b
-	if (a.startTime === b.endTime) {
-		cov_1h4xp5e4yy.b[5][0]++;
-		cov_1h4xp5e4yy.s[13]++;
 
-		return true;
-	} else {
-		cov_1h4xp5e4yy.b[5][1]++;
-	}
+exports.timeSpanContainsTimeSpan = timeSpanContainsTimeSpan;
 
-	// adjacent b | a
-	cov_1h4xp5e4yy.s[14]++;
-	if (a.endTime === b.startTime) {
-		cov_1h4xp5e4yy.b[6][0]++;
-		cov_1h4xp5e4yy.s[15]++;
+var timeSpansOverlap = function timeSpansOverlap(a, b) {
+  // adjacent a | b
+  if (a.startTime === b.endTime) {
+    return true;
+  } // adjacent b | a
 
-		return true;
-	} else {
-		cov_1h4xp5e4yy.b[6][1]++;
-	}
 
-	cov_1h4xp5e4yy.s[16]++;
-	if ((cov_1h4xp5e4yy.b[8][0]++, a.startTime < b.endTime) && (cov_1h4xp5e4yy.b[8][1]++, a.endTime > b.startTime)) {
-		cov_1h4xp5e4yy.b[7][0]++;
-		cov_1h4xp5e4yy.s[17]++;
+  if (a.endTime === b.startTime) {
+    return true;
+  }
 
-		return true;
-	} else {
-		cov_1h4xp5e4yy.b[7][1]++;
-	}
+  if (a.startTime < b.endTime && a.endTime > b.startTime) {
+    return true;
+  }
 
-	cov_1h4xp5e4yy.s[18]++;
-	return false;
+  return false;
 };
-
 /**
  * Combines two timespan into one timespan that contains both
  *
@@ -69896,130 +57179,101 @@ var timeSpansOverlap = exports.timeSpansOverlap = function timeSpansOverlap(a, b
  * @param {TimeSpan} b - second TimeSpan
  * @returns {TimeSpan} the smallest continous TimeSpan that contains both
  */
-cov_1h4xp5e4yy.s[19]++;
-var mergeTimeSpans = exports.mergeTimeSpans = function mergeTimeSpans(a, b) {
-	cov_1h4xp5e4yy.f[4]++;
-	cov_1h4xp5e4yy.s[20]++;
 
-	return {
-		startTime: Math.min(a.startTime, b.startTime),
-		endTime: Math.max(a.endTime, b.endTime)
-	};
+
+exports.timeSpansOverlap = timeSpansOverlap;
+
+var mergeTimeSpans = function mergeTimeSpans(a, b) {
+  return {
+    startTime: Math.min(a.startTime, b.startTime),
+    endTime: Math.max(a.endTime, b.endTime)
+  };
 };
-
 /**
  * @param {TimeSpan[]} timespans - set of timespans
  * @returns {TimeSpan[]} timespans with any overlapping times merged
  */
-cov_1h4xp5e4yy.s[21]++;
-var mergeTimeRangeSet = exports.mergeTimeRangeSet = function mergeTimeRangeSet(timespans) {
-	cov_1h4xp5e4yy.f[5]++;
-	cov_1h4xp5e4yy.s[22]++;
 
-	// when 0 or 1 items return it, nothing left we can do
-	if (timespans.length <= 1) {
-		cov_1h4xp5e4yy.b[9][0]++;
-		cov_1h4xp5e4yy.s[23]++;
 
-		return timespans;
-	} else {
-		cov_1h4xp5e4yy.b[9][1]++;
-	}
+exports.mergeTimeSpans = mergeTimeSpans;
 
-	cov_1h4xp5e4yy.s[24]++;
-	var mergeWithSpans = function mergeWithSpans(_ref, span) {
-		var current = _ref.current,
-		    combined = _ref.combined;
-		cov_1h4xp5e4yy.f[6]++;
-		cov_1h4xp5e4yy.s[25]++;
+var mergeTimeRangeSet = function mergeTimeRangeSet(timespans) {
+  // when 0 or 1 items return it, nothing left we can do
+  if (timespans.length <= 1) {
+    return timespans;
+  }
 
-		// no span marked is current, so this span will be considered
-		// current and the combined spans will be empty
-		if (!current) {
-			cov_1h4xp5e4yy.b[10][0]++;
-			cov_1h4xp5e4yy.s[26]++;
+  var mergeWithSpans = function mergeWithSpans(_ref, span) {
+    var current = _ref.current,
+        combined = _ref.combined;
 
-			return { current: span, combined: combined };
-		} else {
-			cov_1h4xp5e4yy.b[10][1]++;
-		}
+    // no span marked is current, so this span will be considered
+    // current and the combined spans will be empty
+    if (!current) {
+      return {
+        current: span,
+        combined: combined
+      };
+    } // if the span and current overlap, merge them together and use as current
 
-		// if the span and current overlap, merge them together and use as current
-		cov_1h4xp5e4yy.s[27]++;
-		if (timeSpansOverlap(current, span)) {
-			cov_1h4xp5e4yy.b[11][0]++;
-			cov_1h4xp5e4yy.s[28]++;
 
-			return { current: mergeTimeSpans(current, span), combined: combined };
-		} else {
-			cov_1h4xp5e4yy.b[11][1]++;
-		}
+    if (timeSpansOverlap(current, span)) {
+      return {
+        current: mergeTimeSpans(current, span),
+        combined: combined
+      };
+    } // current and span do not overlap, push current to combined
+    // and span becomes current
 
-		// current and span do not overlap, push current to combined
-		// and span becomes current
-		cov_1h4xp5e4yy.s[29]++;
-		return { current: span, combined: combined.concat([current]) };
-	};
 
-	var _ref2 = (cov_1h4xp5e4yy.s[30]++, timespans.reduce(mergeWithSpans, {
-		current: null,
-		combined: []
-	})),
-	    span = _ref2.current,
-	    combined = _ref2.combined;
+    return {
+      current: span,
+      combined: combined.concat([current])
+    };
+  };
 
-	cov_1h4xp5e4yy.s[31]++;
+  var _timespans$reduce = timespans.reduce(mergeWithSpans, {
+    current: null,
+    combined: []
+  }),
+      span = _timespans$reduce.current,
+      combined = _timespans$reduce.combined;
 
-	return combined.concat([span]);
+  return combined.concat([span]);
 };
-
 /**
  * Return the timespan that encompasses all of the timespans in the given set.
  *
  * @param {TimeSpan[]} timespans - unordered list of timespans
  * @returns {TimeSpan} the timespan that includes all of the given timespans
  */
-cov_1h4xp5e4yy.s[32]++;
-var unionTimeSpanSet = exports.unionTimeSpanSet = function unionTimeSpanSet(timespans) {
-	cov_1h4xp5e4yy.f[7]++;
-	cov_1h4xp5e4yy.s[33]++;
 
-	if ((cov_1h4xp5e4yy.b[13][0]++, !timespans) || (cov_1h4xp5e4yy.b[13][1]++, timespans.length === 0)) {
-		cov_1h4xp5e4yy.b[12][0]++;
-		cov_1h4xp5e4yy.s[34]++;
 
-		return { startTime: -Infinity, endTime: Infinity };
-	} else {
-		cov_1h4xp5e4yy.b[12][1]++;
-	}
-	cov_1h4xp5e4yy.s[35]++;
-	if (timespans.length === 1) {
-		cov_1h4xp5e4yy.b[14][0]++;
-		cov_1h4xp5e4yy.s[36]++;
+exports.mergeTimeRangeSet = mergeTimeRangeSet;
 
-		return timespans[0];
-	} else {
-		cov_1h4xp5e4yy.b[14][1]++;
-	}
+var unionTimeSpanSet = function unionTimeSpanSet(timespans) {
+  if (!timespans || timespans.length === 0) {
+    return {
+      startTime: -Infinity,
+      endTime: Infinity
+    };
+  }
 
-	var _ref3 = (cov_1h4xp5e4yy.s[37]++, timespans),
-	    _ref4 = _toArray(_ref3),
-	    head = _ref4[0],
-	    rest = _ref4.slice(1);
+  if (timespans.length === 1) {
+    return timespans[0];
+  }
 
-	cov_1h4xp5e4yy.s[38]++;
+  var _timespans = _toArray(timespans),
+      head = _timespans[0],
+      rest = _timespans.slice(1);
 
-	return rest.reduce(function (union, timespan) {
-		cov_1h4xp5e4yy.f[8]++;
-		cov_1h4xp5e4yy.s[39]++;
-
-		return {
-			startTime: timespan.startTime < union.startTime ? (cov_1h4xp5e4yy.b[15][0]++, timespan.startTime) : (cov_1h4xp5e4yy.b[15][1]++, union.startTime),
-			endTime: timespan.endTime > union.endTime ? (cov_1h4xp5e4yy.b[16][0]++, timespan.endTime) : (cov_1h4xp5e4yy.b[16][1]++, union.endTime)
-		};
-	}, head);
+  return rest.reduce(function (union, timespan) {
+    return {
+      startTime: timespan.startTime < union.startTime ? timespan.startTime : union.startTime,
+      endTime: timespan.endTime > union.endTime ? timespan.endTime : union.endTime
+    };
+  }, head);
 };
-
 /**
  * Invert the set of time ranges to represent the time ranges that fit between.
  * The inverted set starts with -Infinity and ends with Infinity.
@@ -70027,85 +57281,71 @@ var unionTimeSpanSet = exports.unionTimeSpanSet = function unionTimeSpanSet(time
  * @param {TimeSpan[]} timespans - list of time ranges in chronological order
  * @returns {TimeSpan[]} the inverted set of time ranges
  */
-cov_1h4xp5e4yy.s[40]++;
-var invertTimeRangeSet = exports.invertTimeRangeSet = function invertTimeRangeSet(timespans) {
-	cov_1h4xp5e4yy.f[9]++;
-	cov_1h4xp5e4yy.s[41]++;
 
-	// if the set is empty, return the set that includes all time
-	if (timespans.length === 0) {
-		cov_1h4xp5e4yy.b[17][0]++;
-		cov_1h4xp5e4yy.s[42]++;
 
-		return [{ startTime: -Infinity, endTime: Infinity }];
-	} else {
-		cov_1h4xp5e4yy.b[17][1]++;
-	}
+exports.unionTimeSpanSet = unionTimeSpanSet;
 
-	var inverted = (cov_1h4xp5e4yy.s[43]++, []);
+var invertTimeRangeSet = function invertTimeRangeSet(timespans) {
+  // if the set is empty, return the set that includes all time
+  if (timespans.length === 0) {
+    return [{
+      startTime: -Infinity,
+      endTime: Infinity
+    }];
+  }
 
-	// Begin at the beginning of time
-	var start = (cov_1h4xp5e4yy.s[44]++, -Infinity);
-	// if the provided range already starts with -Infinity
-	// start with its end time and remove it
-	cov_1h4xp5e4yy.s[45]++;
-	if (timespans[0].startTime === -Infinity) {
-		cov_1h4xp5e4yy.b[18][0]++;
-		cov_1h4xp5e4yy.s[46]++;
+  var inverted = []; // Begin at the beginning of time
 
-		start = timespans[0].endTime;
-		cov_1h4xp5e4yy.s[47]++;
-		timespans = timespans.slice(1);
-	} else {
-		cov_1h4xp5e4yy.b[18][1]++;
-	}
-	// iterate through each timespan in the set and create time ranges that begin
-	// with the previous range's end time and end with the range's beginning time.
-	// The first range will start with -Infinity
-	cov_1h4xp5e4yy.s[48]++;
-	var _iteratorNormalCompletion = true;
-	var _didIteratorError = false;
-	var _iteratorError = undefined;
+  var start = -Infinity; // if the provided range already starts with -Infinity
+  // start with its end time and remove it
 
-	try {
-		for (var _iterator = timespans[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-			var timespan = _step.value;
-			cov_1h4xp5e4yy.s[49]++;
+  if (timespans[0].startTime === -Infinity) {
+    start = timespans[0].endTime;
+    timespans = timespans.slice(1);
+  } // iterate through each timespan in the set and create time ranges that begin
+  // with the previous range's end time and end with the range's beginning time.
+  // The first range will start with -Infinity
 
-			inverted.push({ startTime: start, endTime: timespan.startTime });
-			cov_1h4xp5e4yy.s[50]++;
-			start = timespan.endTime;
-		}
-		// Complete the last time range by taking the last endTime and ending
-		// with inifinity unless the las timespan's endTime was Infinity
-	} catch (err) {
-		_didIteratorError = true;
-		_iteratorError = err;
-	} finally {
-		try {
-			if (!_iteratorNormalCompletion && _iterator.return) {
-				_iterator.return();
-			}
-		} finally {
-			if (_didIteratorError) {
-				throw _iteratorError;
-			}
-		}
-	}
 
-	cov_1h4xp5e4yy.s[51]++;
-	if (start < Infinity) {
-		cov_1h4xp5e4yy.b[19][0]++;
-		cov_1h4xp5e4yy.s[52]++;
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
 
-		inverted.push({ startTime: start, endTime: Infinity });
-	} else {
-		cov_1h4xp5e4yy.b[19][1]++;
-	}
-	cov_1h4xp5e4yy.s[53]++;
-	return inverted;
+  try {
+    for (var _iterator = timespans[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var timespan = _step.value;
+      inverted.push({
+        startTime: start,
+        endTime: timespan.startTime
+      });
+      start = timespan.endTime;
+    } // Complete the last time range by taking the last endTime and ending
+    // with inifinity unless the las timespan's endTime was Infinity
+
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return != null) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+
+  if (start < Infinity) {
+    inverted.push({
+      startTime: start,
+      endTime: Infinity
+    });
+  }
+
+  return inverted;
 };
-
 /**
  * Adjusts time to the nearest unit of time.
  *
@@ -70121,30 +57361,24 @@ var invertTimeRangeSet = exports.invertTimeRangeSet = function invertTimeRangeSe
  *                                              rounding direcion
  * @returns {number} time adjusted to the nearest snapUnits
  */
-cov_1h4xp5e4yy.s[54]++;
-var snapTimeToUnit = exports.snapTimeToUnit = function snapTimeToUnit(time, snapUnits) {
-	var snappingStrategy = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : (cov_1h4xp5e4yy.b[20][0]++, 'nearest');
-	cov_1h4xp5e4yy.f[10]++;
 
-	var offset = (cov_1h4xp5e4yy.s[55]++, time % snapUnits);
-	// if using the "nearest" snapping point and we're more than halfway passed the midpoint, advance
-	var advance = (cov_1h4xp5e4yy.s[56]++, (cov_1h4xp5e4yy.b[21][0]++, snappingStrategy === 'nearest') && (cov_1h4xp5e4yy.b[21][1]++, offset >= snapUnits * 0.5) || (cov_1h4xp5e4yy.b[21][2]++,
-	// if we're snapping to the 'latest' snap point, then advance no matter what
-	snappingStrategy === 'latest'));
-	cov_1h4xp5e4yy.s[57]++;
-	if (advance) {
-		cov_1h4xp5e4yy.b[22][0]++;
-		cov_1h4xp5e4yy.s[58]++;
 
-		return time + (snapUnits - offset);
-	} else {
-		cov_1h4xp5e4yy.b[22][1]++;
-	}
-	// if not advancing we're falling back to an earlier snapping point
-	cov_1h4xp5e4yy.s[59]++;
-	return time - offset;
+exports.invertTimeRangeSet = invertTimeRangeSet;
+
+var snapTimeToUnit = function snapTimeToUnit(time, snapUnits) {
+  var snappingStrategy = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'nearest';
+  var offset = time % snapUnits; // if using the "nearest" snapping point and we're more than halfway passed the midpoint, advance
+
+  var advance = snappingStrategy === 'nearest' && offset >= snapUnits * 0.5 || // if we're snapping to the 'latest' snap point, then advance no matter what
+  snappingStrategy === 'latest';
+
+  if (advance) {
+    return time + (snapUnits - offset);
+  } // if not advancing we're falling back to an earlier snapping point
+
+
+  return time - offset;
 };
-
 /**
  * Given a timespan it will adjust the startTime and endTime to the nearest units.
  *
@@ -70159,44 +57393,37 @@ var snapTimeToUnit = exports.snapTimeToUnit = function snapTimeToUnit(time, snap
  * @param {boolean} [growOnly=false] - when true only allows the timespan to grow when adjusting
  * @returns {TimeSpan} with start and end times adjusted to the nearest units
  */
-cov_1h4xp5e4yy.s[60]++;
-var snapToNearestSpan = exports.snapToNearestSpan = function snapToNearestSpan(timespan, snapUnits) {
-	var growOnly = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : (cov_1h4xp5e4yy.b[23][0]++, false);
-	cov_1h4xp5e4yy.f[11]++;
-	cov_1h4xp5e4yy.s[61]++;
 
-	return {
-		startTime: snapTimeToUnit(timespan.startTime, snapUnits, growOnly ? (cov_1h4xp5e4yy.b[24][0]++, 'earliest') : (cov_1h4xp5e4yy.b[24][1]++, undefined)),
-		endTime: snapTimeToUnit(timespan.endTime, snapUnits, growOnly ? (cov_1h4xp5e4yy.b[25][0]++, 'latest') : (cov_1h4xp5e4yy.b[25][1]++, undefined))
-	};
+
+exports.snapTimeToUnit = snapTimeToUnit;
+
+var snapToNearestSpan = function snapToNearestSpan(timespan, snapUnits) {
+  var growOnly = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+  return {
+    startTime: snapTimeToUnit(timespan.startTime, snapUnits, growOnly ? 'earliest' : undefined),
+    endTime: snapTimeToUnit(timespan.endTime, snapUnits, growOnly ? 'latest' : undefined)
+  };
 };
 
-cov_1h4xp5e4yy.s[62]++;
-var describeTime = exports.describeTime = function describeTime(time) {
-	cov_1h4xp5e4yy.f[12]++;
-	cov_1h4xp5e4yy.s[63]++;
+exports.snapToNearestSpan = snapToNearestSpan;
 
-	if ((cov_1h4xp5e4yy.b[27][0]++, time === Infinity) || (cov_1h4xp5e4yy.b[27][1]++, time === -Infinity)) {
-		cov_1h4xp5e4yy.b[26][0]++;
-		cov_1h4xp5e4yy.s[64]++;
+var describeTime = function describeTime(time) {
+  if (time === Infinity || time === -Infinity) {
+    return 'whenever';
+  }
 
-		return 'whenever';
-	} else {
-		cov_1h4xp5e4yy.b[26][1]++;
-	}
-	cov_1h4xp5e4yy.s[65]++;
-	return new Date(time * 1000).toUTCString();
+  return new Date(time * 1000).toUTCString();
 };
 
-cov_1h4xp5e4yy.s[66]++;
-var describeTimeSpan = exports.describeTimeSpan = function describeTimeSpan(span) {
-	cov_1h4xp5e4yy.f[13]++;
-	cov_1h4xp5e4yy.s[67]++;
+exports.describeTime = describeTime;
 
-	return 'from ' + describeTime(span.startTime) + ' to ' + describeTime(span.endTime);
+var describeTimeSpan = function describeTimeSpan(span) {
+  return "from ".concat(describeTime(span.startTime), " to ").concat(describeTime(span.endTime));
 };
+
+exports.describeTimeSpan = describeTimeSpan;
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main-e0670b12d5b16b621c08.bundle.js.map
+//# sourceMappingURL=main-3161641cf5c7a7d401e0.bundle.js.map
