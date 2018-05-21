@@ -25,7 +25,7 @@ git status
 git add .
 git commit --message "Deploying $V
 
-Revision $H
+Revision $R
 
 $CHANGES
 "
