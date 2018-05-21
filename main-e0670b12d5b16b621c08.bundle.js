@@ -59710,7 +59710,7 @@ exports.default = function (windowSize, datasource) {
 
 var cov_111lrwsabt = function () {
 	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/block-graph/with-gestures.jsx',
-	    hash = '38b2c366e65602e87c92a7a192e2ad929b942fbc',
+	    hash = 'd241e3daa7b19499af62facc1421938ddba3f8bc',
 	    Function = function () {}.constructor,
 	    global = new Function('return this')(),
 	    gcv = '__coverage__',
@@ -59719,301 +59719,301 @@ var cov_111lrwsabt = function () {
 		statementMap: {
 			'0': {
 				start: {
-					line: 6,
+					line: 11,
 					column: 1
 				},
 				end: {
-					line: 6,
+					line: 11,
 					column: 77
 				}
 			},
 			'1': {
 				start: {
-					line: 10,
+					line: 15,
 					column: 1
 				},
 				end: {
-					line: 16,
+					line: 21,
 					column: 3
 				}
 			},
 			'2': {
 				start: {
-					line: 11,
+					line: 16,
 					column: 18
 				},
 				end: {
-					line: 11,
+					line: 16,
 					column: 59
 				}
 			},
 			'3': {
 				start: {
-					line: 12,
+					line: 17,
 					column: 2
 				},
 				end: {
-					line: 14,
+					line: 19,
 					column: 3
 				}
 			},
 			'4': {
 				start: {
-					line: 13,
+					line: 18,
 					column: 3
 				},
 				end: {
-					line: 13,
+					line: 18,
 					column: 40
 				}
 			},
 			'5': {
 				start: {
-					line: 15,
+					line: 20,
 					column: 2
 				},
 				end: {
-					line: 15,
+					line: 20,
 					column: 39
 				}
 			},
 			'6': {
 				start: {
-					line: 19,
+					line: 24,
 					column: 29
 				},
 				end: {
-					line: 19,
+					line: 24,
 					column: 89
 				}
 			},
 			'7': {
 				start: {
-					line: 19,
+					line: 24,
 					column: 41
 				},
 				end: {
-					line: 19,
+					line: 24,
 					column: 89
 				}
 			},
 			'8': {
 				start: {
-					line: 19,
+					line: 24,
 					column: 81
 				},
 				end: {
-					line: 19,
+					line: 24,
 					column: 88
 				}
 			},
 			'9': {
 				start: {
-					line: 21,
+					line: 26,
 					column: 27
 				},
 				end: {
-					line: 26,
+					line: 31,
 					column: 1
 				}
 			},
 			'10': {
 				start: {
-					line: 33,
+					line: 38,
 					column: 56
 				},
 				end: {
-					line: 33,
+					line: 38,
 					column: 60
 				}
 			},
 			'11': {
 				start: {
-					line: 44,
+					line: 49,
 					column: 39
 				},
 				end: {
-					line: 44,
+					line: 49,
 					column: 60
 				}
 			},
 			'12': {
 				start: {
-					line: 47,
+					line: 52,
 					column: 36
 				},
 				end: {
-					line: 52,
+					line: 57,
 					column: 3
 				}
 			},
 			'13': {
 				start: {
-					line: 50,
+					line: 55,
 					column: 3
 				},
 				end: {
-					line: 50,
+					line: 55,
 					column: 35
 				}
 			},
 			'14': {
 				start: {
-					line: 51,
+					line: 56,
 					column: 3
 				},
 				end: {
-					line: 51,
+					line: 56,
 					column: 90
 				}
 			},
 			'15': {
 				start: {
-					line: 55,
+					line: 60,
 					column: 3
 				},
 				end: {
-					line: 55,
+					line: 60,
 					column: 16
 				}
 			},
 			'16': {
 				start: {
-					line: 56,
+					line: 61,
 					column: 3
 				},
 				end: {
-					line: 56,
+					line: 61,
 					column: 19
 				}
 			},
 			'17': {
 				start: {
-					line: 57,
+					line: 62,
 					column: 3
 				},
 				end: {
-					line: 57,
+					line: 62,
 					column: 31
 				}
 			},
 			'18': {
 				start: {
-					line: 61,
+					line: 66,
 					column: 3
 				},
 				end: {
-					line: 66,
+					line: 71,
 					column: 4
 				}
 			},
 			'19': {
 				start: {
-					line: 62,
+					line: 67,
 					column: 37
 				},
 				end: {
-					line: 62,
+					line: 67,
 					column: 47
 				}
 			},
 			'20': {
 				start: {
-					line: 63,
+					line: 68,
 					column: 4
 				},
 				end: {
-					line: 65,
+					line: 70,
 					column: 7
 				}
 			},
 			'21': {
 				start: {
-					line: 64,
+					line: 69,
 					column: 5
 				},
 				end: {
-					line: 64,
+					line: 69,
 					column: 42
 				}
 			},
 			'22': {
 				start: {
-					line: 79,
+					line: 84,
 					column: 7
 				},
 				end: {
-					line: 79,
+					line: 84,
 					column: 17
 				}
 			},
 			'23': {
 				start: {
-					line: 81,
+					line: 86,
 					column: 20
 				},
 				end: {
-					line: 86,
+					line: 91,
 					column: 4
 				}
 			},
 			'24': {
 				start: {
-					line: 88,
+					line: 93,
 					column: 23
 				},
 				end: {
-					line: 88,
+					line: 93,
 					column: 33
 				}
 			},
 			'25': {
 				start: {
-					line: 90,
+					line: 95,
 					column: 35
 				},
 				end: {
-					line: 90,
+					line: 95,
 					column: 64
 				}
 			},
 			'26': {
 				start: {
-					line: 91,
+					line: 96,
 					column: 23
 				},
 				end: {
-					line: 91,
+					line: 96,
 					column: 96
 				}
 			},
 			'27': {
 				start: {
-					line: 93,
+					line: 98,
 					column: 3
 				},
 				end: {
-					line: 97,
+					line: 102,
 					column: 5
 				}
 			},
 			'28': {
 				start: {
-					line: 100,
+					line: 105,
 					column: 1
 				},
 				end: {
-					line: 100,
+					line: 105,
 					column: 74
 				}
 			},
 			'29': {
 				start: {
-					line: 101,
+					line: 106,
 					column: 1
 				},
 				end: {
-					line: 101,
+					line: 106,
 					column: 21
 				}
 			}
@@ -60023,699 +60023,699 @@ var cov_111lrwsabt = function () {
 				name: 'getDisplayName',
 				decl: {
 					start: {
-						line: 5,
+						line: 10,
 						column: 9
 					},
 					end: {
-						line: 5,
+						line: 10,
 						column: 23
 					}
 				},
 				loc: {
 					start: {
-						line: 5,
+						line: 10,
 						column: 42
 					},
 					end: {
-						line: 7,
+						line: 12,
 						column: 1
 					}
 				},
-				line: 5
+				line: 10
 			},
 			'1': {
 				name: 'matchType',
 				decl: {
 					start: {
-						line: 9,
+						line: 14,
 						column: 16
 					},
 					end: {
-						line: 9,
+						line: 14,
 						column: 25
 					}
 				},
 				loc: {
 					start: {
-						line: 9,
+						line: 14,
 						column: 61
 					},
 					end: {
-						line: 17,
+						line: 22,
 						column: 1
 					}
 				},
-				line: 9
+				line: 14
 			},
 			'2': {
 				name: '(anonymous_2)',
 				decl: {
 					start: {
-						line: 9,
+						line: 14,
 						column: 51
 					},
 					end: {
-						line: 9,
+						line: 14,
 						column: 52
 					}
 				},
 				loc: {
 					start: {
-						line: 9,
+						line: 14,
 						column: 57
 					},
 					end: {
-						line: 9,
+						line: 14,
 						column: 59
 					}
 				},
-				line: 9
+				line: 14
 			},
 			'3': {
 				name: '(anonymous_3)',
 				decl: {
 					start: {
-						line: 10,
+						line: 15,
 						column: 8
 					},
 					end: {
-						line: 10,
+						line: 15,
 						column: 9
 					}
 				},
 				loc: {
 					start: {
-						line: 10,
+						line: 15,
 						column: 39
 					},
 					end: {
-						line: 16,
+						line: 21,
 						column: 2
 					}
 				},
-				line: 10
+				line: 15
 			},
 			'4': {
 				name: '(anonymous_4)',
 				decl: {
 					start: {
-						line: 19,
+						line: 24,
 						column: 29
 					},
 					end: {
-						line: 19,
+						line: 24,
 						column: 30
 					}
 				},
 				loc: {
 					start: {
-						line: 19,
+						line: 24,
 						column: 41
 					},
 					end: {
-						line: 19,
+						line: 24,
 						column: 89
 					}
 				},
-				line: 19
+				line: 24
 			},
 			'5': {
 				name: '(anonymous_5)',
 				decl: {
 					start: {
-						line: 19,
+						line: 24,
 						column: 61
 					},
 					end: {
-						line: 19,
+						line: 24,
 						column: 62
 					}
 				},
 				loc: {
 					start: {
-						line: 19,
+						line: 24,
 						column: 81
 					},
 					end: {
-						line: 19,
+						line: 24,
 						column: 88
 					}
 				},
-				line: 19
+				line: 24
 			},
 			'6': {
 				name: 'withGestures',
 				decl: {
 					start: {
-						line: 33,
+						line: 38,
 						column: 24
 					},
 					end: {
-						line: 33,
+						line: 38,
 						column: 36
 					}
 				},
 				loc: {
 					start: {
-						line: 33,
+						line: 38,
 						column: 62
 					},
 					end: {
-						line: 102,
+						line: 107,
 						column: 1
 					}
 				},
-				line: 33
+				line: 38
 			},
 			'7': {
 				name: '(anonymous_7)',
 				decl: {
 					start: {
-						line: 33,
+						line: 38,
 						column: 50
 					},
 					end: {
-						line: 33,
+						line: 38,
 						column: 51
 					}
 				},
 				loc: {
 					start: {
-						line: 33,
+						line: 38,
 						column: 56
 					},
 					end: {
-						line: 33,
+						line: 38,
 						column: 60
 					}
 				},
-				line: 33
+				line: 38
 			},
 			'8': {
 				name: '(anonymous_8)',
 				decl: {
 					start: {
-						line: 43,
+						line: 48,
 						column: 20
 					},
 					end: {
-						line: 43,
+						line: 48,
 						column: 21
 					}
 				},
 				loc: {
 					start: {
-						line: 43,
+						line: 48,
 						column: 26
 					},
 					end: {
-						line: 43,
+						line: 48,
 						column: 28
 					}
 				},
-				line: 43
+				line: 48
 			},
 			'9': {
 				name: '(anonymous_9)',
 				decl: {
 					start: {
-						line: 44,
+						line: 49,
 						column: 17
 					},
 					end: {
-						line: 44,
+						line: 49,
 						column: 18
 					}
 				},
 				loc: {
 					start: {
-						line: 44,
+						line: 49,
 						column: 39
 					},
 					end: {
-						line: 44,
+						line: 49,
 						column: 60
 					}
 				},
-				line: 44
+				line: 49
 			},
 			'10': {
 				name: '(anonymous_10)',
 				decl: {
 					start: {
-						line: 47,
+						line: 52,
 						column: 11
 					},
 					end: {
-						line: 47,
+						line: 52,
 						column: 12
 					}
 				},
 				loc: {
 					start: {
-						line: 47,
+						line: 52,
 						column: 36
 					},
 					end: {
-						line: 52,
+						line: 57,
 						column: 3
 					}
 				},
-				line: 47
+				line: 52
 			},
 			'11': {
 				name: '(anonymous_11)',
 				decl: {
 					start: {
-						line: 47,
+						line: 52,
 						column: 36
 					},
 					end: {
-						line: 47,
+						line: 52,
 						column: 37
 					}
 				},
 				loc: {
 					start: {
-						line: 47,
+						line: 52,
 						column: 58
 					},
 					end: {
-						line: 52,
+						line: 57,
 						column: 3
 					}
 				},
-				line: 47
+				line: 52
 			},
 			'12': {
 				name: '(anonymous_12)',
 				decl: {
 					start: {
-						line: 54,
+						line: 59,
 						column: 2
 					},
 					end: {
-						line: 54,
+						line: 59,
 						column: 3
 					}
 				},
 				loc: {
 					start: {
-						line: 54,
+						line: 59,
 						column: 21
 					},
 					end: {
-						line: 58,
+						line: 63,
 						column: 3
 					}
 				},
-				line: 54
+				line: 59
 			},
 			'13': {
 				name: '(anonymous_13)',
 				decl: {
 					start: {
-						line: 60,
+						line: 65,
 						column: 2
 					},
 					end: {
-						line: 60,
+						line: 65,
 						column: 3
 					}
 				},
 				loc: {
 					start: {
-						line: 60,
+						line: 65,
 						column: 35
 					},
 					end: {
-						line: 67,
+						line: 72,
 						column: 3
 					}
 				},
-				line: 60
+				line: 65
 			},
 			'14': {
 				name: '(anonymous_14)',
 				decl: {
 					start: {
-						line: 63,
+						line: 68,
 						column: 70
 					},
 					end: {
-						line: 63,
+						line: 68,
 						column: 71
 					}
 				},
 				loc: {
 					start: {
-						line: 63,
+						line: 68,
 						column: 83
 					},
 					end: {
-						line: 65,
+						line: 70,
 						column: 5
 					}
 				},
-				line: 63
+				line: 68
 			},
 			'15': {
 				name: '(anonymous_15)',
 				decl: {
 					start: {
-						line: 69,
+						line: 74,
 						column: 2
 					},
 					end: {
-						line: 69,
+						line: 74,
 						column: 3
 					}
 				},
 				loc: {
 					start: {
-						line: 69,
+						line: 74,
 						column: 11
 					},
 					end: {
-						line: 98,
+						line: 103,
 						column: 3
 					}
 				},
-				line: 69
+				line: 74
 			}
 		},
 		branchMap: {
 			'0': {
 				loc: {
 					start: {
-						line: 6,
+						line: 11,
 						column: 8
 					},
 					end: {
-						line: 6,
+						line: 11,
 						column: 76
 					}
 				},
 				type: 'binary-expr',
 				locations: [{
 					start: {
-						line: 6,
+						line: 11,
 						column: 8
 					},
 					end: {
-						line: 6,
+						line: 11,
 						column: 36
 					}
 				}, {
 					start: {
-						line: 6,
+						line: 11,
 						column: 40
 					},
 					end: {
-						line: 6,
+						line: 11,
 						column: 61
 					}
 				}, {
 					start: {
-						line: 6,
+						line: 11,
 						column: 65
 					},
 					end: {
-						line: 6,
+						line: 11,
 						column: 76
-					}
-				}],
-				line: 6
-			},
-			'1': {
-				loc: {
-					start: {
-						line: 9,
-						column: 26
-					},
-					end: {
-						line: 9,
-						column: 39
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 9,
-						column: 37
-					},
-					end: {
-						line: 9,
-						column: 39
-					}
-				}],
-				line: 9
-			},
-			'2': {
-				loc: {
-					start: {
-						line: 9,
-						column: 41
-					},
-					end: {
-						line: 9,
-						column: 59
-					}
-				},
-				type: 'default-arg',
-				locations: [{
-					start: {
-						line: 9,
-						column: 51
-					},
-					end: {
-						line: 9,
-						column: 59
-					}
-				}],
-				line: 9
-			},
-			'3': {
-				loc: {
-					start: {
-						line: 11,
-						column: 18
-					},
-					end: {
-						line: 11,
-						column: 59
-					}
-				},
-				type: 'binary-expr',
-				locations: [{
-					start: {
-						line: 11,
-						column: 18
-					},
-					end: {
-						line: 11,
-						column: 29
-					}
-				}, {
-					start: {
-						line: 11,
-						column: 33
-					},
-					end: {
-						line: 11,
-						column: 59
 					}
 				}],
 				line: 11
 			},
-			'4': {
+			'1': {
 				loc: {
 					start: {
-						line: 12,
-						column: 2
+						line: 14,
+						column: 26
 					},
 					end: {
 						line: 14,
+						column: 39
+					}
+				},
+				type: 'default-arg',
+				locations: [{
+					start: {
+						line: 14,
+						column: 37
+					},
+					end: {
+						line: 14,
+						column: 39
+					}
+				}],
+				line: 14
+			},
+			'2': {
+				loc: {
+					start: {
+						line: 14,
+						column: 41
+					},
+					end: {
+						line: 14,
+						column: 59
+					}
+				},
+				type: 'default-arg',
+				locations: [{
+					start: {
+						line: 14,
+						column: 51
+					},
+					end: {
+						line: 14,
+						column: 59
+					}
+				}],
+				line: 14
+			},
+			'3': {
+				loc: {
+					start: {
+						line: 16,
+						column: 18
+					},
+					end: {
+						line: 16,
+						column: 59
+					}
+				},
+				type: 'binary-expr',
+				locations: [{
+					start: {
+						line: 16,
+						column: 18
+					},
+					end: {
+						line: 16,
+						column: 29
+					}
+				}, {
+					start: {
+						line: 16,
+						column: 33
+					},
+					end: {
+						line: 16,
+						column: 59
+					}
+				}],
+				line: 16
+			},
+			'4': {
+				loc: {
+					start: {
+						line: 17,
+						column: 2
+					},
+					end: {
+						line: 19,
 						column: 3
 					}
 				},
 				type: 'if',
 				locations: [{
 					start: {
-						line: 12,
+						line: 17,
 						column: 2
 					},
 					end: {
-						line: 14,
+						line: 19,
 						column: 3
 					}
 				}, {
 					start: {
-						line: 12,
+						line: 17,
 						column: 2
 					},
 					end: {
-						line: 14,
+						line: 19,
 						column: 3
 					}
 				}],
-				line: 12
+				line: 17
 			},
 			'5': {
 				loc: {
 					start: {
-						line: 12,
+						line: 17,
 						column: 6
 					},
 					end: {
-						line: 12,
+						line: 17,
 						column: 46
 					}
 				},
 				type: 'binary-expr',
 				locations: [{
 					start: {
-						line: 12,
+						line: 17,
 						column: 6
 					},
 					end: {
-						line: 12,
+						line: 17,
 						column: 13
 					}
 				}, {
 					start: {
-						line: 12,
+						line: 17,
 						column: 17
 					},
 					end: {
-						line: 12,
+						line: 17,
 						column: 46
 					}
 				}],
-				line: 12
+				line: 17
 			},
 			'6': {
 				loc: {
 					start: {
-						line: 33,
+						line: 38,
 						column: 37
 					},
 					end: {
-						line: 33,
+						line: 38,
 						column: 60
 					}
 				},
 				type: 'default-arg',
 				locations: [{
 					start: {
-						line: 33,
+						line: 38,
 						column: 50
 					},
 					end: {
-						line: 33,
+						line: 38,
 						column: 60
 					}
 				}],
-				line: 33
+				line: 38
 			},
 			'7': {
 				loc: {
 					start: {
-						line: 61,
+						line: 66,
 						column: 3
 					},
 					end: {
-						line: 66,
+						line: 71,
 						column: 4
 					}
 				},
 				type: 'if',
 				locations: [{
 					start: {
-						line: 61,
+						line: 66,
 						column: 3
 					},
 					end: {
-						line: 66,
+						line: 71,
 						column: 4
 					}
 				}, {
 					start: {
-						line: 61,
+						line: 66,
 						column: 3
 					},
 					end: {
-						line: 66,
+						line: 71,
 						column: 4
 					}
 				}],
-				line: 61
+				line: 66
 			},
 			'8': {
 				loc: {
 					start: {
-						line: 91,
+						line: 96,
 						column: 23
 					},
 					end: {
-						line: 91,
+						line: 96,
 						column: 96
 					}
 				},
 				type: 'cond-expr',
 				locations: [{
 					start: {
-						line: 91,
+						line: 96,
 						column: 57
 					},
 					end: {
-						line: 91,
+						line: 96,
 						column: 84
 					}
 				}, {
 					start: {
-						line: 91,
+						line: 96,
 						column: 87
 					},
 					end: {
-						line: 91,
+						line: 96,
 						column: 96
 					}
 				}],
-				line: 91
+				line: 96
 			},
 			'9': {
 				loc: {
 					start: {
-						line: 91,
+						line: 96,
 						column: 23
 					},
 					end: {
-						line: 91,
+						line: 96,
 						column: 54
 					}
 				},
 				type: 'binary-expr',
 				locations: [{
 					start: {
-						line: 91,
+						line: 96,
 						column: 23
 					},
 					end: {
-						line: 91,
+						line: 96,
 						column: 31
 					}
 				}, {
 					start: {
-						line: 91,
+						line: 96,
 						column: 35
 					},
 					end: {
-						line: 91,
+						line: 96,
 						column: 54
 					}
 				}],
-				line: 91
+				line: 96
 			}
 		},
 		s: {
@@ -60826,6 +60826,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+/**
+ * Updates display name of wrapped component for easier debugging.
+ * @param {Component} WrappedComponent - component being wrapped
+ * @returns {string} new display name to use for debug output
+ */
 function getDisplayName(WrappedComponent) {
 	cov_111lrwsabt.f[0]++;
 	cov_111lrwsabt.s[0]++;
@@ -70194,4 +70199,4 @@ var describeTimeSpan = exports.describeTimeSpan = function describeTimeSpan(span
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main-cfcb3d42f5c470ac72cf.bundle.js.map
+//# sourceMappingURL=main-e0670b12d5b16b621c08.bundle.js.map
