@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 
 import { SECONDS_PER_HOUR, SECONDS_PER_MINUTE } from 'timespan';
 
+const rando = Math.random() * 360;
+
 const colors = {
-	a: 0,
-	b: 128,
-	c: 255,
+	a: (0 + rando) % 360,
+	b: (120 + rando) % 360,
+	c: (240 + rando) % 360,
 };
 
 const DEFAULT_HUE = 26;
@@ -58,10 +60,10 @@ export default class DemoBlock extends PureComponent {
 			bottom: 6,
 			left: 1,
 			right: 1,
-			background: temp ? `hsla(${hue}, 20%, 50%, 0.25)` : `hsl(${hue}, 20%, 50%)`,
+			background: temp ? `hsla(${hue}, 80%, 50%, 0.25)` : `hsl(${hue}, 50%, 60%)`,
 			borderRadius: 2,
-			border: temp ? `1px solid hsla(${hue}, 50%, 20%, 1)` : 'none',
-			color: temp ? `hsl(${hue}, 20%, 20%)` : '#fff',
+			border: temp ? `1px solid hsla(${hue}, 90%, 20%, 1)` : 'none',
+			color: temp ? `hsl(${hue}, 600%, 20%)` : '#fff',
 			outline: isSelected ? '5px solid #FFF' : 'none',
 			fontWeight: isSelected ? 'bold' : 'normal',
 		};
