@@ -7,7 +7,7 @@ module.exports = {
   context: path.resolve( __dirname, 'src' ),
   entry: './index.js',
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name]-[chunkhash].bundle.js',
   	path: path.resolve( __dirname, 'dist' ) 
   },
   resolve: {
