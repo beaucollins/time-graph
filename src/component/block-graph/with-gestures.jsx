@@ -2,6 +2,11 @@ import { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
 import BlockGraph from './index';
 
+/**
+ * Updates display name of wrapped component for easier debugging.
+ * @param {Component} WrappedComponent - component being wrapped
+ * @returns {string} new display name to use for debug output
+ */
 function getDisplayName(WrappedComponent) {
 	return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 }
