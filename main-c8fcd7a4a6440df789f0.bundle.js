@@ -54732,7 +54732,7 @@ module.exports = function(module) {
 
 var cov_2jr42eh9wh = function () {
 	var path = '/Users/beaucollins/code/lighthouse-scheduler-api/src/components/time-graph/src/component/app.jsx',
-	    hash = '64ee6bef114c08ef6f28620784e5ec8dcebf081f',
+	    hash = '0f2b60c9a356c2a77cd659cbecd226381c48abe5',
 	    Function = function () {}.constructor,
 	    global = new Function('return this')(),
 	    gcv = '__coverage__',
@@ -54954,17 +54954,17 @@ var cov_2jr42eh9wh = function () {
 				decl: {
 					start: {
 						line: 34,
-						column: 44
+						column: 45
 					},
 					end: {
 						line: 34,
-						column: 45
+						column: 46
 					}
 				},
 				loc: {
 					start: {
 						line: 34,
-						column: 50
+						column: 51
 					},
 					end: {
 						line: 37,
@@ -55418,7 +55418,7 @@ App.defaultProps = {
 			cov_2jr42eh9wh.s[2]++;
 
 			return React.createElement(_compressable2.default, { initialData: [] });
-		} }, { key: 'max', label: 'Max Data', render: function render() {
+		} }, { key: 'max', label: 'Thousands', render: function render() {
 			cov_2jr42eh9wh.f[2]++;
 			cov_2jr42eh9wh.s[3]++;
 
@@ -70191,4 +70191,4 @@ var describeTimeSpan = exports.describeTimeSpan = function describeTimeSpan(span
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.bundle.js.map
+//# sourceMappingURL=main-c8fcd7a4a6440df789f0.bundle.js.map
