@@ -14,7 +14,7 @@ git clone -l . ./dist --branch gh-pages
 
 # Run webpack to build new assets
 find dist | grep  -v \^dist\$ | grep -v \.git | grep -v \^dist/README\.md\$ | xargs rm
-npm run -s webpack -- --silent
+npm run -s build -- --silent
 
 # Dirty changes summary is added to the commit
 CHANGES=`git status --short`
@@ -34,4 +34,5 @@ git push
 cd ..
 
 # We have the gh-pages updated locally, push to github
-git push origin
+# git push origin
+echo "git push origin gh-pages to deploy $V"
