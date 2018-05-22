@@ -21,9 +21,9 @@ export default class App extends Component {
 
 	static defaultProps = {
 		options: [
-			{ key: 'availability', label: 'Availability', render: () => {
-				return <div id="graph-container"><AvailabilityPlanner /></div>;
-			} },
+			// { key: 'availability', label: 'Availability', render: () => {
+			// 	return <div id="graph-container"><AvailabilityPlanner /></div>;
+			// } },
 			{ key: 'common', label: 'Common', render: () => {
 				console.log('rendering with %d blocks', commonData.length)
 				return <CompressablePlanner initialData={ commonData } />;
